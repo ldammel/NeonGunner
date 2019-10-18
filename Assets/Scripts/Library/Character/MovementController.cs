@@ -1,5 +1,6 @@
 ﻿using Library.Events;
 using UnityEngine;
+using NaughtyAttributes;
 
 namespace Library.Character
 {
@@ -7,12 +8,13 @@ namespace Library.Character
     [RequireComponent(typeof(Animator))]
     public class MovementController : MonoBehaviour
     {
+        [BoxGroup("Variables")]
         [SerializeField] 
         private float movementSpeed = 3f;
-        
+        [BoxGroup("Variables")]
         [SerializeField] 
         private float speedSmoothTime = 0.1f;
-        
+        [BoxGroup("Variables")]
         [SerializeField] 
         private float rotationSmoothTime = 0.1f;
         
@@ -61,7 +63,7 @@ namespace Library.Character
             
            _controller.Move(Time.deltaTime * _currentSpeed * desiredMoveDirection);
            
-           _animator.SetFloat(HashSpeedPercentage, 0.5f * movementInput.magnitude, speedSmoothTime, Time.deltaTime);
+           //_animator.SetFloat(HashSpeedPercentage, 0.5f * movementInput.magnitude, speedSmoothTime, Time.deltaTime);
         }
 
         public void ChangeColor()

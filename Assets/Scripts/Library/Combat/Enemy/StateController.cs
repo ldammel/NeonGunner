@@ -20,18 +20,19 @@ namespace Library.Combat.Enemy
         private void Awake()
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
+            SetupAI(true, wayPointList);
         }
 
         public void SetupAI(bool aiActivation, List<Transform> wayPoints)
         {
             wayPointList = wayPoints;
             _aiActive = aiActivation;
-            //navMeshAgent.enabled = _aiActive;
+            navMeshAgent.enabled = _aiActive;
         }
 
         private void Update()
         {
-            //if (!_aiActive) return;
+            if (!_aiActive) return;
             currentState.UpdateState(this);
         }
 
