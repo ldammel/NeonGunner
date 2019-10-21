@@ -7,11 +7,16 @@ namespace Library.Combat.Enemy
 {
     public class EnemyHealth : MonoBehaviour
     {
-        [SerializeField] private int maxHealth = 100;
-        [SerializeField] private int curHealth = 100;
+        public int maxHealth = 100;
+        public int curHealth = 100;
+
+        public bool player;
+
+        private Vector3 _startPos;
         // Start is called before the first frame update
         void Start()
         {
+            _startPos = transform.localPosition;
             curHealth = maxHealth;
         }
 
@@ -20,7 +25,17 @@ namespace Library.Combat.Enemy
         {
             if (curHealth <= 0)
             {
-                gameObject.SetActive(false);
+                if (player)
+                {
+                    transform.position = _startPos;
+                    curHealth = maxHealth;
+                }
+                else
+                {
+                    gameObject.SetActive(false);
+                    curHealth = maxHealth;
+                    transform.localPosition = _startPos;
+                }
             }
         }
 

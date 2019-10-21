@@ -5,21 +5,8 @@ namespace Library.Combat.Pooling
 {
     public class BulletShotPool : MonoBehaviour
     {
-        public static BulletShotPool Instance;
-
         [SerializeField] private GameObject prefab;
         private readonly Queue<GameObject> _objects = new Queue<GameObject>();
-        
- 
-        private void Awake()
-        {
-            if (Instance != null) 
-            {
-                Debug.LogError("There can never be more than one Instance of BulletShotPool!");
-            }
-
-            Instance = this;
-        }
 
         private void OnEnable()
         {

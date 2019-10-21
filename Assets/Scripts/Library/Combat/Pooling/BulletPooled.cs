@@ -11,12 +11,24 @@ namespace Library.Combat.Pooling
 
         private float _fireTimer;
 
+        public bool isEnemy = false;
+
         private void Update()
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0) && !isEnemy)
             {
                 if (_fireTimer >= fireRate)
                 {
+                    _fireTimer = 0;
+                    Fire();
+                }
+            }
+
+            if (isEnemy)
+            {
+                if (_fireTimer >= fireRate)
+                {
+                    gameObject.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
                     _fireTimer = 0;
                     Fire();
                 }

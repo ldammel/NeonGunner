@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class AimController : MonoBehaviour {
 
-    public static AimController Instance;
-
     [SerializeField]
     private Image crosshair;
 
@@ -21,11 +19,7 @@ public class AimController : MonoBehaviour {
     public Ray CrossHairRay;
 
     private void Start() {
-        if (Instance != null) {
-            Debug.LogWarning("AimController is a singleton class and may only be initialized once");
-            Application.Quit();
-        }
-        Instance = this;
+
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
@@ -40,12 +34,13 @@ public class AimController : MonoBehaviour {
             crosshair.color = Color.white;
         }
         
+        lookAtPoint = CrossHairRay.GetPoint(100f);
         
-        if (Physics.SphereCast(CrossHairRay, sphereCastSize, out RaycastHit hitInfo, 1000f, LayerMask.GetMask("Enemy"))) {
-            lookAtPoint = hitInfo.point;
-        } else {
-            lookAtPoint = CrossHairRay.GetPoint(100f);
-        }
+       //if (Physics.SphereCast(CrossHairRay, sphereCastSize, out RaycastHit hitInfo, 1000f, LayerMask.GetMask("Enemy"))) {
+       //    lookAtPoint = hitInfo.point;
+       //} else {
+       //    lookAtPoint = CrossHairRay.GetPoint(100f);
+       //}
         
         Weapons.ForEach(w => w.LookAt(lookAtPoint));
     }
