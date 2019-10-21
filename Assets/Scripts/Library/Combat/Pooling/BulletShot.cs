@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Combat.Enemy;
 using UnityEngine;
 
 namespace Library.Combat.Pooling
@@ -6,7 +7,7 @@ namespace Library.Combat.Pooling
     public class BulletShot : MonoBehaviour, IGameObjectPooled
     {
         public float moveSpeed = 30f;
-
+        public int damage = 10;
         private float _lifeTime;
         public float maxLifeTime;
 

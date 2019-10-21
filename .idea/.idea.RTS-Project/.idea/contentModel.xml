@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-106464127.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Lucas.Dammel\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
+    <e p="C:\Users\Lucas\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lucas\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-1039986213.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lucas\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -213,13 +213,16 @@
               <e p="WaypointMovement.cs" t="Include" />
             </e>
             <e p="Combat" t="Include">
+              <e p="AimController.cs" t="Include" />
               <e p="Enemy" t="Include">
                 <e p="Action.cs" t="Include" />
+                <e p="EnemyHealth.cs" t="Include" />
                 <e p="EnemyStats.cs" t="Include" />
                 <e p="PatrolAction.cs" t="Include" />
                 <e p="State.cs" t="Include" />
                 <e p="StateController.cs" t="Include" />
               </e>
+              <e p="GunMovement.cs" t="Include" />
               <e p="Pooling" t="Include">
                 <e p="BulletPooled.cs" t="Include" />
                 <e p="BulletShot.cs" t="Include" />
