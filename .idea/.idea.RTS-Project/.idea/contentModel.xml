@@ -313,6 +313,7 @@
               <e p="OnCollisionController.cs" t="Include" />
               <e p="OnInteractionController.cs" t="Include" />
               <e p="OnTriggerController.cs" t="Include" />
+              <e p="SignActivation.cs" t="Include" />
               <e p="UnityEvents" t="Include">
                 <e p="UnityFloatEvent.cs" t="Include" />
                 <e p="UnityIntEvent.cs" t="Include" />

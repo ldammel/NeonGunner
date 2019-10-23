@@ -13,9 +13,12 @@ namespace Library.Combat.Enemy
         public bool player;
 
         private Vector3 _startPos;
+
+        private Transform _parent;
         // Start is called before the first frame update
         void Start()
         {
+            _parent = transform.parent;
             _startPos = transform.localPosition;
             curHealth = maxHealth;
         }
@@ -32,9 +35,10 @@ namespace Library.Combat.Enemy
                 }
                 else
                 {
-                    gameObject.SetActive(false);
                     curHealth = maxHealth;
                     transform.localPosition = _startPos;
+                    transform.parent = _parent;
+                    gameObject.SetActive(false);
                 }
             }
         }

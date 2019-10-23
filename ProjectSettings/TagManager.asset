@@ -7,6 +7,8 @@ TagManager:
   - PlayerBullet
   - Enemy
   - EnemyBullet
+  - NearPoint
+  - FarPoint
   layers:
   - Default
   - TransparentFX

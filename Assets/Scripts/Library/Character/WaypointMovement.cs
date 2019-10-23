@@ -8,23 +8,30 @@ namespace Library.Character
     {
         public float speed;
         public PathCreator path;
-        private NavMeshAgent _agent;
-        //public static Waypoint NWaypoint { get; set; }
-        //public Waypoint initial;
-        private float dist;
+        public EndOfPathInstruction endOfPathInstruction;
+        public float dist;
         void Start()
         {
-            //NWaypoint = initial;
-            _agent = GetComponent<NavMeshAgent>();
+            if (path != null)
+            {
+                path.pathUpdated += OnPathChanged;
+            }
         }
         
         void Update()
         {
+            if (path == null) return;
             dist += speed * Time.deltaTime; 
-            _agent.destination = path.path.GetPointAtDistance(dist);//NWaypoint.point;
-            _agent.isStopped = false;
+            transform.position = path.path.GetPointAtDistance(dist);
+            transform.rotation = path.path.GetRotationAtDistance(dist, endOfPathInstruction);
+            if (transform.rotation.z != 0)
+            {
+                transform.Rotate(0,0,90);
+            }
         }
-        
+        public void OnPathChanged() {
+            dist = path.path.GetClosestDistanceAlongPath(transform.position);
+        }
         
     }
 }

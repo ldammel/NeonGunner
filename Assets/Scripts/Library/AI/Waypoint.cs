@@ -1,25 +1,20 @@
-﻿using Library.Character;
+﻿using System;
+using Library.Character;
+using Library.Combat.Enemy;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Library.AI
 {
     public class Waypoint : MonoBehaviour
     {
         public bool active;
-        public Vector3 point;
         public GameObject pointObj;
-        private void Update()
-        {
-            point = pointObj.transform.position;
-            gameObject.SetActive(active);
-        }
 
-        private void OnTriggerEnter(Collider other)
+        private void Start()
         {
-            if (other.CompareTag("Player"))
-            {
-                //WaypointMovement.NWaypoint = this;
-            }
+            active = false;
+            pointObj = gameObject;
         }
     }
 }

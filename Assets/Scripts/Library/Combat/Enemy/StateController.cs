@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using Library.AI;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -11,6 +13,7 @@ namespace Library.Combat.Enemy
         public EnemyStats enemyStats;
         public Transform eyes;
 
+        private EnemyHealth eh;
         [HideInInspector] public NavMeshAgent navMeshAgent;
         public List<Transform> wayPointList;
         [HideInInspector] public int nextWayPoint;
@@ -21,6 +24,7 @@ namespace Library.Combat.Enemy
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
             SetupAI(true, wayPointList);
+            eh = gameObject.GetComponent<EnemyHealth>();
         }
 
         public void SetupAI(bool aiActivation, List<Transform> wayPoints)
