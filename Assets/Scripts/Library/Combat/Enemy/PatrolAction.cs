@@ -1,4 +1,5 @@
 ﻿using Library.AI;
+using Library.Combat.Pooling;
 using UnityEngine;
 
 namespace Library.Combat.Enemy
@@ -27,8 +28,10 @@ namespace Library.Combat.Enemy
                     controller.gameObject.transform.parent = controller.wayPointList[controller.nextWayPoint];
                     controller.gameObject.transform.position = controller.wayPointList[controller.nextWayPoint].position;
                     controller.navMeshAgent.enabled = false;
-                    controller.enabled = false;
+                    controller.gameObject.GetComponentInChildren<BulletPooled>().canFire = true;
                     controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().active = true;
+                    controller.eh.wp = controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>();
+                    controller.enabled = false;
                 }
             }
         }

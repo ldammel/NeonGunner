@@ -42,6 +42,19 @@ namespace Library.Combat.Pooling
 
         private void OnCollisionEnter(Collision other)
         {
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                var e = other.gameObject.GetComponent<EnemyHealth>();
+                e.TakeDamage(damage);
+            }
+
+            if (gameObject.CompareTag("EnemyBullet") && other.gameObject.CompareTag("Player"))
+            {
+                var e = other.gameObject.GetComponent<EnemyHealth>();
+                e.TakeDamage(damage);
+            }
+
+
             _pool.ReturnToPool(gameObject);
         }
     }

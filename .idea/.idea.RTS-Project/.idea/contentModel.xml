@@ -282,6 +282,7 @@
                 <e p="State.cs" t="Include" />
                 <e p="StateController.cs" t="Include" />
               </e>
+              <e p="Flak.cs" t="Include" />
               <e p="Flamethrower.cs" t="Include" />
               <e p="GunMovement.cs" t="Include" />
               <e p="HealthText.cs" t="Include" />

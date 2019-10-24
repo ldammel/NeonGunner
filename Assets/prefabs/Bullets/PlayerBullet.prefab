@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4347408297319963510}
   - component: {fileID: -3494412245618807420}
   - component: {fileID: 311205331473066178}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PlayerBullet
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
@@ -126,3 +126,5 @@ MonoBehaviour:
   moveSpeed: 60
   damage: 10
   maxLifeTime: 3
+  isFlak: 0
+  flakFx: {fileID: 0}

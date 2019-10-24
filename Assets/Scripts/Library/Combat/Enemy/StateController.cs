@@ -13,7 +13,7 @@ namespace Library.Combat.Enemy
         public EnemyStats enemyStats;
         public Transform eyes;
 
-        private EnemyHealth eh;
+        public EnemyHealth eh;
         [HideInInspector] public NavMeshAgent navMeshAgent;
         public List<Transform> wayPointList;
         [HideInInspector] public int nextWayPoint;
@@ -37,6 +37,17 @@ namespace Library.Combat.Enemy
         private void Update()
         {
             if (!_aiActive) return;
+            var go = GameObject.FindGameObjectsWithTag("FarPoint");
+            for (int i = 0; i < wayPointList.Count; i++)
+            {
+                for (int j = 0; j < go.Length; j++)
+                {
+                    if (!wayPointList.Contains(go[j].transform))
+                    {
+                        wayPointList[i] = go[j].transform;
+                    }
+                }
+            }
             currentState.UpdateState(this);
         }
 

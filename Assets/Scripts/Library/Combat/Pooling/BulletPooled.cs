@@ -12,6 +12,7 @@ namespace Library.Combat.Pooling
         private float _fireTimer;
 
         public bool isEnemy = false;
+        public bool canFire;
 
         private void Update()
         {
@@ -26,6 +27,7 @@ namespace Library.Combat.Pooling
 
             if (isEnemy)
             {
+                if (!canFire) return;
                 if (_fireTimer >= fireRate)
                 {
                     gameObject.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
