@@ -25,7 +25,6 @@ namespace Library.UI
         
         
         [SerializeField] private TextMeshProUGUI displayText;
-        [SerializeField] private float fadeTime;
         private IEnumerator _notificationCoroutine;
 
         private void Awake()
@@ -36,21 +35,21 @@ namespace Library.UI
             }
         }
 
-        public void SetNewNotification(string message)
+        public void SetNewNotification(string message, float displayTime)
         {
             if (_notificationCoroutine != null) StopCoroutine(_notificationCoroutine);
-            _notificationCoroutine = FadeOutNotification(message);
+            _notificationCoroutine = FadeOutNotification(message, displayTime);
             StartCoroutine(_notificationCoroutine);
         }
 
-        private IEnumerator FadeOutNotification(string message )
+        private IEnumerator FadeOutNotification(string message, float time )
         {
             displayText.text = message;
             float t = 0;
-            while (t < fadeTime)
+            while (t < time)
             {
                 t += Time.unscaledDeltaTime;
-                displayText.color = new Color(displayText.color.r,displayText.color.g,displayText.color.b,Mathf.Lerp(1f,0f,t/fadeTime));
+                displayText.color = new Color(displayText.color.r,displayText.color.g,displayText.color.b,Mathf.Lerp(1f,0f,t/time));
                 yield return null;
             }
         }

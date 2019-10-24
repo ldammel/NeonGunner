@@ -4,39 +4,21 @@
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Checker Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Checker Wall.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Checker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Checker.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Concrete Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Concrete Wall.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Concrete.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Concrete.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_M4 Normal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_M4 Normal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_M4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_M4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Metal Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Metal Wall.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Wood Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Wood Wall.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Wood.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big Looped.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big Looped.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Fire/WFX_GazFireBig (Blue).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Fire/WFX_GazFireBig (Blue).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Black.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Brown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Brown.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Dark Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Dark Grey.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Green.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Red.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road Underside.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road Underside.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Concrete NoCollision.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Concrete NoCollision.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Dirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Dirt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Sand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Sand.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact SoftBody.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact SoftBody.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Explosions/WFX_Nuke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Explosions/WFX_Nuke.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/EnemyBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/EnemyBullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/FlakBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/FlakBullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/PlayerBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/PlayerBullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +55,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ActivateWave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/prefabs/Enemies/Enemy.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/Action.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/HealthText.cs" root0="FORCE_HIGHLIGHTING" />
@@ -106,10 +89,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/OnCollisionController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" />
       </list>
     </option>
   </component>
@@ -165,7 +150,7 @@
       <workItem from="1571613858198" duration="5974000" />
       <workItem from="1571652132867" duration="10629000" />
       <workItem from="1571832543941" duration="8566000" />
-      <workItem from="1571908440767" duration="12507000" />
+      <workItem from="1571908440767" duration="14616000" />
     </task>
     <servers />
   </component>

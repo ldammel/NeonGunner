@@ -35,7 +35,7 @@ namespace Library.Combat
            // transform.Rotate(_rotation);
             
             Vector3 rot = transform.rotation.eulerAngles + new Vector3(-_rotation.y, _rotation.x, 0f); //use local if your char is not always oriented Vector3.up
-            rot.x = ClampAngle(rot.x, 0f, 40f);
+            rot.x = ClampAngle(rot.x, -10f, 20f);
          
             transform.eulerAngles = rot;
         }

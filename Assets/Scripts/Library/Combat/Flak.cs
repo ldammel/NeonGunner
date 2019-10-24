@@ -9,12 +9,10 @@ namespace Library.Combat
 
         [SerializeField] private float radius;
         [SerializeField] private float damage;
-        [SerializeField] private GameObject vfx;
 
         private void OnCollisionEnter(Collision other)
         {
             AreaDamageEnemies(other.GetContact(0).point, radius, damage);
-            Instantiate(vfx, other.GetContact(0).point, other.transform.rotation);
         }
 
         public void AreaDamageEnemies(Vector3 location, float radius, float damage)

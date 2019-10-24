@@ -126,5 +126,4 @@ MonoBehaviour:
   moveSpeed: 60
   damage: 10
   maxLifeTime: 3
-  isFlak: 0
-  flakFx: {fileID: 0}
+  vfx: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}

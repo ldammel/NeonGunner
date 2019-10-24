@@ -41,7 +41,7 @@ namespace Library.Combat.Enemy
                 }
                 else
                 {
-                    NotificationManager.Instance.SetNewNotification("Killed Enemy");
+                    NotificationManager.Instance.SetNewNotification("Killed Enemy", 3);
                     if(wp != null && wp.active) wp.active = false;
                     transform.localPosition = _startPos;
                     transform.parent = _parent;

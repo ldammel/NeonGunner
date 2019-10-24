@@ -328,6 +328,7 @@
             </e>
             <e p="UI" t="Include">
               <e p="NotificationManager.cs" t="Include" />
+              <e p="NotificationTrigger.cs" t="Include" />
             </e>
           </e>
           <e p="SimpleCameraController.cs" t="Include" />

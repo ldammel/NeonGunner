@@ -127,6 +127,7 @@ MonoBehaviour:
   moveSpeed: 30
   damage: 100
   maxLifeTime: 3
+  vfx: {fileID: 100002, guid: 6ecf76dc4f268d340b2666896a954bcc, type: 3}
 --- !u!114 &4484576439604839339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,4 +142,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 5
   damage: 100
-  vfx: {fileID: 100002, guid: 6ecf76dc4f268d340b2666896a954bcc, type: 3}

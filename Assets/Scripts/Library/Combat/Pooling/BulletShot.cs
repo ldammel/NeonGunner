@@ -10,6 +10,7 @@ namespace Library.Combat.Pooling
         public int damage = 10;
         private float _lifeTime;
         public float maxLifeTime;
+        [SerializeField] private GameObject vfx;
 
         private BulletShotPool _pool;
 
@@ -54,7 +55,7 @@ namespace Library.Combat.Pooling
                 e.TakeDamage(damage);
             }
 
-
+            Instantiate(vfx, other.GetContact(0).point, other.transform.rotation);
             _pool.ReturnToPool(gameObject);
         }
     }
