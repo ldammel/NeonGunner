@@ -6,9 +6,9 @@ namespace Library.Combat
 {
     public class Flak : MonoBehaviour
     {
-
-        [SerializeField] private float radius;
+        public float radius = 5;
         [SerializeField] private float damage;
+
 
         private void OnCollisionEnter(Collision other)
         {
@@ -20,7 +20,6 @@ namespace Library.Combat
             var objects = Physics.OverlapSphere(location, radius);
             foreach (var col in objects)
             {
-                Debug.Log(col);
                 var enemy = col.GetComponent<EnemyHealth>();
                 if (enemy == null) continue;
                 enemy.TakeDamage(damage);

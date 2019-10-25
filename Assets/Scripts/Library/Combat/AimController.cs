@@ -30,7 +30,9 @@ public class AimController : MonoBehaviour {
         Vector3 lookAtPoint;
         if (Physics.SphereCast(CrossHairRay, sphereCastSize, out RaycastHit hitInfoOne, 300f, LayerMask.GetMask("Enemy"))) {
             crosshair.color = Color.red;
-        } else {
+        } else if (Physics.SphereCast(CrossHairRay, 0.1f, out RaycastHit hitInfotwo, 300f, LayerMask.GetMask("Player"))) {
+            crosshair.color = Color.green;
+        } else{
             crosshair.color = Color.white;
         }
         

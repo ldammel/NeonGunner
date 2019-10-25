@@ -269,6 +269,9 @@
                 <e p="CharacterHealthObject.cs" t="Include" />
                 <e p="CharacterMoveObject.cs" t="Include" />
               </e>
+              <e p="Upgrades" t="Include">
+                <e p="UpgradeManager.cs" t="Include" />
+              </e>
               <e p="WaypointMovement.cs" t="Include" />
             </e>
             <e p="Combat" t="Include">
@@ -277,7 +280,9 @@
               <e p="Enemy" t="Include">
                 <e p="Action.cs" t="Include" />
                 <e p="EnemyHealth.cs" t="Include" />
+                <e p="EnemySpawnController.cs" t="Include" />
                 <e p="EnemyStats.cs" t="Include" />
+                <e p="HealthBar.cs" t="Include" />
                 <e p="PatrolAction.cs" t="Include" />
                 <e p="State.cs" t="Include" />
                 <e p="StateController.cs" t="Include" />
@@ -285,7 +290,7 @@
               <e p="Flak.cs" t="Include" />
               <e p="Flamethrower.cs" t="Include" />
               <e p="GunMovement.cs" t="Include" />
-              <e p="HealthText.cs" t="Include" />
+              <e p="MachineGun.cs" t="Include" />
               <e p="ParticleDamage.cs" t="Include" />
               <e p="Pooling" t="Include">
                 <e p="BulletPooled.cs" t="Include" />
@@ -327,8 +332,10 @@
               <e p="Keybindings.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
+              <e p="HealthText.cs" t="Include" />
               <e p="NotificationManager.cs" t="Include" />
               <e p="NotificationTrigger.cs" t="Include" />
+              <e p="ScoreText.cs" t="Include" />
             </e>
           </e>
           <e p="SimpleCameraController.cs" t="Include" />

@@ -17,19 +17,17 @@ namespace Library.Combat.Enemy
 
         private Vector3 _startPos;
 
-        private Transform _parent;
-
         public Waypoint wp;
-        // Start is called before the first frame update
-        void Start()
+        
+        public event Action<float> OnHealthPctChanged = delegate{  };    
+        
+        private void Start()
         {
-            _parent = transform.parent;
-            _startPos = transform.localPosition;
             curHealth = maxHealth;
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (curHealth <= 0)
             {
@@ -43,11 +41,9 @@ namespace Library.Combat.Enemy
                 {
                     NotificationManager.Instance.SetNewNotification("Killed Enemy", 3);
                     if(wp != null && wp.active) wp.active = false;
-                    transform.localPosition = _startPos;
-                    transform.parent = _parent;
-                    gameObject.GetComponentInChildren<BulletPooled>().canFire = false;
-                    curHealth = maxHealth;
-                    gameObject.SetActive(false);
+                    EnemySpawnController.killedEnemies++;
+                    EnemySpawnController.totalKills++;
+                    Destroy(gameObject);
                 }
             }
         }
@@ -55,6 +51,8 @@ namespace Library.Combat.Enemy
         public void TakeDamage(float damage)
         {
             curHealth -= damage;
+            float currentHealthPct = curHealth / maxHealth;
+            OnHealthPctChanged(currentHealthPct);
         }
     }
 }

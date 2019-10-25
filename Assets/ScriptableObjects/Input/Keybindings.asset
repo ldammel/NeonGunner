@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Keybindings
   BaseValue: 0
-  jump: 32
-  fire: 323
-  interact: 101
-  pause: 27
-  inventory: 105
+  flak: 49
+  flame: 50
+  mg: 51
+  options: 27

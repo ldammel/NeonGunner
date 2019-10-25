@@ -21,12 +21,6 @@ namespace Library.Combat
             return Mathf.Min(angle, to);
         }
 
-        private void Start()
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-
         private void FixedUpdate()
         {
             _rotation.x = Input.GetAxis("Mouse X")* Time.deltaTime * rotationSpeed;
@@ -38,15 +32,6 @@ namespace Library.Combat
             rot.x = ClampAngle(rot.x, -10f, 20f);
          
             transform.eulerAngles = rot;
-        }
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-            }
         }
     }
 }

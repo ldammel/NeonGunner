@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Library.Combat.Enemy;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -19,6 +20,12 @@ namespace Library.Combat
             collisionEvents = new List<ParticleCollisionEvent>();
         }
 
+        private void Update()
+        {
+            var flameFxMain = flameFx.main;
+            flameFxMain.maxParticles = Input.GetMouseButton(0) ? 130 : 0;
+        }
+
         void OnParticleCollision(GameObject other)
         {
             int numCollisionEvents = flameFx.GetCollisionEvents(other, collisionEvents);
@@ -26,7 +33,7 @@ namespace Library.Combat
 
             while (i < numCollisionEvents)
             {
-                other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+                other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage*Time.unscaledDeltaTime);
                 i++;
             }
         }

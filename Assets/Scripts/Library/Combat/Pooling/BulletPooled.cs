@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Library.Combat.Pooling
 {
     public class BulletPooled : MonoBehaviour
     {
-        [SerializeField]
-        private float fireRate;
+        public float fireRate;
 
         [SerializeField] private BulletShotPool objectPool;
 
