@@ -66,6 +66,101 @@
             </e>
           </e>
         </e>
+        <e p="KriptoFX" t="Include">
+          <e p="Realistic Effects Pack v1" t="Include">
+            <e p="DemoResources" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="RFX1_DemoGUI.cs" t="Include" />
+                <e p="RFX1_FPS.cs" t="Include" />
+                <e p="RFX1_MouseOrbit.cs" t="Include" />
+                <e p="RFX1_RealtimeReflection.cs" t="Include" />
+              </e>
+            </e>
+            <e p="ImagePostEffects" t="Include">
+              <e p="Mobile" t="Include">
+                <e p="Resources" t="Include">
+                  <e p="RFX1_Bloom.shader" t="Include" />
+                  <e p="RFX1_Bloom_Inc.cginc" t="Include" />
+                </e>
+                <e p="RFX1_MobileBloom.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Readme.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Curves" t="Include">
+                <e p="RFX1_AudioPitchCurves.cs" t="Include" />
+                <e p="RFX1_AudioVolumeCurves.cs" t="Include" />
+                <e p="RFX1_LightCurves.cs" t="Include" />
+                <e p="RFX1_ProjectorSizeCurves.cs" t="Include" />
+                <e p="RFX1_ScaleCurves.cs" t="Include" />
+                <e p="RFX1_ShaderColorGradient.cs" t="Include" />
+                <e p="RFX1_ShaderFloatCurve.cs" t="Include" />
+                <e p="RFX1_ShaderProperties.cs" t="Include" />
+                <e p="RFX1_WindCurves.cs" t="Include" />
+              </e>
+              <e p="Editor" t="Include">
+                <e p="CustomShaderGUI.cs" t="Include" />
+                <e p="RFX1_CustomMaterialInspectorParticle.cs" t="Include" />
+              </e>
+              <e p="EffectSettings" t="Include">
+                <e p="RFX1_EffectSettingColor.cs" t="Include" />
+                <e p="RFX1_EffectSettingVisible.cs" t="Include" />
+                <e p="RFX1_ShieldInteraction.cs" t="Include" />
+                <e p="RFX1_Target.cs" t="Include" />
+              </e>
+              <e p="RFX1_ActivateGravityAfterCollision.cs" t="Include" />
+              <e p="RFX1_AnimatorEvents.cs" t="Include" />
+              <e p="RFX1_ColorHelper.cs" t="Include" />
+              <e p="RFX1_CustomLight.cs" t="Include" />
+              <e p="RFX1_DeactivateByTime.cs" t="Include" />
+              <e p="RFX1_ParticleCollisionDecal.cs" t="Include" />
+              <e p="RFX1_ParticleCollisionGameObject.cs" t="Include" />
+              <e p="RFX1_ParticleGravityPoint.cs" t="Include" />
+              <e p="RFX1_ParticleInfinite.cs" t="Include" />
+              <e p="RFX1_ParticlePositionPoint.cs" t="Include" />
+              <e p="RFX1_RandomRotate.cs" t="Include" />
+              <e p="RFX1_Reflection.cs" t="Include" />
+              <e p="RFX1_RotationFreeze.cs" t="Include" />
+              <e p="RFX1_ShieldCollisionTrigger.cs" t="Include" />
+              <e p="RFX1_SimpleDecal.cs" t="Include" />
+              <e p="RFX1_StartDelay.cs" t="Include" />
+              <e p="RFX1_TextureShaderProperties.cs" t="Include" />
+              <e p="RFX1_TransformMotion.cs" t="Include" />
+              <e p="RFX1_UVAnimation.cs" t="Include" />
+              <e p="RFX4_LocalSpaceFix.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="Decal" t="Include">
+                <e p="RFX1_DecalDistortMask.shader" t="Include" />
+                <e p="RFX1_DecalDistortMaskMobile.shader" t="Include" />
+                <e p="RFX1_DecalDistortMaskMul.shader" t="Include" />
+                <e p="RFX1_DecalMask.shader" t="Include" />
+                <e p="RFX1_DecalMaskCutOut.shader" t="Include" />
+                <e p="RFX1_DecalMaskCutOutMobile.shader" t="Include" />
+                <e p="RFX1_DecalWorldIce.shader" t="Include" />
+                <e p="RFX1_DecalWorldIceMobile.shader" t="Include" />
+                <e p="RFX1_DecalWorldMask.shader" t="Include" />
+                <e p="RFX1_DecalWorldMaskMobile.shader" t="Include" />
+              </e>
+              <e p="Editor" t="Include">
+                <e p="RFX1_UberDecalGUI.cs" t="Include" />
+              </e>
+              <e p="RFX1_BlendCutout.shader" t="Include" />
+              <e p="RFX1_Chains.shader" t="Include" />
+              <e p="RFX1_CutoutBorder.shader" t="Include" />
+              <e p="RFX1_DistortionPasses.cginc" t="Include" />
+              <e p="RFX1_Fringe.shader" t="Include" />
+              <e p="RFX1_FringeMobile.shader" t="Include" />
+              <e p="RFX1_Lightning.shader" t="Include" />
+              <e p="RFX1_LightningParticles.shader" t="Include" />
+              <e p="RFX1_Metall.shader" t="Include" />
+              <e p="RFX1_Particle.shader" t="Include" />
+              <e p="RFX1_UberDecal.shader" t="Include" />
+              <e p="UberDistortionStandard.shader" t="Include" />
+              <e p="UberDistortionStandardMobile.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="PathCreator" t="Include">
           <e p="Core" t="Include">
             <e p="Editor" t="Include">
@@ -290,6 +385,7 @@
               <e p="Flak.cs" t="Include" />
               <e p="Flamethrower.cs" t="Include" />
               <e p="GunMovement.cs" t="Include" />
+              <e p="LookAt.cs" t="Include" />
               <e p="MachineGun.cs" t="Include" />
               <e p="ParticleDamage.cs" t="Include" />
               <e p="Pooling" t="Include">
@@ -368,6 +464,228 @@
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
+        </e>
+        <e p="WeatherMaker" t="Include">
+          <e p="ChangeLog.txt" t="Include" />
+          <e p="Demo" t="Include">
+            <e p="DemoResources" t="Include">
+              <e p="Material" t="Include">
+                <e p="WeatherMakerDemoBackgroundShader.shader" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="WeatherMakerDemoAnimateMoveScript.cs" t="Include" />
+                <e p="WeatherMakerDemoReflectionProbeScript.cs" t="Include" />
+                <e p="WeatherMakerDemoScript2D.cs" t="Include" />
+                <e p="WeatherMakerDemoScriptCloudMask.cs" t="Include" />
+                <e p="WeatherMakerDemoScriptSpotlightRotate.cs" t="Include" />
+                <e p="WeatherMakerLightToSunIntensityScript.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Prefab" t="Include">
+            <e p="Editor" t="Include">
+              <e p="WeatherMakerAssetPostProcessor.cs" t="Include" />
+              <e p="WeatherMakerCloudNoiseEditor.cs" t="Include" />
+              <e p="WeatherMakerCloudNoiseEditorWindow.cs" t="Include" />
+              <e p="WeatherMakerEditorCommands.cs" t="Include" />
+              <e p="WeatherMakerLightningBoltEditor.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Clouds" t="Include">
+                <e p="WeatherMakerCloudLayerProfileScript.cs" t="Include" />
+                <e p="WeatherMakerCloudNoiseGeneratorScript.cs" t="Include" />
+                <e p="WeatherMakerCloudNoiseProfileGroupScript.cs" t="Include" />
+                <e p="WeatherMakerCloudNoiseProfileScript.cs" t="Include" />
+                <e p="WeatherMakerCloudProbeScript.cs" t="Include" />
+                <e p="WeatherMakerCloudProfileScript.cs" t="Include" />
+                <e p="WeatherMakerCloudVolumetricProfileScript.cs" t="Include" />
+                <e p="WeatherMakerFullScreenCloudsScript.cs" t="Include" />
+                <e p="WeatherMakerLegacyCloudScript2D.cs" t="Include" />
+              </e>
+              <e p="Extensions" t="Include">
+                <e p="WeatherMakerExtensionAquasScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionCtsScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionGaiaScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionMegaSplatScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionMicroSplatScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionPlaymakerScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionRainSnowSeasonScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionRtpTerrainScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionUberScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionVegetationStudioProScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionWaterScript.cs" t="Include" />
+                <e p="WeatherMakerExtensionWorldManagerScript.cs" t="Include" />
+                <e p="WeatherMakerMirrorNetworkScript.cs" t="Include" />
+              </e>
+              <e p="Fog" t="Include">
+                <e p="WeatherMakerBoxFogScript.cs" t="Include" />
+                <e p="WeatherMakerFogProfileScript.cs" t="Include" />
+                <e p="WeatherMakerFogScript.cs" t="Include" />
+                <e p="WeatherMakerFullScreenFogProfileScript.cs" t="Include" />
+                <e p="WeatherMakerFullScreenFogScript.cs" t="Include" />
+                <e p="WeatherMakerSphereFogScript.cs" t="Include" />
+              </e>
+              <e p="Manager" t="Include">
+                <e p="WeatherMakerAudioManagerScript.cs" t="Include" />
+                <e p="WeatherMakerAuroraManagerScript.cs" t="Include" />
+                <e p="WeatherMakerCloudManager2DScript.cs" t="Include" />
+                <e p="WeatherMakerCloudManagerScript.cs" t="Include" />
+                <e p="WeatherMakerCommandBufferManagerScript.cs" t="Include" />
+                <e p="WeatherMakerConfigurationScript.cs" t="Include" />
+                <e p="WeatherMakerEditorUtility.cs" t="Include" />
+                <e p="WeatherMakerFogManagerScript.cs" t="Include" />
+                <e p="WeatherMakerFullScreenEffect.cs" t="Include" />
+                <e p="WeatherMakerLightManagerScript.cs" t="Include" />
+                <e p="WeatherMakerLightningGenerator.cs" t="Include" />
+                <e p="WeatherMakerLocationWeatherScript.cs" t="Include" />
+                <e p="WeatherMakerPlayerControllerScript.cs" t="Include" />
+                <e p="WeatherMakerPlayerSoundManagerScript.cs" t="Include" />
+                <e p="WeatherMakerPrecipitationManagerScript.cs" t="Include" />
+                <e p="WeatherMakerScript.cs" t="Include" />
+                <e p="WeatherMakerShadowMapScript.cs" t="Include" />
+                <e p="WeatherMakerSkyManagerScript.cs" t="Include" />
+                <e p="WeatherMakerThunderAndLightningManagerScript.cs" t="Include" />
+                <e p="WeatherMakerTweenScript.cs" t="Include" />
+                <e p="WeatherMakerWindManagerScript.cs" t="Include" />
+              </e>
+              <e p="Mesh" t="Include">
+                <e p="WeatherMakerConeCreator.cs" t="Include" />
+                <e p="WeatherMakerPlaneCreatorScript.cs" t="Include" />
+                <e p="WeatherMakerSphereCreator.cs" t="Include" />
+                <e p="WeatherMakerSphereCreatorScript.cs" t="Include" />
+              </e>
+              <e p="Other" t="Include">
+                <e p="WeatherMakerGeometryUtility.cs" t="Include" />
+                <e p="WeatherMakerGradientHelperScript.cs" t="Include" />
+                <e p="WeatherMakerMaterialCopy.cs" t="Include" />
+                <e p="WeatherMakerNetworkPlayerScript.cs" t="Include" />
+                <e p="WeatherMakerOffScreenBufferScript.cs" t="Include" />
+                <e p="WeatherMakerParticleSortScript.cs" t="Include" />
+                <e p="WeatherMakerPerformanceProfileScript.cs" t="Include" />
+                <e p="WeatherMakerPlanarReflectionScript.cs" t="Include" />
+                <e p="WeatherMakerResourceContainerScript.cs" t="Include" />
+                <e p="WeatherMakerShaderIds.cs" t="Include" />
+                <e p="WeatherMakerShaderPropertiesScript.cs" t="Include" />
+                <e p="WeatherMakerTemporalReprojectionStateScript.cs" t="Include" />
+              </e>
+              <e p="Sky" t="Include">
+                <e p="WeatherMakerAtmosphereProfileScript.cs" t="Include" />
+                <e p="WeatherMakerAuroraProfileScript.cs" t="Include" />
+                <e p="WeatherMakerCelestialObjectScript.cs" t="Include" />
+                <e p="WeatherMakerDayNightCycleManagerScript.cs" t="Include" />
+                <e p="WeatherMakerDayNightCycleProfileScript.cs" t="Include" />
+                <e p="WeatherMakerMeteorShowerProfileScript.cs" t="Include" />
+                <e p="WeatherMakerMeteorShowerScript.cs" t="Include" />
+                <e p="WeatherMakerSkyPlaneScript.cs" t="Include" />
+                <e p="WeatherMakerSkyProfileScript.cs" t="Include" />
+                <e p="WeatherMakerSkySphereScript.cs" t="Include" />
+              </e>
+              <e p="Sound" t="Include">
+                <e p="WeatherMakerLoopingAudioSource.cs" t="Include" />
+                <e p="WeatherMakerSoundGroupScript.cs" t="Include" />
+                <e p="WeatherMakerSoundProfileScript.cs" t="Include" />
+                <e p="WeatherMakerSoundScript.cs" t="Include" />
+                <e p="WeatherMakerSoundZoneScript.cs" t="Include" />
+              </e>
+              <e p="Water" t="Include">
+                <e p="WeatherMakerDepthCameraScript.cs" t="Include" />
+                <e p="WeatherMakerReflectionScript.cs" t="Include" />
+                <e p="WeatherMakerWaterProfileScript.cs" t="Include" />
+                <e p="WeatherMakerWaterScript.cs" t="Include" />
+              </e>
+              <e p="Weather" t="Include">
+                <e p="WeatherMakerBaseScriptableObjectScript.cs" t="Include" />
+                <e p="WeatherMakerDampeningZoneScript.cs" t="Include" />
+                <e p="WeatherMakerFallingParticleScript.cs" t="Include" />
+                <e p="WeatherMakerFallingParticleScript2D.cs" t="Include" />
+                <e p="WeatherMakerFallingParticleScript3D.cs" t="Include" />
+                <e p="WeatherMakerFullScreenOverlayScript.cs" t="Include" />
+                <e p="WeatherMakerFullScreenSnowOverlayScript.cs" t="Include" />
+                <e p="WeatherMakerFullScreenWetnessOverlayScript.cs" t="Include" />
+                <e p="WeatherMakerLightningBoltDataStructures.cs" t="Include" />
+                <e p="WeatherMakerLightningBoltPrefabScript.cs" t="Include" />
+                <e p="WeatherMakerLightningBoltScript.cs" t="Include" />
+                <e p="WeatherMakerLightningProfileScript.cs" t="Include" />
+                <e p="WeatherMakerNullZoneProfile.cs" t="Include" />
+                <e p="WeatherMakerNullZoneScript.cs" t="Include" />
+                <e p="WeatherMakerOverlayProfileScript.cs" t="Include" />
+                <e p="WeatherMakerParticleCollisionScript.cs" t="Include" />
+                <e p="WeatherMakerPrecipitationProfileScript.cs" t="Include" />
+                <e p="WeatherMakerProfileGroupScript.cs" t="Include" />
+                <e p="WeatherMakerProfileScript.cs" t="Include" />
+                <e p="WeatherMakerThunderAndLightningScript.cs" t="Include" />
+                <e p="WeatherMakerThunderAndLightningScript2D.cs" t="Include" />
+                <e p="WeatherMakerThunderAndLightningScript3D.cs" t="Include" />
+                <e p="WeatherMakerWeatherZoneScript.cs" t="Include" />
+                <e p="WeatherMakerWetnessOverlayProfileScript.cs" t="Include" />
+                <e p="WeatherMakerWindProfileScript.cs" t="Include" />
+                <e p="WeatherMakerWindScript.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="Resources" t="Include">
+                <e p="WeatherMakerCloudProbeShader.compute" t="Include" />
+              </e>
+              <e p="WeatherMakerAdditiveShader.shader" t="Include" />
+              <e p="WeatherMakerAdvancedNoiseShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerAnimated3DTextureShader.shader" t="Include" />
+              <e p="WeatherMakerAtmosphereComputeShader.compute" t="Include" />
+              <e p="WeatherMakerAtmosphereLookupShader.shader" t="Include" />
+              <e p="WeatherMakerAtmosphereShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerAuroraShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerBoxFogShader.shader" t="Include" />
+              <e p="WeatherMakerCloudNoiseShader.shader" t="Include" />
+              <e p="WeatherMakerCloudNoiseShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerCloudParticleShader.shader" t="Include" />
+              <e p="WeatherMakerCloudShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerCloudShadowShader.shader" t="Include" />
+              <e p="WeatherMakerCloudVolumetricShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerCoreShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerDebugShader.shader" t="Include" />
+              <e p="WeatherMakerDownsampleDepthBufferShader.shader" t="Include" />
+              <e p="WeatherMakerFogExternalShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerFogShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerFogVertFragShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerFullScreenAlphaShader.shader" t="Include" />
+              <e p="WeatherMakerFullScreenBilateralBlurShader.shader" t="Include" />
+              <e p="WeatherMakerFullScreenBlurShader.shader" t="Include" />
+              <e p="WeatherMakerFullScreenCloudsShader.shader" t="Include" />
+              <e p="WeatherMakerFullScreenFogShader.shader" t="Include" />
+              <e p="WeatherMakerFullScreenOverlayShader.shader" t="Include" />
+              <e p="WeatherMakerFullScreenWetnessOverlayShader.shader" t="Include" />
+              <e p="WeatherMakerLightningBoltShader.shader" t="Include" />
+              <e p="WeatherMakerLightningBoltShaderNoGlow.shader" t="Include" />
+              <e p="WeatherMakerLightShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerMathShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerMoonShader.shader" t="Include" />
+              <e p="WeatherMakerNoiseShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerNormalGenerator2DShader.shader" t="Include" />
+              <e p="WeatherMakerNullZoneShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerOverlayShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerPrecipitationShader.shader" t="Include" />
+              <e p="WeatherMakerScreenSpaceShadowsShader.shader" t="Include" />
+              <e p="WeatherMakerShadowsShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerSkyBoxScatteringShader.shader" t="Include" />
+              <e p="WeatherMakerSkyPlaneShader.shader" t="Include" />
+              <e p="WeatherMakerSkyShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerSkySphereShader.shader" t="Include" />
+              <e p="WeatherMakerSphereFogShader.shader" t="Include" />
+              <e p="WeatherMakerSunShader.shader" t="Include" />
+              <e p="WeatherMakerTemporalReprojectionShader.shader" t="Include" />
+              <e p="WeatherMakerTemporalReprojectionShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerTesselationShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerTreeBillboardShader.shader" t="Include" />
+              <e p="WeatherMakerWaterShader.shader" t="Include" />
+              <e p="WeatherMakerWaterShaderInclude.cginc" t="Include" />
+              <e p="WeatherMakerWaterTesselationShader.shader" t="Include" />
+              <e p="WeatherMakerWavingGrassBillboardShader.shader" t="Include" />
+              <e p="WeatherMakerWavingGrassShader.shader" t="Include" />
+              <e p="WeatherMakerWeatherMapShader.shader" t="Include" />
+            </e>
+            <e p="WeatherMakerNetworkPlayer.zip.txt" t="Include" />
+          </e>
+          <e p="Readme.txt" t="Include" />
         </e>
       </e>
       <e p="NaughtyAttributes.Core.csproj" t="IncludeRecursive" />
