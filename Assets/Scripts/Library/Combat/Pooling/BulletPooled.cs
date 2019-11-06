@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat.Pooling
@@ -16,6 +17,7 @@ namespace Library.Combat.Pooling
 
         private void Update()
         {
+            if (PauseMenu.Instance.pauseActive) return;
             if (Input.GetMouseButton(0) && !isEnemy)
             {
                 if (_fireTimer >= fireRate)

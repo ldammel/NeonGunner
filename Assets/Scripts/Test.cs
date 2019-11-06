@@ -14,7 +14,6 @@ public class Test : MonoBehaviour
     [SerializeField] private BulletPooled bullet;
     [SerializeField] private MachineGun mg;
     [SerializeField] private GameObject flame;
-    [SerializeField] private GameObject options;
     private void Start()
     {
         _cam = FindObjectOfType<CameraTransition>();
@@ -26,6 +25,12 @@ public class Test : MonoBehaviour
 
     private void Update()
     {
+        if (InputManager.Instance.KeyDown("options"))
+        {
+            PauseMenu.Instance.TriggerMenu();
+        }
+        
+        if (PauseMenu.Instance.pauseActive) return;
         if (InputManager.Instance.KeyDown("flak"))
         {
             Transition(0);
@@ -38,13 +43,7 @@ public class Test : MonoBehaviour
         {
             Transition(2);
         }
-        else if (InputManager.Instance.KeyDown("options"))
-        {
-            options.SetActive(!options.activeSelf);
-            Cursor.visible = options.activeSelf;
-            Cursor.lockState = options.activeSelf ? CursorLockMode.None : CursorLockMode.Locked;
-        }
-        
+
     }
 
     private void Transition(int position)

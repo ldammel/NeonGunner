@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Library.AI;
+using Library.Events;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -40,11 +41,11 @@ namespace Library.Combat.Enemy
             var go = GameObject.FindGameObjectsWithTag("FarPoint");
             for (int i = 0; i < wayPointList.Count; i++)
             {
-                for (int j = 0; j < go.Length; j++)
+                foreach (var t in go)
                 {
-                    if (!wayPointList.Contains(go[j].transform))
+                    if (!wayPointList.Contains(t.transform))
                     {
-                        wayPointList[i] = go[j].transform;
+                        wayPointList[i] = t.transform;
                     }
                 }
             }
@@ -53,11 +54,9 @@ namespace Library.Combat.Enemy
 
         private void OnDrawGizmos()
         {
-            if (currentState != null && eyes != null)
-            {
-                Gizmos.color = currentState.sceneGizmoColor;
-                Gizmos.DrawWireSphere(eyes.position, enemyStats.lookSphereCastRadius);
-            }
+            if (currentState == null || eyes == null) return;
+            Gizmos.color = currentState.sceneGizmoColor;
+            Gizmos.DrawWireSphere(eyes.position, enemyStats.lookSphereCastRadius);
         }
     }
 }

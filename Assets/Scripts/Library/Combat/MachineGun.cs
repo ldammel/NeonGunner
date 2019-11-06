@@ -16,12 +16,22 @@ namespace Library.Combat
         public float fireRate;
 
         private float _fireTimer;
-        
+
+        private void Start()
+        {
+            _fireTimer = 0;
+            if (cam == null)
+            {
+                cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+            }
+        }
+
 
         private void Update()
         {
             if (Input.GetMouseButton(0))
             {
+                if (PauseMenu.Instance.pauseActive) return;
                 if (_fireTimer >= fireRate)
                 {
                     _fireTimer = 0;
@@ -33,7 +43,6 @@ namespace Library.Combat
 
         private void Shoot()
         {
-            cam = FindObjectOfType<Camera>();
             RaycastHit hit;
             if (!Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range)) return;
             

@@ -1,17 +1,18 @@
 ﻿using Library.Combat.Enemy;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 namespace Library.UI
 {
     public class HealthText : MonoBehaviour
     {
-        public TextMeshProUGUI text;
+        public Image healthImage;
         public EnemyHealth eh;
 
         // Update is called once per frame
         void Update()
         {
-            text.text = eh.curHealth + " / " +  eh.maxHealth;
+            healthImage.fillAmount = eh.curHealth / eh.maxHealth;
         }
     }
 }

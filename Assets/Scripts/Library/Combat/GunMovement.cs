@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Library.Events;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -12,17 +13,16 @@ namespace Library.Combat
         [SerializeField]
         private float rotationSpeed = 2.0f;
         private Vector3 _rotation = Vector3.zero;
-        
-        float ClampAngle(float angle, float from, float to)
+
+        private float ClampAngle(float angle, float from, float to)
         {
-            // accepts e.g. -80, 80
             if (angle < 0f) angle = 360 + angle;
-            if (angle > 180f) return Mathf.Max(angle, 360+from);
-            return Mathf.Min(angle, to);
+            return angle > 180f ? Mathf.Max(angle, 360+@from) : Mathf.Min(angle, to);
         }
 
         private void FixedUpdate()
         {
+            if (PauseMenu.Instance.pauseActive) return;
             _rotation.x = Input.GetAxis("Mouse X")* Time.deltaTime * rotationSpeed;
             _rotation.y = Input.GetAxis("Mouse Y")* Time.deltaTime * rotationSpeed;
             _rotation.z = 0;

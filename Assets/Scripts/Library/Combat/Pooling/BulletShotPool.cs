@@ -27,7 +27,7 @@ namespace Library.Combat.Pooling
         {
             for (int i = 0; i < count; i++)
             {
-                var newObject = Instantiate(prefab, gameObject.transform, true);
+                var newObject = Instantiate(prefab, gameObject.transform);
                 newObject.SetActive(false);
                 _objects.Enqueue(newObject);
                 newObject.GetComponent<IGameObjectPooled>().Pool = this;

@@ -1,16 +1,16 @@
-using System.Collections;
 using System.Collections.Generic;
+using Library.Events;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class AimController : MonoBehaviour {
+namespace Library.Combat
+{
+    public class AimController : MonoBehaviour {
 
     [SerializeField]
     private Image crosshair;
 
-    [SerializeField]
-    private List<Transform> Weapons;
+    [SerializeField] private Transform[] Weapons;
 
     [SerializeField]
     private float sphereCastSize;
@@ -23,7 +23,8 @@ public class AimController : MonoBehaviour {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
-    private void Update() {
+        private void Update() { 
+        if (PauseMenu.Instance.pauseActive) return;
         var centerOfCrosshair = crosshair.transform.position;
         CrossHairRay = mainCamera.ScreenPointToRay(centerOfCrosshair);
         
@@ -43,7 +44,11 @@ public class AimController : MonoBehaviour {
        //} else {
        //    lookAtPoint = CrossHairRay.GetPoint(100f);
        //}
-        
-        Weapons.ForEach(w => w.LookAt(lookAtPoint));
+
+           foreach (var w in Weapons)
+           {
+               w.LookAt(lookAtPoint);
+           }
+        }
     }
 }

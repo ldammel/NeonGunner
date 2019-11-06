@@ -1,5 +1,6 @@
 ﻿using Library.AI;
 using Library.Combat.Pooling;
+using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat.Enemy
@@ -14,8 +15,10 @@ namespace Library.Combat.Enemy
 
         private void Patrol(StateController controller)
         {
+            controller.navMeshAgent.enabled = !PauseMenu.Instance.pauseActive;
+            if (!controller.navMeshAgent.enabled) return;
+            controller.navMeshAgent.isStopped = PauseMenu.Instance.pauseActive;
             controller.navMeshAgent.destination = controller.wayPointList[controller.nextWayPoint].position;
-            controller.navMeshAgent.isStopped = false;
 
             if (controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance && !controller.navMeshAgent.pathPending)
             {

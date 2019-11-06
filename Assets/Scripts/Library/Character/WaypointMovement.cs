@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Library.Events;
+using UnityEngine;
 using UnityEngine.AI;
 using PathCreation;
 
@@ -10,6 +11,7 @@ namespace Library.Character
         public PathCreator path;
         public EndOfPathInstruction endOfPathInstruction;
         public float dist;
+        private bool _active;
         void Start()
         {
             if (path != null)
@@ -20,6 +22,7 @@ namespace Library.Character
         
         void Update()
         {
+            if (PauseMenu.Instance.pauseActive) return;
             if (path == null) return;
             dist += speed * Time.deltaTime; 
             transform.position = path.path.GetPointAtDistance(dist);
