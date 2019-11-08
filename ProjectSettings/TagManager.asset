@@ -12,6 +12,8 @@ TagManager:
   - FxTemporaire
   - Flak
   - Sign
+  - Fail
+  - Win
   layers:
   - Default
   - TransparentFX

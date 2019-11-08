@@ -14,6 +14,8 @@ public class Test : MonoBehaviour
     [SerializeField] private BulletPooled bullet;
     [SerializeField] private MachineGun mg;
     [SerializeField] private GameObject flame;
+    [SerializeField] private CurrencyObject cur;
+    
     private void Start()
     {
         _cam = FindObjectOfType<CameraTransition>();
@@ -21,6 +23,7 @@ public class Test : MonoBehaviour
         mg.enabled = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Transition(2);
     }
 
     private void Update()
@@ -31,11 +34,11 @@ public class Test : MonoBehaviour
         }
         
         if (PauseMenu.Instance.pauseActive) return;
-        if (InputManager.Instance.KeyDown("flak"))
+        if (InputManager.Instance.KeyDown("flak")  && cur.flakActive)
         {
             Transition(0);
         }
-        else if (InputManager.Instance.KeyDown("flame"))
+        else if (InputManager.Instance.KeyDown("flame") && cur.flameActive)
         {
             Transition(1);
         }

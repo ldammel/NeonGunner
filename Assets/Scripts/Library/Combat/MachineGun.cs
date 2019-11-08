@@ -7,8 +7,8 @@ namespace Library.Combat
 {
     public class MachineGun : MonoBehaviour
     {
-        [SerializeField] private float damage;
-        [SerializeField] private float range;
+        public float damage;
+        public float range;
 
         [SerializeField] private Camera cam;
         [SerializeField] private GameObject vfx;

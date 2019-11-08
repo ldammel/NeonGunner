@@ -3,7 +3,7 @@ namespace Library.Base
 {
     public abstract class BaseScriptableObject : ScriptableObject
     {
-        public string Name;
-        public float BaseValue;
+        [HideInInspector]public string Name;
+        [HideInInspector]public float BaseValue;
     }
 }

@@ -2,7 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using Library.AI;
+using Library.Character.Upgrades;
 using Library.Combat.Pooling;
+using Library.Data;
+using Library.Events;
 using Library.UI;
 using UnityEngine;
 
@@ -18,15 +21,15 @@ namespace Library.Combat.Enemy
         private Vector3 _startPos;
 
         public Waypoint wp;
-        
+
         public event Action<float> OnHealthPctChanged = delegate{  };    
         
         private void Start()
         {
+            _startPos = transform.position;
             curHealth = maxHealth;
         }
-
-        // Update is called once per frame
+        
         private void Update()
         {
             if (curHealth <= 0)
@@ -34,8 +37,9 @@ namespace Library.Combat.Enemy
                 curHealth = 0;
                 if (player)
                 {
-                    transform.position = _startPos;
-                    curHealth = maxHealth;
+                    PauseMenu.Instance.pauseActive = true;
+                    LevelManager.Instance.failScreen.SetActive(true);
+                    LevelEnd.Instance.CalculateReward(1);
                 }
                 else
                 {

@@ -29,6 +29,12 @@ namespace Library.Events
             menuObject.SetActive(false);
         }
 
+        private void Update()
+        {
+            Cursor.visible = pauseActive;
+            Cursor.lockState = pauseActive ? CursorLockMode.None : CursorLockMode.Locked;
+        }
+
         public void Quit()
         {
             Application.Quit();
@@ -38,8 +44,6 @@ namespace Library.Events
         {
             menuObject.SetActive(!menuObject.activeSelf);
             pauseActive = !pauseActive;
-            Cursor.visible = pauseActive;
-            Cursor.lockState = pauseActive ? CursorLockMode.None : CursorLockMode.Locked;
         }
 
     }

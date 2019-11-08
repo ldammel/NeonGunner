@@ -5,7 +5,7 @@ namespace Library.Combat.Pooling
 {
     public class BulletShotPool : MonoBehaviour
     {
-        [SerializeField] private GameObject prefab;
+        public GameObject prefab;
         private readonly Queue<GameObject> _objects = new Queue<GameObject>();
 
         private void OnEnable()

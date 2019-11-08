@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 137540555}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212256458}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Nearpoint Wagon 1 -1 Right
   m_TagString: NearPoint
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 609103740}
   - component: {fileID: 609103739}
   - component: {fileID: 4340726428369393190}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 349057424754517741}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &661976608
 Light:
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 1057539536}
   - component: {fileID: 1057539538}
   - component: {fileID: 1057539537}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: BarrelGuard_default2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1456154350}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: cam target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 349057424754517741}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!108 &1483530544
 Light:
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 1532906005}
   - component: {fileID: 1532906007}
   - component: {fileID: 1532906006}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Base_default4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 1591526441}
   - component: {fileID: 1591526443}
   - component: {fileID: 1591526442}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Base_default6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 1687258584}
   - component: {fileID: 1687258582}
   - component: {fileID: 1687258586}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 7991
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -979,7 +979,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 349057424754517741}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!108 &1839478215
 Light:
@@ -1161,7 +1161,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 349057424754517741}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &2002403232
 Light:
@@ -1325,7 +1325,7 @@ GameObject:
   - component: {fileID: 2060274916}
   - component: {fileID: 2060274918}
   - component: {fileID: 2060274917}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Motor_default5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1392,6 +1392,84 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &2113081683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113081684}
+  - component: {fileID: 2113081687}
+  - component: {fileID: 2113081686}
+  m_Layer: 13
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2113081684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113081683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 30.6, z: 0}
+  m_LocalScale: {x: 30, y: 30, z: 30}
+  m_Children: []
+  m_Father: {fileID: 349057424754517741}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2113081687
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113081683}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2113081686
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113081683}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 5
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ac5fb466a041d464d812ce9acd69840c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &43907365830423526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,7 +1481,7 @@ GameObject:
   - component: {fileID: 3339772939183320316}
   - component: {fileID: 4936464434063843159}
   - component: {fileID: 7359143772492043002}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Wheel_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1479,7 +1557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4001527819017030512}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Train Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1596,7 +1674,7 @@ Transform:
   - {fileID: 3464239233778088457}
   - {fileID: 3283366792182689822}
   m_Father: {fileID: 349057424754517741}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &235710729831310313
 GameObject:
@@ -1607,7 +1685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6983935211932848414}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -1643,8 +1721,8 @@ GameObject:
   - component: {fileID: 5059514781902418037}
   - component: {fileID: 8156611866320049010}
   - component: {fileID: 441555972}
-  - component: {fileID: 349057424647153389}
-  m_Layer: 12
+  - component: {fileID: 7650687540804336181}
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1662,7 +1740,6 @@ Transform:
   m_LocalPosition: {x: 876.01, y: 0.211, z: 71.45}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
-  - {fileID: 6380484261954503135}
   - {fileID: 4001527819017030512}
   - {fileID: 954301213746603098}
   - {fileID: 137540555}
@@ -1670,6 +1747,7 @@ Transform:
   - {fileID: 3219575322381779871}
   - {fileID: 8116378759027395360}
   - {fileID: 2467574592985573905}
+  - {fileID: 2113081684}
   - {fileID: 661976607}
   - {fileID: 2002403231}
   - {fileID: 1483530543}
@@ -1735,8 +1813,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99, y: 0.94, z: 5.14}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.95, y: 1, z: 5.14}
+  m_Center: {x: 0, y: 0.55, z: 0}
 --- !u!95 &5059514781902418037
 Animator:
   serializedVersion: 3
@@ -1788,24 +1866,22 @@ MonoBehaviour:
   curHealth: 5000
   player: 1
   wp: {fileID: 0}
---- !u!143 &349057424647153389
-CharacterController:
+--- !u!54 &7650687540804336181
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349057424754517737}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
   serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Mass: 100000
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &349057424901002813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 349057424901002802}
   - component: {fileID: 349057424901002803}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1831,7 +1907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349057424901002813}
   m_LocalRotation: {x: -0.06975647, y: 0, z: 0, w: 0.9975641}
-  m_LocalPosition: {x: 0, y: 1.5, z: 2.93}
+  m_LocalPosition: {x: 0, y: 1.68, z: 4.211}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1456154350}
@@ -1866,7 +1942,7 @@ GameObject:
   - component: {fileID: 5310871547119216540}
   - component: {fileID: 6554406161866992563}
   - component: {fileID: 5365845183700122035}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Tender_wheels_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1944,7 +2020,7 @@ GameObject:
   - component: {fileID: 7106090772201130298}
   - component: {fileID: 6581871415663922723}
   - component: {fileID: 518556052955146407}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Door_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2022,7 +2098,7 @@ GameObject:
   - component: {fileID: 3501935007858169740}
   - component: {fileID: 5033833806503531719}
   - component: {fileID: 5505446834261618893}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Base_default4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2100,7 +2176,7 @@ GameObject:
   - component: {fileID: 3009875859432387108}
   - component: {fileID: 7976035586316720807}
   - component: {fileID: 1009753523601504035}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinders_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2178,7 +2254,7 @@ GameObject:
   - component: {fileID: 1442740091275598529}
   - component: {fileID: 8838409564309949779}
   - component: {fileID: 3939007173557461801}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Tender_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2254,7 +2330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8203657732673721545}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2289,7 +2365,7 @@ GameObject:
   - component: {fileID: 2513306003233147547}
   - component: {fileID: 8250795348575050538}
   - component: {fileID: 4954065970800585358}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Return_rod_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2367,7 +2443,7 @@ GameObject:
   - component: {fileID: 6951074192836241808}
   - component: {fileID: 3155219118158826227}
   - component: {fileID: 8051623653968560826}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Tender_wheels_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2444,7 +2520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2467574592985573905}
   - component: {fileID: 207572393}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2482,7 +2558,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676756115371994002}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8ebbb76687aed540ab385f72bcb3713, type: 3}
   m_Name: 
@@ -2501,7 +2577,7 @@ MonoBehaviour:
   - {fileID: 6559170557229007212}
   - {fileID: 6238851228948190626}
   rootObj: {fileID: 0}
-  spawnAmount: 5
+  spawnAmount: 10
 --- !u!1 &685440633695313754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,7 +2587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306030704154579318}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: camTransitionPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2543,7 +2619,7 @@ GameObject:
   - component: {fileID: 2217165042041361417}
   - component: {fileID: 4180369021162278763}
   - component: {fileID: 1772773720082805258}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Reverser_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2619,7 +2695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1628452453946503280}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -2651,7 +2727,7 @@ GameObject:
   - component: {fileID: 454946173841866025}
   - component: {fileID: 7829399834976924467}
   - component: {fileID: 4561271202589230101}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2729,7 +2805,7 @@ GameObject:
   - component: {fileID: 2778017446076190835}
   - component: {fileID: 5715696044983898863}
   - component: {fileID: 5796114295106621450}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Manifold_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2807,7 +2883,7 @@ GameObject:
   - component: {fileID: 2758034095592265415}
   - component: {fileID: 3639637224199997843}
   - component: {fileID: 7666720625839889625}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Lamp_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2885,7 +2961,7 @@ GameObject:
   - component: {fileID: 6801622952917765427}
   - component: {fileID: 2783265932824765045}
   - component: {fileID: 801886258784815005}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Reversing_rod_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2961,7 +3037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8616167935931447848}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: camTransitionPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2991,7 +3067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8209402047966703917}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: cam target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3023,7 +3099,7 @@ GameObject:
   - component: {fileID: 103518380952747601}
   - component: {fileID: 3996509871218893119}
   - component: {fileID: 6834036548993563052}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Main_rod_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3101,7 +3177,7 @@ GameObject:
   - component: {fileID: 4020038168578806907}
   - component: {fileID: 4489821533388254242}
   - component: {fileID: 6340252520033497761}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Water_tap3_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3179,7 +3255,7 @@ GameObject:
   - component: {fileID: 6801247073066381897}
   - component: {fileID: 8086516624216348050}
   - component: {fileID: 8145759779983247684}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Group_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3256,7 +3332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7868067148762046177}
   - component: {fileID: 1953841710}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoint Wagon 1 -2 Right
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -3300,7 +3376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4841849354571176408}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: cam target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3332,7 +3408,7 @@ GameObject:
   - component: {fileID: 6417591113830967518}
   - component: {fileID: 3192698057934106520}
   - component: {fileID: 5206782841516352718}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Feedwater_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3410,7 +3486,7 @@ GameObject:
   - component: {fileID: 8454733164529538203}
   - component: {fileID: 3929498986884129876}
   - component: {fileID: 961971540033741057}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Smokestack_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3486,7 +3562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2578261108494080794}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -3518,7 +3594,7 @@ GameObject:
   - component: {fileID: 8902441258298250209}
   - component: {fileID: 1802837377159648282}
   - component: {fileID: 8370131530989802457}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Frame_leafsprings_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3596,7 +3672,7 @@ GameObject:
   - component: {fileID: 4145973860019543880}
   - component: {fileID: 2949806924199584712}
   - component: {fileID: 9003314183916177462}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Water_glass_case_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3672,7 +3748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3219575322381779871}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: NearPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3708,7 +3784,7 @@ GameObject:
   - component: {fileID: 2792173043875207925}
   - component: {fileID: 4962876558402653077}
   - component: {fileID: 5900304699220940675}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Water_tap_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3786,7 +3862,7 @@ GameObject:
   - component: {fileID: 4721580198025350414}
   - component: {fileID: 7866562272476744078}
   - component: {fileID: 1498032848375406312}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Boiler_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3862,7 +3938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4214392808484852611}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -3894,7 +3970,7 @@ GameObject:
   - component: {fileID: 8635388526663914724}
   - component: {fileID: 6844086990359628882}
   - component: {fileID: 5408128317928006190}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Frame_leafsprings_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3972,7 +4048,7 @@ GameObject:
   - component: {fileID: 924520548406028241}
   - component: {fileID: 5153053280782971611}
   - component: {fileID: 5190118623203696794}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stabilizing_rod_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4050,7 +4126,7 @@ GameObject:
   - component: {fileID: 2592392017424147258}
   - component: {fileID: 8065602947886051261}
   - component: {fileID: 7769870766777027121}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Side_rod_trailing_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4127,7 +4203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9137137360367341848}
   - component: {fileID: 36838640}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoint Wagon 1 -4 Right
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -4172,7 +4248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7583779653466460884}
   - component: {fileID: 6193044655314428755}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4208,7 +4284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  range: 50
+  range: 100
   cam: {fileID: 1687258584}
   vfx: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
   fireRate: 0.2
@@ -4223,7 +4299,7 @@ GameObject:
   - component: {fileID: 5500419904847166245}
   - component: {fileID: 6380937038467329010}
   - component: {fileID: 8578671567247532767}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_lifting_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4301,7 +4377,7 @@ GameObject:
   - component: {fileID: 2928263240693922342}
   - component: {fileID: 8782703917395342921}
   - component: {fileID: 3019969942891707832}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Base_default6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4379,7 +4455,7 @@ GameObject:
   - component: {fileID: 1670064178511677493}
   - component: {fileID: 2977064588498664585}
   - component: {fileID: 8221701941842971991}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Injector_lever2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4457,7 +4533,7 @@ GameObject:
   - component: {fileID: 5796140873778861309}
   - component: {fileID: 6083131429203124047}
   - component: {fileID: 2176261801741534680}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Measure_taps_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4535,7 +4611,7 @@ GameObject:
   - component: {fileID: 2616489003495215226}
   - component: {fileID: 4151704329675765081}
   - component: {fileID: 3329086028943525881}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Side_rod_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4613,7 +4689,7 @@ GameObject:
   - component: {fileID: 1707893694433429995}
   - component: {fileID: 1458205843176269391}
   - component: {fileID: 1856774091882756204}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Flue_lever_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4691,7 +4767,7 @@ GameObject:
   - component: {fileID: 5386781549852764896}
   - component: {fileID: 6251684800966260742}
   - component: {fileID: 4583569487815635052}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Flue_valve_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4769,7 +4845,7 @@ GameObject:
   - component: {fileID: 8992052485593173506}
   - component: {fileID: 1874835717942655466}
   - component: {fileID: 8056768130820672993}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Tender_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4847,7 +4923,7 @@ GameObject:
   - component: {fileID: 1943354463027042253}
   - component: {fileID: 9192843402398307217}
   - component: {fileID: 1373157369304530618}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4925,7 +5001,7 @@ GameObject:
   - component: {fileID: 5314691625465667711}
   - component: {fileID: 1132020534487308475}
   - component: {fileID: 9172821353426720688}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Steam_pipes_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5003,7 +5079,7 @@ GameObject:
   - component: {fileID: 5834528813433632219}
   - component: {fileID: 4277561017551994928}
   - component: {fileID: 1485793629705647759}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_2_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5081,7 +5157,7 @@ GameObject:
   - component: {fileID: 4591191347456356013}
   - component: {fileID: 2596875126939911180}
   - component: {fileID: 8377683997240894671}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder_drains_lever_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5159,7 +5235,7 @@ GameObject:
   - component: {fileID: 6412602665566479177}
   - component: {fileID: 1905799016868164949}
   - component: {fileID: 2609455683772345190}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Regulator_lever_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5237,7 +5313,7 @@ GameObject:
   - component: {fileID: 1211203683538185752}
   - component: {fileID: 1235004254947284621}
   - component: {fileID: 580565122455146374}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Wheel_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5314,7 +5390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1206645279886552010}
   - component: {fileID: 992409561}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoint Wagon 1 -5 Left
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -5360,7 +5436,7 @@ GameObject:
   - component: {fileID: 6841459176847273657}
   - component: {fileID: 5506919811893608751}
   - component: {fileID: 7068107553744925762}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Lifting_rod_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5437,7 +5513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9147808096814169524}
   - component: {fileID: 1296750108}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoint Wagon 1 -3 Left
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -5483,7 +5559,7 @@ GameObject:
   - component: {fileID: 3983398363531646320}
   - component: {fileID: 8815723178743682723}
   - component: {fileID: 2134856203542095832}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Water_tap2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5561,7 +5637,7 @@ GameObject:
   - component: {fileID: 3464239233778088457}
   - component: {fileID: 7194644595325276836}
   - component: {fileID: 33033396075128629}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Window_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5638,7 +5714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3600540431607228027}
   - component: {fileID: 1439980128}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoint Wagon 1 -3 Right
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -5684,7 +5760,7 @@ GameObject:
   - component: {fileID: 9095597033613033762}
   - component: {fileID: 7436678750678716653}
   - component: {fileID: 5820494931251274788}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5762,7 +5838,7 @@ GameObject:
   - component: {fileID: 8477162444193294621}
   - component: {fileID: 5293538515080978064}
   - component: {fileID: 654145562717594475}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Tender_brakes_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5840,7 +5916,7 @@ GameObject:
   - component: {fileID: 3283366792182689822}
   - component: {fileID: 2158310491067221142}
   - component: {fileID: 4776604645418557139}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Window_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5916,7 +5992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 954301213746603098}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Flak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5939,7 +6015,7 @@ Transform:
   - {fileID: 2060274916}
   - {fileID: 609103737}
   m_Father: {fileID: 349057424754517741}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4340055881741010436
 GameObject:
@@ -5952,7 +6028,7 @@ GameObject:
   - component: {fileID: 3754482702619342579}
   - component: {fileID: 5932670357664699317}
   - component: {fileID: 4720714780005313522}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Group_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6030,7 +6106,7 @@ GameObject:
   - component: {fileID: 1455288482675850357}
   - component: {fileID: 8697779502973175926}
   - component: {fileID: 1664330612695229656}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Group_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6111,6 +6187,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flameFx: {fileID: 4468374337920072382}
   damage: 5
+  range: 7
+  spread: 7
+  ammoConsumptionPerSecond: 0
+  ammoRefreshPerSecond: 0
+  maxAmmo: 0
+  ammo: 100
+  ammoCountDisplay: {fileID: 0}
 --- !u!1 &4511594660773212015
 GameObject:
   m_ObjectHideFlags: 0
@@ -6122,7 +6205,7 @@ GameObject:
   - component: {fileID: 525252328014665901}
   - component: {fileID: 6767770594049632999}
   - component: {fileID: 52815662944154678}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Buffer_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6200,7 +6283,7 @@ GameObject:
   - component: {fileID: 6842011321929214014}
   - component: {fileID: 2451784016810693960}
   - component: {fileID: 2616883287819895941}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Lamp_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6278,7 +6361,7 @@ GameObject:
   - component: {fileID: 4111836336069130434}
   - component: {fileID: 4589212696099803307}
   - component: {fileID: 7966369433969824778}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Safety_valve_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6358,7 +6441,7 @@ GameObject:
   - component: {fileID: 4584679985833889814}
   - component: {fileID: 4584679985833889809}
   - component: {fileID: 260458465152821580}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6468,7 +6551,7 @@ GameObject:
   - component: {fileID: 4584679986014599866}
   - component: {fileID: 4584679986014599864}
   - component: {fileID: 4584679986014599867}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: BarrelGuard_default2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6546,7 +6629,7 @@ GameObject:
   - component: {fileID: 4584679987016872846}
   - component: {fileID: 4584679987016872844}
   - component: {fileID: 4584679987016872847}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Motor_default5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6624,7 +6707,7 @@ GameObject:
   - component: {fileID: 4584679987560887679}
   - component: {fileID: 4584679987560887677}
   - component: {fileID: 4584679987560887676}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Base_default4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6702,7 +6785,7 @@ GameObject:
   - component: {fileID: 4584679987619707715}
   - component: {fileID: 4584679987619707713}
   - component: {fileID: 4584679987619707712}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Base_default6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6780,7 +6863,7 @@ GameObject:
   - component: {fileID: 1599640155248978623}
   - component: {fileID: 8976709088106891071}
   - component: {fileID: 7158916693263825082}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Group_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6858,7 +6941,7 @@ GameObject:
   - component: {fileID: 4579942875828054011}
   - component: {fileID: 2195184876689208565}
   - component: {fileID: 6258342208269800333}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_2_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6936,7 +7019,7 @@ GameObject:
   - component: {fileID: 8011459411912409639}
   - component: {fileID: 6140964683845521650}
   - component: {fileID: 3021398526303729790}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7014,7 +7097,7 @@ GameObject:
   - component: {fileID: 4020500101451085346}
   - component: {fileID: 2156959482160723242}
   - component: {fileID: 7820887649307239407}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Steam_dome_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7092,7 +7175,7 @@ GameObject:
   - component: {fileID: 5465535456412753592}
   - component: {fileID: 747622254100441748}
   - component: {fileID: 852943519017332334}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Reversing_arm_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7169,7 +7252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6202149237316015229}
   - component: {fileID: 1101630365}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: 'FarPoint Wagon 1 -4 Left '
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -7215,7 +7298,7 @@ GameObject:
   - component: {fileID: 4016232895137504114}
   - component: {fileID: 9195449371288361649}
   - component: {fileID: 6772906559316123874}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stabilizing_rod_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7293,7 +7376,7 @@ GameObject:
   - component: {fileID: 2368649811440422139}
   - component: {fileID: 5988179614057125183}
   - component: {fileID: 3342151243854412849}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_2_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7371,7 +7454,7 @@ GameObject:
   - component: {fileID: 1301355097391681740}
   - component: {fileID: 5747956640505534358}
   - component: {fileID: 2755435361953598728}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Pressure_relief_valve_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7449,7 +7532,7 @@ GameObject:
   - component: {fileID: 6814768641131152928}
   - component: {fileID: 6088808677168210960}
   - component: {fileID: 3543123396981625611}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cabin_lower_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7525,7 +7608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 580022935758300951}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Nearpoint Wagon 1 -2 Right
   m_TagString: NearPoint
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -7556,7 +7639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6745618995430982780}
   - component: {fileID: 1046197581}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoint Wagon 1 -1 Left
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -7602,7 +7685,7 @@ GameObject:
   - component: {fileID: 1956543928721230494}
   - component: {fileID: 3363613868172239438}
   - component: {fileID: 3568980583490828981}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Group_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7680,7 +7763,7 @@ GameObject:
   - component: {fileID: 7138500093638889023}
   - component: {fileID: 6430508757274066446}
   - component: {fileID: 443759603684002158}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Buffer_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7758,7 +7841,7 @@ GameObject:
   - component: {fileID: 1721728798496676192}
   - component: {fileID: 2009291015245104229}
   - component: {fileID: 2492294837004710547}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Lamp_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7835,7 +7918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4737029774100068494}
   - component: {fileID: 337153309}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: 'FarPoint Wagon 1 -2 Left '
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -7881,7 +7964,7 @@ GameObject:
   - component: {fileID: 7930981122406819119}
   - component: {fileID: 8993308193130292005}
   - component: {fileID: 8300192466435616656}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Group_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7959,7 +8042,7 @@ GameObject:
   - component: {fileID: 7118715792315209715}
   - component: {fileID: 742717470465456182}
   - component: {fileID: 3509858268031168724}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Pressure_Gauge_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8037,7 +8120,7 @@ GameObject:
   - component: {fileID: 6489461873432218134}
   - component: {fileID: 126131895080479737}
   - component: {fileID: 300299456188410850}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Catcher_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8115,7 +8198,7 @@ GameObject:
   - component: {fileID: 1286841750296360135}
   - component: {fileID: 5351556440226447914}
   - component: {fileID: 1502163104450351780}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Firebox_lever_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8191,7 +8274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5565034595091787199}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -8223,7 +8306,7 @@ GameObject:
   - component: {fileID: 8158687300720127526}
   - component: {fileID: 3827367794902861278}
   - component: {fileID: 4897290721463178580}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Return_rod_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8301,7 +8384,7 @@ GameObject:
   - component: {fileID: 7677605265809588712}
   - component: {fileID: 2302653861836343162}
   - component: {fileID: 5191846227857130384}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Side_rod_trailing_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8379,7 +8462,7 @@ GameObject:
   - component: {fileID: 8017731366034018081}
   - component: {fileID: 3490523492565051248}
   - component: {fileID: 5300262198617453006}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Wheel_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8457,7 +8540,7 @@ GameObject:
   - component: {fileID: 601029887636257713}
   - component: {fileID: 2470985523494933747}
   - component: {fileID: 4510854717352170643}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8537,7 +8620,7 @@ GameObject:
   - component: {fileID: 1765902077474956276}
   - component: {fileID: 8825703710564650349}
   - component: {fileID: 3777951432737928437}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8614,7 +8697,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6260091845597722896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 746b20c59b3789e45a1ea90630ee0d33, type: 3}
   m_Name: 
@@ -8627,7 +8710,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6260091845597722896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04b47133e469c21418a5c1e2ec7ee5e8, type: 3}
   m_Name: 
@@ -8647,7 +8730,7 @@ GameObject:
   - component: {fileID: 2098927340261285332}
   - component: {fileID: 6677235254471839332}
   - component: {fileID: 9105821728495646438}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Lamp_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8725,7 +8808,7 @@ GameObject:
   - component: {fileID: 3036875659786249468}
   - component: {fileID: 1495623142939023819}
   - component: {fileID: 5946555922059142137}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Firebox_door_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8803,7 +8886,7 @@ GameObject:
   - component: {fileID: 1294432259152872941}
   - component: {fileID: 2259041855086212065}
   - component: {fileID: 5172735061780470369}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder_drains_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8881,7 +8964,7 @@ GameObject:
   - component: {fileID: 5185013980460676446}
   - component: {fileID: 6507792582222212219}
   - component: {fileID: 2404259691401589420}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crosshead_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8959,7 +9042,7 @@ GameObject:
   - component: {fileID: 4385526225138823012}
   - component: {fileID: 1000488757541101241}
   - component: {fileID: 3734179112387758608}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Regulator_fixture_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9037,7 +9120,7 @@ GameObject:
   - component: {fileID: 2020335039010950400}
   - component: {fileID: 3208798662378719246}
   - component: {fileID: 8625985811775867882}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Side_rod_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9114,7 +9197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1192697840951815877}
   - component: {fileID: 1933672870}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoint Wagon 1 -5 Right
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -9160,7 +9243,7 @@ GameObject:
   - component: {fileID: 5280148650276963281}
   - component: {fileID: 1163963105075547568}
   - component: {fileID: 4934865335669719828}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Main_rod_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9238,7 +9321,7 @@ GameObject:
   - component: {fileID: 956754234398987992}
   - component: {fileID: 3162286575504331091}
   - component: {fileID: 3066037961338169941}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Catcher_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9316,7 +9399,7 @@ GameObject:
   - component: {fileID: 3783320114670477354}
   - component: {fileID: 3463065048652438634}
   - component: {fileID: 7300403703688964147}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Wheel_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9392,7 +9475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8116378759027395360}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9434,7 +9517,7 @@ GameObject:
   - component: {fileID: 6173194975158272838}
   - component: {fileID: 8742467856543013046}
   - component: {fileID: 6485663958473693748}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Buffer_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9510,7 +9593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6822728413849627077}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: camTransitionPoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9542,7 +9625,7 @@ GameObject:
   - component: {fileID: 8250815023527000117}
   - component: {fileID: 2874409659031759702}
   - component: {fileID: 9023602059767222273}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: BarrelGuard_default2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9618,7 +9701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1880902386851148355}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -9650,7 +9733,7 @@ GameObject:
   - component: {fileID: 2330365321234114581}
   - component: {fileID: 6116441837117064066}
   - component: {fileID: 8531698885208548735}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Regulator_support_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9728,7 +9811,7 @@ GameObject:
   - component: {fileID: 5487485979149825694}
   - component: {fileID: 7078785732034308287}
   - component: {fileID: 6703098347971117715}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Lamp_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9804,7 +9887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3159270361166649519}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Nearpoint Wagon 1 -1 Left
   m_TagString: NearPoint
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -9836,7 +9919,7 @@ GameObject:
   - component: {fileID: 2759723305550514968}
   - component: {fileID: 2380426116826311237}
   - component: {fileID: 447480685356686549}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Group_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9914,7 +9997,7 @@ GameObject:
   - component: {fileID: 1577402870246589287}
   - component: {fileID: 506124898787387837}
   - component: {fileID: 8189163882817656113}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Steam_pipe_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9992,7 +10075,7 @@ GameObject:
   - component: {fileID: 3953290268286722947}
   - component: {fileID: 2061622822912929741}
   - component: {fileID: 6704477468518066509}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cabin_top_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10070,7 +10153,7 @@ GameObject:
   - component: {fileID: 4902533834155602963}
   - component: {fileID: 1415119281162107440}
   - component: {fileID: 2177833948947889854}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Buffer_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10146,7 +10229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6238851228948190626}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -10178,7 +10261,7 @@ GameObject:
   - component: {fileID: 3019620984824112248}
   - component: {fileID: 4643400507614452611}
   - component: {fileID: 7669431996833141663}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Group_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10256,7 +10339,7 @@ GameObject:
   - component: {fileID: 2395588973315506381}
   - component: {fileID: 6691285469473694437}
   - component: {fileID: 2585731851374875641}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10334,7 +10417,7 @@ GameObject:
   - component: {fileID: 4450976972310325267}
   - component: {fileID: 675321129833950040}
   - component: {fileID: 7244954344104222073}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_2_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10412,7 +10495,7 @@ GameObject:
   - component: {fileID: 8139321045578577032}
   - component: {fileID: 1397224174491011323}
   - component: {fileID: 8573945184054095539}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Tender_door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10490,7 +10573,7 @@ GameObject:
   - component: {fileID: 619140839808101020}
   - component: {fileID: 6311757023277640071}
   - component: {fileID: 6523652479799474996}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Injectors_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10567,7 +10650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4901877117976040505}
   - component: {fileID: 342135083}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: FarPoint Wagon 1 -1 Right
   m_TagString: FarPoint
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -10613,7 +10696,7 @@ GameObject:
   - component: {fileID: 3565701159215109797}
   - component: {fileID: 4022751484149438593}
   - component: {fileID: 4512792991921865247}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Motor_default5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10689,7 +10772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7508641761611839279}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Nearpoint Wagon 1 -2 Left
   m_TagString: NearPoint
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -10721,7 +10804,7 @@ GameObject:
   - component: {fileID: 4591272890978848692}
   - component: {fileID: 5349834386747785376}
   - component: {fileID: 3385812187701937160}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10799,7 +10882,7 @@ GameObject:
   - component: {fileID: 3614390065372754284}
   - component: {fileID: 500262149030636826}
   - component: {fileID: 7591032229200423287}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crosshead_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10877,7 +10960,7 @@ GameObject:
   - component: {fileID: 4630660259399592010}
   - component: {fileID: 5309323995175454603}
   - component: {fileID: 611932248421418782}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Water_gauge_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10953,7 +11036,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5067567409807583494}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -10983,7 +11066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5850067031757095322}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -11015,7 +11098,7 @@ GameObject:
   - component: {fileID: 8105999093468885367}
   - component: {fileID: 1355759613975054622}
   - component: {fileID: 5806682666972046624}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder_drain_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11093,7 +11176,7 @@ GameObject:
   - component: {fileID: 662482985861118042}
   - component: {fileID: 1669729705939147621}
   - component: {fileID: 3933340428763295774}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Crank_lifting_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11171,7 +11254,7 @@ GameObject:
   - component: {fileID: 4493585372464345927}
   - component: {fileID: 1022505934162719331}
   - component: {fileID: 3661630890155304409}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Lifting_rod_2_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11249,7 +11332,7 @@ GameObject:
   - component: {fileID: 196255716821862260}
   - component: {fileID: 8585947902294631612}
   - component: {fileID: 1036959816327751583}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Door_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11327,7 +11410,7 @@ GameObject:
   - component: {fileID: 8125682427747605662}
   - component: {fileID: 5052491259187940015}
   - component: {fileID: 8487824765474974075}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Injector_lever1_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11405,7 +11488,7 @@ GameObject:
   - component: {fileID: 1355931233333664334}
   - component: {fileID: 2127317251630538621}
   - component: {fileID: 3284066488208335482}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Wheel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11481,7 +11564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6559170557229007212}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -11511,7 +11594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7406760572411570720}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: MG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11546,10 +11629,6 @@ PrefabInstance:
     - target: {fileID: 100002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
       propertyPath: m_Name
       value: WFX_FlameThrower Big Looped
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
-      propertyPath: m_Layer
-      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
       propertyPath: m_IsActive
@@ -11605,18 +11684,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.11
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 6.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: b2e8413438f79464aa69948979b150a8, type: 3}
-      propertyPath: m_Layer
-      value: 12
+      value: 15.83
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b2e8413438f79464aa69948979b150a8, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
+      propertyPath: ShapeModule.alignToDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
+      propertyPath: ShapeModule.randomDirectionAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
+      propertyPath: ShapeModule.arc.value
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8, type: 3}
@@ -11657,12 +11752,6 @@ PrefabInstance:
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2e8413438f79464aa69948979b150a8, type: 3}
---- !u!198 &4468374337920072382 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 4468374337901847932}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4468374337901945822 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: b2e8413438f79464aa69948979b150a8,
@@ -11672,6 +11761,12 @@ GameObject:
 --- !u!4 &4468374337901723646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: b2e8413438f79464aa69948979b150a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 4468374337901847932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4468374337920072382 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8,
     type: 3}
   m_PrefabInstance: {fileID: 4468374337901847932}
   m_PrefabAsset: {fileID: 0}
@@ -11692,11 +11787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.03
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.49
+      value: 27.9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -11716,7 +11811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11732,87 +11827,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key2.a
-      value: 0.69411767
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key1.a
-      value: 0.6784314
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.atime1
-      value: 19082
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.ctime1
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.atime3
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.atime0
+    - target: {fileID: 11400000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.atime2
-      value: 39899
+    - target: {fileID: 19900000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: ForceModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: moveWithTransform
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: InitialModule.startLifetime.minScalar
-      value: 7
+      propertyPath: simulationSpeed
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: prewarm
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
+      propertyPath: useRigidbodyForVelocity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: InitialModule.size3D
-      value: 0
+      propertyPath: moveWithTransform
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: InitialModule.rotation3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: InitialModule.randomizeRotationDirection
-      value: 0
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
       value: 0.46666667
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: InitialModule.gravityModifier.scalar
-      value: 0
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.22160912
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
-      propertyPath: useRigidbodyForVelocity
-      value: 0
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.2392716
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.5660378
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 0.5566038
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.a
+      value: 0.6784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.a
+      value: 0.69411767
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime1
+      value: 19082
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime2
+      value: 39899
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: LightsModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}
+      propertyPath: LightsModule.ratio
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51868da5aa41fec43a5304482a50914e, type: 3}

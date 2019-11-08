@@ -7,7 +7,7 @@ namespace Library.Combat
     public class Flak : MonoBehaviour
     {
         public float radius = 5;
-        [SerializeField] private float damage;
+        public float damage;
 
 
         private void OnCollisionEnter(Collision other)

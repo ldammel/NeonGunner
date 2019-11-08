@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2eb7e112034ff4969548288ba260b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 0.5
+  fireRate: 1
   objectPool: {fileID: 513876216}
   isEnemy: 1
   canFire: 0

@@ -207,8 +207,9 @@
             <e p="Character" t="Include">
               <e p="MovementController.cs" t="Include" />
               <e p="ScriptableObjects" t="Include">
-                <e p="CharacterHealthObject.cs" t="Include" />
                 <e p="CharacterMoveObject.cs" t="Include" />
+                <e p="CurrencyObject.cs" t="Include" />
+                <e p="WeaponValues.cs" t="Include" />
               </e>
               <e p="Upgrades" t="Include">
                 <e p="UpgradeManager.cs" t="Include" />
@@ -242,6 +243,7 @@
             </e>
             <e p="Data" t="Include">
               <e p="GameSaveManager.cs" t="Include" />
+              <e p="LevelManager.cs" t="Include" />
             </e>
             <e p="Events" t="Include">
               <e p="BaseEvents" t="Include">
@@ -251,6 +253,7 @@
                 <e p="VoidEvent.cs" t="Include" />
               </e>
               <e p="CameraTransition.cs" t="Include" />
+              <e p="LevelEnd.cs" t="Include" />
               <e p="Listeners" t="Include">
                 <e p="BaseGameEventListener.cs" t="Include" />
                 <e p="FloatListener.cs" t="Include" />
@@ -272,6 +275,7 @@
               <e p="Void.cs" t="Include" />
             </e>
             <e p="Tools" t="Include">
+              <e p="Design.cs" t="Include" />
               <e p="InputManager.cs" t="Include" />
               <e p="Keybindings.cs" t="Include" />
             </e>

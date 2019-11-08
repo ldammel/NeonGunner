@@ -7,7 +7,7 @@ namespace Library.Combat.Pooling
     public class BulletShot : MonoBehaviour, IGameObjectPooled
     {
         public float moveSpeed = 30f;
-        public int damage = 10;
+        public float damage = 10;
         private float _lifeTime;
         public float maxLifeTime;
         [SerializeField] private GameObject vfx;
