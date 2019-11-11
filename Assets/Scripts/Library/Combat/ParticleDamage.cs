@@ -8,25 +8,25 @@ namespace Library.Combat
     {
         public ParticleSystem part;
         public List<ParticleCollisionEvent> collisionEvents;
-        private EnemyHealth eh;
+        private EnemyHealth _eh;
 
-        void Start()
+        private void Start()
         {
-            eh = GetComponent<EnemyHealth>();
+            _eh = GetComponent<EnemyHealth>();
             collisionEvents = new List<ParticleCollisionEvent>();
         }
 
-        void OnParticleCollision(GameObject other)
+        private void OnParticleCollision(GameObject other)
         {
             int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
 
-            Rigidbody rb = other.GetComponent<Rigidbody>();
-            int i = 0;
+            var rb = other.GetComponent<Rigidbody>();
+            var i = 0;
 
             while (i < numCollisionEvents)
             {
-                eh.TakeDamage(20);
-                Debug.Log(eh.curHealth);
+                _eh.TakeDamage(20);
+                Debug.Log(_eh.curHealth);
                 i++;
             }
         }

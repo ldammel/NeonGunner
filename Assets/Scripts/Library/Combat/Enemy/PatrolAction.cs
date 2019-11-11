@@ -17,9 +17,9 @@ namespace Library.Combat.Enemy
         {
             controller.navMeshAgent.enabled = !PauseMenu.Instance.pauseActive;
             if (!controller.navMeshAgent.enabled) return;
-            controller.navMeshAgent.isStopped = PauseMenu.Instance.pauseActive;
+            
             controller.navMeshAgent.destination = controller.wayPointList[controller.nextWayPoint].position;
-
+            
             if (!(controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance) || controller.navMeshAgent.pathPending) return;
             if (controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().active)
             {

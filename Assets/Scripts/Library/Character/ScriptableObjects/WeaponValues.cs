@@ -72,5 +72,18 @@ namespace Library.Character.ScriptableObjects
         [BoxGroup(" Flamethrower Upgrade Settings")] 
         public float flameSpreadUpgrade;
         #endregion
+        
+        #region Flying Enemy Settings
+        [BoxGroup("Flying Enemy Settings")] 
+        public float enemyHealth;
+        [BoxGroup("Flying Enemy Settings")] 
+        public float enemyDamage;
+        [BoxGroup("Flying Enemy Settings")] 
+        public float enemyAttackSpeed;
+        [BoxGroup("Flying Enemy Settings")] 
+        public float enemyMoveSpeed;
+        [BoxGroup("Flying Enemy Settings")] 
+        public float enemyRange;
+        #endregion
     }
 }

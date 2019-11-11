@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f68bb47cfecc4dea945009fc1cd9daab, type: 3}
+  m_Name: Hard Difficulty
+  m_EditorClassIdentifier: 
+  Name: 
+  BaseValue: 0
+  mgDamage: 0
+  mgRange: 0
+  mgFireRate: 0
+  mgMaxUpgradeLevel: 0
+  mgUpgradeCost: 0
+  mgUpgradeCostMultiplier: 0
+  mgFireRateUpgrade: 0
+  flakDamage: 0
+  flakRange: 0
+  flakDamageRadius: 0
+  flakFireRate: 0
+  flakMaxUpgradeLevel: 0
+  flakUpgradeCost: 0
+  flakUpgradeCostMultiplier: 0
+  flakFireRateUpgrade: 0
+  flakRadiusUpgrade: 0
+  flameDamage: 0
+  flameRange: 0
+  flameMaxAmmo: 0
+  flameAmmoConsumptionPerSecond: 0
+  flameAmmoRefreshPerSecond: 0
+  flameSpread: 0
+  flameMaxUpgradeLevel: 0
+  flameUpgradeCost: 0
+  flameUpgradeCostMultiplier: 0
+  flameMaxAmmoUpgrade: 0
+  flameSpreadUpgrade: 0

@@ -32,9 +32,10 @@ namespace Library.Combat
 
         private void Update()
         {
-            var localScale = flameFx.gameObject.transform.localScale;
+            var o = flameFx.gameObject;
+            var localScale = o.transform.localScale;
             localScale = new Vector3(spread,localScale.y, range);
-            flameFx.gameObject.transform.localScale = localScale;
+            o.transform.localScale = localScale;
             ammoCountDisplay.text = Mathf.Round(ammo).ToString(CultureInfo.CurrentCulture);
             var flameFxMain = flameFx.main;
             flameFxMain.maxParticles = Input.GetMouseButton(0) ? 130 : 0;
@@ -51,7 +52,7 @@ namespace Library.Combat
 
         void OnParticleCollision(GameObject other)
         {
-            int numCollisionEvents = flameFx.GetCollisionEvents(other, collisionEvents);
+            var numCollisionEvents = flameFx.GetCollisionEvents(other, collisionEvents);
             int i = 0;
 
             while (i < numCollisionEvents)

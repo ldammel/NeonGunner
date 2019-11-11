@@ -4,10 +4,8 @@ using Library.Character.ScriptableObjects;
 using Library.Character.Upgrades;
 using Library.Combat;
 using Library.Combat.Enemy;
-using Library.Combat.Pooling;
 using UnityEngine;
 using NaughtyAttributes;
-using UnityEngine.AI;
 
 namespace Library.Tools
 {
@@ -42,16 +40,6 @@ namespace Library.Tools
         private GameObject _player;
         private WaypointMovement _playerSpeed;
         private EnemyHealth _playerHealth;
-        private Flak _flak;
-        private MachineGun _mg;
-        private BulletShot _bullet;
-        private BulletPooled _pool;
-        
-        private NavMeshAgent _enemyNav;
-        private EnemyHealth _enemyHealth;
-        private BulletPooled _enemyPool;
-        private GameObject _enemyBullet;
-        private BulletShot _enemyDamage;
         #endregion
         
         #region Player Settings
@@ -146,54 +134,45 @@ namespace Library.Tools
         [Button("Reset Stats")]
         public void ResetStats()
         {
-            //--------------- Check if Prefabs are assigned ----------------
+          //--------------- Check if Prefabs are assigned ----------------
 
-            if (flakPrefab == null || flyingEnemy == null || upgradeObject == null)
-            {
-                Debug.LogError("Please assign Flak, Flame, Upgrade and Enemy Prefab before testing!");
-                Application.Quit();
-            }
+          if (flakPrefab == null || flyingEnemy == null || upgradeObject == null)
+          {
+              Debug.LogError("Please assign Flak, Flame, Upgrade and Enemy Prefab before testing!");
+              Application.Quit();
+          }
 
-            //----------------- Get Required Components ------------------
+          //----------------- Get Required Components ------------------
 
-            _player = GameObject.FindGameObjectWithTag("Player");
-            _playerSpeed = _player.GetComponent<WaypointMovement>();
-            _playerHealth = _player.GetComponent<EnemyHealth>();
-            _mg = _player.GetComponentInChildren<MachineGun>();
-            _flak = flakPrefab.GetComponent<Flak>();
-            _bullet = flakPrefab.GetComponent<BulletShot>();
-            _pool = _player.GetComponentInChildren<BulletPooled>();
-            _enemyNav = flyingEnemy.GetComponent<NavMeshAgent>();
-            _enemyHealth = flyingEnemy.GetComponent<EnemyHealth>();
-            _enemyPool = flyingEnemy.GetComponentInChildren<BulletPooled>();
-            _enemyBullet = flyingEnemy.GetComponent<BulletShotPool>().prefab;
-            _enemyDamage = _enemyBullet.GetComponent<BulletShot>();
+          _player = GameObject.FindGameObjectWithTag("Player");
+          _playerSpeed = _player.GetComponent<WaypointMovement>();
+          _playerHealth = _player.GetComponent<EnemyHealth>();
 
-            //---------------Value Initialization---------------------
-            _playerHealth.maxHealth = playerHealth;
-            _playerSpeed.speed = playerSpeed;            
-            
-            values.mgDamage = mgDamage;
-            values.mgRange = mgRange;
-            values.mgFireRate = mgFireRate;
+          //---------------Value Initialization---------------------
+          _playerHealth.maxHealth = playerHealth;
+          _playerSpeed.speed = playerSpeed;            
+          
+          values.mgDamage = mgDamage;
+          values.mgRange = mgRange;
+          values.mgFireRate = mgFireRate;
 
-            values.flakDamageRadius = flakDamageRadius;
-            values.flakDamage = flakDamage;;
-            values.flakRange = flakRange;;
-            values.flakFireRate = flakFireRate;;
+          values.flakDamageRadius = flakDamageRadius;
+          values.flakDamage = flakDamage;;
+          values.flakRange = flakRange;;
+          values.flakFireRate = flakFireRate;;
 
-            values.flameDamage = flameDamage;
-            values.flameRange = flameRange;
-            values.flameSpread = flameSpread;
-            values.flameMaxAmmo = flameMaxAmmo;
-            values.flameAmmoConsumptionPerSecond = flameAmmoConsumptionPerSecond;
-            values.flameAmmoRefreshPerSecond = flameAmmoRefreshPerSecond;
+          values.flameDamage = flameDamage;
+          values.flameRange = flameRange;
+          values.flameSpread = flameSpread;
+          values.flameMaxAmmo = flameMaxAmmo;
+          values.flameAmmoConsumptionPerSecond = flameAmmoConsumptionPerSecond;
+          values.flameAmmoRefreshPerSecond = flameAmmoRefreshPerSecond;
 
-            _enemyHealth.maxHealth = enemyHealth;
-            _enemyDamage.damage = enemyDamage;
-            _enemyNav.speed = enemyMoveSpeed;
-            _enemyPool.fireRate = enemyAttackSpeed; 
-            _enemyNav.stoppingDistance = enemyRange;
+          values.enemyDamage = enemyDamage;
+          values.enemyHealth = enemyHealth;
+          values.enemyMoveSpeed = enemyMoveSpeed;
+          values.enemyAttackSpeed = enemyAttackSpeed;
+          values.enemyRange = enemyRange;
 
           values.mgMaxUpgradeLevel = mgMaxUpgradeLevel;
           values.mgUpgradeCost = mgUpgradeCost;
@@ -211,6 +190,56 @@ namespace Library.Tools
           values.flakUpgradeCostMultiplier = flakUpgradeCostMultiplier;
           values.flakRadiusUpgrade = flakRadiusUpgrade;
           values.flakFireRateUpgrade = flakFireRateUpgrade;
+
+          currency.currentCurrency = 0;
+          currency.flakLevel = 0;
+          currency.flameLevel = 0;
+          currency.mgLevel = 0;
+          currency.flakActive = false;
+          currency.flameActive = false;
+        }
+        
+        [Button("Reset Difficulty")]
+        public void ResetInitialValues()
+        {
+          mgDamage = values.mgDamage;
+          mgRange = values.mgRange;
+          mgFireRate =  values.mgFireRate;
+
+          flakDamageRadius = values.flakDamageRadius;
+          flakDamage = values.flakDamage;
+          flakRange = values.flakRange;
+          flakFireRate = values.flakFireRate;
+
+          flameDamage = values.flameDamage;
+          flameRange = values.flameRange;
+          flameSpread = values.flameSpread;
+          flameMaxAmmo = values.flameMaxAmmo;
+          flameAmmoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
+          flameAmmoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
+
+          enemyDamage = values.enemyDamage;
+          enemyHealth = values.enemyHealth;
+          enemyMoveSpeed = values.enemyMoveSpeed;
+          enemyAttackSpeed = values.enemyAttackSpeed;
+          enemyRange = values.enemyRange ;
+
+          mgMaxUpgradeLevel = values.mgMaxUpgradeLevel ;
+          mgUpgradeCost = values.mgUpgradeCost;
+          mgUpgradeCostMultiplier = values.mgUpgradeCostMultiplier;
+          mgFireRateUpgrade = values.mgFireRateUpgrade;
+
+          flameMaxUpgradeLevel = values.flameMaxUpgradeLevel;
+          flameUpgradeCost = values.flameUpgradeCost;
+          flameUpgradeCostMultiplier = values.flameUpgradeCostMultiplier;
+          flameMaxAmmoUpgrade = values.flameMaxAmmoUpgrade;
+          flameSpreadUpgrade = values.flameSpreadUpgrade;
+            
+          flakMaxUpgradeLevel = values.flakMaxUpgradeLevel;
+          flakUpgradeCost =  values.flakUpgradeCost;
+          flakUpgradeCostMultiplier = values.flakUpgradeCostMultiplier;
+          flakRadiusUpgrade = values.flakRadiusUpgrade;
+          flakFireRateUpgrade = values.flakFireRateUpgrade;
 
           currency.currentCurrency = 0;
           currency.flakLevel = 0;

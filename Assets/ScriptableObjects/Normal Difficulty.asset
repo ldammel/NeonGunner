@@ -10,34 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f68bb47cfecc4dea945009fc1cd9daab, type: 3}
-  m_Name: New Weapon Values
+  m_Name: Normal Difficulty
   m_EditorClassIdentifier: 
   Name: 
   BaseValue: 0
   mgDamage: 50
   mgRange: 100
-  mgFireRate: 0.05
+  mgFireRate: 0.2
   mgMaxUpgradeLevel: 2
-  mgUpgradeCost: 400
+  mgUpgradeCost: 200
   mgUpgradeCostMultiplier: 2
   mgFireRateUpgrade: 2
   flakDamage: 100
   flakRange: 2
-  flakDamageRadius: 10
-  flakFireRate: 0.5
+  flakDamageRadius: 5
+  flakFireRate: 1
   flakMaxUpgradeLevel: 2
-  flakUpgradeCost: 400
+  flakUpgradeCost: 500
   flakUpgradeCostMultiplier: 2
   flakFireRateUpgrade: 2
   flakRadiusUpgrade: 2
-  flameDamage: 20
-  flameRange: 5
-  flameMaxAmmo: 200
+  flameDamage: 30
+  flameRange: 15
+  flameMaxAmmo: 100
   flameAmmoConsumptionPerSecond: 1
   flameAmmoRefreshPerSecond: 1
-  flameSpread: 10
+  flameSpread: 7
   flameMaxUpgradeLevel: 2
-  flameUpgradeCost: 400
+  flameUpgradeCost: 300
   flameUpgradeCostMultiplier: 2
   flameMaxAmmoUpgrade: 100
   flameSpreadUpgrade: 10
+  enemyHealth: 100
+  enemyDamage: 10
+  enemyAttackSpeed: 1
+  enemyMoveSpeed: 30
+  enemyRange: 10

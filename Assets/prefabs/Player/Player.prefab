@@ -174,8 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshair: {fileID: 0}
-  Weapons:
-  - {fileID: 349057424901002802}
+  weapons: []
   sphereCastSize: 1
 --- !u!1 &661976606
 GameObject:
@@ -1906,15 +1905,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349057424901002813}
-  m_LocalRotation: {x: -0.06975647, y: 0, z: 0, w: 0.9975641}
-  m_LocalPosition: {x: 0, y: 1.68, z: 4.211}
+  m_LocalRotation: {x: -0.026176924, y: 0, z: 0, w: 0.99965733}
+  m_LocalPosition: {x: 0, y: 1.44, z: 3.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1456154350}
   - {fileID: 2035090540}
   m_Father: {fileID: 609103737}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -8, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -3, y: 0, z: 0}
 --- !u!114 &349057424901002803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6537,8 +6536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshair: {fileID: 0}
-  Weapons:
-  - {fileID: 8203657732673721545}
+  weapons: []
   sphereCastSize: 1
 --- !u!1 &4584679986014599845
 GameObject:
@@ -8716,8 +8714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshair: {fileID: 0}
-  Weapons:
-  - {fileID: 7583779653466460884}
+  weapons: []
   sphereCastSize: 1
 --- !u!1 &6299760881074288475
 GameObject:

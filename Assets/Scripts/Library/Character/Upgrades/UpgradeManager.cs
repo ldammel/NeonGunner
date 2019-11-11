@@ -2,6 +2,7 @@
 using Library.Character.ScriptableObjects;
 using Library.Combat;
 using Library.Combat.Pooling;
+using Library.Events;
 using Library.UI;
 using TMPro;
 using UnityEngine;
@@ -22,6 +23,13 @@ namespace Library.Character.Upgrades
         [SerializeField] private BulletPooled pool;
         [SerializeField] private TextMeshProUGUI currencyDisplay;
 
+        public VoidEvent onFlameUpgrade;
+        public VoidEvent onMgUpgrade;
+        public VoidEvent onFlakUpgrade;
+        public VoidEvent onFlameUpgradeTwo;
+        public VoidEvent onMgUpgradeTwo;
+        public VoidEvent onFlakUpgradeTwo;
+
         public TextMeshProUGUI mgText;
 
         public TextMeshProUGUI flameText;
@@ -38,9 +46,19 @@ namespace Library.Character.Upgrades
         {
             flak.radius = values.flakDamageRadius;
             pool.fireRate = values.flakFireRate;
+            flak.damage = values.flakDamage;
+            flak.gameObject.GetComponent<BulletShot>().maxLifeTime = values.flakRange;
+
             flame.spread = values.flameSpread;
             flame.maxAmmo = values.flameMaxAmmo;
+            flame.damage = values.flameDamage;
+            flame.range = values.flameRange;
+            flame.ammoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
+            flame.ammoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
+            
             mg.fireRate = values.mgFireRate;
+            mg.damage = values.mgDamage;
+            mg.range = values.mgRange;
         }
 
         private void Update()
@@ -70,6 +88,7 @@ namespace Library.Character.Upgrades
             upgrades.flakActive = true;
             
         }
+        
         public void UnlockFlame()
         {
             if (upgrades.currentCurrency < flakPrice)
@@ -97,10 +116,12 @@ namespace Library.Character.Upgrades
                 case 1:
                     flak.radius *= values.flakRadiusUpgrade;
                     values.flakDamageRadius *= values.flakRadiusUpgrade;
+                    onFlakUpgrade.Raise();
                     return;
                 case 2:
                     pool.fireRate /= values.flakFireRateUpgrade;
                     values.flakFireRate /= values.flakFireRateUpgrade;
+                    onFlakUpgradeTwo.Raise();
                     return;
                 default:
                     return;
@@ -123,10 +144,12 @@ namespace Library.Character.Upgrades
                 case 1:
                     flame.spread = values.flameSpreadUpgrade;
                     values.flameSpread = values.flameSpreadUpgrade;
+                    onFlameUpgrade.Raise();
                     return;
                 case 2:
                     flame.maxAmmo += values.flameMaxAmmoUpgrade;
                     values.flameMaxAmmo += values.flameMaxAmmoUpgrade;
+                    onFlameUpgradeTwo.Raise();
                     return;
                 default:
                     return;
@@ -142,11 +165,21 @@ namespace Library.Character.Upgrades
                 return;
             }
 
+
             upgrades.mgLevel++;
             upgrades.currentCurrency -= values.mgUpgradeCost;
             values.mgUpgradeCost *= values.mgUpgradeCostMultiplier;
             mg.fireRate /= values.mgFireRateUpgrade;
             values.mgFireRate /= values.mgFireRateUpgrade;
+            
+            if (upgrades.mgLevel == 1)
+            {
+                onMgUpgrade.Raise();
+            }
+            else
+            {
+                onMgUpgradeTwo.Raise();
+            }
         }
 
         public void CheatMoney()

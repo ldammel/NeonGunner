@@ -34,7 +34,7 @@ namespace Library.Events
         private float baseSeconds;
         private int baseMinutes;
         [SerializeField] private TextMeshProUGUI timeText;
-        [SerializeField] private TextMeshProUGUI timeTakenText;
+        [SerializeField] private TextMeshProUGUI rewardText;
         
 
         private void Start()
@@ -58,11 +58,10 @@ namespace Library.Events
             }
             else if (timeLimitSeconds <= 0 && timeLimitMinutes == 0)
             {
-                //GameOver
+                GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth = 0;
             }
 
             timeText.text = Mathf.RoundToInt(timeLimitMinutes) + ":" + Mathf.RoundToInt(timeLimitSeconds);
-            timeTakenText.text = Mathf.RoundToInt(_timeTaken).ToString(CultureInfo.CurrentCulture);
         }
 
         private void OnCollisionEnter(Collision other)
@@ -75,14 +74,15 @@ namespace Library.Events
         
         public void CalculateReward(int reward)
         {
-            _reward = Mathf.Round((((EnemySpawnController.totalKills * Design.Instance.currencyGainPerEnemy)/(_timeTaken/10)) +(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth/50))*reward);
+            _reward = Mathf.Round((((EnemySpawnController.totalKills * Design.Instance.currencyGainPerEnemy)/(_timeTaken*10)) +(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth/50))*reward);
             _manager.upgrades.currentCurrency += (int)_reward;
             _timeTaken = 0;
             EnemySpawnController.totalKills = 0;
             EnemySpawnController.killedEnemies = 0;
             timeLimitMinutes = baseMinutes;
             timeLimitSeconds = baseSeconds;
-            NotificationManager.Instance.SetNewNotification("Gained " +_reward+ " Money",3);
+            rewardText.text = "You Gained " + _reward + " Money";
+            rewardText.gameObject.SetActive(true);
         }
 
     }

@@ -9,20 +9,19 @@ namespace Library.Combat
         public float radius = 5;
         public float damage;
 
-
         private void OnCollisionEnter(Collision other)
         {
             AreaDamageEnemies(other.GetContact(0).point, radius, damage);
         }
 
-        public void AreaDamageEnemies(Vector3 location, float radius, float damage)
+        private static void AreaDamageEnemies(Vector3 location, float area, float hitDamage)
         {
-            var objects = Physics.OverlapSphere(location, radius);
+            var objects = Physics.OverlapSphere(location, area);
             foreach (var col in objects)
             {
                 var enemy = col.GetComponent<EnemyHealth>();
                 if (enemy == null) continue;
-                enemy.TakeDamage(damage);
+                enemy.TakeDamage(hitDamage);
             }
         }
     }

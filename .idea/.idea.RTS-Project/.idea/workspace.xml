@@ -2,33 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Base/BaseScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Base/BaseScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CharacterHealthObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CharacterHealthObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/New Weapon Values.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/New Weapon Values.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio/AudioSpectrum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio/AudioSpectrum.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio/AudioSyncColor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio/AudioSyncColor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio/AudioSyncScale.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio/AudioSyncScale.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio/AudioSyncer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Audio/AudioSyncer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/CameraManager.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/CameraManager.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ParticleDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ParticleDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Options.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Options.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,16 +52,27 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnTriggerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnCollisionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/EndOfPathInstruction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnInteractionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Void.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/BaseGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/FloatListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/VertexPath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/IGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/VoidListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/VoidEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/FloatEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/BaseGameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/UnityEvents/UnityFloatEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/MovementController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -65,6 +80,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/prefabs/Enemies/Enemy.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemySpawnController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PathCreator/Core/Editor/PathEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,6 +95,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/Keybindings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ActivateWave.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/RoadMeshCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" root0="FORCE_HIGHLIGHTING" />
@@ -87,6 +105,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/AI/Waypoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/ScoreText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/DifficultySelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ParticleDamage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
@@ -104,26 +123,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ActivateWave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/HealthText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ParticleDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathFollower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/AI/Waypoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/OnCollisionController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/HealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/ScoreText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemySpawnController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Keybindings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/HealthText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
         <option value="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/VertexPath.cs" />
@@ -131,15 +139,28 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SceneSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Base/BaseScriptableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ParticleDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Keybindings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/DifficultySelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" />
       </list>
     </option>
   </component>
@@ -201,6 +222,7 @@
       <workItem from="1573030561623" duration="8177000" />
       <workItem from="1573116309818" duration="16435000" />
       <workItem from="1573203285588" duration="12239000" />
+      <workItem from="1573462414194" duration="14293000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,5 @@
-﻿using Library.Events;
+﻿using System;
+using Library.Events;
 using UnityEngine;
 using UnityEngine.AI;
 using PathCreation;
@@ -12,22 +13,23 @@ namespace Library.Character
         public EndOfPathInstruction endOfPathInstruction;
         public float dist;
         private bool _active;
-        void Start()
+
+        public void Start()
         {
             if (path != null)
             {
                 path.pathUpdated += OnPathChanged;
             }
         }
-        
-        void Update()
+
+        private void Update()
         {
             if (PauseMenu.Instance.pauseActive) return;
             if (path == null) return;
             dist += speed * Time.deltaTime; 
             transform.position = path.path.GetPointAtDistance(dist);
             transform.rotation = path.path.GetRotationAtDistance(dist, endOfPathInstruction);
-            if (transform.rotation.z != 0)
+            if (Math.Abs(transform.rotation.z) > 0)
             {
                 transform.Rotate(0,0,90);
             }

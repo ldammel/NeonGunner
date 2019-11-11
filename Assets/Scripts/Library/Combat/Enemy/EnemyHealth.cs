@@ -43,7 +43,6 @@ namespace Library.Combat.Enemy
                 }
                 else
                 {
-                    NotificationManager.Instance.SetNewNotification("Killed Enemy", 3);
                     if(wp != null && wp.active) wp.active = false;
                     EnemySpawnController.killedEnemies++;
                     EnemySpawnController.totalKills++;
@@ -55,7 +54,7 @@ namespace Library.Combat.Enemy
         public void TakeDamage(float damage)
         {
             curHealth -= damage;
-            float currentHealthPct = curHealth / maxHealth;
+            var currentHealthPct = curHealth / maxHealth;
             OnHealthPctChanged(currentHealthPct);
         }
     }

@@ -195,12 +195,6 @@
             <e p="AI" t="Include">
               <e p="Waypoint.cs" t="Include" />
             </e>
-            <e p="Audio" t="Include">
-              <e p="AudioSpectrum.cs" t="Include" />
-              <e p="AudioSyncColor.cs" t="Include" />
-              <e p="AudioSyncer.cs" t="Include" />
-              <e p="AudioSyncScale.cs" t="Include" />
-            </e>
             <e p="Base" t="Include">
               <e p="BaseScriptableObject.cs" t="Include" />
             </e>
@@ -253,6 +247,7 @@
                 <e p="VoidEvent.cs" t="Include" />
               </e>
               <e p="CameraTransition.cs" t="Include" />
+              <e p="DifficultySelector.cs" t="Include" />
               <e p="LevelEnd.cs" t="Include" />
               <e p="Listeners" t="Include">
                 <e p="BaseGameEventListener.cs" t="Include" />
@@ -284,6 +279,7 @@
               <e p="NotificationManager.cs" t="Include" />
               <e p="NotificationTrigger.cs" t="Include" />
               <e p="ScoreText.cs" t="Include" />
+              <e p="UIManager.cs" t="Include" />
             </e>
           </e>
           <e p="SimpleCameraController.cs" t="Include" />
