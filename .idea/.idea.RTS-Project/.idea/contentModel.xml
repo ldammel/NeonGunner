@@ -260,7 +260,9 @@
               <e p="OnInteractionController.cs" t="Include" />
               <e p="OnTriggerController.cs" t="Include" />
               <e p="PauseMenu.cs" t="Include" />
+              <e p="QuickTimeTrigger.cs" t="Include" />
               <e p="SceneSwitch.cs" t="Include" />
+              <e p="SelectDifficulty.cs" t="Include" />
               <e p="SignActivation.cs" t="Include" />
               <e p="UnityEvents" t="Include">
                 <e p="UnityFloatEvent.cs" t="Include" />

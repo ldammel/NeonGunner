@@ -1,6 +1,7 @@
 ﻿using System;
 using Library.Combat;
 using Library.Combat.Pooling;
+using Library.Data;
 using UnityEngine;
 using Library.Events;
 using Library.Tools;
@@ -28,7 +29,7 @@ public class Test : MonoBehaviour
 
     private void Update()
     {
-        if (InputManager.Instance.KeyDown("options"))
+        if (InputManager.Instance.KeyDown("options") && !LevelManager.Instance.levelSelection.activeSelf)
         {
             PauseMenu.Instance.TriggerMenu();
         }

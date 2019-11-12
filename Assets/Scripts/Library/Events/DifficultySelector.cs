@@ -12,16 +12,11 @@ namespace Library.Events
 {
     public class DifficultySelector : MonoBehaviour
     {
-        public WeaponValues easy;
-        public WeaponValues medium;
-        public WeaponValues hard;
-
         public GameObject enemyPrefab;
+        public GameObject enemyBulletObj;
 
-        private WeaponValues _selectedDifficulty;
-        private UpgradeManager _manager;
-        private Design _design;
-        
+        public WeaponValues selectedDifficulty;
+
         private NavMeshAgent _enemyNav;
         private EnemyHealth _enemyHealth;
         private BulletPooled _enemyPool;
@@ -29,46 +24,20 @@ namespace Library.Events
 
         private void Start()
         {
-            _manager = FindObjectOfType<UpgradeManager>();
             _enemyNav = enemyPrefab.GetComponent<NavMeshAgent>();
             _enemyHealth = enemyPrefab.GetComponent<EnemyHealth>();
             _enemyPool = enemyPrefab.GetComponentInChildren<BulletPooled>();
-            _enemyDamage = enemyPrefab.GetComponent<BulletShot>();
-            _design = FindObjectOfType<Design>();
-        }
-
-        public void SelectDifficulty(string difficulty)
-        {
-            switch (difficulty)
-            {
-                case "easy":
-                    _selectedDifficulty = easy;
-                    return;
-                case "medium":
-                    _selectedDifficulty = medium;
-                    return;
-                case "hard":
-                    _selectedDifficulty = hard;
-                    return;
-                default:
-                    return;
-            }
+            _enemyDamage = enemyBulletObj.GetComponent<BulletShot>();
+            ChangeValues();
         }
 
         private void ChangeValues()
         {
-            _manager.values = _selectedDifficulty;
-            _design.values = _selectedDifficulty;
-            
-            _enemyHealth.maxHealth = _selectedDifficulty.enemyHealth;
-            _enemyDamage.damage = _selectedDifficulty.enemyDamage;
-            _enemyNav.speed = _selectedDifficulty.enemyMoveSpeed;
-            _enemyPool.fireRate = _selectedDifficulty.enemyAttackSpeed; 
-            _enemyNav.stoppingDistance = _selectedDifficulty.enemyRange;
-            
+            _enemyHealth.maxHealth = selectedDifficulty.enemyHealth;
+            _enemyDamage.damage = selectedDifficulty.enemyDamage;
+            _enemyNav.speed = selectedDifficulty.enemyMoveSpeed;
+            _enemyPool.fireRate = selectedDifficulty.enemyAttackSpeed; 
+            _enemyNav.stoppingDistance = selectedDifficulty.enemyRange;
         }
-
-
-
     }
 }

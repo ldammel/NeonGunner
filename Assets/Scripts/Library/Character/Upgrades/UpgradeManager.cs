@@ -75,6 +75,32 @@ namespace Library.Character.Upgrades
             flameUpgradeButton.SetActive(upgrades.flameActive);
             flakBuyButton.SetActive(!upgrades.flakActive);
             flameBuyButton.SetActive(!upgrades.flameActive);
+
+            if (upgrades.mgLevel == 1)
+            {
+                onMgUpgrade.Raise();
+            }
+            if (upgrades.mgLevel == 2)
+            {
+                onMgUpgradeTwo.Raise();
+            }
+            if (upgrades.flameLevel == 1)
+            {
+                onFlameUpgrade.Raise();
+            }
+            if (upgrades.flameLevel == 2)
+            {
+                onFlameUpgradeTwo.Raise();
+            }
+            if (upgrades.flakLevel == 1)
+            {
+                onFlakUpgrade.Raise();
+            }
+            if (upgrades.flakLevel == 2)
+            {
+                onFlakUpgradeTwo.Raise();
+            }
+            
         }
 
         public void UnlockFlak()
