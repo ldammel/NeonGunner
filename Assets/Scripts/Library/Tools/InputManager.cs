@@ -18,7 +18,6 @@ namespace Library.Tools
             {
                 Destroy(this);
             }
-            DontDestroyOnLoad(this);
         }
 
         public bool KeyDown(string key)

@@ -49,7 +49,7 @@ namespace Library.Tools
         [BoxGroup("Player Settings")]
         public float playerSpeed;
         [BoxGroup("Player Settings")] 
-        public int currencyGainPerEnemy;
+        public ushort currencyGainPerEnemy;
         #endregion
         
         #region MG Settings
@@ -61,11 +61,11 @@ namespace Library.Tools
         public float mgFireRate;
         
         [BoxGroup("MG Upgrade Settings")] 
-        public int mgMaxUpgradeLevel;
+        public ushort mgMaxUpgradeLevel;
         [BoxGroup("MG Upgrade Settings")] 
-        public int mgUpgradeCost;
+        public ushort mgUpgradeCost;
         [BoxGroup("MG Upgrade Settings")] 
-        public int mgUpgradeCostMultiplier;
+        public ushort mgUpgradeCostMultiplier;
         [BoxGroup("MG Upgrade Settings")] 
         public float mgFireRateUpgrade;
         #endregion
@@ -81,11 +81,11 @@ namespace Library.Tools
         public float flakFireRate;
         
         [BoxGroup(" Flak Upgrade Settings")] 
-        public int flakMaxUpgradeLevel;
+        public ushort flakMaxUpgradeLevel;
         [BoxGroup(" Flak Upgrade Settings")] 
-        public int flakUpgradeCost;
+        public ushort flakUpgradeCost;
         [BoxGroup(" Flak Upgrade Settings")] 
-        public int flakUpgradeCostMultiplier;
+        public ushort flakUpgradeCostMultiplier;
         [BoxGroup(" Flak Upgrade Settings")] 
         public float flakFireRateUpgrade;
         [BoxGroup(" Flak Upgrade Settings")] 
@@ -107,11 +107,11 @@ namespace Library.Tools
         public float flameSpread;
         
         [BoxGroup(" Flamethrower Upgrade Settings")] 
-        public int flameMaxUpgradeLevel;
+        public ushort flameMaxUpgradeLevel;
         [BoxGroup(" Flamethrower Upgrade Settings")] 
-        public int flameUpgradeCost;
+        public ushort flameUpgradeCost;
         [BoxGroup(" Flamethrower Upgrade Settings")] 
-        public int flameUpgradeCostMultiplier;
+        public ushort flameUpgradeCostMultiplier;
         [BoxGroup(" Flamethrower Upgrade Settings")] 
         public float flameMaxAmmoUpgrade;
         [BoxGroup(" Flamethrower Upgrade Settings")] 
@@ -190,15 +190,19 @@ namespace Library.Tools
           values.flakUpgradeCostMultiplier = flakUpgradeCostMultiplier;
           values.flakRadiusUpgrade = flakRadiusUpgrade;
           values.flakFireRateUpgrade = flakFireRateUpgrade;
-
-          currency.currentCurrency = 0;
-          currency.flakLevel = 0;
-          currency.flameLevel = 0;
-          currency.mgLevel = 0;
-          currency.flakActive = false;
-          currency.flameActive = false;
         }
-        
+
+        [Button("Reset Progress")]
+        public void ResetProgress()
+        {
+            currency.currentCurrency = 0;
+            currency.flakLevel = 0;
+            currency.flameLevel = 0;
+            currency.mgLevel = 0;
+            currency.flakActive = false;
+            currency.flameActive = false;
+        }
+
         [Button("Reset Difficulty")]
         public void ResetInitialValues()
         {

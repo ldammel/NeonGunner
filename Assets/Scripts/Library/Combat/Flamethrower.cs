@@ -12,14 +12,14 @@ namespace Library.Combat
     public class Flamethrower : MonoBehaviour
     {
         [SerializeField] private ParticleSystem flameFx;
-        [HideInInspector]public float damage;
-        [HideInInspector]public float range;
-        [HideInInspector]public float spread;
+        [HideInInspector] public float damage;
+        [HideInInspector] public float range;
+        [HideInInspector] public float spread;
         [HideInInspector] public float ammoConsumptionPerSecond;
         [HideInInspector] public float ammoRefreshPerSecond;
-        [HideInInspector]public float maxAmmo;
-        [SerializeField] private float ammo;
-        [SerializeField] private TextMeshProUGUI ammoCountDisplay;
+        [HideInInspector] public float maxAmmo;
+        [SerializeField]  private float ammo;
+        [SerializeField]  private TextMeshProUGUI ammoCountDisplay;
         public List<ParticleCollisionEvent> collisionEvents;
 
         private void Start()

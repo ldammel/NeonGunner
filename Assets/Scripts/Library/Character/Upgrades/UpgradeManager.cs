@@ -15,10 +15,10 @@ namespace Library.Character.Upgrades
         public WeaponValues values;
         [SerializeField] private Flak flak;
         [SerializeField] private GameObject flakGameObject;
-        [SerializeField] private int flakPrice;
+        [SerializeField] private ushort flakPrice;
         [SerializeField] private Flamethrower flame;
         [SerializeField] private GameObject flameGameObject;
-        [SerializeField] private int flamePrice;
+        [SerializeField] private ushort flamePrice;
         [SerializeField] private MachineGun mg;
         [SerializeField] private BulletPooled pool;
         [SerializeField] private TextMeshProUGUI currencyDisplay;

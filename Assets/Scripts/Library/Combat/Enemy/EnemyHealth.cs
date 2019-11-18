@@ -22,6 +22,8 @@ namespace Library.Combat.Enemy
 
         public Waypoint wp;
 
+        public bool godMode;
+
         public event Action<float> OnHealthPctChanged = delegate{  };    
         
         private void Start()
@@ -32,6 +34,11 @@ namespace Library.Combat.Enemy
         
         private void Update()
         {
+            if (godMode)
+            {
+                curHealth = maxHealth;
+            }
+
             if (curHealth <= 0)
             {
                 curHealth = 0;

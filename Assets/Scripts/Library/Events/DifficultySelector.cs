@@ -31,7 +31,7 @@ namespace Library.Events
             ChangeValues();
         }
 
-        private void ChangeValues()
+        public void ChangeValues()
         {
             _enemyHealth.maxHealth = selectedDifficulty.enemyHealth;
             _enemyDamage.damage = selectedDifficulty.enemyDamage;

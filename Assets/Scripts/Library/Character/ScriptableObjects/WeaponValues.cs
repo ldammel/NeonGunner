@@ -16,11 +16,11 @@ namespace Library.Character.ScriptableObjects
         public float mgFireRate;
         
         [BoxGroup("MG Upgrade Settings")] 
-        public int mgMaxUpgradeLevel;
+        public ushort mgMaxUpgradeLevel;
         [BoxGroup("MG Upgrade Settings")] 
-        public int mgUpgradeCost;
+        public ushort mgUpgradeCost;
         [BoxGroup("MG Upgrade Settings")] 
-        public int mgUpgradeCostMultiplier;
+        public ushort mgUpgradeCostMultiplier;
         [BoxGroup("MG Upgrade Settings")] 
         public float mgFireRateUpgrade;
         #endregion
@@ -36,11 +36,11 @@ namespace Library.Character.ScriptableObjects
         public float flakFireRate;
         
         [BoxGroup(" Flak Upgrade Settings")] 
-        public int flakMaxUpgradeLevel;
+        public ushort flakMaxUpgradeLevel;
         [BoxGroup(" Flak Upgrade Settings")] 
-        public int flakUpgradeCost;
+        public ushort flakUpgradeCost;
         [BoxGroup(" Flak Upgrade Settings")] 
-        public int flakUpgradeCostMultiplier;
+        public ushort flakUpgradeCostMultiplier;
         [BoxGroup(" Flak Upgrade Settings")] 
         public float flakFireRateUpgrade;
         [BoxGroup(" Flak Upgrade Settings")] 
@@ -62,11 +62,11 @@ namespace Library.Character.ScriptableObjects
         public float flameSpread;
         
         [BoxGroup(" Flamethrower Upgrade Settings")] 
-        public int flameMaxUpgradeLevel;
+        public ushort flameMaxUpgradeLevel;
         [BoxGroup(" Flamethrower Upgrade Settings")] 
-        public int flameUpgradeCost;
+        public ushort flameUpgradeCost;
         [BoxGroup(" Flamethrower Upgrade Settings")] 
-        public int flameUpgradeCostMultiplier;
+        public ushort flameUpgradeCostMultiplier;
         [BoxGroup(" Flamethrower Upgrade Settings")] 
         public float flameMaxAmmoUpgrade;
         [BoxGroup(" Flamethrower Upgrade Settings")] 

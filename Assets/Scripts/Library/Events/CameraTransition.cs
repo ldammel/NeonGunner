@@ -10,9 +10,9 @@ namespace Library.Events
 
         [SerializeField] private Transform[] parents;
 
-        private int _lastPos;
-        private int _curPos;
-        public void Transition(int position)
+        private ushort _lastPos;
+        private ushort _curPos;
+        public void Transition(ushort position)
         {
             _curPos = position;
             if (_curPos == _lastPos) return;

@@ -8,7 +8,7 @@ namespace Library.UI
     {
         public TextMeshProUGUI text;
 
-        private int score;
+        private ushort score;
 
         // Update is called once per frame
         void Update()

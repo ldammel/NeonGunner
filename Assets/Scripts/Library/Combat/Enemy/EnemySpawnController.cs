@@ -8,10 +8,10 @@ namespace Library.Combat.Enemy
         [SerializeField] private GameObject enemyPrefab;
         [SerializeField] private Transform[] spawnPoints;
         [SerializeField] private Transform rootObj;
-        [SerializeField] private int spawnAmount;
+        public ushort spawnAmount;
 
-        public static int killedEnemies;
-        public static int totalKills;
+        public static ushort killedEnemies;
+        public static ushort totalKills;
 
         private void Start()
         {
@@ -25,7 +25,7 @@ namespace Library.Combat.Enemy
             killedEnemies = 0;
         }
 
-        public void SpawnEnemys(int count)
+        public void SpawnEnemys(ushort count)
         {
             for (int i = 0; i < count; i++)
             {

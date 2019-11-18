@@ -12,7 +12,7 @@ namespace Library.Combat.Enemy
         public float attackRange = 1f;
         public float attackRate = 1f;
         public float attackForce = 15f;
-        public int   attackDamage = 50;
+        public ushort   attackDamage = 50;
         
         public float searchDuration = 4f;
         public float searchingTurnSpeed = 120f;

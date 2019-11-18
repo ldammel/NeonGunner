@@ -50,7 +50,7 @@ public class Test : MonoBehaviour
 
     }
 
-    private void Transition(int position)
+    private void Transition(ushort position)
     {
         _cam.Transition(position);
         for (int i = 0; i < gun.Length; i++)

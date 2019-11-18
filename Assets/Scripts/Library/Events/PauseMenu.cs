@@ -1,4 +1,8 @@
 ﻿using System;
+using Library.Character;
+using Library.Character.Upgrades;
+using Library.Combat.Enemy;
+using Library.UI;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -20,11 +24,15 @@ namespace Library.Events
         }
 
         [SerializeField] private GameObject menuObject;
+        public GameObject codeMenu;
 
         public bool pauseActive;
+        private bool changedSpeed = false;
+        private float _speed;
 
         private void Start()
         {
+            _speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed;
             pauseActive = false;
             menuObject.SetActive(false);
         }
@@ -33,6 +41,11 @@ namespace Library.Events
         {
             Cursor.visible = pauseActive;
             Cursor.lockState = pauseActive ? CursorLockMode.None : CursorLockMode.Locked;
+            if (Input.GetKeyDown(KeyCode.F8))
+            {
+                TriggerMenu();
+                codeMenu.SetActive(!codeMenu.activeSelf);
+            }
         }
 
         public void Quit()
@@ -44,6 +57,41 @@ namespace Library.Events
         {
             menuObject.SetActive(!menuObject.activeSelf);
             pauseActive = !pauseActive;
+        }
+
+        public void CheatCodes(string code)
+        {
+            switch (code)
+            {
+                case "motherlode" :
+                    gameObject.GetComponent<UpgradeManager>().CheatMoney();
+                    NotificationManager.Instance.SetNewNotification("Added 10000 Money!", 3);
+                    return;
+                case "blasphemy":
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode = !GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode;
+                    NotificationManager.Instance.SetNewNotification( GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode ? "Godmode Activated" : "Godmode Deactivated", 3);
+                    return;
+                case "gottagofast":
+                    if (!changedSpeed)
+                    {
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed = 7;
+                        NotificationManager.Instance.SetNewNotification("Speed Up!", 3);
+                        changedSpeed = true;
+                    }
+                    else
+                    {
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed = _speed;
+                        NotificationManager.Instance.SetNewNotification("Slow Down!", 3);
+                        changedSpeed = false;
+                    }
+                    return;
+                case "kamikaze":
+                    NotificationManager.Instance.SetNewNotification("KAMIKAZEE!", 3);
+                    GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<EnemySpawnController>().SpawnEnemys(8);
+                    return;
+                default:
+                    return;
+            }
         }
 
     }
