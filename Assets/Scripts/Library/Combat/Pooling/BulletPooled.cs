@@ -1,5 +1,6 @@
 ﻿using System;
 using Library.Events;
+using Library.Tools;
 using UnityEngine;
 
 namespace Library.Combat.Pooling
@@ -24,6 +25,7 @@ namespace Library.Combat.Pooling
                 {
                     _fireTimer = 0;
                     Fire();
+                    SoundManager.Instance.PlaySound("Flak");
                 }
             }
 

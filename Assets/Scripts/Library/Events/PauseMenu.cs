@@ -2,6 +2,7 @@
 using Library.Character;
 using Library.Character.Upgrades;
 using Library.Combat.Enemy;
+using Library.Tools;
 using Library.UI;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -66,28 +67,33 @@ namespace Library.Events
                 case "motherlode" :
                     gameObject.GetComponent<UpgradeManager>().CheatMoney();
                     NotificationManager.Instance.SetNewNotification("Added 10000 Money!", 3);
+                    SoundManager.Instance.PlaySound("Enabled");
                     return;
                 case "blasphemy":
                     GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode = !GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode;
                     NotificationManager.Instance.SetNewNotification( GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode ? "Godmode Activated" : "Godmode Deactivated", 3);
+                    SoundManager.Instance.PlaySound(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode ? "Enabled" : "Disabled");
                     return;
                 case "gottagofast":
                     if (!changedSpeed)
                     {
                         GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed = 7;
                         NotificationManager.Instance.SetNewNotification("Speed Up!", 3);
+                        SoundManager.Instance.PlaySound("Enabled");
                         changedSpeed = true;
                     }
                     else
                     {
                         GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed = _speed;
                         NotificationManager.Instance.SetNewNotification("Slow Down!", 3);
+                        SoundManager.Instance.PlaySound("Disabled");
                         changedSpeed = false;
                     }
                     return;
                 case "kamikaze":
                     NotificationManager.Instance.SetNewNotification("KAMIKAZEE!", 3);
                     GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<EnemySpawnController>().SpawnEnemys(8);
+                    SoundManager.Instance.PlaySound("Enabled");
                     return;
                 default:
                     return;

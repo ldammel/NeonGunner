@@ -547,6 +547,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextWayPoint: 0
+  _aiActive: 0
 --- !u!195 &513876214
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -586,6 +587,8 @@ MonoBehaviour:
   player: 0
   wp: {fileID: 0}
   godMode: 0
+  deathSound: {fileID: 6697611754318035362, guid: 507b4169413c6dd4a819dbdbf7698494,
+    type: 3}
 --- !u!114 &513876216
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System;
 using Library.Combat.Enemy;
 using Library.Events;
+using Library.Tools;
 using UnityEngine;
 
 namespace Library.Combat
@@ -14,6 +15,7 @@ namespace Library.Combat
         [SerializeField] private GameObject vfx;
         
         public float fireRate;
+        public GameObject soundObject;
 
         private float _fireTimer;
 
@@ -56,6 +58,7 @@ namespace Library.Combat
             }
             
             Instantiate(vfx, hit.point, hit.collider.transform.rotation);
+            Instantiate(soundObject,gameObject.transform);
         }
     }
 }

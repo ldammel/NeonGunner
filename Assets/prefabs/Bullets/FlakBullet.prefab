@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 5
   damage: 100
+  explosion: {fileID: 0}
 --- !u!54 &7545042013801477964
 Rigidbody:
   m_ObjectHideFlags: 0

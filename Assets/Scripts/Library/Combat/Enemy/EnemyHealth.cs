@@ -8,6 +8,7 @@ using Library.Data;
 using Library.Events;
 using Library.UI;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Library.Combat.Enemy
 {
@@ -23,6 +24,8 @@ namespace Library.Combat.Enemy
         public Waypoint wp;
 
         public bool godMode;
+
+        public GameObject deathSound;
 
         public event Action<float> OnHealthPctChanged = delegate{  };    
         
@@ -47,12 +50,14 @@ namespace Library.Combat.Enemy
                     PauseMenu.Instance.pauseActive = true;
                     LevelManager.Instance.failScreen.SetActive(true);
                     LevelEnd.Instance.CalculateReward(1);
+                    curHealth = 1;
                 }
                 else
                 {
                     if(wp != null && wp.active) wp.active = false;
                     EnemySpawnController.killedEnemies++;
                     EnemySpawnController.totalKills++;
+                    Instantiate(deathSound);
                     Destroy(gameObject);
                 }
             }

@@ -23,22 +23,12 @@ namespace Library.Data
         public GameObject failScreen;
         public GameObject winScreen;
 
-        public void RoundEnd(string condition)
+        public void RoundEnd()
         {
             RemoveEnemies();
+            winScreen.SetActive(false);
+            failScreen.SetActive(false);
             levelSelection.SetActive(true);
-            switch (condition)
-            {
-                case "Win":
-                    winScreen.SetActive(false);
-                    return;
-                case "Fail":
-                    failScreen.SetActive(false);
-                    return;
-                default:
-                    Debug.LogError("Unknown Condition");
-                    return;
-            }
         }
 
         public void Restart()

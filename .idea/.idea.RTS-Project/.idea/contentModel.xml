@@ -275,6 +275,8 @@
               <e p="Design.cs" t="Include" />
               <e p="InputManager.cs" t="Include" />
               <e p="Keybindings.cs" t="Include" />
+              <e p="SoundManager.cs" t="Include" />
+              <e p="SoundPlayer.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
               <e p="HealthText.cs" t="Include" />
@@ -283,6 +285,7 @@
               <e p="ScoreText.cs" t="Include" />
               <e p="SpeedDisplay.cs" t="Include" />
               <e p="UIManager.cs" t="Include" />
+              <e p="UpgradeUIManager.cs" t="Include" />
             </e>
           </e>
           <e p="SimpleCameraController.cs" t="Include" />

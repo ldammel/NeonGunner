@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using JetBrains.Annotations;
 using Library.Combat.Enemy;
+using Library.Tools;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -21,6 +22,7 @@ namespace Library.Combat
         [SerializeField]  private float ammo;
         [SerializeField]  private TextMeshProUGUI ammoCountDisplay;
         public List<ParticleCollisionEvent> collisionEvents;
+        private bool soundPlaying;
 
         private void Start()
         {
@@ -38,7 +40,22 @@ namespace Library.Combat
             o.transform.localScale = localScale;
             ammoCountDisplay.text = Mathf.Round(ammo).ToString(CultureInfo.CurrentCulture);
             var flameFxMain = flameFx.main;
-            flameFxMain.maxParticles = Input.GetMouseButton(0) ? 130 : 0;
+            if (Input.GetMouseButton(0))
+            {
+                flameFxMain.maxParticles = 130;
+                if (!soundPlaying)
+                {
+                    SoundManager.Instance.PlaySound("Flame");
+                    soundPlaying = true;
+                }
+            }
+            else
+            {
+                 flameFxMain.maxParticles = 0;
+                 SoundManager.Instance.PlaySound("Stop");
+                 soundPlaying = false;
+            }
+
             if (flameFxMain.maxParticles != 0)
             {
                 ammo -= ammoConsumptionPerSecond * Time.deltaTime;

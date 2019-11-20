@@ -19,7 +19,7 @@ namespace Library.Combat.Enemy
         public List<Transform> wayPointList;
         [HideInInspector] public int nextWayPoint;
 
-        private bool _aiActive;
+        public bool _aiActive;
 
         private void Awake()
         {

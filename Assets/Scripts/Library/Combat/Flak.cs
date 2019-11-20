@@ -1,5 +1,6 @@
 ﻿using System;
 using Library.Combat.Enemy;
+using Library.Tools;
 using UnityEngine;
 
 namespace Library.Combat
@@ -8,10 +9,17 @@ namespace Library.Combat
     {
         public float radius = 5;
         public float damage;
+        public AudioSource explosion;
+
+        private void Start()
+        {
+            explosion = GameObject.Find("---PLAYER---/Sounds/ExplosionSound").GetComponent<AudioSource>();
+        }
 
         private void OnCollisionEnter(Collision other)
         {
             AreaDamageEnemies(other.GetContact(0).point, radius, damage);
+            explosion.Play();
         }
 
         private static void AreaDamageEnemies(Vector3 location, float area, float hitDamage)
