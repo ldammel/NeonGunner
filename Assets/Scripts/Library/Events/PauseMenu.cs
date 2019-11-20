@@ -77,7 +77,7 @@ namespace Library.Events
                 case "gottagofast":
                     if (!changedSpeed)
                     {
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed = 7;
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().maxSpeed;
                         NotificationManager.Instance.SetNewNotification("Speed Up!", 3);
                         SoundManager.Instance.PlaySound("Enabled");
                         changedSpeed = true;

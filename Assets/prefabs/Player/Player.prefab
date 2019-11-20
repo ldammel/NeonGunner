@@ -43,6 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212256458}
+  - component: {fileID: 1180333416}
   m_Layer: 0
   m_Name: Nearpoint Wagon 1 -1 Right
   m_TagString: NearPoint
@@ -64,6 +65,20 @@ Transform:
   m_Father: {fileID: 3219575322381779871}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180333416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212256457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
+  pointObj: {fileID: 212256457}
 --- !u!1 &609103736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,6 +1736,7 @@ GameObject:
   - component: {fileID: 8156611866320049010}
   - component: {fileID: 441555972}
   - component: {fileID: 7650687540804336181}
+  - component: {fileID: 201823361}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1846,6 +1862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  maxSpeed: 5
   path: {fileID: 0}
   endOfPathInstruction: 0
   dist: 0
@@ -1884,6 +1901,102 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!82 &201823361
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349057424754517737}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 44237392e57cfca4fb00bc53d28569ab, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.34
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &349057424901002813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,8 +2678,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ebbb76687aed540ab385f72bcb3713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8316347139329622347, guid: b6688555abdb53d439e2da5a8711b167,
-    type: 3}
+  enemyPrefab:
+  - {fileID: 8316347139329622347, guid: b6688555abdb53d439e2da5a8711b167, type: 3}
+  - {fileID: 8316347139329622347, guid: 7ac450c2d88115845a10377784db9b41, type: 3}
   spawnPoints:
   - {fileID: 2578261108494080794}
   - {fileID: 1880902386851148355}
@@ -2579,7 +2693,7 @@ MonoBehaviour:
   - {fileID: 6559170557229007212}
   - {fileID: 6238851228948190626}
   rootObj: {fileID: 0}
-  spawnAmount: 3
+  spawnAmount: 1
 --- !u!1 &685440633695313754
 GameObject:
   m_ObjectHideFlags: 0
@@ -7611,6 +7725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 580022935758300951}
+  - component: {fileID: 1473136488}
   m_Layer: 0
   m_Name: Nearpoint Wagon 1 -2 Right
   m_TagString: NearPoint
@@ -7632,6 +7747,20 @@ Transform:
   m_Father: {fileID: 3219575322381779871}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1473136488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433469680699539513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
+  pointObj: {fileID: 5433469680699539513}
 --- !u!1 &5449825779278740040
 GameObject:
   m_ObjectHideFlags: 0
@@ -9889,6 +10018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3159270361166649519}
+  - component: {fileID: 1448693835}
   m_Layer: 0
   m_Name: Nearpoint Wagon 1 -1 Left
   m_TagString: NearPoint
@@ -9910,6 +10040,20 @@ Transform:
   m_Father: {fileID: 3219575322381779871}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448693835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644504356646654494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
+  pointObj: {fileID: 7644504356646654494}
 --- !u!1 &7652585900059722025
 GameObject:
   m_ObjectHideFlags: 0
@@ -10774,6 +10918,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7508641761611839279}
+  - component: {fileID: 2129007825}
   m_Layer: 0
   m_Name: Nearpoint Wagon 1 -2 Left
   m_TagString: NearPoint
@@ -10795,6 +10940,20 @@ Transform:
   m_Father: {fileID: 3219575322381779871}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2129007825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496866251969841943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  pointObj: {fileID: 8496866251969841943}
 --- !u!1 &8559530558376154917
 GameObject:
   m_ObjectHideFlags: 0
@@ -11754,9 +11913,9 @@ PrefabInstance:
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2e8413438f79464aa69948979b150a8, type: 3}
---- !u!1 &4468374337901945822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: b2e8413438f79464aa69948979b150a8,
+--- !u!198 &4468374337920072382 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8,
     type: 3}
   m_PrefabInstance: {fileID: 4468374337901847932}
   m_PrefabAsset: {fileID: 0}
@@ -11766,9 +11925,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4468374337901847932}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &4468374337920072382 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19800002, guid: b2e8413438f79464aa69948979b150a8,
+--- !u!1 &4468374337901945822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: b2e8413438f79464aa69948979b150a8,
     type: 3}
   m_PrefabInstance: {fileID: 4468374337901847932}
   m_PrefabAsset: {fileID: 0}

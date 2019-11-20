@@ -25,6 +25,8 @@ namespace Library.Character
         private float _speedSmoothVelocity = 0f;
         private float _currentSpeed = 0f;
 
+        private Rigidbody rb;
+
         private static readonly int HashSpeedPercentage = Animator.StringToHash("SpeedPercentage");
 
         private void Start()
@@ -32,10 +34,12 @@ namespace Library.Character
             _controller = GetComponent<CharacterController>();
             _animator = GetComponent<Animator>();
             if (Camera.main != null) _mainCameraTransform = Camera.main.transform;
+            rb = gameObject.GetComponent<Rigidbody>();
         }
 
         private void Update()
         {
+            rb.isKinematic = PauseMenu.Instance.pauseActive;
             Move();
         }
 

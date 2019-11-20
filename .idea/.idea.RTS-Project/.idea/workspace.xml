@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/MovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/MovementController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Combat/AI/Waypoint.cs" />
         <option value="$PROJECT_DIR$/Assets/AimController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ActivateWave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/HealthText.cs" />
@@ -114,7 +122,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Keybindings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/QuickTimeTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" />
@@ -127,11 +134,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/ScoreText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/DifficultySelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/UpgradeUIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
@@ -139,10 +144,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemySpawnController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/MovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemySpawnController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
       </list>
     </option>
   </component>
@@ -210,7 +219,7 @@
       <workItem from="1574071238207" duration="4411000" />
       <workItem from="1574085184419" duration="5366000" />
       <workItem from="1574159326277" duration="8629000" />
-      <workItem from="1574243906873" duration="3461000" />
+      <workItem from="1574243906873" duration="9234000" />
     </task>
     <servers />
   </component>

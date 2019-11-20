@@ -9,6 +9,7 @@ namespace Library.Combat.Enemy
     [CreateAssetMenu(fileName = "Patrol", menuName = "AI/Actions/Patrol")]
     public class PatrolAction : Action
     {
+        public WaypointMovement _mov;
         public override void Act(StateController controller)
         {
             Patrol(controller);
@@ -38,8 +39,7 @@ namespace Library.Combat.Enemy
                 {
                     if (!controller.setSpeed)
                     {
-                     GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed -= 1;
-                     controller.setSpeed = true;
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(-1);
                     }
                     controller.gameObject.transform.parent = controller.wayPointList[controller.nextWayPoint];
                     controller.gameObject.transform.position = controller.wayPointList[controller.nextWayPoint].position;

@@ -9,10 +9,14 @@ namespace Library.Character
     public class WaypointMovement : MonoBehaviour
     {
         public float speed;
+        public float maxSpeed;
         public PathCreator path;
         public EndOfPathInstruction endOfPathInstruction;
         public float dist;
         private bool _active;
+        public float reducedSpeed;
+
+        private Rigidbody rb;
 
         public void Start()
         {
@@ -20,10 +24,15 @@ namespace Library.Character
             {
                 path.pathUpdated += OnPathChanged;
             }
+
+            speed = 4;
+            reducedSpeed = speed;
+            rb = gameObject.GetComponent<Rigidbody>();
         }
 
         private void Update()
         {
+            rb.isKinematic = PauseMenu.Instance.pauseActive;
             if (PauseMenu.Instance.pauseActive) return;
             if (path == null) return;
             dist += speed * Time.deltaTime; 
@@ -33,10 +42,25 @@ namespace Library.Character
             {
                 transform.Rotate(0,0,90);
             }
+            if(speed > reducedSpeed)
+            {
+                speed -= 0.5f * Time.deltaTime;
+            }
+            else if (speed < reducedSpeed)
+            {
+                speed += 0.5f * Time.deltaTime;
+            }
+            
         }
         public void OnPathChanged() {
             dist = path.path.GetClosestDistanceAlongPath(transform.position);
         }
-        
+
+        public void SetSpeed(float amount)
+        {
+            reducedSpeed += amount;
+            if (reducedSpeed <= 0) reducedSpeed = 0;
+        }
+
     }
 }

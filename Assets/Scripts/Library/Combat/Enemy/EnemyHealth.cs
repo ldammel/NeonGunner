@@ -52,9 +52,9 @@ namespace Library.Combat.Enemy
             if (!(curHealth <= 0) || player) return;
             curHealth = 0;
             if(wp != null && wp.active) wp.active = false;
-            if (gameObject.GetComponent<StateController>().setSpeed)
+            if (!gameObject.GetComponent<StateController>().enabled)
             {
-                ResetSpeed();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(1);
             }
 
             EnemySpawnController.killedEnemies++;
@@ -68,7 +68,7 @@ namespace Library.Combat.Enemy
             PauseMenu.Instance.pauseActive = true;
             LevelManager.Instance.failScreen.SetActive(true);
             LevelEnd.Instance.CalculateReward(1);
-            gameObject.GetComponent<WaypointMovement>().speed = 4;
+            gameObject.GetComponent<WaypointMovement>().speed = gameObject.GetComponent<WaypointMovement>().maxSpeed;
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
             curHealth = maxHealth;
         }
@@ -78,11 +78,6 @@ namespace Library.Combat.Enemy
             curHealth -= damage;
             var currentHealthPct = curHealth / maxHealth;
             OnHealthPctChanged(currentHealthPct);
-        }
-
-        private void ResetSpeed()
-        {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed += 1;
         }
     }
 }

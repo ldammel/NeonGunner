@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Library.AI;
+using Library.Character;
 using Library.Events;
 using UnityEngine;
 using UnityEngine.AI;
@@ -24,7 +25,6 @@ namespace Library.Combat.Enemy
         public bool _aiActive;
         [HideInInspector]
         public bool setSpeed;
-
         private void Awake()
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
