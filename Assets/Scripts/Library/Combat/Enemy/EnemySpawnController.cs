@@ -5,7 +5,7 @@ namespace Library.Combat.Enemy
 {
     public class EnemySpawnController : MonoBehaviour
     {
-        [SerializeField] private GameObject enemyPrefab;
+        [SerializeField] private GameObject[] enemyPrefab;
         [SerializeField] private Transform[] spawnPoints;
         [SerializeField] private Transform rootObj;
         public ushort spawnAmount;
@@ -20,7 +20,7 @@ namespace Library.Combat.Enemy
 
         private void Update()
         {
-            if (killedEnemies < spawnAmount * spawnPoints.Length) return;
+            if (killedEnemies < spawnAmount * spawnPoints.Length*2) return;
             SpawnEnemys(spawnAmount);
             killedEnemies = 0;
         }
@@ -29,9 +29,10 @@ namespace Library.Combat.Enemy
         {
             for (int i = 0; i < count; i++)
             {
-                for (int j = 0; j < spawnPoints.Length; j++)
+                foreach (var t in spawnPoints)
                 {
-                    Instantiate(enemyPrefab,spawnPoints[j].position, Quaternion.identity, rootObj);
+                    Instantiate(enemyPrefab[0],t.position, Quaternion.identity, rootObj);
+                    Instantiate(enemyPrefab[1],t.position, Quaternion.identity, rootObj);
                 }
             }
         }

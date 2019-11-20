@@ -18,8 +18,12 @@ namespace Library.Combat.Enemy
         [HideInInspector] public NavMeshAgent navMeshAgent;
         public List<Transform> wayPointList;
         [HideInInspector] public int nextWayPoint;
+        public string waypointName;
+        public bool isMelee;
 
         public bool _aiActive;
+        [HideInInspector]
+        public bool setSpeed;
 
         private void Awake()
         {
@@ -33,12 +37,13 @@ namespace Library.Combat.Enemy
             wayPointList = wayPoints;
             _aiActive = aiActivation;
             navMeshAgent.enabled = _aiActive;
+            setSpeed = false;
         }
 
         private void Update()
         {
             if (!_aiActive) return;
-            var go = GameObject.FindGameObjectsWithTag("FarPoint");
+            var go = GameObject.FindGameObjectsWithTag(waypointName);
             for (int i = 0; i < wayPointList.Count; i++)
             {
                 foreach (var t in go)

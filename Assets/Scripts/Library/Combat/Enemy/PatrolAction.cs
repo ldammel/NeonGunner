@@ -1,4 +1,5 @@
 ﻿using Library.AI;
+using Library.Character;
 using Library.Combat.Pooling;
 using Library.Events;
 using UnityEngine;
@@ -27,9 +28,26 @@ namespace Library.Combat.Enemy
             }
             else
             {
-                controller.gameObject.GetComponentInChildren<BulletPooled>().canFire = true;
-                controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().active = true;
-                controller.eh.wp = controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>();
+                if (!controller.isMelee)
+                {
+                    controller.gameObject.GetComponentInChildren<BulletPooled>().canFire = true;
+                    controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().active = true;
+                    controller.eh.wp = controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>();
+                }
+                else
+                {
+                    if (!controller.setSpeed)
+                    {
+                     GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed -= 1;
+                     controller.setSpeed = true;
+                    }
+                    controller.gameObject.transform.parent = controller.wayPointList[controller.nextWayPoint];
+                    controller.gameObject.transform.position = controller.wayPointList[controller.nextWayPoint].position;
+                    controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().active = true;
+                    controller.eh.wp = controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>();
+                    controller.navMeshAgent.enabled = false;
+                    controller.enabled = false;
+                }
             }
         }
     }

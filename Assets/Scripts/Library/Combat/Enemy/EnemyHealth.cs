@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Library.AI;
+using Library.Character;
 using Library.Character.Upgrades;
 using Library.Combat.Pooling;
 using Library.Data;
@@ -41,26 +42,34 @@ namespace Library.Combat.Enemy
             {
                 curHealth = maxHealth;
             }
-
-            if (curHealth <= 0)
+            if(player)
             {
-                curHealth = 0;
-                if (player)
+                if (gameObject.GetComponent<WaypointMovement>().speed <= 0 || curHealth <= 0)
                 {
-                    PauseMenu.Instance.pauseActive = true;
-                    LevelManager.Instance.failScreen.SetActive(true);
-                    LevelEnd.Instance.CalculateReward(1);
-                    curHealth = 1;
-                }
-                else
-                {
-                    if(wp != null && wp.active) wp.active = false;
-                    EnemySpawnController.killedEnemies++;
-                    EnemySpawnController.totalKills++;
-                    Instantiate(deathSound);
-                    Destroy(gameObject);
+                    PlayerDeath();
                 }
             }
+            if (!(curHealth <= 0) || player) return;
+            curHealth = 0;
+            if(wp != null && wp.active) wp.active = false;
+            if (gameObject.GetComponent<StateController>().setSpeed)
+            {
+                ResetSpeed();
+            }
+
+            EnemySpawnController.killedEnemies++;
+            EnemySpawnController.totalKills++;
+            Instantiate(deathSound);
+            Destroy(gameObject);
+        }
+
+        private void PlayerDeath()
+        {
+            gameObject.GetComponent<WaypointMovement>().speed = 4;
+            curHealth = maxHealth;
+            PauseMenu.Instance.pauseActive = true;
+            LevelManager.Instance.failScreen.SetActive(true);
+            LevelEnd.Instance.CalculateReward(1);
         }
 
         public void TakeDamage(float damage)
@@ -68,6 +77,11 @@ namespace Library.Combat.Enemy
             curHealth -= damage;
             var currentHealthPct = curHealth / maxHealth;
             OnHealthPctChanged(currentHealthPct);
+        }
+
+        private void ResetSpeed()
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed += 1;
         }
     }
 }
