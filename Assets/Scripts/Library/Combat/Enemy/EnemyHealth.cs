@@ -65,11 +65,12 @@ namespace Library.Combat.Enemy
 
         private void PlayerDeath()
         {
-            gameObject.GetComponent<WaypointMovement>().speed = 4;
-            curHealth = maxHealth;
             PauseMenu.Instance.pauseActive = true;
             LevelManager.Instance.failScreen.SetActive(true);
             LevelEnd.Instance.CalculateReward(1);
+            gameObject.GetComponent<WaypointMovement>().speed = 4;
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            curHealth = maxHealth;
         }
 
         public void TakeDamage(float damage)
