@@ -77,14 +77,14 @@ namespace Library.Events
                 case "gottagofast":
                     if (!changedSpeed)
                     {
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().maxSpeed;
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(2);
                         NotificationManager.Instance.SetNewNotification("Speed Up!", 3);
                         SoundManager.Instance.PlaySound("Enabled");
                         changedSpeed = true;
                     }
                     else
                     {
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed = _speed;
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(-2);
                         NotificationManager.Instance.SetNewNotification("Slow Down!", 3);
                         SoundManager.Instance.PlaySound("Disabled");
                         changedSpeed = false;
@@ -92,7 +92,7 @@ namespace Library.Events
                     return;
                 case "kamikaze":
                     NotificationManager.Instance.SetNewNotification("KAMIKAZEE!", 3);
-                    GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<EnemySpawnController>().SpawnEnemys(8);
+                    GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<EnemySpawnController>().SpawnEnemies(8);
                     SoundManager.Instance.PlaySound("Enabled");
                     return;
                 default:

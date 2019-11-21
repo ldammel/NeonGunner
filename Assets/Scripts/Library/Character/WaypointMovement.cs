@@ -20,13 +20,12 @@ namespace Library.Character
 
         public void Start()
         {
+            reducedSpeed = speed;
+            speed = 3;
             if (path != null)
             {
                 path.pathUpdated += OnPathChanged;
             }
-
-            speed = 4;
-            reducedSpeed = speed;
             rb = gameObject.GetComponent<Rigidbody>();
         }
 
@@ -44,11 +43,11 @@ namespace Library.Character
             }
             if(speed > reducedSpeed)
             {
-                speed -= 0.5f * Time.deltaTime;
+                speed -= 1f * Time.deltaTime;
             }
             else if (speed < reducedSpeed)
             {
-                speed += 0.5f * Time.deltaTime;
+                speed += 1f * Time.deltaTime;
             }
             
         }
@@ -60,6 +59,7 @@ namespace Library.Character
         {
             reducedSpeed += amount;
             if (reducedSpeed <= 0) reducedSpeed = 0;
+            if (reducedSpeed >= maxSpeed) reducedSpeed = maxSpeed;
         }
 
     }

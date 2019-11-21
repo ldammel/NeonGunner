@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6697611754318035365}
   - component: {fileID: 6697611754318035364}
-  - component: {fileID: 4556407185589659478}
   m_Layer: 0
   m_Name: DeathSound
   m_TagString: Untagged
@@ -44,7 +43,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cf7f3a5106537c44ab731b1b07ad0d8c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.171
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -128,18 +127,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4556407185589659478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6697611754318035362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 053f2c6132bd0d041b4de87a28fae156, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyTime: 3
-  soundName: 
-  destroy: 1

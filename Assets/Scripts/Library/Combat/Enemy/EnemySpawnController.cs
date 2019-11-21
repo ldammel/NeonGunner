@@ -15,24 +15,30 @@ namespace Library.Combat.Enemy
 
         private void Start()
         {
-            SpawnEnemys(spawnAmount);
+           // SpawnEnemies(spawnAmount);
         }
 
         private void Update()
         {
-            if (killedEnemies < spawnAmount * spawnPoints.Length*2) return;
-            SpawnEnemys(spawnAmount);
-            killedEnemies = 0;
+           //if (killedEnemies < spawnAmount * spawnPoints.Length) return;
+          //  SpawnEnemies(spawnAmount);
+          //  killedEnemies = 0;
         }
 
-        public void SpawnEnemys(ushort count)
+        private void OnTriggerEnter(Collider other)
+        {
+            if (!other.CompareTag("Player")) return;
+            SpawnEnemies(spawnAmount);
+
+        }
+
+        public void SpawnEnemies(ushort count)
         {
             for (int i = 0; i < count; i++)
             {
                 foreach (var t in spawnPoints)
                 {
                     Instantiate(enemyPrefab[0],t.position, Quaternion.identity, rootObj);
-                    Instantiate(enemyPrefab[1],t.position, Quaternion.identity, rootObj);
                 }
             }
         }

@@ -1,7 +1,5 @@
-﻿using System;
+﻿
 using Library.Character;
-using Library.Tools;
-using NaughtyAttributes.Editor;
 using UnityEngine;
 
 namespace Library.UI

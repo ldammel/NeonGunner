@@ -22,8 +22,8 @@ MonoBehaviour:
   mgUpgradeCostMultiplier: 2
   mgFireRateUpgrade: 2
   flakDamage: 100
-  flakRange: 2
-  flakDamageRadius: 5
+  flakRange: 0.5
+  flakDamageRadius: 2
   flakFireRate: 1
   flakMaxUpgradeLevel: 2
   flakUpgradeCost: 500
@@ -44,5 +44,5 @@ MonoBehaviour:
   enemyHealth: 100
   enemyDamage: 10
   enemyAttackSpeed: 1
-  enemyMoveSpeed: 30
+  enemyMoveSpeed: 45
   enemyRange: 10

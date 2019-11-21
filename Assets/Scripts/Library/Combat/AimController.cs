@@ -18,6 +18,7 @@ namespace Library.Combat
     private Camera _mainCamera;
     public Ray crossHairRay;
 
+
     private void Start() {
 
         _mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();

@@ -26,12 +26,13 @@ namespace Library.Combat.Enemy
 
         public bool godMode;
 
-        public GameObject deathSound;
+        public AudioSource deathSound;
 
         public event Action<float> OnHealthPctChanged = delegate{  };    
         
         private void Start()
         {
+            deathSound = GameObject.Find("---PLAYER---/Sounds/DeathSound").GetComponent<AudioSource>();
             _startPos = transform.position;
             curHealth = maxHealth;
         }
@@ -59,7 +60,11 @@ namespace Library.Combat.Enemy
 
             EnemySpawnController.killedEnemies++;
             EnemySpawnController.totalKills++;
-            Instantiate(deathSound);
+            if (!deathSound.isPlaying)
+            {
+                deathSound.Play();
+            }
+
             Destroy(gameObject);
         }
 

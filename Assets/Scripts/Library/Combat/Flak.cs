@@ -16,15 +16,17 @@ namespace Library.Combat
             explosion = GameObject.Find("---PLAYER---/Sounds/ExplosionSound").GetComponent<AudioSource>();
         }
 
+
         private void OnCollisionEnter(Collision other)
         {
             AreaDamageEnemies(other.GetContact(0).point, radius, damage);
-            explosion.Play();
         }
 
-        private static void AreaDamageEnemies(Vector3 location, float area, float hitDamage)
+        public void AreaDamageEnemies(Vector3 location, float area, float hitDamage)
         {
+            explosion.Play();
             var objects = Physics.OverlapSphere(location, area);
+            if (objects.Length == 0) return;
             foreach (var col in objects)
             {
                 var enemy = col.GetComponent<EnemyHealth>();

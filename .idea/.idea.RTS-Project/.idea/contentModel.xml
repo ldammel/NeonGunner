@@ -234,6 +234,7 @@
                 <e p="BulletShot.cs" t="Include" />
                 <e p="BulletShotPool.cs" t="Include" />
               </e>
+              <e p="RocketStrike.cs" t="Include" />
             </e>
             <e p="Data" t="Include">
               <e p="GameSaveManager.cs" t="Include" />
@@ -282,6 +283,7 @@
               <e p="HealthText.cs" t="Include" />
               <e p="NotificationManager.cs" t="Include" />
               <e p="NotificationTrigger.cs" t="Include" />
+              <e p="RocketStrikeUI.cs" t="Include" />
               <e p="ScoreText.cs" t="Include" />
               <e p="SpeedDisplay.cs" t="Include" />
               <e p="UIManager.cs" t="Include" />

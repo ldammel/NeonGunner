@@ -31,7 +31,7 @@ namespace Library.Combat.Pooling
 
             if (isEnemy)
             {
-                if (!canFire) return;
+                //if (!canFire) return;
                 if (_fireTimer >= fireRate)
                 {
                     gameObject.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
