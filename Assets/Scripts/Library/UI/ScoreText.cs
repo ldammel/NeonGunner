@@ -6,15 +6,19 @@ namespace Library.UI
 {
     public class ScoreText : MonoBehaviour
     {
-        public TextMeshProUGUI text;
+        [SerializeField]
+        private TextMeshProUGUI text;
+        [SerializeField]
+        private ushort neededAmount;
 
         private ushort score;
+        
 
         // Update is called once per frame
         void Update()
         {
             score = EnemySpawnController.totalKills;
-            text.text = score + " Enemys Killed";
+            text.text = score + " / " + neededAmount;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Data.Missions;
 using UnityEngine;
 
 namespace Library.Combat.Enemy
@@ -8,22 +9,9 @@ namespace Library.Combat.Enemy
         [SerializeField] private GameObject[] enemyPrefab;
         [SerializeField] private Transform[] spawnPoints;
         [SerializeField] private Transform rootObj;
-        public ushort spawnAmount;
-
+        [SerializeField] private ushort spawnAmount;
         public static ushort killedEnemies;
         public static ushort totalKills;
-
-        private void Start()
-        {
-           // SpawnEnemies(spawnAmount);
-        }
-
-        private void Update()
-        {
-           //if (killedEnemies < spawnAmount * spawnPoints.Length) return;
-          //  SpawnEnemies(spawnAmount);
-          //  killedEnemies = 0;
-        }
 
         private void OnTriggerEnter(Collider other)
         {

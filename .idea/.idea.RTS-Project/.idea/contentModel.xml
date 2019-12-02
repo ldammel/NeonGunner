@@ -239,6 +239,10 @@
             <e p="Data" t="Include">
               <e p="GameSaveManager.cs" t="Include" />
               <e p="LevelManager.cs" t="Include" />
+              <e p="Missions" t="Include">
+                <e p="Mission.cs" t="Include" />
+                <e p="MissionController.cs" t="Include" />
+              </e>
             </e>
             <e p="Events" t="Include">
               <e p="BaseEvents" t="Include">
