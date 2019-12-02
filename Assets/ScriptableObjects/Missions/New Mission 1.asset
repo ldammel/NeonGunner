@@ -9,14 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b33591e722c19c048876f9b6271f2ecc, type: 3}
-  m_Name: Currency
+  m_Script: {fileID: 11500000, guid: ab36ae9968a6fa94cb4e280e9d1e1c0f, type: 3}
+  m_Name: New Mission 1
   m_EditorClassIdentifier: 
   Name: 
   BaseValue: 0
-  currentCurrency: 85
-  flakLevel: 0
-  flameLevel: 0
-  mgLevel: 1
-  flakActive: 0
-  flameActive: 1
+  missionDescription: Kill Enemies
+  missionGoal: 50
+  reward: 2000
+  active: 1
+  missionType: 0

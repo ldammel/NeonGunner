@@ -9,10 +9,10 @@ namespace Library.Data.Missions
     {
         public string missionDescription;
         public int missionGoal;
-        public string currentMissionStatus;
         public ushort reward;
+        public bool active;
 
-        [Dropdown("Rarity")]public MissionType missionType;
+        [Dropdown("MissionType")]public MissionType missionType;
         public enum MissionType
         {
             Kill,

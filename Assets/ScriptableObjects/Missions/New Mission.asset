@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   BaseValue: 0
-  missionDescription: 'Kill 100 Enemies:'
-  missionGoal: 100
-  currentMissionStatus: 0
+  missionDescription: Kill Enemies
+  missionGoal: 25
   reward: 1000
+  active: 1
+  missionType: 0

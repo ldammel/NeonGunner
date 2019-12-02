@@ -37,13 +37,14 @@ namespace Library.Data.Missions
             {
                 if (missionDisplay[i] == null || progressDisplay[i] == null) return;
                 missionDisplay[i].text = missions[i].missionDescription;
-                if (missions[i].missionType == Mission.MissionType.Kill)
+                missionDisplay[i].gameObject.SetActive(missions[i].active);
+                progressDisplay[i].gameObject.SetActive(missions[i].active);
+                if (missions[i].missionType == Mission.MissionType.Kill && missions[i].active)
                 {
-                progressDisplay[i].text =EnemySpawnController.killedEnemies + " / " + missions[i].missionGoal;
-                    if (EnemySpawnController.killedEnemies >= missions[i].missionGoal)
-                    {
-                        currency.currentCurrency += missions[i].reward;
-                    }
+                    progressDisplay[i].text =EnemySpawnController.killedEnemies + " / " + missions[i].missionGoal;
+                    if (EnemySpawnController.killedEnemies < missions[i].missionGoal) continue;
+                    currency.currentCurrency += missions[i].reward;
+                    missions[i].active = false;
                 }
             }
         }
