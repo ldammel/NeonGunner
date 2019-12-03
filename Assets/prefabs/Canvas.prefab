@@ -3406,7 +3406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -5.2999268, y: -5.5007}
+  m_AnchoredPosition: {x: -5.2998047, y: -5.5007}
   m_SizeDelta: {x: 271.8, y: 326.8}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &5093177426988121145
@@ -3678,7 +3678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kill 100 Enemies:'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3747,13 +3747,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.079964, w: 0}
   m_textInfo:
     textComponent: {fileID: 7737176074365273623}
-    characterCount: 17
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4499,7 +4499,6 @@ GameObject:
   - component: {fileID: 7937902088836111788}
   - component: {fileID: 7076239608702561686}
   - component: {fileID: 1797881338476261378}
-  - component: {fileID: 4337585204710102926}
   m_Layer: 5
   m_Name: KilledEnemies (1)
   m_TagString: Untagged
@@ -4552,7 +4551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2000/500
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4621,13 +4620,13 @@ MonoBehaviour:
   m_margin: {x: 0.023213385, y: 0, z: 1.0097125, w: 0.050075177}
   m_textInfo:
     textComponent: {fileID: 1797881338476261378}
-    characterCount: 8
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 2
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4644,20 +4643,6 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4337585204710102926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3430325819285036841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d8d9bf390aa92540ada306eed2752fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1797881338476261378}
-  neededAmount: 200
 --- !u!1 &3492517424226875104
 GameObject:
   m_ObjectHideFlags: 0
@@ -8069,7 +8054,6 @@ GameObject:
   - component: {fileID: 5533721278548760833}
   - component: {fileID: 5533721278548760846}
   - component: {fileID: 5533721278548760847}
-  - component: {fileID: 5533721278548760832}
   m_Layer: 5
   m_Name: KilledEnemies
   m_TagString: Untagged
@@ -8122,7 +8106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2000/500
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8191,13 +8175,13 @@ MonoBehaviour:
   m_margin: {x: 0.023213385, y: 0, z: 1.0097125, w: 0.050075177}
   m_textInfo:
     textComponent: {fileID: 5533721278548760847}
-    characterCount: 8
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 2
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -8214,20 +8198,6 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5533721278548760832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5533721278548760834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d8d9bf390aa92540ada306eed2752fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 5533721278548760847}
-  neededAmount: 200
 --- !u!1 &5533721278569311297
 GameObject:
   m_ObjectHideFlags: 0
@@ -9363,7 +9333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 23.999878, y: 447.54}
+  m_AnchoredPosition: {x: 24, y: 447.54}
   m_SizeDelta: {x: 75.02, y: 279.43}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &5533721279192096742
@@ -12049,7 +12019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kill 100 Enemies:'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12118,13 +12088,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.079964, w: 0}
   m_textInfo:
     textComponent: {fileID: 769585476468314606}
-    characterCount: 17
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -12568,7 +12538,6 @@ GameObject:
   - component: {fileID: 7324813231074157928}
   - component: {fileID: 4510523433804176996}
   - component: {fileID: 2070363928967308572}
-  - component: {fileID: 6326282334241244896}
   m_Layer: 5
   m_Name: KilledEnemies (2)
   m_TagString: Untagged
@@ -12621,7 +12590,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2000/500
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12690,13 +12659,13 @@ MonoBehaviour:
   m_margin: {x: 0.023213385, y: 0, z: 1.0097125, w: 0.050075177}
   m_textInfo:
     textComponent: {fileID: 2070363928967308572}
-    characterCount: 8
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 2
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -12713,20 +12682,6 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6326282334241244896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8349164266424492444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d8d9bf390aa92540ada306eed2752fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 2070363928967308572}
-  neededAmount: 200
 --- !u!1 &8466261191395163597
 GameObject:
   m_ObjectHideFlags: 0
@@ -12790,7 +12745,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kill 100 Enemies:'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12859,13 +12814,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -1.079964, w: 0}
   m_textInfo:
     textComponent: {fileID: 1229955633770564351}
-    characterCount: 17
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -13630,9 +13585,9 @@ PrefabInstance:
       objectReference: {fileID: 5533721279977921226}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b4b02b983ab2bd41a3f19af63a6f110, type: 3}
---- !u!1 &7856785726206423976 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2432879288525696343, guid: 2b4b02b983ab2bd41a3f19af63a6f110,
+--- !u!224 &7856785726670757967 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2432879288988466864, guid: 2b4b02b983ab2bd41a3f19af63a6f110,
     type: 3}
   m_PrefabInstance: {fileID: 5533721278233321215}
   m_PrefabAsset: {fileID: 0}
@@ -13642,9 +13597,9 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5533721278233321215}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &7856785726670757967 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2432879288988466864, guid: 2b4b02b983ab2bd41a3f19af63a6f110,
+--- !u!1 &7856785726206423976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2432879288525696343, guid: 2b4b02b983ab2bd41a3f19af63a6f110,
     type: 3}
   m_PrefabInstance: {fileID: 5533721278233321215}
   m_PrefabAsset: {fileID: 0}

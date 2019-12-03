@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab36ae9968a6fa94cb4e280e9d1e1c0f, type: 3}
-  m_Name: New Mission 2
+  m_Name: New Mission 3
   m_EditorClassIdentifier: 
   Name: 
   BaseValue: 0
-  index: 3
+  index: 4
   missionDescription: Kill Enemies
-  missionGoal: 72
+  missionGoal: 100
   reward: 5000
   active: 1
   missionType: 0

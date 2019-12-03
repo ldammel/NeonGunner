@@ -7,6 +7,7 @@ namespace Library.Data.Missions
     [CreateAssetMenu(menuName = "Mission", fileName = "New Mission")]
     public class Mission : BaseScriptableObject
     {
+        public int index;
         public string missionDescription;
         public int missionGoal;
         public ushort reward;

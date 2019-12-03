@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   BaseValue: 0
-  currentCurrency: 85
+  currentCurrency: 3000
   flakLevel: 0
   flameLevel: 0
-  mgLevel: 1
+  mgLevel: 0
   flakActive: 0
-  flameActive: 1
+  flameActive: 0

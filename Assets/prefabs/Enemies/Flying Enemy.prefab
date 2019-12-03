@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ed14d55ca63d841b2c8b76177c5081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
   curHealth: 100
   player: 0
   wp: {fileID: 0}
@@ -625,6 +625,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8316347139329622351}
     m_Modifications:
+    - target: {fileID: 100114, guid: c66da6f504dfb834fb236a922b603df4, type: 3}
+      propertyPath: m_Name
+      value: RedDragon
+      objectReference: {fileID: 0}
     - target: {fileID: 400114, guid: c66da6f504dfb834fb236a922b603df4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -680,10 +684,6 @@ PrefabInstance:
     - target: {fileID: 400114, guid: c66da6f504dfb834fb236a922b603df4, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 100114, guid: c66da6f504dfb834fb236a922b603df4, type: 3}
-      propertyPath: m_Name
-      value: RedDragon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c66da6f504dfb834fb236a922b603df4, type: 3}
