@@ -28,17 +28,9 @@ namespace Library.Data
 
                 private void Start()
                 {
-                        if (manager.selectedSlotOne == null)
-                        {
-                                SelectSlotOne(0);
-                        }
-                        else
-                        {
-                                SelectSlotOne(manager.selectedWeaponOne);
-                                if (manager.selectedSlotTwo == null) return;
-                                SelectSlotTwo(manager.selectedWeaponTwo);
-                        }
-
+                        SelectSlotOne(manager.selectedWeaponOne);
+                        if (manager.selectedSlotTwo == null) return;
+                        SelectSlotTwo(manager.selectedWeaponTwo);
                 }
 
                 private void Update()

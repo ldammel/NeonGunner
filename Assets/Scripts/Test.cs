@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Library.Combat;
 using Library.Combat.Pooling;
 using Library.Data;
@@ -24,6 +25,7 @@ public class Test : MonoBehaviour
         _cam = FindObjectOfType<CameraTransition>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        StartCoroutine(FirstTransition());
     }
 
     private void Update()
@@ -63,11 +65,16 @@ public class Test : MonoBehaviour
         for (int i = 0; i < gun.Length; i++)
         {
             if(gun[i] != null) gun[i].enabled = i == position;
-            //if(aim[i] != null) aim[i].enabled = i == position;
             if(bullet[i] != null) bullet[i].enabled = i == position;
             if(flame[i] != null) flame[i].SetActive(i == position);
             if(mg[i] != null) mg[i].enabled = i == position;
         }
+    }
+
+    IEnumerator FirstTransition()
+    {
+        yield return new WaitForSeconds(0.05f);
+        _cam.FirstTransition();
     }
 
 }

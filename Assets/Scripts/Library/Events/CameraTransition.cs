@@ -30,5 +30,18 @@ namespace Library.Events
             _lastVec = new Vector3(parents[_lastPos].transform.rotation.x,parents[_lastPos].transform.rotation.y,parents[_lastPos].transform.rotation.z);
             _lastPos = position;
         }
+
+        public void FirstTransition()
+        {
+            var transform1 = cam.transform;
+            _lastCamVec = new Vector3(transform1.rotation.x,transform1.rotation.y,transform1.rotation.z);
+            parents[0].eulerAngles = Vector3.zero;
+            transform1.position = positions[0].position;
+            transform1.eulerAngles = Vector3.zero;
+            transform1.parent = parents[0];
+            _newCamVec = _lastCamVec;
+            _lastVec = new Vector3(parents[0].transform.rotation.x,parents[0].transform.rotation.y,parents[0].transform.rotation.z);
+            _lastPos = 0;
+        }
     }
 }

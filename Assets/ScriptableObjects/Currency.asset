@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   BaseValue: 0
-  currentCurrency: 34050
+  currentCurrency: 53364
   flakLevel: 0
   flameLevel: 0
   mgLevel: 0
-  selectedSlotOne: {fileID: 0}
-  selectedSlotTwo: {fileID: 0}
-  selectedWeaponOne: 0
+  selectedSlotOne: {fileID: 826079500682482524, guid: ac115e4d0cee37d48ac4d2604c9fdf6b,
+    type: 3}
+  selectedSlotTwo: {fileID: 8515736470161167883, guid: 447158411e991ce4889d80cfe0603854,
+    type: 3}
+  selectedWeaponOne: 2
   selectedWeaponTwo: 0
   flakActive: 0
   flameActive: 0
