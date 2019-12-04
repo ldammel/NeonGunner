@@ -29,6 +29,7 @@ namespace Library.Combat
             var coll = flameFx.collision;
             coll.enabled = true;
             collisionEvents = new List<ParticleCollisionEvent>();
+            ammoCountDisplay = GameObject.Find("---UI---/Canvas/FlameAmmo").GetComponent<TextMeshProUGUI>();
 
         }
 

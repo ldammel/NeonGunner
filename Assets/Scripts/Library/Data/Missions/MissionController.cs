@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Library.Combat.Enemy;
+using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
 
@@ -22,12 +23,19 @@ namespace Library.Data.Missions
             Instance = this;
         }
 
-        [SerializeField]
-        private List<Mission> missions;
+        [BoxGroup("Currency")]
         [SerializeField]
         private CurrencyObject currency;
+        
+        [BoxGroup("Missions")]
+        [SerializeField]
+        private List<Mission> missions;
+        
+        [BoxGroup("Text Elements")]
         [SerializeField] 
         private List<TextMeshProUGUI> missionDisplay;
+        
+        [BoxGroup("Text Elements")]
         [SerializeField] 
         private List<TextMeshProUGUI> progressDisplay;
 
@@ -41,16 +49,21 @@ namespace Library.Data.Missions
             if (missions == null) return;
             for (int i = 0; i < missionDisplay.Count; i++)
             {
-                if (missionDisplay[i] == null || progressDisplay[i] == null) return;
-                missionDisplay[i].gameObject.SetActive(missions[i] != null);
-                progressDisplay[i].gameObject.SetActive(missions[i] != null);
-                if (missions[i] == null) continue;
-                missionDisplay[i].text = missions[i].missionDescription;
-                progressDisplay[i].text =EnemySpawnController.killedEnemies + " / " + missions[i].missionGoal;
-                if (EnemySpawnController.killedEnemies < missions[i].missionGoal) continue;
-                currency.currentCurrency += missions[i].reward;
-                RemoveMission(i);
+                UpdateMissions(i);
             }
+        }
+
+        private void UpdateMissions(int i)
+        {
+            if (missionDisplay[i] == null || progressDisplay[i] == null) return;
+            missionDisplay[i].gameObject.SetActive(missions[i] != null);
+            progressDisplay[i].gameObject.SetActive(missions[i] != null);
+            if (missions[i] == null) return;
+            missionDisplay[i].text = missions[i].missionDescription;
+            progressDisplay[i].text = EnemySpawnController.killedEnemies + " / " + missions[i].missionGoal;
+            if (EnemySpawnController.killedEnemies < missions[i].missionGoal) return;
+            currency.currentCurrency += missions[i].reward;
+            RemoveMission(i);
         }
 
         private void RemoveMission(int missionIndex)

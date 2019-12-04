@@ -19,6 +19,7 @@ namespace Library.Character.Upgrades
         [SerializeField] private Flamethrower flame;
         [SerializeField] private GameObject flameGameObject;
         [SerializeField] private ushort flamePrice;
+        [SerializeField] private GameObject mgGameObject;
         [SerializeField] private MachineGun mg;
         [SerializeField] private BulletPooled pool;
         [SerializeField] private TextMeshProUGUI currencyDisplay;
@@ -44,6 +45,9 @@ namespace Library.Character.Upgrades
         
         private void Start()
         {
+            mg = mgGameObject.GetComponentInChildren<MachineGun>();
+            flame = flameGameObject.GetComponentInChildren<Flamethrower>();
+            pool = flakGameObject.GetComponentInChildren<BulletPooled>();
             flak.radius = values.flakDamageRadius;
             pool.fireRate = values.flakFireRate;
             flak.damage = values.flakDamage;
@@ -69,10 +73,6 @@ namespace Library.Character.Upgrades
             flakBuyText.text = flakPrice.ToString();
             flameBuyText.text = flamePrice.ToString();
             currencyDisplay.text = upgrades.currentCurrency.ToString();
-            flakGameObject.SetActive(upgrades.flakActive);
-            flameGameObject.SetActive(upgrades.flameActive);
-            flakUpgradeButton.SetActive(upgrades.flakActive);
-            flameUpgradeButton.SetActive(upgrades.flameActive);
             flakBuyButton.SetActive(!upgrades.flakActive);
             flameBuyButton.SetActive(!upgrades.flameActive);
         }

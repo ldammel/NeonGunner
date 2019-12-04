@@ -10,21 +10,20 @@ public class Test : MonoBehaviour
 {
     private CameraTransition _cam;
 
-    [SerializeField] private GunMovement[] gun;
-    [SerializeField] private AimController[] aim;
-    [SerializeField] private BulletPooled bullet;
-    [SerializeField] private MachineGun mg;
-    [SerializeField] private GameObject flame;
-    [SerializeField] private CurrencyObject cur;
-    
+    public GunMovement[] gun;
+    public AimController[] aim;
+    public BulletPooled[] bullet;
+    public MachineGun[] mg;
+    public GameObject[] flame;
+    public CurrencyObject cur;
+    public Transform[] positions;
+    public Transform[] parents;
+
     private void Start()
     {
         _cam = FindObjectOfType<CameraTransition>();
-        flame.SetActive(false);
-        mg.enabled = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        Transition(2);
     }
 
     private void Update()
@@ -35,32 +34,40 @@ public class Test : MonoBehaviour
         }
         
         if (PauseMenu.Instance.pauseActive) return;
-        if (InputManager.Instance.KeyDown("flak")  && cur.flakActive)
+        if (InputManager.Instance.KeyDown("flak"))
         {
             Transition(0);
         }
-        else if (InputManager.Instance.KeyDown("flame") && cur.flameActive)
+        else if (InputManager.Instance.KeyDown("flame"))
         {
             Transition(1);
         }
-        else if (InputManager.Instance.KeyDown("mg"))
+        for (int i = 0; i < positions.Length; i++)
         {
-            Transition(2);
+            if (parents[i] == null) continue;
+            _cam.positions[i] = positions[i];
         }
 
+        for (int i = 0; i < parents.Length; i++)
+        {
+            if (parents[i] == null) continue;
+            _cam.parents[i] = parents[i];
+        }
     }
 
-    private void Transition(ushort position)
+    public void Transition(ushort position)
     {
+        _cam.parents[position] = parents[position];
+        _cam.positions[position] = positions[position];
         _cam.Transition(position);
         for (int i = 0; i < gun.Length; i++)
         {
-            gun[i].enabled = i == position;
-            aim[i].enabled = i == position;
+            if(gun[i] != null) gun[i].enabled = i == position;
+            //if(aim[i] != null) aim[i].enabled = i == position;
+            if(bullet[i] != null) bullet[i].enabled = i == position;
+            if(flame[i] != null) flame[i].SetActive(i == position);
+            if(mg[i] != null) mg[i].enabled = i == position;
         }
-        bullet.enabled = position == 0;
-        flame.SetActive(position == 1);
-        mg.enabled = position == 2;
     }
 
 }

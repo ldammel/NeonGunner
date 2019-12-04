@@ -11,7 +11,6 @@ namespace Library.Data.Missions
         public string missionDescription;
         public int missionGoal;
         public ushort reward;
-        public bool active;
 
         [Dropdown("MissionType")]public MissionType missionType;
         public enum MissionType

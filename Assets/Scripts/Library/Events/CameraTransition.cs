@@ -5,11 +5,9 @@ namespace Library.Events
 {
     public class CameraTransition : MonoBehaviour
     {
-        [SerializeField] private Camera cam;
-        
-        [SerializeField] private Transform[] positions;
-
-        [SerializeField] private Transform[] parents;
+        public Camera cam;
+        public Transform[] positions;
+        public Transform[] parents;
 
         private ushort _lastPos;
         private ushort _curPos;
@@ -17,11 +15,6 @@ namespace Library.Events
         private Vector3 _lastVec;
         private Vector3 _lastCamVec;
         private Vector3 _newCamVec;
-
-        private void Start()
-        {
-            _lastVec = new Vector3(parents[2].transform.rotation.x,parents[2].transform.rotation.y,parents[2].transform.rotation.z);
-        }
 
         public void Transition(ushort position)
         {

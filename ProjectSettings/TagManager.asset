@@ -14,6 +14,8 @@ TagManager:
   - Sign
   - Fail
   - Win
+  - CamTransition
+  - Crosshair
   layers:
   - Default
   - TransparentFX
