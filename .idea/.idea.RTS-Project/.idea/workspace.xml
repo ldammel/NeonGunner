@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flak.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flak.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,8 +165,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
       </list>
     </option>
   </component>
@@ -250,7 +242,7 @@
       <workItem from="1575367504420" duration="11165000" />
       <workItem from="1575449742986" duration="9158000" />
       <workItem from="1575471349960" duration="2703000" />
-      <workItem from="1575474266019" duration="1072000" />
+      <workItem from="1575474266019" duration="1808000" />
     </task>
     <servers />
   </component>

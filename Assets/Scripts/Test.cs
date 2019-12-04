@@ -75,6 +75,13 @@ public class Test : MonoBehaviour
     {
         yield return new WaitForSeconds(0.05f);
         _cam.FirstTransition();
+        for (int i = 0; i < gun.Length; i++)
+        {
+            if(gun[i] != null) gun[i].enabled = i == 0;
+            if(bullet[i] != null) bullet[i].enabled = i == 0;
+            if(flame[i] != null) flame[i].SetActive(i == 0);
+            if(mg[i] != null) mg[i].enabled = i == 0;
+        }
     }
 
 }
