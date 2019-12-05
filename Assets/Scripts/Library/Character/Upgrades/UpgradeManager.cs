@@ -45,6 +45,7 @@ namespace Library.Character.Upgrades
         
         private void Start()
         {
+            
             mg = mgGameObject.GetComponentInChildren<MachineGun>();
             flame = flameGameObject.GetComponentInChildren<Flamethrower>();
             pool = flakGameObject.GetComponentInChildren<BulletPooled>();
@@ -67,6 +68,8 @@ namespace Library.Character.Upgrades
 
         private void Update()
         {
+            flameUpgradeButton.SetActive(upgrades.flameActive);
+            flakUpgradeButton.SetActive(upgrades.flakActive);
             flakText.text = upgrades.flakLevel + " - Cost:" + values.flakUpgradeCost;
             flameText.text = upgrades.flameLevel + " - Cost:" + values.flameUpgradeCost;
             mgText.text = upgrades.mgLevel + " - Cost: " + values.mgUpgradeCost;
