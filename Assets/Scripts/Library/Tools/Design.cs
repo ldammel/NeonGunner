@@ -1,11 +1,10 @@
-﻿using System;
-using Library.Character;
+﻿using Library.Character;
 using Library.Character.ScriptableObjects;
 using Library.Character.Upgrades;
 using Library.Combat;
 using Library.Combat.Enemy;
 using UnityEngine;
-using NaughtyAttributes;
+using Sirenix.OdinInspector;
 
 namespace Library.Tools
 {
@@ -23,125 +22,152 @@ namespace Library.Tools
         }
         
         #region Script Components
-
+        [TabGroup("Required Objects")]
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
+        [DetailedInfoBox("Click for Info...",
+            "Values: Select the Object you want to Balance (Difficulty). \n\n" +
+                    "Once done with balancing, Select the 'SelectedDif' Object to play the game!")]
         [Required()] 
         public WeaponValues values;
+        
+        [TabGroup("Required Objects")]
+        [Tooltip("The Object containing the Currency Informations.")]
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
         [Required()]
         public CurrencyObject currency;
-        [Required()]
-        public UpgradeManager upgradeObject;
-        [Required()]
-        public GameObject flakPrefab;
-        [Required()]
-        public GameObject flyingEnemy;
-        [Required()]
-        public Flamethrower flame;
-        
+
         private GameObject _player;
         private WaypointMovement _playerSpeed;
         private EnemyHealth _playerHealth;
         #endregion
         
         #region Player Settings
-        
-        [BoxGroup("Player Settings")]
+        [TabGroup("Player Settings")]
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
         public float playerHealth;
-        [BoxGroup("Player Settings")]
+        [TabGroup("Player Settings")]
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
         public float playerSpeed;
-        [BoxGroup("Player Settings")] 
-        public ushort currencyGainPerEnemy;
+        [TabGroup("Player Settings")]
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
+        public float currencyGainPerEnemy;
         #endregion
         
         #region MG Settings
-        [BoxGroup("MG Settings")]
+        [TabGroup("Weapon Settings","MG Base Settings")]
+        [GUIColor(1, 0.6f, 0.4f)]
         public float mgDamage;
-        [BoxGroup("MG Settings")]
+        [TabGroup("Weapon Settings","MG Base Settings")]
+        [GUIColor(1, 0.6f, 0.4f)]
         public float mgRange;
-        [BoxGroup("MG Settings")]
+        [TabGroup("Weapon Settings","MG Base Settings")]
+        [GUIColor(1, 0.6f, 0.4f)]
         public float mgFireRate;
         
-        [BoxGroup("MG Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","MG Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort mgMaxUpgradeLevel;
-        [BoxGroup("MG Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","MG Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort mgUpgradeCost;
-        [BoxGroup("MG Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","MG Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort mgUpgradeCostMultiplier;
-        [BoxGroup("MG Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","MG Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public float mgFireRateUpgrade;
-        #endregion
+        #endregion 
         
         #region Flak Settings
-        [BoxGroup("Flak Settings")] 
+        [TabGroup("Weapon Settings","Flak Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flakDamage;
-        [BoxGroup("Flak Settings")] 
+        [TabGroup("Weapon Settings","Flak Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flakRange;
-        [BoxGroup("Flak Settings")] 
+        [TabGroup("Weapon Settings","Flak Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flakDamageRadius;
-        [BoxGroup("Flak Settings")] 
+        [TabGroup("Weapon Settings","Flak Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flakFireRate;
         
-        [BoxGroup(" Flak Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort flakMaxUpgradeLevel;
-        [BoxGroup(" Flak Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort flakUpgradeCost;
-        [BoxGroup(" Flak Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort flakUpgradeCostMultiplier;
-        [BoxGroup(" Flak Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public float flakFireRateUpgrade;
-        [BoxGroup(" Flak Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public float flakRadiusUpgrade;
         #endregion
         
         #region Flame Settings
-        [BoxGroup("Flamethrower Settings")] 
+        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flameDamage;
-        [BoxGroup("Flamethrower Settings")] 
+        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flameRange;
-        [BoxGroup("Flamethrower Settings")] 
+        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flameMaxAmmo;
-        [BoxGroup("Flamethrower Settings")] 
+        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flameAmmoConsumptionPerSecond;
-        [BoxGroup("Flamethrower Settings")] 
+        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flameAmmoRefreshPerSecond;
-        [BoxGroup("Flamethrower Settings")] 
+        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
+        [GUIColor(1, 0.6f, 0.4f)]
         public float flameSpread;
         
-        [BoxGroup(" Flamethrower Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort flameMaxUpgradeLevel;
-        [BoxGroup(" Flamethrower Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort flameUpgradeCost;
-        [BoxGroup(" Flamethrower Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public ushort flameUpgradeCostMultiplier;
-        [BoxGroup(" Flamethrower Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public float flameMaxAmmoUpgrade;
-        [BoxGroup(" Flamethrower Upgrade Settings")] 
+        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
+        [GUIColor(0, 1, 0)]
         public float flameSpreadUpgrade;
         #endregion
         
         #region Flying Enemy Settings
-        [BoxGroup("Flying Enemy Settings")] 
+        [TabGroup("Enemy Settings")] 
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
         public float enemyHealth;
-        [BoxGroup("Flying Enemy Settings")] 
+        [TabGroup("Enemy Settings")] 
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
         public float enemyDamage;
-        [BoxGroup("Flying Enemy Settings")] 
+        [TabGroup("Enemy Settings")] 
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
         public float enemyAttackSpeed;
-        [BoxGroup("Flying Enemy Settings")] 
+        [TabGroup("Enemy Settings")] 
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
         public float enemyMoveSpeed;
-        [BoxGroup("Flying Enemy Settings")] 
+        [TabGroup("Enemy Settings")] 
+        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
         public float enemyRange;
         #endregion
 
-        [Button("Reset Stats")]
+        [Button("Reset Stats On Scriptable Object",(ButtonSizes.Large))]
+        [GUIColor(0.4f, 0.8f, 1)]
         public void ResetStats()
         {
-          //--------------- Check if Prefabs are assigned ----------------
-
-          if (flakPrefab == null || flyingEnemy == null || upgradeObject == null)
-          {
-              Debug.LogError("Please assign Flak, Flame, Upgrade and Enemy Prefab before testing!");
-              Application.Quit();
-          }
-
           //----------------- Get Required Components ------------------
 
           _player = GameObject.FindGameObjectWithTag("Player");
@@ -192,7 +218,8 @@ namespace Library.Tools
           values.flakFireRateUpgrade = flakFireRateUpgrade;
         }
 
-        [Button("Reset Progress")]
+        [Button("Reset Progress in Game",(ButtonSizes.Large))]
+        [GUIColor(0.4f, 0.8f, 1)]
         public void ResetProgress()
         {
             currency.currentCurrency = 0;
@@ -202,8 +229,8 @@ namespace Library.Tools
             currency.flakActive = false;
             currency.flameActive = false;
         }
-
-        [Button("Reset Difficulty")]
+        [Button("Reset Stats in Designer",(ButtonSizes.Large))]
+        [GUIColor(0.4f, 0.8f, 1)]
         public void ResetInitialValues()
         {
           mgDamage = values.mgDamage;

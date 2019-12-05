@@ -17,6 +17,24 @@ public class WeaponSelectionManager : MonoBehaviour
 
         private void Update()
         {
+                if (man.selectedSlotOne != null)
+                {
+                        SelectWeaponOne(man.selectedWeaponOne);
+                }
+                else
+                {
+                        displayText[0].text = "None";
+                }
+
+                if (man.selectedSlotTwo != null)
+                {
+                        SelectWeaponTwo(man.selectedWeaponTwo);
+                }
+                else
+                {
+                        displayText[1].text = "None";
+                }
+                
                 if (man.flakActive) return;
                 if (man.flameActive) return;
                 foreach (var x in flakButtons)

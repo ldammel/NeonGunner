@@ -28,9 +28,8 @@ namespace Library.Data
 
                 private void Start()
                 {
-                        SelectSlotOne(manager.selectedWeaponOne);
-                        if (manager.selectedSlotTwo == null) return;
-                        SelectSlotTwo(manager.selectedWeaponTwo);
+                        if (manager.selectedSlotOne != null) SelectSlotOne(manager.selectedWeaponOne);
+                        if (manager.selectedSlotTwo != null) SelectSlotTwo(manager.selectedWeaponTwo);
                 }
 
                 private void Update()
@@ -41,6 +40,11 @@ namespace Library.Data
 
                 public void SelectSlotOne(int weapon)
                 {
+                        if (manager.selectedWeaponTwo == weapon)
+                        {
+                                manager.selectedSlotTwo = null;
+                                manager.selectedWeaponTwo = 0;
+                        }
                         var go = Instantiate(weapons[weapon], parents[0].transform);
                         manager.selectedSlotOne = weapons[weapon];
                         manager.selectedWeaponOne = weapon;
@@ -66,6 +70,11 @@ namespace Library.Data
                 
                 public void SelectSlotTwo(int weapon)
                 {
+                        if (manager.selectedWeaponOne == weapon)
+                        {
+                                manager.selectedSlotOne = null;
+                                manager.selectedWeaponOne = 0;
+                        }
                         var go = Instantiate(weapons[weapon], parents[1].transform);
                         manager.selectedSlotTwo = weapons[weapon];
                         manager.selectedWeaponTwo = weapon;

@@ -504,18 +504,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5533721280055385463}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &202771837 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9176109219972151289, guid: d545ce7d4a7f425429f36add55d1d3b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 5533721280055385463}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6d1d94c2c94554c9abd578b9ac0472, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &205431611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,15 +2347,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
   currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
-  upgradeObject: {fileID: 202771837}
-  flakPrefab: {fileID: 4468534938057636108, guid: a9178588c8e3f2f4482f1a185c4376ae,
-    type: 3}
-  flyingEnemy: {fileID: 8316347139329622347, guid: b6688555abdb53d439e2da5a8711b167,
-    type: 3}
-  flame: {fileID: 0}
   playerHealth: 5000
   playerSpeed: 6
-  currencyGainPerEnemy: 1
+  currencyGainPerEnemy: 0
   mgDamage: 50
   mgRange: 100
   mgFireRate: 0.2

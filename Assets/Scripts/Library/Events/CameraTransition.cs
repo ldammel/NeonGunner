@@ -18,6 +18,7 @@ namespace Library.Events
 
         public void Transition(ushort position)
         {
+            if (parents[position] == null) return;
             _curPos = position;
             if (_curPos == _lastPos) return;
             var transform1 = cam.transform;
