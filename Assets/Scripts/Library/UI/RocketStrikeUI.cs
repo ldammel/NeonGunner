@@ -48,7 +48,7 @@ public class RocketStrikeUI : MonoBehaviour {
         }
 
         Instance = this;
-        mainCamera = FindObjectOfType<Camera>();
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         
         if (mainCamera == null) {
             Debug.Log("Could not find camera");

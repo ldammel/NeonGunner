@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/EnemyBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/EnemyBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/PlayerBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/PlayerBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,11 +178,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/EnemyFoundEvent.cs" />
         <option value="$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Modules/RocketStrikeModule.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" />
       </list>
     </option>
   </component>
@@ -276,7 +262,7 @@
       <workItem from="1575534068887" duration="10083000" />
       <workItem from="1575553708701" duration="577000" />
       <workItem from="1575621324868" duration="797000" />
-      <workItem from="1575626549950" duration="6863000" />
+      <workItem from="1575626549950" duration="7153000" />
     </task>
     <servers />
   </component>
