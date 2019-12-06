@@ -265,6 +265,7 @@
                 <e p="BulletShotPool.cs" t="Include" />
               </e>
               <e p="RocketStrike.cs" t="Include" />
+              <e p="ShrapnelPiece.cs" t="Include" />
             </e>
             <e p="Data" t="Include">
               <e p="GameSaveManager.cs" t="Include" />

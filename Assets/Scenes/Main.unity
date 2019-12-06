@@ -3505,7 +3505,7 @@ PrefabInstance:
         type: 3}
       propertyPath: prefab
       value: 
-      objectReference: {fileID: 4468534938057636108, guid: a9178588c8e3f2f4482f1a185c4376ae,
+      objectReference: {fileID: 4468534938057636108, guid: beece9324ccf52a4097ef14e9785b47c,
         type: 3}
     - target: {fileID: 6380484262966305476, guid: a1c304e2db40f0140ab374fcdd282cd4,
         type: 3}
