@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 2602063749062939550}
   - component: {fileID: 1287395732845186454}
   - component: {fileID: 8297657806507352847}
-  - component: {fileID: 4409582327501822615}
+  - component: {fileID: 132200047578035073}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -469,22 +469,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 50
---- !u!114 &4409582327501822615
+  crosshair: {fileID: 0}
+  sphereCastSize: 0
+  _mainCamera: {fileID: 0}
+--- !u!114 &132200047578035073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6898478141715011442}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04b47133e469c21418a5c1e2ec7ee5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   crosshair: {fileID: 0}
-  weapons:
-  - {fileID: 875436246235941252}
-  sphereCastSize: 1
+  weapons: []
+  sphereCastSize: 0
   _mainCamera: {fileID: 0}
 --- !u!1 &7860869257388837535
 GameObject:

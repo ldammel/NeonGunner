@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: 0845ed0ba199bc24c8681f9e949f6ffa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4908981831284042680
+    second: TargetLockSheet_2k_0
+  - first:
+      213: 4582200674117616500
+    second: TargetLockSheet_2k_1
+  - first:
+      213: -7336425100180891745
+    second: TargetLockSheet_2k_2
+  - first:
+      213: 1936297290196588615
+    second: TargetLockSheet_2k_3
+  - first:
+      213: 703597743703819018
+    second: TargetLockSheet_2k_4
+  - first:
+      213: -386606291227133407
+    second: TargetLockSheet_2k_5
+  - first:
+      213: 5450993607309862164
+    second: TargetLockSheet_2k_6
+  - first:
+      213: -1031519487673020297
+    second: TargetLockSheet_2k_7
+  - first:
+      213: -4126856777795613074
+    second: TargetLockSheet_2k_8
+  - first:
+      213: 7645842730616766111
+    second: TargetLockSheet_2k_9
+  - first:
+      213: 3949875004815425288
+    second: TargetLockSheet_2k_10
+  - first:
+      213: 3549342837722689224
+    second: TargetLockSheet_2k_11
+  - first:
+      213: -4883856017076299606
+    second: TargetLockSheet_2k_12
+  - first:
+      213: 5293134981671058801
+    second: TargetLockSheet_2k_13
+  - first:
+      213: -1570626622578213107
+    second: TargetLockSheet_2k_14
+  - first:
+      213: 1508326938856895967
+    second: TargetLockSheet_2k_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 1530, z: 1533, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1544
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa36b3ec0cfa7f4b9ead5454fdcaaba
+      internalID: 4908981831284042680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_1
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1546
+        width: 492
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4996cec5c220e4c953e0c070b3858c
+      internalID: 4582200674117616500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1548
+        width: 488
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab01deaf388ad8479d03229ba6c5474
+      internalID: -7336425100180891745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_3
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1550
+        width: 484
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0979e7834a78c498fe8ea0aafb6d7c
+      internalID: 1936297290196588615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1040
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcda8266ecc50ac468677461ad89d08e
+      internalID: 703597743703819018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_5
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1043
+        width: 474
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5267edff50242234c973c7e2acf69bd0
+      internalID: -386606291227133407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_6
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1044
+        width: 472
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ecdef03602da244ba0d90fa31b9644
+      internalID: 5450993607309862164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_7
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1047
+        width: 466
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cd5cd429b09d142affbef94de490f9
+      internalID: -1031519487673020297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 536
+        width: 464
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0821bbe9c095b4b87af052fc720e24
+      internalID: -4126856777795613074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_9
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 539
+        width: 458
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57fd8502486efa4cb35fbe6987bee05
+      internalID: 7645842730616766111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_10
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 540
+        width: 456
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b98c949ce9df2842b7ed74fa3c6f434
+      internalID: 3949875004815425288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_11
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 541
+        width: 454
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4674c457b671541bfeb836c8707ab4
+      internalID: 3549342837722689224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b6ab3954ac38648bc8ceb991526058
+      internalID: -4883856017076299606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_13
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 32
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ac29f7f6e0bd04aac3ce0151712928
+      internalID: 5293134981671058801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_14
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 32
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6af114cfda67db48890b49970fcb9ac
+      internalID: -1570626622578213107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TargetLockSheet_2k_15
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 33
+        width: 446
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221a1344b84c17e49ba3a576a88a86fc
+      internalID: 1508326938856895967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

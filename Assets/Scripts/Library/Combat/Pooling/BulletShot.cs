@@ -16,6 +16,8 @@ namespace Library.Combat.Pooling
         private BulletShotPool _pool;
         private bool _isflakNotNull;
 
+        public bool isEnemy;
+
         public BulletShotPool Pool
         {
             get => _pool;
@@ -56,7 +58,7 @@ namespace Library.Combat.Pooling
 
         private void OnCollisionEnter(Collision other)
         {
-            if (other.gameObject.CompareTag("Enemy"))
+            if (other.gameObject.CompareTag("Enemy") && !isEnemy)
             {
                 var e = other.gameObject.GetComponent<EnemyHealth>();
                 e.TakeDamage(damage);

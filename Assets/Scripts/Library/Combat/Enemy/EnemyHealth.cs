@@ -28,7 +28,9 @@ namespace Library.Combat.Enemy
 
         public AudioSource deathSound;
 
-        public event Action<float> OnHealthPctChanged = delegate{  };    
+        public event Action<float> OnHealthPctChanged = delegate{  };
+
+        public BulletPooled pool;
         
         private void Start()
         {
@@ -51,13 +53,13 @@ namespace Library.Combat.Enemy
                 }
             }
             if (!(curHealth <= 0) || player) return;
-            curHealth = 0;
+            curHealth = 1;
             if(wp != null && wp.active) wp.active = false;
             if (!gameObject.GetComponent<StateController>().enabled)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(1);
             }
-
+            
             EnemySpawnController.killedEnemies++;
             EnemySpawnController.totalKills++;
             if (!deathSound.isPlaying)
@@ -65,6 +67,7 @@ namespace Library.Combat.Enemy
                 deathSound.Play();
             }
 
+            pool.enabled = false;
             Destroy(gameObject);
         }
 

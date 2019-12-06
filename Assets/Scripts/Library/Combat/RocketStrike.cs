@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Library.Combat.Enemy;
+using Library.Data;
 using Library.UI;
 using UnityEngine;
 
@@ -52,33 +53,40 @@ namespace Library.Combat
         [SerializeField]
         private GameObject explosionPrefab;
         
-        private float currentDooldown;
+        public float currentDooldown;
         private bool lastButtonOneState;
-        private List<EnemyHealth> rocketStrikeTargets = new List<EnemyHealth>();
+        public List<EnemyHealth> rocketStrikeTargets = new List<EnemyHealth>();
         [SerializeField] private int maxMissileTargets = 16;
+
+        public GunMovement aim;
 
         private void Start() {
             currentDooldown = coolDownTime;
         }
 
         private void Update() {
+            foreach (var x in rocketStrikeTargets)
+            {
+                if(x != null) continue;
+            }
             if(!firingRockets && currentDooldown < coolDownTime) {
                 currentDooldown += Time.deltaTime;
             }
 
             if (currentDooldown < coolDownTime) return;
+            RocketStrikeUI.ResetRocketIndicator();
             var mouseButtonDown = Input.GetMouseButton(1);
-        
-            if (mouseButtonDown != lastButtonOneState) {
-                if (!mouseButtonDown) {
-                    //AimController.Instance.EnemyInVisor.RemoveListener(RocketStrikeTargetAdd);
-                    TriggerRocketStrike();
-                } else {
-                   // AimController.Instance.EnemyInVisor.AddListener(RocketStrikeTargetAdd);
-                }
-            
-                lastButtonOneState = mouseButtonDown;
+            aim = FindObjectOfType<GunMovement>();
+
+            if (mouseButtonDown == lastButtonOneState) return;
+            if (!mouseButtonDown) {
+                aim.EnemyInVisor.RemoveListener(RocketStrikeTargetAdd);
+                TriggerRocketStrike();
+            } else {
+                aim.EnemyInVisor.AddListener(RocketStrikeTargetAdd);
             }
+            
+            lastButtonOneState = mouseButtonDown;
         }
 
         private void TriggerRocketStrike() {
@@ -88,8 +96,9 @@ namespace Library.Combat
             var height = distanceShot/4f;
             var aimPoints = new Transform[rocketStrikeTargets.Count];
             //var endPoints = new Vector3[rocketStrikeTargets.Count];
-            for (var i = 0; i < rocketStrikeTargets.Count; i++) {
-                aimPoints[i] = rocketStrikeTargets[i].transform;
+            for (var i = 0; i < rocketStrikeTargets.Count; i++)
+            {
+                aimPoints[i] =rocketStrikeTargets[i] == null ? FindObjectOfType<EnemyHealth>().transform : rocketStrikeTargets[i].transform;
 //            endPoints[i] = Physics.Raycast(new Ray(aimPoints[i] + (Vector3.up * height), Vector3.down), out var hit, 500f, LayerMask.GetMask("Ground")) ? hit.point : aimPoints[i];
             }
 
@@ -109,6 +118,7 @@ namespace Library.Combat
 
         private void RocketStrikeTargetAdd(EnemyHealth enemy) {
             if (rocketStrikeTargets.Count < maxMissileTargets && !rocketStrikeTargets.Contains(enemy)) {
+                RocketStrikeUI.AddRocketTarget(enemy);
                 rocketStrikeTargets.Add(enemy);
             }
         }
@@ -116,6 +126,7 @@ namespace Library.Combat
         private void FireMissile(Transform startPoint, Transform aimPoint, float height, float delay, bool lastMissile) {
             var rocket = Instantiate(rocketPrefab);
             var rocketTransform = rocket.GetComponent<Transform>();
+            Debug.Log("Fired Missile");
         
             if (rocketTransform == null) return;
 
@@ -130,6 +141,8 @@ namespace Library.Combat
             float progress;
             var bygoneTime = 0f;
             var target = endPoint.position;
+            
+            RocketStrikeUI.ReduceRocketIndicator();
 
             do {
                 bygoneTime += Time.deltaTime;
@@ -137,8 +150,8 @@ namespace Library.Combat
 
                 var position = startPoint.position;
                 target = endPoint == null ? target : endPoint.position;
-               // rocketTransform.position = MathParabola.Parabola(position, target, height, progress);
-               // rocketTransform.LookAt(MathParabola.Parabola(position, target, height, Mathf.Clamp01(progress + 0.05f)));
+                rocketTransform.position = MathParabola.Parabola(position, target, height, progress);
+                rocketTransform.LookAt(MathParabola.Parabola(position, target, height, Mathf.Clamp01(progress + 0.05f)));
                 yield return new WaitForEndOfFrame();
             } while (progress < 1f);
 
@@ -148,8 +161,7 @@ namespace Library.Combat
             }
 
             Destroy(rocketTransform.gameObject);
-            //BOOM
-            target = endPoint.position;
+
             var enemies = Physics.OverlapBox(target, boxHalfExtents, Quaternion.LookRotation(target - startPoint.position), damageToLayers);
             foreach (var enemy in enemies) {
                 var e = enemy.GetComponent<EnemyHealth>();

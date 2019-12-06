@@ -127,3 +127,4 @@ MonoBehaviour:
   damage: 10
   maxLifeTime: 3
   vfx: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
+  isEnemy: 1
