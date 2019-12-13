@@ -13,9 +13,6 @@ public class RocketStrikeUI : MonoBehaviour {
     [SerializeField, Required]
     private Image imageRocketIndicator;
 
-    [SerializeField]
-    private int rocketIndicatorSegments;
-
     private int activeRocketIndicatorSegments;
     public List<EnemyTarget> targets = new List<EnemyTarget>();
     private Camera mainCamera;
@@ -74,10 +71,6 @@ public class RocketStrikeUI : MonoBehaviour {
 
     public static void ReduceRocketIndicator() {
         Instance.imageRocketIndicator.fillAmount = --Instance.activeRocketIndicatorSegments / (float)ROCKET_COUNT;
-    }
-
-    public static void SetRocketFill(float fill) {
-        Instance.imageRocketIndicator.fillAmount = fill;
     }
 
     public static void ResetRocketIndicator() {

@@ -9,53 +9,41 @@ namespace Library.Combat
 {
     public class RocketStrike : MonoBehaviour {
         private const float MISSILE_LAUNCHER_OPEN_TIME = 0.75f;
+        
         private static bool firingRockets;
-    
         
-        [SerializeField]
-        private float acceleration;
-
+        [SerializeField] private float acceleration;
         
-        [SerializeField]
-        private float distanceShot;
-
+        [SerializeField] private float distanceShot;
         
-        [SerializeField]
-        private float maxSpeed;
-
+        [SerializeField] private float maxSpeed;
        
-        [SerializeField]
-        private Vector3 boxHalfExtents;
+        [SerializeField] private Vector3 boxHalfExtents;
 
-        [SerializeField]
-        private LayerMask damageToLayers;
+        [SerializeField] private LayerMask damageToLayers;
 
         [SerializeField] private int explosionDamage;
     
-        [SerializeField]
-        private float timeBetweenMissiles = 0.1f;
+        [SerializeField] private float timeBetweenMissiles = 0.1f;
         
-        [SerializeField]
-        private float coolDownTime = 3f;
+        [SerializeField] private float coolDownTime = 3f;
     
-        [SerializeField]
-        private Transform playerTransform;
+        [SerializeField] private Transform playerTransform;
     
-        [SerializeField]
-        private Transform[] rocketSlotsLeft;
+        [SerializeField] private Transform[] rocketSlotsLeft;
     
-        [SerializeField]
-        private Transform[] rocketSlotsRight;
+        [SerializeField] private Transform[] rocketSlotsRight;
 
-        [SerializeField]
-        private GameObject rocketPrefab;
+        [SerializeField] private GameObject rocketPrefab;
     
-        [SerializeField]
-        private GameObject explosionPrefab;
+        [SerializeField] private GameObject explosionPrefab;
         
         public float currentDooldown;
+        
         private bool lastButtonOneState;
+        
         public List<EnemyHealth> rocketStrikeTargets = new List<EnemyHealth>();
+        
         [SerializeField] private int maxMissileTargets = 16;
 
         public GunMovement aim;
@@ -80,10 +68,10 @@ namespace Library.Combat
 
             if (mouseButtonDown == lastButtonOneState) return;
             if (!mouseButtonDown) {
-                aim.EnemyInVisor.RemoveListener(RocketStrikeTargetAdd);
+                aim.enemyInVisor.RemoveListener(RocketStrikeTargetAdd);
                 TriggerRocketStrike();
             } else {
-                aim.EnemyInVisor.AddListener(RocketStrikeTargetAdd);
+                aim.enemyInVisor.AddListener(RocketStrikeTargetAdd);
             }
             
             lastButtonOneState = mouseButtonDown;
@@ -117,10 +105,9 @@ namespace Library.Combat
         }
 
         private void RocketStrikeTargetAdd(EnemyHealth enemy) {
-            if (rocketStrikeTargets.Count < maxMissileTargets && !rocketStrikeTargets.Contains(enemy)) {
-                RocketStrikeUI.AddRocketTarget(enemy);
-                rocketStrikeTargets.Add(enemy);
-            }
+            if (rocketStrikeTargets.Count >= maxMissileTargets || rocketStrikeTargets.Contains(enemy)) return;
+            RocketStrikeUI.AddRocketTarget(enemy);
+            rocketStrikeTargets.Add(enemy);
         }
 
         private void FireMissile(Transform startPoint, Transform aimPoint, float height, float delay, bool lastMissile) {
@@ -140,7 +127,7 @@ namespace Library.Combat
 
             float progress;
             var bygoneTime = 0f;
-            var target = endPoint.position;
+            var target = endPoint == null ? startPoint.position : endPoint.position;
             
             RocketStrikeUI.ReduceRocketIndicator();
 

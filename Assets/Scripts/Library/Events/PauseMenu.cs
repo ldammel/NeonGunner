@@ -33,7 +33,7 @@ namespace Library.Events
 
         private void Start()
         {
-            _speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().speed;
+            _speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().moveSpeed;
             pauseActive = false;
             menuObject.SetActive(false);
         }
@@ -42,11 +42,9 @@ namespace Library.Events
         {
             Cursor.visible = pauseActive;
             Cursor.lockState = pauseActive ? CursorLockMode.None : CursorLockMode.Locked;
-            if (Input.GetKeyDown(KeyCode.F8))
-            {
-                TriggerMenu();
-                codeMenu.SetActive(!codeMenu.activeSelf);
-            }
+            if (!Input.GetKeyDown(KeyCode.F8)) return;
+            TriggerMenu();
+            codeMenu.SetActive(!codeMenu.activeSelf);
         }
 
         public void Quit()
@@ -75,20 +73,10 @@ namespace Library.Events
                     SoundManager.Instance.PlaySound(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode ? "Enabled" : "Disabled");
                     return;
                 case "gottagofast":
-                    if (!changedSpeed)
-                    {
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(2);
-                        NotificationManager.Instance.SetNewNotification("Speed Up!", 3);
-                        SoundManager.Instance.PlaySound("Enabled");
-                        changedSpeed = true;
-                    }
-                    else
-                    {
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(-2);
-                        NotificationManager.Instance.SetNewNotification("Slow Down!", 3);
-                        SoundManager.Instance.PlaySound("Disabled");
-                        changedSpeed = false;
-                    }
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(changedSpeed ? -2 : 2);
+                    NotificationManager.Instance.SetNewNotification(changedSpeed ? "Slow Down!" : "Speed Up!", 3);
+                    SoundManager.Instance.PlaySound(changedSpeed ? "Disabled" : "Enabled");
+                    changedSpeed = !changedSpeed;
                     return;
                 case "kamikaze":
                     NotificationManager.Instance.SetNewNotification("KAMIKAZEE!", 3);

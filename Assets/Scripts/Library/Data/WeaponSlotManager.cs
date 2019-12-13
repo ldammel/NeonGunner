@@ -8,7 +8,7 @@ namespace Library.Data
         public class WeaponSlotManager : MonoBehaviour
         {
                 public static WeaponSlotManager Instance;
-                public CurrencyObject manager;
+                public CurrencyObject currencyObject;
 
                 private void Awake()
                 {
@@ -18,7 +18,7 @@ namespace Library.Data
                                 Application.Quit();
                         }
                         Instance = this;
-                        if(manager.selectedSlotOne == null) SelectSlotOne(0);
+                        if(currencyObject.selectedSlotOne == null) SelectSlotOne(0);
                 }
                 
                 public GameObject[] weapons;
@@ -28,40 +28,35 @@ namespace Library.Data
 
                 private void Start()
                 {
-                        if (manager.selectedSlotOne != null) SelectSlotOne(manager.selectedWeaponOne);
-                        if (manager.selectedSlotTwo != null) SelectSlotTwo(manager.selectedWeaponTwo);
-                }
-
-                private void Update()
-                {
                         test = FindObjectOfType<Test>();
+                        if (currencyObject.selectedSlotOne != null) SelectSlotOne(currencyObject.selectedWeaponOne);
+                        if (currencyObject.selectedSlotTwo != null) SelectSlotTwo(currencyObject.selectedWeaponTwo);
                 }
-
 
                 public void SelectSlotOne(int weapon)
                 {
-                        if (manager.selectedWeaponTwo == weapon)
+                        if (currencyObject.selectedWeaponTwo == weapon)
                         {
-                                manager.selectedSlotTwo = null;
-                                manager.selectedWeaponTwo = 0;
+                                currencyObject.selectedSlotTwo = null;
+                                currencyObject.selectedWeaponTwo = 0;
                         }
                         var go = Instantiate(weapons[weapon], parents[0].transform);
-                        manager.selectedSlotOne = weapons[weapon];
-                        manager.selectedWeaponOne = weapon;
-                        test.gun[0] = go.GetComponentInChildren<GunMovement>();
-                        test.aim[0] = go.GetComponentInChildren<AimController>();
-                        test.parents[0] = test.aim[0].transform;
+                        currencyObject.selectedSlotOne = weapons[weapon];
+                        currencyObject.selectedWeaponOne = weapon;
+                        test.gunMovementComponent[0] = go.GetComponentInChildren<GunMovement>();
+                        test.aimControllerComponent[0] = go.GetComponentInChildren<AimController>();
+                        test.parents[0] = test.aimControllerComponent[0].transform;
                         test.positions[0] = go.GetComponentInChildren<CamTransitionPoint>().transform;
                         switch (weapon)
                         {
                                 case 0:
-                                        test.mg[0] = go.GetComponentInChildren<MachineGun>();
+                                        test.machineGunComponent[0] = go.GetComponentInChildren<MachineGun>();
                                         break;
                                 case 1:
-                                        test.flame[0] = go.GetComponentInChildren<Flamethrower>().gameObject;
+                                        test.flamethrowerGameObject[0] = go.GetComponentInChildren<Flamethrower>().gameObject;
                                         break;
                                 case 2:
-                                        test.bullet[0] = go.GetComponentInChildren<BulletPooled>();
+                                        test.bulletPooledComponent[0] = go.GetComponentInChildren<BulletPooled>();
                                         break;
                                 default:
                                         break;
@@ -70,28 +65,28 @@ namespace Library.Data
                 
                 public void SelectSlotTwo(int weapon)
                 {
-                        if (manager.selectedWeaponOne == weapon)
+                        if (currencyObject.selectedWeaponOne == weapon)
                         {
-                                manager.selectedSlotOne = null;
-                                manager.selectedWeaponOne = 0;
+                                currencyObject.selectedSlotOne = null;
+                                currencyObject.selectedWeaponOne = 0;
                         }
                         var go = Instantiate(weapons[weapon], parents[1].transform);
-                        manager.selectedSlotTwo = weapons[weapon];
-                        manager.selectedWeaponTwo = weapon;
-                        test.gun[1] = go.GetComponentInChildren<GunMovement>();
-                        test.aim[1] = go.GetComponentInChildren<AimController>();
-                        test.parents[1] = test.aim[1].transform;;
+                        currencyObject.selectedSlotTwo = weapons[weapon];
+                        currencyObject.selectedWeaponTwo = weapon;
+                        test.gunMovementComponent[1] = go.GetComponentInChildren<GunMovement>();
+                        test.aimControllerComponent[1] = go.GetComponentInChildren<AimController>();
+                        test.parents[1] = test.aimControllerComponent[1].transform;;
                         test.positions[1] = go.GetComponentInChildren<CamTransitionPoint>().transform;
                         switch (weapon)
                         {
                                 case 0:
-                                        test.mg[1] = go.GetComponentInChildren<MachineGun>();
+                                        test.machineGunComponent[1] = go.GetComponentInChildren<MachineGun>();
                                         break;
                                 case 1:
-                                        test.flame[1] = go.GetComponentInChildren<Flamethrower>().gameObject;
+                                        test.flamethrowerGameObject[1] = go.GetComponentInChildren<Flamethrower>().gameObject;
                                         break;
                                 case 2:
-                                        test.bullet[1] = go.GetComponentInChildren<BulletPooled>();
+                                        test.bulletPooledComponent[1] = go.GetComponentInChildren<BulletPooled>();
                                         break;
                                 default:
                                         break;

@@ -23,7 +23,7 @@ namespace Library.Combat.Enemy
             controller.navMeshAgent.destination = controller.wayPointList[controller.nextWayPoint].position;
             
             if (!(controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance) || controller.navMeshAgent.pathPending) return;
-            if (controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().active)
+            if (controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().isWaypointActive)
             {
                 controller.nextWayPoint = (controller.nextWayPoint + 1) % controller.wayPointList.Count;
             }
@@ -32,7 +32,7 @@ namespace Library.Combat.Enemy
                 if (!controller.isMelee)
                 {
                     controller.gameObject.GetComponentInChildren<BulletPooled>().canFire = true;
-                    controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().active = true;
+                    controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().isWaypointActive = true;
                     controller.eh.wp = controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>();
                 }
                 else
@@ -43,7 +43,7 @@ namespace Library.Combat.Enemy
                     }
                     controller.gameObject.transform.parent = controller.wayPointList[controller.nextWayPoint];
                     controller.gameObject.transform.position = controller.wayPointList[controller.nextWayPoint].position;
-                    controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().active = true;
+                    controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().isWaypointActive = true;
                     controller.eh.wp = controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>();
                     controller.navMeshAgent.enabled = false;
                     controller.enabled = false;

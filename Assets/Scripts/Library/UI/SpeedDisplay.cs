@@ -18,12 +18,12 @@ namespace Library.UI
         {
             mov = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>();
             speedMax = mov.maxSpeed;
-            curSpeed = mov.speed;
+            curSpeed = mov.moveSpeed;
         }
 
         private void Update()
         {
-            curSpeed = mov.speed;
+            curSpeed = mov.moveSpeed;
             if (curSpeed > speedMax) curSpeed = speedMax;
             pointer.transform.eulerAngles = new Vector3(0,0,Mathf.Lerp(pointer.transform.rotation.z,GetSpeedRotation(),1));
         }

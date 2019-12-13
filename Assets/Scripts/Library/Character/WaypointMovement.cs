@@ -8,11 +8,11 @@ namespace Library.Character
 {
     public class WaypointMovement : MonoBehaviour
     {
-        public float speed;
+        public float moveSpeed;
         public float maxSpeed;
         public PathCreator path;
         public EndOfPathInstruction endOfPathInstruction;
-        public float dist;
+        public float currentDistance;
         private bool _active;
         public float reducedSpeed;
 
@@ -20,8 +20,8 @@ namespace Library.Character
 
         public void Start()
         {
-            reducedSpeed = speed;
-            speed = 3;
+            reducedSpeed = moveSpeed;
+            moveSpeed = 3;
             if (path != null)
             {
                 path.pathUpdated += OnPathChanged;
@@ -34,25 +34,25 @@ namespace Library.Character
             rb.isKinematic = PauseMenu.Instance.pauseActive;
             if (PauseMenu.Instance.pauseActive) return;
             if (path == null) return;
-            dist += speed * Time.deltaTime; 
-            transform.position = path.path.GetPointAtDistance(dist);
-            transform.rotation = path.path.GetRotationAtDistance(dist, endOfPathInstruction);
+            currentDistance += moveSpeed * Time.deltaTime; 
+            transform.position = path.path.GetPointAtDistance(currentDistance);
+            transform.rotation = path.path.GetRotationAtDistance(currentDistance, endOfPathInstruction);
             if (Math.Abs(transform.rotation.z) > 0)
             {
                 transform.Rotate(0,0,90);
             }
-            if(speed > reducedSpeed)
+            if(moveSpeed > reducedSpeed)
             {
-                speed -= 1f * Time.deltaTime;
+                moveSpeed -= 1f * Time.deltaTime;
             }
-            else if (speed < reducedSpeed)
+            else if (moveSpeed < reducedSpeed)
             {
-                speed += 1f * Time.deltaTime;
+                moveSpeed += 1f * Time.deltaTime;
             }
             
         }
         public void OnPathChanged() {
-            dist = path.path.GetClosestDistanceAlongPath(transform.position);
+            currentDistance = path.path.GetClosestDistanceAlongPath(transform.position);
         }
 
         public void SetSpeed(float amount)

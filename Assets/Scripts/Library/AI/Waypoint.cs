@@ -8,13 +8,13 @@ namespace Library.AI
 {
     public class Waypoint : MonoBehaviour
     {
-        public bool active;
-        public GameObject pointObj;
+        public bool isWaypointActive;
+        public GameObject thisWaypointObject;
 
         private void Start()
         {
-            active = false;
-            pointObj = gameObject;
+            isWaypointActive = false;
+            thisWaypointObject = gameObject;
         }
     }
 }

@@ -11,12 +11,12 @@ public class Test : MonoBehaviour
 {
     private CameraTransition _cam;
 
-    public GunMovement[] gun;
-    public AimController[] aim;
-    public BulletPooled[] bullet;
-    public MachineGun[] mg;
-    public GameObject[] flame;
-    public CurrencyObject cur;
+    public GunMovement[] gunMovementComponent;
+    public AimController[] aimControllerComponent;
+    public BulletPooled[] bulletPooledComponent;
+    public MachineGun[] machineGunComponent;
+    public GameObject[] flamethrowerGameObject;
+    public CurrencyObject currencyObject;
     public Transform[] positions;
     public Transform[] parents;
 
@@ -25,7 +25,7 @@ public class Test : MonoBehaviour
         _cam = FindObjectOfType<CameraTransition>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        StartCoroutine(FirstTransition());
+        StartCoroutine(FirstTransitionOnStart());
     }
 
     private void Update()
@@ -38,12 +38,13 @@ public class Test : MonoBehaviour
         if (PauseMenu.Instance.pauseActive) return;
         if (InputManager.Instance.KeyDown("flak"))
         {
-            Transition(0);
+            TransitionCameraPosition(0);
         }
         else if (InputManager.Instance.KeyDown("flame"))
         {
-            Transition(1);
+            TransitionCameraPosition(1);
         }
+        
         for (int i = 0; i < positions.Length; i++)
         {
             if (parents[i] == null) continue;
@@ -57,30 +58,30 @@ public class Test : MonoBehaviour
         }
     }
 
-    public void Transition(ushort position)
+    private void TransitionCameraPosition(ushort position)
     {
         _cam.parents[position] = parents[position];
         _cam.positions[position] = positions[position];
-        _cam.Transition(position);
-        for (int i = 0; i < gun.Length; i++)
+        _cam.TransitionCameraPosition(position);
+        for (int i = 0; i < gunMovementComponent.Length; i++)
         {
-            if(gun[i] != null) gun[i].enabled = i == position;
-            if(bullet[i] != null) bullet[i].enabled = i == position;
-            if(flame[i] != null) flame[i].SetActive(i == position);
-            if(mg[i] != null) mg[i].enabled = i == position;
+            if(gunMovementComponent[i] != null) gunMovementComponent[i].enabled = i == position;
+            if(bulletPooledComponent[i] != null) bulletPooledComponent[i].enabled = i == position;
+            if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == position);
+            if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == position;
         }
     }
 
-    IEnumerator FirstTransition()
+    private IEnumerator FirstTransitionOnStart()
     {
         yield return new WaitForSeconds(0.05f);
-        _cam.FirstTransition();
-        for (int i = 0; i < gun.Length; i++)
+        _cam.FirstTransitionOnStart();
+        for (int i = 0; i < gunMovementComponent.Length; i++)
         {
-            if(gun[i] != null) gun[i].enabled = i == 0;
-            if(bullet[i] != null) bullet[i].enabled = i == 0;
-            if(flame[i] != null) flame[i].SetActive(i == 0);
-            if(mg[i] != null) mg[i].enabled = i == 0;
+            if(gunMovementComponent[i] != null) gunMovementComponent[i].enabled = i == 0;
+            if(bulletPooledComponent[i] != null) bulletPooledComponent[i].enabled = i == 0;
+            if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == 0);
+            if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == 0;
         }
     }
 

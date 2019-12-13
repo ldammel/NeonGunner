@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 212256457}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &661976606
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,12 +866,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c297c6deae2fa245b2a8067e734aa41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  moveSpeed: 6
   maxSpeed: 8
   path: {fileID: 0}
   endOfPathInstruction: 0
-  dist: 0
-  reducedSpeed: 0
+  currentDistance: 0
+  reducedSpeed: 6
 --- !u!114 &441555972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 900c60ff5570c5741bce9dc3b3b51925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  currencyObject: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
   weapons:
   - {fileID: 8515736470161167883, guid: 447158411e991ce4889d80cfe0603854, type: 3}
   - {fileID: 8879015948160441982, guid: 27135ef34b3f71641af81fe7175bf977, type: 3}
@@ -2289,8 +2289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &1367468472142943501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,8 +3220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &2200832900801735310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4665,8 +4665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &3921709370083706455
 GameObject:
   m_ObjectHideFlags: 0
@@ -4848,8 +4848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &3982716107973255406
 GameObject:
   m_ObjectHideFlags: 0
@@ -5109,8 +5109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &4206485048881507895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6198,8 +6198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &5234626531770881808
 GameObject:
   m_ObjectHideFlags: 0
@@ -6555,8 +6555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5433469680699539513}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &5449825779278740040
 GameObject:
   m_ObjectHideFlags: 0
@@ -6600,8 +6600,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &5501331138085167757
 GameObject:
   m_ObjectHideFlags: 0
@@ -6879,8 +6879,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5547833721214489103}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &5581352608060582449
 GameObject:
   m_ObjectHideFlags: 0
@@ -8076,8 +8076,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &6851725605578962033
 GameObject:
   m_ObjectHideFlags: 0
@@ -8689,8 +8689,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 7644504356646654494}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &7652585900059722025
 GameObject:
   m_ObjectHideFlags: 0
@@ -9623,8 +9623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  pointObj: {fileID: 5449825779278740040}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &8496866251969841943
 GameObject:
   m_ObjectHideFlags: 0
@@ -9668,8 +9668,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f34cae2156e714cbf25240ff21c468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  pointObj: {fileID: 8496866251969841943}
+  isWaypointActive: 0
+  thisWaypointObject: {fileID: 0}
 --- !u!1 &8559530558376154917
 GameObject:
   m_ObjectHideFlags: 0

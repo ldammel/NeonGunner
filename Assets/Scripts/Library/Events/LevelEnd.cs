@@ -25,16 +25,18 @@ namespace Library.Events
 
             Instance = this;
         }
+        
+        public float timeLimitSeconds;
+        public ushort timeLimitMinutes;
+        
+        [SerializeField] private TextMeshProUGUI timeText;
+        [SerializeField] private TextMeshProUGUI rewardText;
 
         private ushort _reward;
         private float _timeTaken;
-        public float timeLimitSeconds;
-        public ushort timeLimitMinutes;
         private UpgradeManager _manager;
         private float baseSeconds;
         private ushort baseMinutes;
-        [SerializeField] private TextMeshProUGUI timeText;
-        [SerializeField] private TextMeshProUGUI rewardText;
         
 
         private void Start()

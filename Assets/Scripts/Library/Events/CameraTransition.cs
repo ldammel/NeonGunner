@@ -16,7 +16,7 @@ namespace Library.Events
         private Vector3 _lastCamVec;
         private Vector3 _newCamVec;
 
-        public void Transition(ushort position)
+        public void TransitionCameraPosition(ushort position)
         {
             if (parents[position] == null) return;
             _curPos = position;
@@ -32,7 +32,7 @@ namespace Library.Events
             _lastPos = position;
         }
 
-        public void FirstTransition()
+        public void FirstTransitionOnStart()
         {
             var transform1 = cam.transform;
             _lastCamVec = new Vector3(transform1.rotation.x,transform1.rotation.y,transform1.rotation.z);

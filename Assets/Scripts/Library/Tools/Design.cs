@@ -176,7 +176,7 @@ namespace Library.Tools
 
           //---------------Value Initialization---------------------
           _playerHealth.maxHealth = playerHealth;
-          _playerSpeed.speed = playerSpeed;            
+          _playerSpeed.moveSpeed = playerSpeed;            
           
           values.mgDamage = mgDamage;
           values.mgRange = mgRange;

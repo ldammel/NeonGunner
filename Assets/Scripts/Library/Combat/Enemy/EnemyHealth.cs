@@ -47,14 +47,14 @@ namespace Library.Combat.Enemy
             }
             if(player)
             {
-                if (gameObject.GetComponent<WaypointMovement>().speed <= 0 || curHealth <= 0)
+                if (gameObject.GetComponent<WaypointMovement>().moveSpeed <= 0 || curHealth <= 0)
                 {
                     PlayerDeath();
                 }
             }
             if (!(curHealth <= 0) || player) return;
             curHealth = 1;
-            if(wp != null && wp.active) wp.active = false;
+            if(wp != null && wp.isWaypointActive) wp.isWaypointActive = false;
             if (!gameObject.GetComponent<StateController>().enabled)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(1);
@@ -76,7 +76,7 @@ namespace Library.Combat.Enemy
             PauseMenu.Instance.pauseActive = true;
             LevelManager.Instance.failScreen.SetActive(true);
             LevelEnd.Instance.CalculateReward(1);
-            gameObject.GetComponent<WaypointMovement>().speed = gameObject.GetComponent<WaypointMovement>().maxSpeed;
+            gameObject.GetComponent<WaypointMovement>().moveSpeed = gameObject.GetComponent<WaypointMovement>().maxSpeed;
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
             curHealth = maxHealth;
         }

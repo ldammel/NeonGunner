@@ -25,7 +25,7 @@ namespace Library.Data.Missions
 
         [BoxGroup("Currency")]
         [SerializeField]
-        private CurrencyObject currency;
+        private CurrencyObject currencyObject;
         
         [BoxGroup("Missions")]
         [SerializeField]
@@ -62,7 +62,7 @@ namespace Library.Data.Missions
             missionDisplay[i].text = missions[i].missionDescription;
             progressDisplay[i].text = EnemySpawnController.killedEnemies + " / " + missions[i].missionGoal;
             if (EnemySpawnController.killedEnemies < missions[i].missionGoal) return;
-            currency.currentCurrency += missions[i].reward;
+            currencyObject.currentCurrency += missions[i].reward;
             RemoveMission(i);
         }
 

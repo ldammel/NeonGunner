@@ -9,31 +9,31 @@ namespace Library.Events
     {
         [SerializeField] private PathCreator path; 
         [SerializeField] private PathCreator mainPath; 
-        private WaypointMovement move;
+        private WaypointMovement _move;
         [SerializeField] private GameObject[] deactivate;
         public bool activated;
 
         private void Start()
         {
-            move = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>();
+            _move = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>();
         }
 
-        public void ChangePath(WaypointMovement _move)
+        public void ChangePath(WaypointMovement move)
         {
             if (activated)
             {
-                _move.path = mainPath;
-                move.OnPathChanged();
+                move.path = mainPath;
+                _move.OnPathChanged();
                 gameObject.SetActive(false);
             }
             else
             {
-                _move.path = path;
-                move.dist = 0;
+                move.path = path;
+                _move.currentDistance = 0;
             }
         }
 
-        public void PathSign()
+        public void PathSignActivation()
         {
             deactivate[0].GetComponent<SignActivation>().activated = true;
             gameObject.SetActive(false);

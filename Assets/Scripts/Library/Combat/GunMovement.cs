@@ -19,15 +19,15 @@ namespace Library.Combat
 
         [SerializeField] private float sphereCastSize;
         
-        public Camera _mainCamera;
+        public Camera mainCamera;
         public Ray crossHairRay;
         
-        public readonly EnemyFoundEvent EnemyInVisor = new EnemyFoundEvent();
+        public readonly EnemyFoundEvent enemyInVisor = new EnemyFoundEvent();
 
         private void Start()
         {
             crosshair = GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>();
-            _mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+            mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         }
 
         private float ClampAngle(float angle, float from, float to)
@@ -53,12 +53,12 @@ namespace Library.Combat
         {
             if (PauseMenu.Instance.pauseActive) return;
             var centerOfCrosshair = crosshair.transform.position;
-            crossHairRay = _mainCamera.ScreenPointToRay(centerOfCrosshair);
+            crossHairRay = mainCamera.ScreenPointToRay(centerOfCrosshair);
 
             if (Physics.SphereCast(crossHairRay, sphereCastSize,out RaycastHit hitInfo, 300f, LayerMask.GetMask("Enemy")))
             {
                 crosshair.color = Color.red;
-                if(hitInfo.collider.gameObject != null && hitInfo.collider.gameObject.GetComponent<EnemyHealth>()) EnemyInVisor.Invoke(hitInfo.collider.gameObject.GetComponent<EnemyHealth>());
+                if(hitInfo.collider.gameObject != null && hitInfo.collider.gameObject.GetComponent<EnemyHealth>()) enemyInVisor.Invoke(hitInfo.collider.gameObject.GetComponent<EnemyHealth>());
             }
             else if (Physics.SphereCast(crossHairRay, 0.1f, 300f, LayerMask.GetMask("Player")))
             {

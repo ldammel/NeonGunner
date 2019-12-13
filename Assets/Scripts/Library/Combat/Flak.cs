@@ -11,7 +11,7 @@ namespace Library.Combat
     {
         public float radius = 5;
         public float damage;
-        public AudioSource explosion;
+        public AudioSource explosionSoundSource;
 
         public GameObject shrapnelBullet;
         public int shrapnelAmount;
@@ -23,7 +23,7 @@ namespace Library.Combat
         private void Start()
         {
             var c = gameObject.GetComponent<MeshRenderer>().enabled = true;
-            explosion = GameObject.Find("---PLAYER---/Sounds/ExplosionSound").GetComponent<AudioSource>();
+            explosionSoundSource = GameObject.Find("---PLAYER---/Sounds/ExplosionSound").GetComponent<AudioSource>();
             canExplode = false;
             StartCoroutine(ShrapnelStart());
         }
@@ -51,7 +51,7 @@ namespace Library.Combat
 
         public void AreaDamageEnemies(Vector3 location, float area, float hitDamage)
         {
-            explosion.Play();
+            explosionSoundSource.Play();
             var objects = Physics.OverlapSphere(location, area);
             if (objects.Length == 0) return;
             foreach (var col in objects)

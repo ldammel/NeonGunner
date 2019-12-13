@@ -48,7 +48,6 @@ public class WeaponSelectionManager : MonoBehaviour
                 }
         }
 
-
         public void SelectWeaponOne(int weapon)
         {
                 switch (weapon)
