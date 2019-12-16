@@ -13,14 +13,6 @@ namespace Library.Combat
     public class Flamethrower : MonoBehaviour
     {
         [SerializeField] private ParticleSystem flameFx;
-        [HideInInspector] public float damage;
-        [HideInInspector] public float range;
-        [HideInInspector] public float spread;
-        [HideInInspector] public float ammoConsumptionPerSecond;
-        [HideInInspector] public float ammoRefreshPerSecond;
-        [HideInInspector] public float maxAmmo;
-        [SerializeField]  private float ammo;
-        [SerializeField]  private TextMeshProUGUI ammoCountDisplay;
         public List<ParticleCollisionEvent> collisionEvents;
         private bool soundPlaying;
 
@@ -29,44 +21,8 @@ namespace Library.Combat
             var coll = flameFx.collision;
             coll.enabled = true;
             collisionEvents = new List<ParticleCollisionEvent>();
-            ammoCountDisplay = GameObject.Find("---UI---/Canvas/FlameAmmo").GetComponent<TextMeshProUGUI>();
-
         }
 
-        private void Update()
-        {
-            var o = flameFx.gameObject;
-            var localScale = o.transform.localScale;
-            localScale = new Vector3(spread,localScale.y, range);
-            o.transform.localScale = localScale;
-            ammoCountDisplay.text = Mathf.Round(ammo).ToString(CultureInfo.CurrentCulture);
-            var flameFxMain = flameFx.main;
-            if (Input.GetMouseButton(0))
-            {
-                flameFxMain.maxParticles = 130;
-                if (!soundPlaying)
-                {
-                    SoundManager.Instance.PlaySound("Flame");
-                    soundPlaying = true;
-                }
-            }
-            else
-            {
-                 flameFxMain.maxParticles = 0;
-                 SoundManager.Instance.PlaySound("Stop");
-                 soundPlaying = false;
-            }
-
-            if (flameFxMain.maxParticles != 0)
-            {
-                ammo -= ammoConsumptionPerSecond * Time.deltaTime;
-            }
-
-            if (ammo < maxAmmo && flameFxMain.maxParticles == 0)
-            {
-                ammo += ammoRefreshPerSecond * Time.deltaTime;
-            }
-        }
 
         void OnParticleCollision(GameObject other)
         {
@@ -75,6 +31,7 @@ namespace Library.Combat
 
             while (i < numCollisionEvents)
             {
+                float damage = 50;
                 other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
                 i++;
             }

@@ -16,6 +16,7 @@ TagManager:
   - Win
   - CamTransition
   - Crosshair
+  - RocketStrike
   layers:
   - Default
   - TransparentFX

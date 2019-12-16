@@ -8,6 +8,8 @@ public class CurrencyObject : BaseScriptableObject
     public ushort flakLevel;
     public ushort flameLevel;
     public ushort mgLevel;
+    public ushort rocketLevel;
+    public ushort shrapnelLevel;
 
     public GameObject selectedSlotOne;
     public GameObject selectedSlotTwo;

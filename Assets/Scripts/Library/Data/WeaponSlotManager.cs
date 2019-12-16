@@ -53,7 +53,7 @@ namespace Library.Data
                                         test.machineGunComponent[0] = go.GetComponentInChildren<MachineGun>();
                                         break;
                                 case 1:
-                                        test.flamethrowerGameObject[0] = go.GetComponentInChildren<Flamethrower>().gameObject;
+                                        test.flamethrowerGameObject[0] = go.GetComponentInChildren<Caltrops>().gameObject;
                                         break;
                                 case 2:
                                         test.bulletPooledComponent[0] = go.GetComponentInChildren<BulletPooled>();
