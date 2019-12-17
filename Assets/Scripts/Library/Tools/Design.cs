@@ -3,6 +3,7 @@ using Library.Character.ScriptableObjects;
 using Library.Character.Upgrades;
 using Library.Combat;
 using Library.Combat.Enemy;
+using Library.Data;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
@@ -63,17 +64,7 @@ namespace Library.Tools
         [TabGroup("Weapon Settings","MG Base Settings")]
         [GUIColor(1, 0.6f, 0.4f)]
         public float mgFireRate;
-        
-        [TabGroup("Weapon Upgrade Settings","MG Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort mgMaxUpgradeLevel;
-        [TabGroup("Weapon Upgrade Settings","MG Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort mgUpgradeCost;
-        [TabGroup("Weapon Upgrade Settings","MG Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort mgUpgradeCostMultiplier;
-        [TabGroup("Weapon Upgrade Settings","MG Upgrade Settings")] 
+        [TabGroup("Weapon Settings","MG Base Settings")] 
         [GUIColor(0, 1, 0)]
         public float mgFireRateUpgrade;
         #endregion 
@@ -91,20 +82,10 @@ namespace Library.Tools
         [TabGroup("Weapon Settings","Flak Base Settings")] 
         [GUIColor(1, 0.6f, 0.4f)]
         public float flakFireRate;
-        
-        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort flakMaxUpgradeLevel;
-        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort flakUpgradeCost;
-        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort flakUpgradeCostMultiplier;
-        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
+        [TabGroup("Weapon Settings","Flak Base Settings")] 
         [GUIColor(0, 1, 0)]
         public float flakFireRateUpgrade;
-        [TabGroup("Weapon Upgrade Settings","Flak Upgrade Settings")] 
+        [TabGroup("Weapon Settings","Flak Base Settings")] 
         [GUIColor(0, 1, 0)]
         public float flakRadiusUpgrade;
         #endregion
@@ -118,9 +99,6 @@ namespace Library.Tools
         public float flameRange;
         [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
         [GUIColor(1, 0.6f, 0.4f)]
-        public float flameMaxAmmo;
-        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
-        [GUIColor(1, 0.6f, 0.4f)]
         public float flameAmmoConsumptionPerSecond;
         [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
         [GUIColor(1, 0.6f, 0.4f)]
@@ -128,20 +106,7 @@ namespace Library.Tools
         [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
         [GUIColor(1, 0.6f, 0.4f)]
         public float flameSpread;
-        
-        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort flameMaxUpgradeLevel;
-        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort flameUpgradeCost;
-        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public ushort flameUpgradeCostMultiplier;
-        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
-        [GUIColor(0, 1, 0)]
-        public float flameMaxAmmoUpgrade;
-        [TabGroup("Weapon Upgrade Settings","Flamethrower Upgrade Settings")] 
+        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
         [GUIColor(0, 1, 0)]
         public float flameSpreadUpgrade;
         #endregion
@@ -176,46 +141,29 @@ namespace Library.Tools
 
           //---------------Value Initialization---------------------
           _playerHealth.maxHealth = playerHealth;
-          _playerSpeed.moveSpeed = playerSpeed;            
-          
+          _playerSpeed.moveSpeed = playerSpeed; 
           values.mgDamage = mgDamage;
           values.mgRange = mgRange;
           values.mgFireRate = mgFireRate;
-
           values.flakDamageRadius = flakDamageRadius;
           values.flakDamage = flakDamage;;
           values.flakRange = flakRange;;
           values.flakFireRate = flakFireRate;;
-
           values.flameDamage = flameDamage;
           values.flameRange = flameRange;
           values.flameSpread = flameSpread;
-          values.flameMaxAmmo = flameMaxAmmo;
           values.flameAmmoConsumptionPerSecond = flameAmmoConsumptionPerSecond;
           values.flameAmmoRefreshPerSecond = flameAmmoRefreshPerSecond;
-
           values.enemyDamage = enemyDamage;
           values.enemyHealth = enemyHealth;
           values.enemyMoveSpeed = enemyMoveSpeed;
           values.enemyAttackSpeed = enemyAttackSpeed;
           values.enemyRange = enemyRange;
-
-          values.mgMaxUpgradeLevel = mgMaxUpgradeLevel;
-          values.mgUpgradeCost = mgUpgradeCost;
-          values.mgUpgradeCostMultiplier = mgUpgradeCostMultiplier;
           values.mgFireRateUpgrade = mgFireRateUpgrade;
-
-          values.flameMaxUpgradeLevel = flameMaxUpgradeLevel;
-          values.flameUpgradeCost = flameUpgradeCost;
-          values.flameUpgradeCostMultiplier = flameUpgradeCostMultiplier;
-          values.flameMaxAmmoUpgrade = flameMaxAmmoUpgrade;
           values.flameSpreadUpgrade = flameSpreadUpgrade;
-            
-          values.flakMaxUpgradeLevel = flakMaxUpgradeLevel;
-          values.flakUpgradeCost = flakUpgradeCost;
-          values.flakUpgradeCostMultiplier = flakUpgradeCostMultiplier;
           values.flakRadiusUpgrade = flakRadiusUpgrade;
           values.flakFireRateUpgrade = flakFireRateUpgrade;
+          SaveData.Instance.SaveAllData();
         }
 
         [Button("Reset Progress in Game",(ButtonSizes.Large))]
@@ -226,8 +174,13 @@ namespace Library.Tools
             currency.flakLevel = 0;
             currency.flameLevel = 0;
             currency.mgLevel = 0;
-            currency.flakActive = false;
-            currency.flameActive = false;
+            currency.rocketLevel = 0;
+            currency.shrapnelLevel = 0;
+            currency.caltropLevel = 0;
+            currency.gasLevel = 0;
+            currency.laserLevel = 0;
+            currency.teslaLevel = 0;
+            SaveData.Instance.SaveAllData();
         }
         [Button("Reset Stats in Designer",(ButtonSizes.Large))]
         [GUIColor(0.4f, 0.8f, 1)]
@@ -236,48 +189,35 @@ namespace Library.Tools
           mgDamage = values.mgDamage;
           mgRange = values.mgRange;
           mgFireRate =  values.mgFireRate;
-
           flakDamageRadius = values.flakDamageRadius;
           flakDamage = values.flakDamage;
           flakRange = values.flakRange;
           flakFireRate = values.flakFireRate;
-
           flameDamage = values.flameDamage;
           flameRange = values.flameRange;
           flameSpread = values.flameSpread;
-          flameMaxAmmo = values.flameMaxAmmo;
           flameAmmoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
           flameAmmoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
-
           enemyDamage = values.enemyDamage;
           enemyHealth = values.enemyHealth;
           enemyMoveSpeed = values.enemyMoveSpeed;
           enemyAttackSpeed = values.enemyAttackSpeed;
           enemyRange = values.enemyRange ;
-
-          mgMaxUpgradeLevel = values.mgMaxUpgradeLevel ;
-          mgUpgradeCost = values.mgUpgradeCost;
-          mgUpgradeCostMultiplier = values.mgUpgradeCostMultiplier;
           mgFireRateUpgrade = values.mgFireRateUpgrade;
-
-          flameMaxUpgradeLevel = values.flameMaxUpgradeLevel;
-          flameUpgradeCost = values.flameUpgradeCost;
-          flameUpgradeCostMultiplier = values.flameUpgradeCostMultiplier;
-          flameMaxAmmoUpgrade = values.flameMaxAmmoUpgrade;
           flameSpreadUpgrade = values.flameSpreadUpgrade;
-            
-          flakMaxUpgradeLevel = values.flakMaxUpgradeLevel;
-          flakUpgradeCost =  values.flakUpgradeCost;
-          flakUpgradeCostMultiplier = values.flakUpgradeCostMultiplier;
           flakRadiusUpgrade = values.flakRadiusUpgrade;
           flakFireRateUpgrade = values.flakFireRateUpgrade;
-
           currency.currentCurrency = 0;
           currency.flakLevel = 0;
           currency.flameLevel = 0;
           currency.mgLevel = 0;
-          currency.flakActive = false;
-          currency.flameActive = false;
+          currency.rocketLevel = 0;
+          currency.shrapnelLevel = 0;
+          currency.caltropLevel = 0;
+          currency.gasLevel = 0;
+          currency.laserLevel = 0;
+          currency.teslaLevel = 0;
+          SaveData.Instance.SaveAllData();
         }
     }
 }

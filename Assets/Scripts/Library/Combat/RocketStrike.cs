@@ -22,11 +22,11 @@ namespace Library.Combat
 
         [SerializeField] private LayerMask damageToLayers;
 
-        [SerializeField] private int explosionDamage;
+        public int explosionDamage;
     
         [SerializeField] private float timeBetweenMissiles = 0.1f;
         
-        [SerializeField] private float coolDownTime = 3f;
+        public float coolDownTime = 3f;
     
         [SerializeField] private Transform playerTransform;
     
@@ -44,7 +44,7 @@ namespace Library.Combat
         
         public List<EnemyHealth> rocketStrikeTargets = new List<EnemyHealth>();
         
-        [SerializeField] private int maxMissileTargets = 16;
+        public int maxMissileTargets = 16;
 
         public GunMovement aim;
 

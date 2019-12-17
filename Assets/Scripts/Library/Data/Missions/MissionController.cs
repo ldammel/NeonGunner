@@ -67,7 +67,6 @@ namespace Library.Data.Missions
             progressDisplay[i].text = EnemySpawnController.killedEnemies + " / " + missions[i].missionGoal;
             if (EnemySpawnController.killedEnemies < missions[i].missionGoal) return;
             currencyObject.currentCurrency += missions[i].reward;
-            _manager.UpdateCurrency();
             RemoveMission(i);
         }
 

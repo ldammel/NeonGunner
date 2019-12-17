@@ -78,7 +78,6 @@ namespace Library.Events
         {
             _reward = (ushort)Mathf.Round((((EnemySpawnController.totalKills * Design.Instance.currencyGainPerEnemy)/(_timeTaken/20)) +(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth/(_timeTaken)))*reward);
             _manager.upgrades.currentCurrency += _reward;
-            _manager.UpdateCurrency();
             _timeTaken = 0;
             EnemySpawnController.totalKills = 0;
             EnemySpawnController.killedEnemies = 0;

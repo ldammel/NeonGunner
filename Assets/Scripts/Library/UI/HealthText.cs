@@ -7,7 +7,7 @@ namespace Library.UI
     public class HealthText : MonoBehaviour
     {
         public Image healthImage;
-        public EnemyHealth eh;
+                                      public EnemyHealth eh;
 
         // Update is called once per frame
         void Update()

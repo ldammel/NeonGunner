@@ -26,17 +26,10 @@ namespace Library.Events
            value.enemyAttackSpeed = values.enemyAttackSpeed;
            value.enemyRange = values.enemyRange ;
 
-           value.mgMaxUpgradeLevel = values.mgMaxUpgradeLevel ;
-           value.mgUpgradeCostMultiplier = values.mgUpgradeCostMultiplier;
            value.mgFireRateUpgrade = values.mgFireRateUpgrade;
-
-           value.flameMaxUpgradeLevel = values.flameMaxUpgradeLevel;
-           value.flameUpgradeCostMultiplier = values.flameUpgradeCostMultiplier;
-           value.flameMaxAmmoUpgrade = values.flameMaxAmmoUpgrade;
+           
            value.flameSpreadUpgrade = values.flameSpreadUpgrade;
 
-           value.flakMaxUpgradeLevel = values.flakMaxUpgradeLevel;
-           value.flakUpgradeCostMultiplier = values.flakUpgradeCostMultiplier;
            value.flakRadiusUpgrade = values.flakRadiusUpgrade;
            value.flakFireRateUpgrade = values.flakFireRateUpgrade;
             

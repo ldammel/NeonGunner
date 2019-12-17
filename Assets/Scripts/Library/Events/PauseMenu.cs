@@ -33,9 +33,9 @@ namespace Library.Events
 
         private void Start()
         {
-            _speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().moveSpeed;
-            pauseActive = false;
-            menuObject.SetActive(false);
+           // _speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().moveSpeed;
+            pauseActive = true;
+            menuObject.SetActive(true);
         }
 
         private void Update()

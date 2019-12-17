@@ -34,18 +34,6 @@ public class WeaponSelectionManager : MonoBehaviour
                 {
                         displayText[1].text = "None";
                 }
-                
-                if (man.flakActive) return;
-                if (man.flameActive) return;
-                foreach (var x in flakButtons)
-                {
-                        x.SetActive(man.flakActive);
-                }
-
-                foreach (var x in flameButtons)
-                {
-                        x.SetActive(man.flameActive);
-                }
         }
 
         public void SelectWeaponOne(int weapon)

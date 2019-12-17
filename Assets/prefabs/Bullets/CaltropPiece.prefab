@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &2232464273036986778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3062812129110614117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d9d9ecfd510a04783866729fead7da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flameFx: {fileID: 3062812129092106501}
 --- !u!1 &4468534938057636108
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +92,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.6
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -137,8 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f308ed114ca1d41b7c92997241e218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vfx: {fileID: 3062812129110614117}
   timeUntilDelete: 5
+  flameFx: {fileID: 3062812129092106501}
+  damage: 50
 --- !u!1001 &3062812129110582983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -613,12 +601,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 11400000, guid: ec8ca459c13886c48b2e9767acbe237b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec8ca459c13886c48b2e9767acbe237b, type: 3}
---- !u!1 &3062812129110614117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: ec8ca459c13886c48b2e9767acbe237b,
-    type: 3}
-  m_PrefabInstance: {fileID: 3062812129110582983}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3062812129110457413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: ec8ca459c13886c48b2e9767acbe237b,

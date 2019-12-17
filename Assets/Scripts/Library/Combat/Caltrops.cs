@@ -7,7 +7,7 @@ namespace Library.Combat
 {
     public class Caltrops : MonoBehaviour
     {
-        [SerializeField] private int caltropAmount;
+        public int caltropAmount;
         [SerializeField] private GameObject caltropPrefab;
         [SerializeField] private float fireRate;
         private float _fireTimer;
@@ -21,7 +21,7 @@ namespace Library.Combat
                 {
                     var go = Instantiate(caltropPrefab);
                     var position = transform.position;
-                    go.transform.position = new Vector3(position.x + Random.Range(-10,10), position.y, position.z+ Random.Range(-5,5));
+                    go.transform.position = new Vector3(position.x + Random.Range(-10,10), position.y, position.z+ Random.Range(-10,10));
                 }
                 _fireTimer = 0;
             }

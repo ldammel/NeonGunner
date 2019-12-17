@@ -277,6 +277,7 @@
                 <e p="Mission.cs" t="Include" />
                 <e p="MissionController.cs" t="Include" />
               </e>
+              <e p="SaveData.cs" t="Include" />
               <e p="WeaponSelectionManager.cs" t="Include" />
               <e p="WeaponSlotManager.cs" t="Include" />
             </e>
@@ -329,6 +330,17 @@
               <e p="SpeedDisplay.cs" t="Include" />
               <e p="UIManager.cs" t="Include" />
               <e p="UpgradeUIManager.cs" t="Include" />
+              <e p="WeaponUpgrades" t="Include">
+                <e p="UpgradeCaltrop.cs" t="Include" />
+                <e p="UpgradeFlak.cs" t="Include" />
+                <e p="UpgradeFlame.cs" t="Include" />
+                <e p="UpgradeGas.cs" t="Include" />
+                <e p="UpgradeLaser.cs" t="Include" />
+                <e p="UpgradeMG.cs" t="Include" />
+                <e p="UpgradeRocket.cs" t="Include" />
+                <e p="UpgradeShrapnel.cs" t="Include" />
+                <e p="UpgradeTesla.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="SimpleCameraController.cs" t="Include" />

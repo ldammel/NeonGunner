@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Character.ScriptableObjects;
 using Library.Combat.Enemy;
 using Library.Events;
 using Library.Tools;
@@ -11,6 +12,7 @@ namespace Library.Combat
         public float damage;
         public float range;
 
+        [SerializeField] private WeaponValues values;
         [SerializeField] private Camera cam;
         [SerializeField] private GameObject vfx;
         
@@ -26,6 +28,9 @@ namespace Library.Combat
             {
                 cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
             }
+            fireRate = values.mgFireRate;
+            damage = values.mgDamage;
+            range = values.mgRange;
         }
 
 
