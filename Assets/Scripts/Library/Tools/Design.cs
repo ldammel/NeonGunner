@@ -180,6 +180,9 @@ namespace Library.Tools
             currency.gasLevel = 0;
             currency.laserLevel = 0;
             currency.teslaLevel = 0;
+            currency.selectedWeaponOne = 0;
+            currency.selectedWeaponTwo = 0;
+            currency.selectedSlotTwo = null;
             SaveData.Instance.SaveAllData();
         }
         [Button("Reset Stats in Designer",(ButtonSizes.Large))]

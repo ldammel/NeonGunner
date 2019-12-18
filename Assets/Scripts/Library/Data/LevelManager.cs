@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Library.Combat.Enemy;
 using Library.Events;
 using UnityEngine;
@@ -20,8 +21,15 @@ namespace Library.Data
         }
 
         public GameObject levelSelection;
+        public GameObject upgradeScreen;
         public GameObject failScreen;
         public GameObject winScreen;
+
+        private void Start()
+        {
+            StartCoroutine(StartGame());
+            SaveData.Instance.LoadAllData();
+        }
 
         public void RoundEnd()
         {
@@ -33,6 +41,7 @@ namespace Library.Data
 
         public void Restart()
         {
+            SaveData.Instance.SaveAllData();
             SceneManager.LoadScene(1);
         }
 
@@ -45,6 +54,17 @@ namespace Library.Data
             {
                 Destroy(e);
             }
+        }
+
+        IEnumerator StartGame()
+        {
+            PauseMenu.Instance.pauseActive = true;
+            levelSelection.SetActive(true);
+            upgradeScreen.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+            upgradeScreen.SetActive(false);
+            levelSelection.SetActive(false);
+            PauseMenu.Instance.pauseActive = false;
         }
     }
 }

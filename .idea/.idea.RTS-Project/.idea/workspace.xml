@@ -2,34 +2,122 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Animator Controler.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Animator Controler/TerrorHPCTRL.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Animator Controler/TerrorHPCTRL.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/AttackWingClaw.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/AttackWingClaw.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Basic Attack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Basic Attack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Defend.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Defend.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Flame Attack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Flame Attack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/FlyAttack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/FlyAttack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/FlyForward.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/FlyForward.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/FlyGlide.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/FlyGlide.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/FlyIdle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/FlyIdle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/GetHit.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/GetHit.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Landing.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Landing.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Run.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/Run.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/TakeOff.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/TakeOff.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/die.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/die.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/idle01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/idle01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/idle02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/idle02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/scream.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/scream.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/sleep.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/sleep.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/walk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Animations/walk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Purple.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Purple.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Shadow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Shadow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Stage.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Materials/Stage.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/MayaAndPSDFiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/MayaAndPSDFiles/MayaFiles.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/MayaAndPSDFiles/MayaFiles.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/MayaAndPSDFiles/OriginalPSD.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/MayaAndPSDFiles/OriginalPSD.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Mesh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Mesh/DefaultMesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Mesh/DefaultMesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs/BlueDragon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs/BlueDragon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs/GreenDragon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs/GreenDragon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs/PurpleDragon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs/PurpleDragon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs/RedDragon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Prefabs/RedDragon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Scene/Scene01.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Scene/Scene01.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/BlueUnlit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/BlueUnlit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/GreenUnlit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/GreenUnlit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/RedUnlit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/RedUnlit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/bg.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/DragonTerrorBringerHP/Textures/shadow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/Librarian.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/Librarian.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/act_animal_eyes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/act_animal_eyes.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/act_bibliotekar norm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/act_bibliotekar norm.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/act_bibliotekar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/act_bibliotekar.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/SelectedDif.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/SelectedDif.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropPiece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropPiece.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Caltrops.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Caltrops.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/MissionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/MissionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/HealthText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/HealthText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/CaltropPiece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/CaltropPiece.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/MissionDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/ScoreText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemySpawnController.cs" />
@@ -186,7 +273,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ShrapnelPiece.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/AI/Waypoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
@@ -203,25 +289,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/MissionController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Caltrops.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeCaltrop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" />
       </list>
     </option>
   </component>
@@ -307,6 +395,7 @@
       <workItem from="1576507519605" duration="1648000" />
       <workItem from="1576577657114" duration="8812000" />
       <workItem from="1576590802582" duration="7554000" />
+      <workItem from="1576664968850" duration="6329000" />
     </task>
     <servers />
   </component>

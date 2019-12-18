@@ -1847,6 +1847,7 @@ GameObject:
   - component: {fileID: 8282341587209061842}
   - component: {fileID: 3206907682855055365}
   - component: {fileID: 306747629004912664}
+  - component: {fileID: 4983419945946864827}
   m_Layer: 5
   m_Name: Shrapnel Level 2
   m_TagString: Untagged
@@ -1955,6 +1956,35 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4983419945946864827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114643729043663930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390debf2fe7908448896a4b03959b9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  flak: {fileID: 4484576439604839339, guid: beece9324ccf52a4097ef14e9785b47c, type: 3}
+  flakGameObject: {fileID: 826079500682482524, guid: ac115e4d0cee37d48ac4d2604c9fdf6b,
+    type: 3}
+  shrapnelGameObject: {fileID: 4468534938057636108, guid: beece9324ccf52a4097ef14e9785b47c,
+    type: 3}
+  shrapnel: {fileID: 0}
+  pool: {fileID: 0}
+  prefabPool: {fileID: 0}
+  previousUpgrade: {fileID: 5409861133091240927}
+  nextUpgrade: {fileID: 5370301566017366238}
+  lockedImage: {fileID: 2546203501355789374}
+  upgradeLevel: 1
+  upgradeCost: 15000
+  isLocked: 1
+  isActivated: 0
 --- !u!1 &116357828144147086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,6 +2732,7 @@ GameObject:
   - component: {fileID: 994986048253431796}
   - component: {fileID: 8491485105760047104}
   - component: {fileID: 4240495528717950647}
+  - component: {fileID: 1847401587274186149}
   m_Layer: 5
   m_Name: Rocket Level 3
   m_TagString: Untagged
@@ -2810,6 +2841,29 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1847401587274186149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797772873366496507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3a52222f439b047b45a033011d8a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  rocket: {fileID: 0}
+  rocketObject: {fileID: 0}
+  previousUpgrade: {fileID: 7077560072784239183}
+  nextUpgrade: {fileID: 0}
+  lockedImage: {fileID: 5118932513427164883}
+  upgradeLevel: 2
+  upgradeCost: 20000
+  isLocked: 1
+  isActivated: 0
 --- !u!1 &901162832995817088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2962,6 +3016,7 @@ GameObject:
   - component: {fileID: 6656535067296429473}
   - component: {fileID: 619656041916205579}
   - component: {fileID: 5761986299750996768}
+  - component: {fileID: 5409861133091240927}
   m_Layer: 5
   m_Name: Shrapnel Level 1
   m_TagString: Untagged
@@ -3070,6 +3125,35 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5409861133091240927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914437455295623751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390debf2fe7908448896a4b03959b9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  flak: {fileID: 4484576439604839339, guid: beece9324ccf52a4097ef14e9785b47c, type: 3}
+  flakGameObject: {fileID: 826079500682482524, guid: ac115e4d0cee37d48ac4d2604c9fdf6b,
+    type: 3}
+  shrapnelGameObject: {fileID: 4468534938057636108, guid: beece9324ccf52a4097ef14e9785b47c,
+    type: 3}
+  shrapnel: {fileID: 0}
+  pool: {fileID: 0}
+  prefabPool: {fileID: 0}
+  previousUpgrade: {fileID: 0}
+  nextUpgrade: {fileID: 4983419945946864827}
+  lockedImage: {fileID: 2301607118303948792}
+  upgradeLevel: 0
+  upgradeCost: 10000
+  isLocked: 1
+  isActivated: 0
 --- !u!1 &956730562589989859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3296,79 @@ MonoBehaviour:
   upgradeCost: 7500
   isLocked: 1
   isActivated: 0
+--- !u!1 &982977189252347218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4159164917721217165}
+  - component: {fileID: 8639600645860504712}
+  - component: {fileID: 3643663022223031481}
+  m_Layer: 5
+  m_Name: Overlay (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4159164917721217165
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982977189252347218}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5533721280192847845}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8639600645860504712
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982977189252347218}
+  m_CullTransparentMesh: 0
+--- !u!114 &3643663022223031481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982977189252347218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.41509432, g: 0.41313633, b: 0.41313633, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 08b461fc8ac9ee149a41121b3ad16c97, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1090277928081528135
 GameObject:
   m_ObjectHideFlags: 0
@@ -8560,6 +8717,7 @@ GameObject:
   - component: {fileID: 2793335324813166574}
   - component: {fileID: 5957106870797704803}
   - component: {fileID: 3695346503744997088}
+  - component: {fileID: 4126151563387706026}
   m_Layer: 5
   m_Name: Flak Level 3
   m_TagString: Untagged
@@ -8668,6 +8826,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4126151563387706026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3431071485768861954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a301786645d18df4b915b424ba5e2123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  flak: {fileID: 4484576439604839339, guid: a9178588c8e3f2f4482f1a185c4376ae, type: 3}
+  flakGameObject: {fileID: 826079500682482524, guid: ac115e4d0cee37d48ac4d2604c9fdf6b,
+    type: 3}
+  pool: {fileID: 0}
+  previousUpgrade: {fileID: 7987272828093501045}
+  nextUpgrade: {fileID: 0}
+  rocketUpgrade: {fileID: 9194972443745805238}
+  shrapnelUpgrade: {fileID: 5409861133091240927}
+  lockedImage: {fileID: 3451737773718756701}
+  upgradeLevel: 2
+  upgradeCost: 2000
+  isLocked: 1
+  isActivated: 0
 --- !u!1 &3442875148380004037
 GameObject:
   m_ObjectHideFlags: 0
@@ -8680,6 +8865,7 @@ GameObject:
   - component: {fileID: 7384631902906827371}
   - component: {fileID: 3446875045989714704}
   - component: {fileID: 3493243996204807830}
+  - component: {fileID: 9194972443745805238}
   m_Layer: 5
   m_Name: Rocket Level 1
   m_TagString: Untagged
@@ -8788,6 +8974,29 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9194972443745805238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442875148380004037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3a52222f439b047b45a033011d8a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  rocket: {fileID: 0}
+  rocketObject: {fileID: 0}
+  previousUpgrade: {fileID: 0}
+  nextUpgrade: {fileID: 7077560072784239183}
+  lockedImage: {fileID: 1324838985750152900}
+  upgradeLevel: 0
+  upgradeCost: 10000
+  isLocked: 1
+  isActivated: 0
 --- !u!1 &3491662553145909930
 GameObject:
   m_ObjectHideFlags: 0
@@ -9700,7 +9909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7671664987699833504
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10886,6 +11095,7 @@ GameObject:
   - component: {fileID: 1988244054315835829}
   - component: {fileID: 8672820714914650934}
   - component: {fileID: 9176389514942400882}
+  - component: {fileID: 7987272828093501045}
   m_Layer: 5
   m_Name: Flak Level 2
   m_TagString: Untagged
@@ -10994,6 +11204,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7987272828093501045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187896651524055041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a301786645d18df4b915b424ba5e2123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  flak: {fileID: 4484576439604839339, guid: a9178588c8e3f2f4482f1a185c4376ae, type: 3}
+  flakGameObject: {fileID: 826079500682482524, guid: ac115e4d0cee37d48ac4d2604c9fdf6b,
+    type: 3}
+  pool: {fileID: 0}
+  previousUpgrade: {fileID: 7081964892572722037}
+  nextUpgrade: {fileID: 4126151563387706026}
+  rocketUpgrade: {fileID: 0}
+  shrapnelUpgrade: {fileID: 0}
+  lockedImage: {fileID: 7839868504338884057}
+  upgradeLevel: 1
+  upgradeCost: 1500
+  isLocked: 1
+  isActivated: 0
 --- !u!1 &4206430981452127464
 GameObject:
   m_ObjectHideFlags: 0
@@ -14623,6 +14860,79 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5422491674646478914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8688554255464807844}
+  - component: {fileID: 8594010340672389989}
+  - component: {fileID: 5236365962450503349}
+  m_Layer: 5
+  m_Name: Overlay (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8688554255464807844
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5422491674646478914}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5533721279670251318}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8594010340672389989
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5422491674646478914}
+  m_CullTransparentMesh: 0
+--- !u!114 &5236365962450503349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5422491674646478914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.41509432, g: 0.41313633, b: 0.41313633, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 08b461fc8ac9ee149a41121b3ad16c97, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5533721278213351887
 GameObject:
   m_ObjectHideFlags: 0
@@ -17061,6 +17371,7 @@ RectTransform:
   m_Children:
   - {fileID: 5533721279868256237}
   - {fileID: 5533721280117778453}
+  - {fileID: 8688554255464807844}
   m_Father: {fileID: 8949726047639372300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17636,7 +17947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5533721279977921225
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17848,6 +18159,7 @@ GameObject:
   - component: {fileID: 5533721280192847842}
   - component: {fileID: 5533721280192847843}
   - component: {fileID: 5533721280192847844}
+  - component: {fileID: 7081964892572722037}
   m_Layer: 5
   m_Name: Flak Level 1
   m_TagString: Untagged
@@ -17868,6 +18180,7 @@ RectTransform:
   m_Children:
   - {fileID: 5533721278213351886}
   - {fileID: 5533721279194699986}
+  - {fileID: 4159164917721217165}
   m_Father: {fileID: 140282652758123679}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17955,6 +18268,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7081964892572722037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5533721280192847846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a301786645d18df4b915b424ba5e2123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  flak: {fileID: 4484576439604839339, guid: a9178588c8e3f2f4482f1a185c4376ae, type: 3}
+  flakGameObject: {fileID: 826079500682482524, guid: ac115e4d0cee37d48ac4d2604c9fdf6b,
+    type: 3}
+  pool: {fileID: 0}
+  previousUpgrade: {fileID: 0}
+  nextUpgrade: {fileID: 7987272828093501045}
+  rocketUpgrade: {fileID: 0}
+  shrapnelUpgrade: {fileID: 0}
+  lockedImage: {fileID: 3643663022223031481}
+  upgradeLevel: 0
+  upgradeCost: 1000
+  isLocked: 0
+  isActivated: 0
 --- !u!1 &5533721280203001747
 GameObject:
   m_ObjectHideFlags: 0
@@ -18417,6 +18757,7 @@ GameObject:
   - component: {fileID: 6397779606394854015}
   - component: {fileID: 6780867184310811052}
   - component: {fileID: 2197095773320356837}
+  - component: {fileID: 5370301566017366238}
   m_Layer: 5
   m_Name: Shrapnel Level 3
   m_TagString: Untagged
@@ -18525,6 +18866,35 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5370301566017366238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561724154230156090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390debf2fe7908448896a4b03959b9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  flak: {fileID: 4484576439604839339, guid: beece9324ccf52a4097ef14e9785b47c, type: 3}
+  flakGameObject: {fileID: 826079500682482524, guid: ac115e4d0cee37d48ac4d2604c9fdf6b,
+    type: 3}
+  shrapnelGameObject: {fileID: 4468534938057636108, guid: beece9324ccf52a4097ef14e9785b47c,
+    type: 3}
+  shrapnel: {fileID: 0}
+  pool: {fileID: 0}
+  prefabPool: {fileID: 0}
+  previousUpgrade: {fileID: 4983419945946864827}
+  nextUpgrade: {fileID: 0}
+  lockedImage: {fileID: 3965333329055740124}
+  upgradeLevel: 2
+  upgradeCost: 20000
+  isLocked: 1
+  isActivated: 0
 --- !u!1 &5575232675478726004
 GameObject:
   m_ObjectHideFlags: 0
@@ -22210,6 +22580,7 @@ GameObject:
   - component: {fileID: 5227028510616807528}
   - component: {fileID: 1989015556443192440}
   - component: {fileID: 2847373196667829862}
+  - component: {fileID: 7077560072784239183}
   m_Layer: 5
   m_Name: Rocket Level 2
   m_TagString: Untagged
@@ -22318,6 +22689,29 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7077560072784239183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7939047508081121397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3a52222f439b047b45a033011d8a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
+  values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
+  rocket: {fileID: 0}
+  rocketObject: {fileID: 0}
+  previousUpgrade: {fileID: 9194972443745805238}
+  nextUpgrade: {fileID: 1847401587274186149}
+  lockedImage: {fileID: 1517246178948116907}
+  upgradeLevel: 1
+  upgradeCost: 15000
+  isLocked: 1
+  isActivated: 0
 --- !u!1 &8065387469266603491
 GameObject:
   m_ObjectHideFlags: 0
@@ -25797,15 +26191,15 @@ PrefabInstance:
       objectReference: {fileID: 5533721279977921226}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b4b02b983ab2bd41a3f19af63a6f110, type: 3}
---- !u!224 &7856785726206423977 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2432879288525696342, guid: 2b4b02b983ab2bd41a3f19af63a6f110,
-    type: 3}
-  m_PrefabInstance: {fileID: 5533721278233321215}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7856785726206423976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2432879288525696343, guid: 2b4b02b983ab2bd41a3f19af63a6f110,
+    type: 3}
+  m_PrefabInstance: {fileID: 5533721278233321215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &7856785726206423977 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2432879288525696342, guid: 2b4b02b983ab2bd41a3f19af63a6f110,
     type: 3}
   m_PrefabInstance: {fileID: 5533721278233321215}
   m_PrefabAsset: {fileID: 0}
