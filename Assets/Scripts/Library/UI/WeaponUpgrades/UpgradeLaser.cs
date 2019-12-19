@@ -24,10 +24,16 @@ namespace Library.UI.WeaponUpgrades
         public bool isLocked;
         public bool isActivated;
 
+        private bool _alreadyActivated;
+
         private void Start()
         {
             _activatedImage = gameObject.GetComponent<Image>();
             _thisButton = gameObject.GetComponent<Button>();
+            UpdateImages();
+            if (currency.laserLevel == 0) return;
+            _alreadyActivated = true;
+            Upgrade();
             UpdateImages();
         }
 
@@ -42,11 +48,14 @@ namespace Library.UI.WeaponUpgrades
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
             }
+            
+            isActivated = true;
+            _thisButton.enabled = false;
             
             if (nextUpgrade !=null)
             {
@@ -54,12 +63,9 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.UpdateImages();
             }
             
+            if (currency.laserLevel >= upgradeLevel && currency.laserLevel != 0) return;
             currency.laserLevel = upgradeLevel;
             currency.currentCurrency -= upgradeCost;
-
-            isActivated = true;
-            _thisButton.enabled = false;
-
         }
     }
 }

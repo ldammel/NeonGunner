@@ -2,147 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Files.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/Librarian.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/Helper.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/Helper/MouseUtility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/Helper/MouseUtility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/Helper/PathHandle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/Helper/PathHandle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/Helper/ScreenSpacePolyLine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/Helper/ScreenSpacePolyLine.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/PathCreatorEditor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/PathCreatorEditor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/PathEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Editor/PathEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/BezierPath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/BezierPath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/EndOfPathInstruction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/EndOfPathInstruction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/GlobalDisplaySettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/GlobalDisplaySettings.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/MinMax3D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/MinMax3D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/PathCreator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/PathCreator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/PathCreatorData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/PathCreatorData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/PathSpace.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/PathSpace.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/VertexPath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Objects/VertexPath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/PathCreator.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/PathCreator.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Utility.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Utility/CubicBezierUtility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Utility/CubicBezierUtility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Utility/MathUtility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Utility/MathUtility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Utility/VertexPathUtility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Runtime/Utility/VertexPathUtility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Settings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Settings/GlobalDisplaySettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Core/Settings/GlobalDisplaySettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Documentation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Documentation/Documentation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Documentation/Documentation.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Black.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Black.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Blue.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Blue.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Brown.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Brown.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Dark Grey.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Dark Grey.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Green.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Green.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Red.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Red.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road Texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road Texture.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road Underside.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road Underside.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Materials/Road.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs/Cube.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs/Cube.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs/Follower.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs/Follower.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs/Path.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs/Path.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs/Sphere.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Prefabs/Sphere.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Follow Path.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Follow Path.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Generate Path.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Generate Path.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Object Placement.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Object Placement.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Path as Prefab.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Path as Prefab.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Road.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scenes/Road.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/Editor/PathSceneToolEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/Editor/PathSceneToolEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/GeneratePathExample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/GeneratePathExample.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathFollower.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathFollower.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathPlacer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathPlacer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathSceneTool.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathSceneTool.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/PathSpawner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/RoadMeshCreator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PathCreator/Examples/Scripts/RoadMeshCreator.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/Easy Difficulty.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/Easy Difficulty.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/Hard Difficulty.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/Hard Difficulty.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/Normal Difficulty.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/Normal Difficulty.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/SelectedDif.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Difficulty/SelectedDif.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeCaltrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeCaltrop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion Small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion Small.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeatherMaker/Prefab/WeatherMakerLWRPPackage.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/---MANAGERS---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/---MANAGERS---.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/shrapnel Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/shrapnel Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/shrapnelPiece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/shrapnelPiece.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Path/Path.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Path/Path.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,13 +152,13 @@
     <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/SummoningController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/MonsterInventory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurve.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/MissionDisplayController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/RocketStrikeUI.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/Mission.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CamTransitionPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/MathParabola.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/EnemyFoundEvent.cs" />
@@ -292,7 +171,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/GameSaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropThrower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
@@ -300,28 +178,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/HealthText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/MissionController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Caltrops.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeCaltrop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" />
         <option value="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs" />
@@ -329,7 +194,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/IUpgrade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeCaltrop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" />
       </list>
     </option>
   </component>
@@ -416,7 +296,7 @@
       <workItem from="1576577657114" duration="8812000" />
       <workItem from="1576590802582" duration="7554000" />
       <workItem from="1576664968850" duration="6329000" />
-      <workItem from="1576744671295" duration="7910000" />
+      <workItem from="1576744671295" duration="13663000" />
     </task>
     <servers />
   </component>

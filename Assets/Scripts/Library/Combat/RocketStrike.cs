@@ -64,17 +64,22 @@ namespace Library.Combat
             if (currentDooldown < coolDownTime) return;
             RocketStrikeUI.ResetRocketIndicator();
             var mouseButtonDown = Input.GetMouseButton(1);
+
             aim = FindObjectOfType<GunMovement>();
 
             if (mouseButtonDown == lastButtonOneState) return;
-            if (!mouseButtonDown) {
+            if (!mouseButtonDown)
+            {
                 aim.enemyInVisor.RemoveListener(RocketStrikeTargetAdd);
                 TriggerRocketStrike();
-            } else {
+            }
+            else
+            {
                 aim.enemyInVisor.AddListener(RocketStrikeTargetAdd);
             }
-            
+
             lastButtonOneState = mouseButtonDown;
+            
         }
 
         private void TriggerRocketStrike() {

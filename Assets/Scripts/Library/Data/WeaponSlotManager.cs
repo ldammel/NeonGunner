@@ -58,6 +58,18 @@ namespace Library.Data
                                 case 2:
                                         test.bulletPooledComponent[0] = go.GetComponentInChildren<BulletPooled>();
                                         break;
+                                case 3:
+                                        
+                                        break;
+                                case 4:
+                                        
+                                        break;
+                                case 5:
+                                        
+                                        break;
+                                case 6:
+                                        test.caltropComponent[0] = go.GetComponentInChildren<Caltrops>();
+                                        break;
                                 default:
                                         break;
                         }
@@ -87,6 +99,18 @@ namespace Library.Data
                                         break;
                                 case 2:
                                         test.bulletPooledComponent[1] = go.GetComponentInChildren<BulletPooled>();
+                                        break;
+                                case 3:
+                                        
+                                        break;
+                                case 4:
+                                        
+                                        break;
+                                case 5:
+                                        
+                                        break;
+                                case 6:
+                                        test.caltropComponent[1] = go.GetComponentInChildren<Caltrops>();
                                         break;
                                 default:
                                         break;

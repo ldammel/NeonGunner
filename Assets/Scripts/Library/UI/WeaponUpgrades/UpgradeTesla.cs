@@ -15,19 +15,25 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private UpgradeTesla nextUpgrade;
         
         [SerializeField] private Image lockedImage;
-        private Image _activatedImage;
-        private Button _thisButton;
         
         [SerializeField] private ushort upgradeLevel;
         [SerializeField] private ushort upgradeCost;
         
         public bool isLocked;
         public bool isActivated;
+        
+        private bool _alreadyActivated;
+        private Image _activatedImage;
+        private Button _thisButton;
 
         private void Start()
         {
             _activatedImage = gameObject.GetComponent<Image>();
             _thisButton = gameObject.GetComponent<Button>();
+            UpdateImages();            
+            if (currency.teslaLevel == 0) return;
+            _alreadyActivated = true;
+            Upgrade();
             UpdateImages();
         }
 
@@ -42,11 +48,14 @@ namespace Library.UI.WeaponUpgrades
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
             }
+
+            isActivated = true;
+            _thisButton.enabled = false;
             
             if (nextUpgrade !=null)
             {
@@ -54,11 +63,11 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.UpdateImages();
             }
             
-            currency.teslaLevel = upgradeLevel;
-            currency.currentCurrency -= upgradeCost;
-
-            isActivated = true;
-            _thisButton.enabled = false;
+            if (currency.teslaLevel < upgradeLevel)
+            {
+                currency.teslaLevel = upgradeLevel;
+                currency.currentCurrency -= upgradeCost;
+            }
 
             switch (upgradeLevel)
             {

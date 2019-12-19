@@ -16,6 +16,7 @@ public class Test : MonoBehaviour
     public BulletPooled[] bulletPooledComponent;
     public MachineGun[] machineGunComponent;
     public GameObject[] flamethrowerGameObject;
+    public Caltrops[] caltropComponent;
     public CurrencyObject currencyObject;
     public Transform[] positions;
     public Transform[] parents;
@@ -69,6 +70,7 @@ public class Test : MonoBehaviour
             if(bulletPooledComponent[i] != null) bulletPooledComponent[i].enabled = i == position;
             if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == position);
             if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == position;
+            //if(caltropComponent[i] != null) caltropComponent[i].enabled = i == position;
         }
     }
 
@@ -82,6 +84,7 @@ public class Test : MonoBehaviour
             if(bulletPooledComponent[i] != null) bulletPooledComponent[i].enabled = i == 0;
             if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == 0);
             if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == 0;
+            //if(caltropComponent[i] != null) caltropComponent[i].enabled = i == 0;
         }
     }
 

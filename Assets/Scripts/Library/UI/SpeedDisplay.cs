@@ -17,7 +17,7 @@ namespace Library.UI
 
         private void Start()
         {
-            speedMax = mov.Points[0].GetFloat("Speed");
+            speedMax = mov.Points[1].GetFloat("Speed");
         }
 
         private void Update()

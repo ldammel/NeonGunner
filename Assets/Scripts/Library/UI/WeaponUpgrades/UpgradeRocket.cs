@@ -11,32 +11,35 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private CurrencyObject currency;
         [SerializeField] private WeaponValues values;
 
-        [SerializeField] private RocketStrike rocket;
         [SerializeField] private GameObject rocketObject;
         
         [SerializeField] private UpgradeRocket previousUpgrade;
         [SerializeField] private UpgradeRocket nextUpgrade;
 
         [SerializeField] private Image lockedImage;
-        private Image _activatedImage;
-        private Button _thisButton;
         
         [SerializeField] private ushort upgradeLevel;
         [SerializeField] private ushort upgradeCost;
         
         public bool isLocked;
         public bool isActivated;
+        
+        private bool _alreadyActivated;
+        private RocketStrike _rocket;
+        private Image _activatedImage;
+        private Button _thisButton;
 
         private void Start()
         {
             _activatedImage = gameObject.GetComponent<Image>();
-            rocket = rocketObject.GetComponentInChildren<RocketStrike>();
-            rocket.explosionDamage = (int)values.rocketDamage;
-            rocket.coolDownTime = values.rocketFireRate;
-            rocket.maxMissileTargets = (int)values.rocketEnemiesAmount;
+            _rocket = rocketObject.GetComponentInChildren<RocketStrike>();
+            _rocket.explosionDamage = (int)values.rocketDamage;
+            _rocket.coolDownTime = values.rocketFireRate;
+            _rocket.maxMissileTargets = (int)values.rocketEnemiesAmount;
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
             if (currency.rocketLevel == 0) return;
+            _alreadyActivated = true;
             Upgrade();
             UpdateImages();
         }
@@ -52,7 +55,7 @@ namespace Library.UI.WeaponUpgrades
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
@@ -83,10 +86,10 @@ namespace Library.UI.WeaponUpgrades
                     rocketObject.SetActive(true);
                     break;
                 case 1:
-                    rocket.maxMissileTargets = (int)values.rocketEnemiesAmount;
+                    _rocket.maxMissileTargets = (int)values.rocketEnemiesAmount;
                     return;
                 case 2:
-                    rocket.coolDownTime = values.rocketFireRate;
+                    _rocket.coolDownTime = values.rocketFireRate;
                     return;
                 default:
                     return;
