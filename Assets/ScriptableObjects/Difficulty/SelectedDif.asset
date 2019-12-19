@@ -16,7 +16,7 @@ MonoBehaviour:
   BaseValue: 0
   mgDamage: 50
   mgRange: 100
-  mgFireRate: 0.05
+  mgFireRate: 0.2
   mgFireRateUpgrade: 2
   laserDamage: 0
   laserDamageUpgrade: 0
@@ -28,18 +28,18 @@ MonoBehaviour:
   teslaJumpAmountUpgrade: 0
   flakDamage: 100
   flakRange: 0.5
-  flakDamageRadius: 8
-  flakFireRate: 0.25
+  flakDamageRadius: 2
+  flakFireRate: 1
   flakFireRateUpgrade: 2
   flakRadiusUpgrade: 2
-  shrapnelDamage: 50
+  shrapnelDamage: 5000
   shrapnelRadius: 5
   shrapnelAmount: 20
   shrapnelRadiusUpgrade: 5
   shrapnelDamageUpgrade: 10
   rocketDamage: 100
-  rocketFireRate: 3
-  rocketEnemiesAmount: 4
+  rocketFireRate: 1.5
+  rocketEnemiesAmount: 8
   rocketFireRateUpgrade: 2
   rocketEnemiesAmountUpgrade: 8
   flameDamage: 30

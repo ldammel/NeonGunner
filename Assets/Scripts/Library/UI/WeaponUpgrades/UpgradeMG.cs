@@ -41,7 +41,7 @@ namespace Library.UI.WeaponUpgrades
             mg.fireRate = values.mgFireRate;
             mg.damage = values.mgDamage;
             mg.range = values.mgRange;
-            if (currency.mgLevel < upgradeLevel) return;
+            if (currency.mgLevel == 0) return;
             Upgrade();
             UpdateImages();
         }

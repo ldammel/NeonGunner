@@ -59,8 +59,8 @@ namespace Library.Combat
             }
             else if (hit.collider.gameObject.CompareTag("Sign"))
             {
-                if(hit.collider.gameObject.GetComponent<SignActivation>() != null) hit.collider.gameObject.GetComponent<SignActivation>().PathSignActivation();
-                hit.collider.gameObject.SetActive(false);
+               // if(hit.collider.gameObject.GetComponent<SignActivation>() != null) hit.collider.gameObject.GetComponent<SignActivation>().PathSignActivation();
+               // hit.collider.gameObject.SetActive(false);
             }
             
             Instantiate(vfx, hit.point, hit.collider.transform.rotation);

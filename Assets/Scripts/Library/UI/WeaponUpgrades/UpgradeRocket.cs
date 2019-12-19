@@ -36,7 +36,7 @@ namespace Library.UI.WeaponUpgrades
             rocket.maxMissileTargets = (int)values.rocketEnemiesAmount;
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
-            if (currency.rocketLevel < upgradeLevel) return;
+            if (currency.rocketLevel == 0) return;
             Upgrade();
             UpdateImages();
         }

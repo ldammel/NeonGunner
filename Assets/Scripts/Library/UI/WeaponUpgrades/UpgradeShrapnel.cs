@@ -43,7 +43,7 @@ namespace Library.UI.WeaponUpgrades
             flak.gameObject.GetComponent<BulletShot>().maxLifeTime = values.flakRange;
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
-            if (currency.shrapnelLevel < upgradeLevel) return;
+            if (currency.shrapnelLevel == 0) return;
             Upgrade();
             UpdateImages();
         }
@@ -74,13 +74,14 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.UpdateImages();
             }
             
+            prefabPool.prefab = shrapnelGameObject;
+            prefabPool.ResetShots();
+            
             if (currency.shrapnelLevel < upgradeLevel)
             {
                 currency.shrapnelLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;
-                prefabPool.prefab = shrapnelGameObject;
-                values.flakDamageRadius *= values.shrapnelRadiusUpgrade;
-                values.shrapnelDamage *= values.shrapnelDamageUpgrade;
+                if(upgradeLevel == 2)values.shrapnelDamage *= values.shrapnelDamageUpgrade;
             }
 
             UpdateImages();
@@ -88,7 +89,7 @@ namespace Library.UI.WeaponUpgrades
             switch (upgradeLevel)
             {
                 case 1:
-                    flak.radius = values.flakDamageRadius;
+
                     return;
                 case 2:
                     shrapnel.damage = (int)values.shrapnelDamage;

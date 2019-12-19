@@ -41,7 +41,7 @@ namespace Library.UI.WeaponUpgrades
             flak.gameObject.GetComponent<BulletShot>().maxLifeTime = values.flakRange;
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
-            if (currency.flakLevel < upgradeLevel) return;
+            if (currency.flakLevel == 0) return;
             Upgrade();
             UpdateImages();
         }
@@ -86,8 +86,8 @@ namespace Library.UI.WeaponUpgrades
             {
                 currency.flakLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;
-                values.flakDamageRadius *= values.flakRadiusUpgrade;
-                values.flakFireRate /= values.flakFireRateUpgrade;
+               if(upgradeLevel == 1) values.flakDamageRadius *= values.flakRadiusUpgrade;
+               if(upgradeLevel == 2) values.flakFireRate /= values.flakFireRateUpgrade;
             }
 
             

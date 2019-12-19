@@ -14,18 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   BaseValue: 0
-  currentCurrency: 0
-  flakLevel: 0
+  currentCurrency: 39210
+  flakLevel: 2
   flameLevel: 0
-  mgLevel: 0
-  rocketLevel: 0
-  shrapnelLevel: 0
+  mgLevel: 2
+  rocketLevel: 2
+  shrapnelLevel: 2
   caltropLevel: 0
   gasLevel: 0
   laserLevel: 0
   teslaLevel: 0
   selectedSlotOne: {fileID: 8515736470161167883, guid: 447158411e991ce4889d80cfe0603854,
     type: 3}
-  selectedSlotTwo: {fileID: 0}
+  selectedSlotTwo: {fileID: 826079500682482524, guid: ac115e4d0cee37d48ac4d2604c9fdf6b,
+    type: 3}
   selectedWeaponOne: 0
-  selectedWeaponTwo: 0
+  selectedWeaponTwo: 2

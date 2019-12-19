@@ -32,7 +32,7 @@ namespace Library.Events
         [SerializeField] private TextMeshProUGUI timeText;
         [SerializeField] private TextMeshProUGUI rewardText;
 
-        private ushort _reward;
+        private int _reward;
         private float _timeTaken;
         private UpgradeManager _manager;
         private float baseSeconds;
@@ -76,7 +76,7 @@ namespace Library.Events
         
         public void CalculateReward(int reward)
         {
-            _reward = (ushort)Mathf.Round((((EnemySpawnController.totalKills * Design.Instance.currencyGainPerEnemy)/(_timeTaken/20)) +(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth/(_timeTaken)))*reward);
+            _reward = Mathf.RoundToInt((((EnemySpawnController.totalKills * Design.Instance.currencyGainPerEnemy)/(_timeTaken/20)) +(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth/(_timeTaken/20)))*reward);
             _manager.upgrades.currentCurrency += _reward;
             _timeTaken = 0;
             EnemySpawnController.totalKills = 0;

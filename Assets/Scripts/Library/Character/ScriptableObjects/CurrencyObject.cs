@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Currency")]
 public class CurrencyObject : BaseScriptableObject
 {
-    public ushort currentCurrency;
+    public int currentCurrency;
     public ushort flakLevel;
     public ushort flameLevel;
     public ushort mgLevel;
