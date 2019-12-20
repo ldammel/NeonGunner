@@ -485,6 +485,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 50
+  crosshair: {fileID: 0}
+  sphereCastSize: 0
+  mainCamera: {fileID: 0}
 --- !u!114 &877792225540641587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,11 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04b47133e469c21418a5c1e2ec7ee5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crosshair: {fileID: 0}
-  weapons:
-  - {fileID: 3464342133499406956}
-  sphereCastSize: 1
-  _mainCamera: {fileID: 0}
 --- !u!1 &3464342133855502554
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +626,7 @@ MonoBehaviour:
   fireRate: 1
   objectPool: {fileID: 0}
   isEnemy: 0
-  canFire: 0
+  canFire: 1
 --- !u!1 &4489712461946290630
 GameObject:
   m_ObjectHideFlags: 0
