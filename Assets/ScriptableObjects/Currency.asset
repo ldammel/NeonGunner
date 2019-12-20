@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   BaseValue: 0
-  currentCurrency: 613
-  flakLevel: 0
+  currentCurrency: 39210
+  flakLevel: 2
   flameLevel: 0
   mgLevel: 2
-  rocketLevel: 0
-  shrapnelLevel: 0
+  rocketLevel: 2
+  shrapnelLevel: 2
   caltropLevel: 0
   gasLevel: 0
   laserLevel: 0

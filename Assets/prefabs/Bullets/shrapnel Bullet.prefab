@@ -125,12 +125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecbbae489e64cf45872ac18aba56f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
+  radius: 4
   damage: 100
-  explosion: {fileID: 0}
+  explosionSoundSource: {fileID: 0}
   shrapnelBullet: {fileID: 4468534938057636108, guid: 824b15080c7d80643b9713d4f6a17975,
     type: 3}
-  shrapnelAmount: 200
+  shrapnelAmount: 100
   isShrapnel: 1
 --- !u!54 &7545042013801477964
 Rigidbody:

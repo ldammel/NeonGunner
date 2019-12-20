@@ -110,8 +110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 25
   damage: 100
-  maxLifeTime: 0.5
+  maxLifeTime: 1
   vfx: {fileID: 100002, guid: 6ecf76dc4f268d340b2666896a954bcc, type: 3}
+  isEnemy: 0
 --- !u!114 &4484576439604839339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +127,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 5
   damage: 100
-  explosion: {fileID: 0}
+  explosionSoundSource: {fileID: 0}
+  shrapnelBullet: {fileID: 0}
+  shrapnelAmount: 0
+  isShrapnel: 0
 --- !u!54 &7545042013801477964
 Rigidbody:
   m_ObjectHideFlags: 0

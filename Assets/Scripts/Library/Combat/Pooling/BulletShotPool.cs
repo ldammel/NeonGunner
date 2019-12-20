@@ -8,7 +8,7 @@ namespace Library.Combat.Pooling
         public GameObject prefab;
         private readonly Queue<GameObject> _objects = new Queue<GameObject>();
 
-        private void OnEnable()
+        private void Start()
         {
             AddShots(10);
         }
@@ -21,6 +21,15 @@ namespace Library.Combat.Pooling
             }
 
             return _objects.Dequeue();
+        }
+
+        public void ResetShots()
+        {
+            for (int i = 0; i < _objects.Count; i++)
+            {
+                Destroy(_objects.Dequeue());
+            }
+            AddShots(10);
         }
 
         private void AddShots(int count)

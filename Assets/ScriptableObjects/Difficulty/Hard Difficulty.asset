@@ -17,30 +17,44 @@ MonoBehaviour:
   mgDamage: 25
   mgRange: 100
   mgFireRate: 0.2
-  mgMaxUpgradeLevel: 2
-  mgUpgradeCost: 200
-  mgUpgradeCostMultiplier: 2
   mgFireRateUpgrade: 2
+  laserDamage: 0
+  laserDamageUpgrade: 0
+  laserRange: 0
+  teslaDamage: 0
+  teslaFireRate: 0
+  teslaJumpAmount: 0
+  teslaFireRateUpgrade: 0
+  teslaJumpAmountUpgrade: 0
   flakDamage: 100
   flakRange: 0.5
   flakDamageRadius: 2
-  flakFireRate: 1
-  flakMaxUpgradeLevel: 2
-  flakUpgradeCost: 500
-  flakUpgradeCostMultiplier: 2
+  flakFireRate: 2
   flakFireRateUpgrade: 2
   flakRadiusUpgrade: 2
+  shrapnelDamage: 0
+  shrapnelRadius: 0
+  shrapnelAmount: 0
+  shrapnelRadiusUpgrade: 0
+  shrapnelDamageUpgrade: 0
+  rocketDamage: 0
+  rocketFireRate: 0
+  rocketEnemiesAmount: 0
+  rocketFireRateUpgrade: 0
+  rocketEnemiesAmountUpgrade: 0
   flameDamage: 10
   flameRange: 15
-  flameMaxAmmo: 100
   flameAmmoConsumptionPerSecond: 1
   flameAmmoRefreshPerSecond: 1
   flameSpread: 7
-  flameMaxUpgradeLevel: 2
-  flameUpgradeCost: 300
-  flameUpgradeCostMultiplier: 2
-  flameMaxAmmoUpgrade: 100
   flameSpreadUpgrade: 10
+  caltropsDamage: 0
+  caltropsAmount: 0
+  caltropsAmountUpgrade: 0
+  gasDamage: 0
+  gasMaxRadius: 0
+  gasDamageUpgrade: 0
+  gasMaxRadiusUpgrade: 0
   enemyHealth: 500
   enemyDamage: 20
   enemyAttackSpeed: 1

@@ -41,14 +41,18 @@ namespace Library.UI.WeaponUpgrades
             flak.gameObject.GetComponent<BulletShot>().maxLifeTime = values.flakRange;
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
+            if (currency.flakLevel == 0) return;
+            Upgrade();
+            UpdateImages();
         }
 
         public void UpdateImages()
         {
-            if (previousUpgrade.isActivated) isLocked = false;
-            lockedImage.enabled = isLocked;
-            _activatedImage.color = isActivated ? Color.yellow : Color.gray;
-            _thisButton.enabled = !isLocked;
+            if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
+            if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            if(_thisButton != null) _thisButton.enabled = !isLocked;
+            if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }
 
         public void Upgrade()
@@ -58,6 +62,9 @@ namespace Library.UI.WeaponUpgrades
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
             }
+            
+            isActivated = true;
+            _thisButton.enabled = false;
             
             if (nextUpgrade !=null)
             {
@@ -75,21 +82,24 @@ namespace Library.UI.WeaponUpgrades
                 shrapnelUpgrade.UpdateImages();
             }
             
-            currency.flakLevel = upgradeLevel;
-            currency.currentCurrency -= upgradeCost;
+            if (currency.flakLevel < upgradeLevel)
+            {
+                currency.flakLevel = upgradeLevel;
+                currency.currentCurrency -= upgradeCost;
+               if(upgradeLevel == 1) values.flakDamageRadius *= values.flakRadiusUpgrade;
+               if(upgradeLevel == 2) values.flakFireRate /= values.flakFireRateUpgrade;
+            }
 
-            isActivated = true;
-            _thisButton.enabled = false;
+            
+            UpdateImages();
 
             switch (upgradeLevel)
             {
                 case 1:
-                    flak.radius *= values.flakRadiusUpgrade;
-                    values.flakDamageRadius *= values.flakRadiusUpgrade;
+                    flak.radius = values.flakDamageRadius;
                     return;
                 case 2:
-                    pool.fireRate /= values.flakFireRateUpgrade;
-                    values.flakFireRate /= values.flakFireRateUpgrade;
+                    pool.fireRate = values.flakFireRate;
                     return;
                 default:
                     return;

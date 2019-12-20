@@ -34,9 +34,10 @@ namespace Library.UI.WeaponUpgrades
         public void UpdateImages()
         {
             if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
-            lockedImage.enabled = isLocked;
-            _activatedImage.color = isActivated ? Color.yellow : Color.gray;
-            _thisButton.enabled = !isLocked;
+            if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            if(_thisButton != null) _thisButton.enabled = !isLocked;
+            if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }
 
         public void Upgrade()

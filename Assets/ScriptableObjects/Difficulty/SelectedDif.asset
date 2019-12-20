@@ -32,16 +32,16 @@ MonoBehaviour:
   flakFireRate: 1
   flakFireRateUpgrade: 2
   flakRadiusUpgrade: 2
-  shrapnelDamage: 0
-  shrapnelRadius: 0
-  shrapnelAmount: 0
-  shrapnelRadiusUpgrade: 0
-  shrapnelDamageUpgrade: 0
-  rocketDamage: 0
-  rocketFireRate: 0
-  rocketEnemiesAmount: 0
-  rocketFireRateUpgrade: 0
-  rocketEnemiesAmountUpgrade: 0
+  shrapnelDamage: 5000
+  shrapnelRadius: 5
+  shrapnelAmount: 20
+  shrapnelRadiusUpgrade: 5
+  shrapnelDamageUpgrade: 10
+  rocketDamage: 100
+  rocketFireRate: 1.5
+  rocketEnemiesAmount: 8
+  rocketFireRateUpgrade: 2
+  rocketEnemiesAmountUpgrade: 8
   flameDamage: 30
   flameRange: 15
   flameAmmoConsumptionPerSecond: 1

@@ -40,7 +40,7 @@ public class Test : MonoBehaviour
         {
             TransitionCameraPosition(0);
         }
-        else if (InputManager.Instance.KeyDown("flame"))
+        else if (InputManager.Instance.KeyDown("flame") && currencyObject.selectedSlotTwo != null)
         {
             TransitionCameraPosition(1);
         }
@@ -74,7 +74,7 @@ public class Test : MonoBehaviour
 
     private IEnumerator FirstTransitionOnStart()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.2f);
         _cam.FirstTransitionOnStart();
         for (int i = 0; i < gunMovementComponent.Length; i++)
         {

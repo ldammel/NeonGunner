@@ -91,7 +91,7 @@ namespace Library.Data
         [Button]
         public void LoadAllData()
         {
-            cO.currentCurrency = (ushort)PlayerPrefs.GetInt("CurrentCurrency", cO.currentCurrency);
+            cO.currentCurrency = PlayerPrefs.GetInt("CurrentCurrency", cO.currentCurrency);
             cO.flakLevel = (ushort)PlayerPrefs.GetInt("flakLevel", cO.flakLevel);
             cO.flameLevel = (ushort)PlayerPrefs.GetInt("flameLevel", cO.flameLevel);
             cO.mgLevel = (ushort)PlayerPrefs.GetInt("mgLevel", cO.mgLevel);

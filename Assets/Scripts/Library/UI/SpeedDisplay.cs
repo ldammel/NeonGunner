@@ -1,4 +1,5 @@
 ﻿
+using BansheeGz.BGSpline.Curve;
 using Library.Character;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ namespace Library.UI
     public class SpeedDisplay : MonoBehaviour
     {
         public GameObject pointer;
-        private WaypointMovement mov;
+        public BGCurve mov;
         private const float MaxAngle = 45;
         private const float ZeroAngle = 345;
 
@@ -16,14 +17,12 @@ namespace Library.UI
 
         private void Start()
         {
-            mov = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>();
-            speedMax = mov.maxSpeed;
-            curSpeed = mov.moveSpeed;
+            speedMax = mov.Points[0].GetFloat("Speed");
         }
 
         private void Update()
         {
-            curSpeed = mov.moveSpeed;
+            curSpeed = mov.Points[0].GetFloat("Speed");;
             if (curSpeed > speedMax) curSpeed = speedMax;
             pointer.transform.eulerAngles = new Vector3(0,0,Mathf.Lerp(pointer.transform.rotation.z,GetSpeedRotation(),1));
         }

@@ -163,7 +163,6 @@ namespace Library.Tools
           values.flameSpreadUpgrade = flameSpreadUpgrade;
           values.flakRadiusUpgrade = flakRadiusUpgrade;
           values.flakFireRateUpgrade = flakFireRateUpgrade;
-          SaveData.Instance.SaveAllData();
         }
 
         [Button("Reset Progress in Game",(ButtonSizes.Large))]
@@ -180,7 +179,9 @@ namespace Library.Tools
             currency.gasLevel = 0;
             currency.laserLevel = 0;
             currency.teslaLevel = 0;
-            SaveData.Instance.SaveAllData();
+            currency.selectedWeaponOne = 0;
+            currency.selectedWeaponTwo = 0;
+            currency.selectedSlotTwo = null;
         }
         [Button("Reset Stats in Designer",(ButtonSizes.Large))]
         [GUIColor(0.4f, 0.8f, 1)]
@@ -217,7 +218,6 @@ namespace Library.Tools
           currency.gasLevel = 0;
           currency.laserLevel = 0;
           currency.teslaLevel = 0;
-          SaveData.Instance.SaveAllData();
         }
     }
 }

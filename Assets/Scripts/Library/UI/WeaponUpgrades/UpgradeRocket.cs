@@ -36,14 +36,18 @@ namespace Library.UI.WeaponUpgrades
             rocket.maxMissileTargets = (int)values.rocketEnemiesAmount;
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
+            if (currency.rocketLevel == 0) return;
+            Upgrade();
+            UpdateImages();
         }
 
         public void UpdateImages()
         {
-            if (previousUpgrade.isActivated && isLocked) isLocked = false;
-            lockedImage.enabled = isLocked;
-            _activatedImage.color = isActivated ? Color.yellow : Color.gray;
-            _thisButton.enabled = !isLocked;
+            if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
+            if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            if(_thisButton != null) _thisButton.enabled = !isLocked;
+            if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }
 
         public void Upgrade()
@@ -54,25 +58,35 @@ namespace Library.UI.WeaponUpgrades
                 return;
             }
             
+            isActivated = true;
+            _thisButton.enabled = false;
+            
             if (nextUpgrade !=null)
             {
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
 
-            currency.rocketLevel = upgradeLevel;
-            currency.currentCurrency -= upgradeCost;
+            if (currency.rocketLevel < upgradeLevel)
+            {
+                currency.rocketLevel = upgradeLevel;
+                currency.currentCurrency -= upgradeCost;
+                if(upgradeLevel == 1)values.rocketEnemiesAmount = values.rocketEnemiesAmountUpgrade;
+                if(upgradeLevel == 2)values.rocketFireRate /= values.rocketFireRateUpgrade;
+            }
 
-            isActivated = true;
-            _thisButton.enabled = false;
+            UpdateImages();
 
             switch (upgradeLevel)
             {
+                case 0:
+                    rocketObject.SetActive(true);
+                    break;
                 case 1:
-                    rocket.maxMissileTargets = 8;
+                    rocket.maxMissileTargets = (int)values.rocketEnemiesAmount;
                     return;
                 case 2:
-                    rocket.coolDownTime /= 2;
+                    rocket.coolDownTime = values.rocketFireRate;
                     return;
                 default:
                     return;

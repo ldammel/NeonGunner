@@ -16,6 +16,7 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private GameObject shrapnelGameObject;
         [SerializeField] private ShrapnelPiece shrapnel;
         [SerializeField] private BulletPooled pool;
+        [SerializeField] private BulletShotPool prefabPool;
         
         [SerializeField] private UpgradeShrapnel previousUpgrade;
         [SerializeField] private UpgradeShrapnel nextUpgrade;
@@ -32,9 +33,9 @@ namespace Library.UI.WeaponUpgrades
 
         private void Start()
         {
+            prefabPool = GameObject.Find("---PLAYER---/GameObjectPool").GetComponent<BulletShotPool>();
             _activatedImage = gameObject.GetComponent<Image>();
             pool = flakGameObject.GetComponentInChildren<BulletPooled>();
-            shrapnel = shrapnelGameObject.GetComponentInChildren<ShrapnelPiece>();
             flak.radius = values.flakDamageRadius;
             pool.fireRate = values.flakFireRate;
             flak.damage = values.flakDamage;
@@ -42,14 +43,18 @@ namespace Library.UI.WeaponUpgrades
             flak.gameObject.GetComponent<BulletShot>().maxLifeTime = values.flakRange;
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
+            if (currency.shrapnelLevel == 0) return;
+            Upgrade();
+            UpdateImages();
         }
 
         public void UpdateImages()
         {
-            if (previousUpgrade.isActivated && isLocked) isLocked = false;
-            lockedImage.enabled = isLocked;
-            _activatedImage.color = isActivated ? Color.yellow : Color.gray;
-            _thisButton.enabled = !isLocked;
+            if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
+            if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            if(_thisButton != null) _thisButton.enabled = !isLocked;
+            if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }
 
         public void Upgrade()
@@ -60,25 +65,34 @@ namespace Library.UI.WeaponUpgrades
                 return;
             }
             
+            isActivated = true;
+            _thisButton.enabled = false;
+            
             if (nextUpgrade !=null)
             {
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
             
-            currency.shrapnelLevel = upgradeLevel;
-            currency.currentCurrency -= upgradeCost;
+            prefabPool.prefab = shrapnelGameObject;
+            prefabPool.ResetShots();
+            
+            if (currency.shrapnelLevel < upgradeLevel)
+            {
+                currency.shrapnelLevel = upgradeLevel;
+                currency.currentCurrency -= upgradeCost;
+                if(upgradeLevel == 2)values.shrapnelDamage *= values.shrapnelDamageUpgrade;
+            }
 
-            isActivated = true;
-            _thisButton.enabled = false;
+            UpdateImages();
 
             switch (upgradeLevel)
             {
                 case 1:
-                    flak.radius *= values.shrapnelRadiusUpgrade;
+
                     return;
                 case 2:
-                    shrapnel.damage *= (int)values.shrapnelDamageUpgrade;
+                    shrapnel.damage = (int)values.shrapnelDamage;
                     return;
                 default:
                     return;

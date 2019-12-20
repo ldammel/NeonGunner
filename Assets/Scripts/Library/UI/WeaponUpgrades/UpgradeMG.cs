@@ -41,7 +41,7 @@ namespace Library.UI.WeaponUpgrades
             mg.fireRate = values.mgFireRate;
             mg.damage = values.mgDamage;
             mg.range = values.mgRange;
-            if (currency.mgLevel < upgradeLevel) return;
+            if (currency.mgLevel == 0) return;
             Upgrade();
             UpdateImages();
         }
@@ -52,6 +52,7 @@ namespace Library.UI.WeaponUpgrades
             if(lockedImage != null) lockedImage.enabled = isLocked;
             if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
             if(_thisButton != null) _thisButton.enabled = !isLocked;
+            if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }
 
         public void Upgrade()
@@ -85,18 +86,15 @@ namespace Library.UI.WeaponUpgrades
             {
                 currency.mgLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;
+                values.mgFireRate /= values.mgFireRateUpgrade;
             }
+            
+            UpdateImages();
 
             if (mg.fireRate != values.mgFireRate)
             {
-                mg.fireRate /= values.mgFireRateUpgrade;
-                values.mgFireRate /= values.mgFireRateUpgrade;
+                mg.fireRate = values.mgFireRate;
             }
-
-            
-
-            
-            UpdateImages();
         }
     }
 }

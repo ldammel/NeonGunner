@@ -31,13 +31,15 @@ namespace Library.Combat
         private void Update()
         {
             if (Input.GetMouseButtonDown(0) && isShrapnel)
-            { 
+            {
+                if (!canExplode) return;
+                canExplode = false;
                 for (int i = 0; i < shrapnelAmount; i++)
                 {
                     var go = Instantiate(shrapnelBullet, Random.insideUnitSphere * radius+ transform.position, Quaternion.identity);
                     var rb = go.gameObject.GetComponent<Rigidbody>();
                     rb.AddRelativeForce(Random.Range(-1000,1000),-500,Random.Range(-1000,1000));
-                    Destroy(go,1f);
+                    Destroy(go,0.5f);
                 }
                 AreaDamageEnemies(transform.position, radius, damage);
             }
@@ -66,7 +68,7 @@ namespace Library.Combat
 
         IEnumerator ShrapnelStart()
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.3f);
             canExplode = true;
         }
     }
