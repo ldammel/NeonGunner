@@ -11,12 +11,13 @@ public class Test : MonoBehaviour
 {
     private CameraTransition _cam;
 
-    public GunMovement[] gunMovementComponent;
-    public AimController[] aimControllerComponent;
-    public BulletPooled[] bulletPooledComponent;
-    public MachineGun[] machineGunComponent;
-    public GameObject[] flamethrowerGameObject;
-    public Caltrops[] caltropComponent;
+    public GunMovement[] gunMovementComponent = new GunMovement[2];
+    public AimController[] aimControllerComponent = new AimController[2];
+    public BulletPooled[] bulletPooledComponent = new BulletPooled[2];
+    public MachineGun[] machineGunComponent = new MachineGun[2];
+    public GameObject[] flamethrowerGameObject = new GameObject[2];
+    public Caltrops[] caltropComponent = new Caltrops[2];
+    public Laser[] laserComponent = new Laser[2];
     public CurrencyObject currencyObject;
     public Transform[] positions;
     public Transform[] parents;
@@ -70,7 +71,8 @@ public class Test : MonoBehaviour
             if(bulletPooledComponent[i] != null) bulletPooledComponent[i].enabled = i == position;
             if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == position);
             if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == position;
-            //if(caltropComponent[i] != null) caltropComponent[i].enabled = i == position;
+            if(laserComponent[i] != null) laserComponent[i].enabled = i == position;
+            if(caltropComponent[i] != null) caltropComponent[i].enabled = i == position;
         }
     }
 
@@ -84,7 +86,8 @@ public class Test : MonoBehaviour
             if(bulletPooledComponent[i] != null) bulletPooledComponent[i].enabled = i == 0;
             if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == 0);
             if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == 0;
-            //if(caltropComponent[i] != null) caltropComponent[i].enabled = i == 0;
+            if(laserComponent[i] != null) laserComponent[i].enabled = i == 0;
+            if(caltropComponent[i] != null) caltropComponent[i].enabled = i == 0;
         }
     }
 

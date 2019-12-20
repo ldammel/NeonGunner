@@ -86,7 +86,7 @@ namespace Library.UI.WeaponUpgrades
                 teslaUpgrade.UpdateImages();
             }
 
-            if (currency.mgLevel < upgradeLevel)
+            if (!_alreadyActivated)
             {
                 currency.mgLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;

@@ -59,7 +59,7 @@ namespace Library.Data
                                         test.bulletPooledComponent[0] = go.GetComponentInChildren<BulletPooled>();
                                         break;
                                 case 3:
-                                        
+                                        test.laserComponent[0] = go.GetComponentInChildren<Laser>();
                                         break;
                                 case 4:
                                         
@@ -101,7 +101,7 @@ namespace Library.Data
                                         test.bulletPooledComponent[1] = go.GetComponentInChildren<BulletPooled>();
                                         break;
                                 case 3:
-                                        
+                                        test.laserComponent[1] = go.GetComponentInChildren<Laser>();
                                         break;
                                 case 4:
                                         

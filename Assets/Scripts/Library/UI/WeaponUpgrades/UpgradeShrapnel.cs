@@ -80,7 +80,7 @@ namespace Library.UI.WeaponUpgrades
             _prefabPool.prefab = shrapnelGameObject;
             _prefabPool.ResetShots();
             
-            if (currency.shrapnelLevel < upgradeLevel)
+            if (!_alreadyActivated)
             {
                 currency.shrapnelLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;

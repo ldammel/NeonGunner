@@ -70,7 +70,7 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.UpdateImages();
             }
 
-            if (currency.rocketLevel < upgradeLevel)
+            if (!_alreadyActivated)
             {
                 currency.rocketLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;

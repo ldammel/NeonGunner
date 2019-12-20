@@ -84,7 +84,7 @@ namespace Library.UI.WeaponUpgrades
                 shrapnelUpgrade.UpdateImages();
             }
             
-            if (currency.flakLevel < upgradeLevel)
+            if (!_alreadyActivated)
             {
                 currency.flakLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;

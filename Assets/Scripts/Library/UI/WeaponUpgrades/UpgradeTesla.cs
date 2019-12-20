@@ -63,7 +63,7 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.UpdateImages();
             }
             
-            if (currency.teslaLevel < upgradeLevel)
+            if (!_alreadyActivated)
             {
                 currency.teslaLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;

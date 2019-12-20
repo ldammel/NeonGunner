@@ -86,7 +86,7 @@ namespace Library.UI.WeaponUpgrades
                 gasUpgrade.UpdateImages();
             }
             
-            if (currency.flameLevel < upgradeLevel)
+            if (!_alreadyActivated)
             {
                 currency.flameLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;

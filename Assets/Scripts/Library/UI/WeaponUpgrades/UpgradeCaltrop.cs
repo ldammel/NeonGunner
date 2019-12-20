@@ -67,9 +67,8 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
-
-            if (upgradeLevel == 0) return;
-            if (currency.caltropLevel >= upgradeLevel) return;
+            
+            if (_alreadyActivated) return;
             currency.caltropLevel = upgradeLevel;
             currency.currentCurrency -= upgradeCost;
             _caltrops.caltropAmount += 10;

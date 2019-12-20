@@ -18,9 +18,9 @@ MonoBehaviour:
   mgRange: 100
   mgFireRate: 0.2
   mgFireRateUpgrade: 2
-  laserDamage: 0
-  laserDamageUpgrade: 0
-  laserRange: 0
+  laserDamage: 20
+  laserDamageUpgrade: 1.5
+  laserRange: 50
   teslaDamage: 0
   teslaFireRate: 0
   teslaJumpAmount: 0

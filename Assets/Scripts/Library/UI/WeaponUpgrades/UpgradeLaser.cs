@@ -11,6 +11,8 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private CurrencyObject currency;
         [SerializeField] private WeaponValues values;
 
+        [SerializeField] private GameObject laserGameObject;
+
         [SerializeField] private UpgradeLaser previousUpgrade;
         [SerializeField] private UpgradeLaser nextUpgrade;
         
@@ -25,9 +27,11 @@ namespace Library.UI.WeaponUpgrades
         public bool isActivated;
 
         private bool _alreadyActivated;
+        private Laser laser;
 
         private void Start()
         {
+            laser = laserGameObject.GetComponentInChildren<Laser>();
             _activatedImage = gameObject.GetComponent<Image>();
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
@@ -62,10 +66,15 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
-            
-            if (currency.laserLevel >= upgradeLevel && currency.laserLevel != 0) return;
-            currency.laserLevel = upgradeLevel;
-            currency.currentCurrency -= upgradeCost;
+
+            if (!_alreadyActivated)
+            {
+                currency.laserLevel = upgradeLevel;
+                currency.currentCurrency -= upgradeCost;
+                values.laserDamage *= values.laserDamageUpgrade;
+            }
+
+            laser.damage = values.laserDamage;
         }
     }
 }
