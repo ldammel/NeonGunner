@@ -12,7 +12,6 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private CurrencyObject currency;
         [SerializeField] private WeaponValues values;
         
-        [SerializeField] private MachineGun mg;
         [SerializeField] private GameObject mgGameObject;
         
         [SerializeField] private UpgradeMG previousUpgrade;
@@ -22,26 +21,31 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private UpgradeTesla teslaUpgrade;
         
         [SerializeField] private Image lockedImage;
-        public Image _activatedImage;
-        private Button _thisButton;
-        
+
         [SerializeField] private ushort upgradeLevel;
         [SerializeField] private ushort upgradeCost;
         
         public bool isLocked;
         public bool isActivated;
+        
+        private bool _alreadyActivated;
 
+        private MachineGun _mg;
+        private Image _activatedImage;
+        private Button _thisButton;
+        
         private void Start()
         {
 
             _activatedImage = gameObject.GetComponent<Image>();
-            mg = mgGameObject.GetComponentInChildren<MachineGun>();
+            _mg = mgGameObject.GetComponentInChildren<MachineGun>();
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
-            mg.fireRate = values.mgFireRate;
-            mg.damage = values.mgDamage;
-            mg.range = values.mgRange;
+            _mg.fireRate = values.mgFireRate;
+            _mg.damage = values.mgDamage;
+            _mg.range = values.mgRange;
             if (currency.mgLevel == 0) return;
+            _alreadyActivated = true;
             Upgrade();
             UpdateImages();
         }
@@ -57,7 +61,7 @@ namespace Library.UI.WeaponUpgrades
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
@@ -82,7 +86,7 @@ namespace Library.UI.WeaponUpgrades
                 teslaUpgrade.UpdateImages();
             }
 
-            if (currency.mgLevel < upgradeLevel)
+            if (!_alreadyActivated)
             {
                 currency.mgLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;
@@ -91,9 +95,9 @@ namespace Library.UI.WeaponUpgrades
             
             UpdateImages();
 
-            if (mg.fireRate != values.mgFireRate)
+            if (_mg.fireRate != values.mgFireRate)
             {
-                mg.fireRate = values.mgFireRate;
+                _mg.fireRate = values.mgFireRate;
             }
         }
     }
