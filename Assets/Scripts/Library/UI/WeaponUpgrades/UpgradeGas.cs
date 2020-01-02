@@ -24,53 +24,49 @@ namespace Library.UI.WeaponUpgrades
         
         public bool isLocked;
         public bool isActivated;
+        
+        private bool _alreadyActivated;
 
         private void Start()
         {
             _activatedImage = gameObject.GetComponent<Image>();
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
+            if (currency.gasLevel == 0) return;
+            _alreadyActivated = true;
+            Upgrade();
+            UpdateImages();
         }
 
         public void UpdateImages()
         {
-            if (previousUpgrade.isActivated && isLocked) isLocked = false;
-            lockedImage.enabled = isLocked;
-            _activatedImage.color = isActivated ? Color.yellow : Color.gray;
-            _thisButton.enabled = !isLocked;
+            if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
+            if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            if(_thisButton != null) _thisButton.enabled = !isLocked;
+            if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
             }
+            
+            isActivated = true;
+            _thisButton.enabled = false;
             
             if (nextUpgrade !=null)
             {
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
-            
+
+            if (_alreadyActivated) return;
             currency.gasLevel = upgradeLevel;
             currency.currentCurrency -= upgradeCost;
-
-            isActivated = true;
-            _thisButton.enabled = false;
-
-            switch (upgradeLevel)
-            {
-                case 1:
-
-                    return;
-                case 2:
-
-                    return;
-                default:
-                    return;
-            }
         }
     }
 }

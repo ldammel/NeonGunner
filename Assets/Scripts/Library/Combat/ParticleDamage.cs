@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Library.Combat.Enemy;
+using Library.Tools;
 using UnityEngine;
 
 namespace Library.Combat
@@ -8,25 +9,49 @@ namespace Library.Combat
     {
         public ParticleSystem part;
         public List<ParticleCollisionEvent> collisionEvents;
-        private EnemyHealth _eh;
+        public float damage;
+        public float cooldown;
+        private bool soundPlaying;
+        private float _fireTimer;
 
         private void Start()
         {
-            _eh = GetComponent<EnemyHealth>();
+            var coll = part.collision;
+            coll.enabled = true;
             collisionEvents = new List<ParticleCollisionEvent>();
+            _fireTimer = cooldown;
+        }
+        
+        private void Update()
+        {
+            var fxMain = part.main;
+            if (Input.GetMouseButtonDown(0) && _fireTimer >= cooldown)
+            {
+                part.Play();
+                if (!soundPlaying)
+                {
+                    SoundManager.Instance.PlaySound("Flame");
+                    soundPlaying = true;
+                }
+                _fireTimer = 0;
+            }
+            else
+            {
+                
+                if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
+                soundPlaying = false;
+            }
+            _fireTimer += Time.deltaTime;
         }
 
         private void OnParticleCollision(GameObject other)
         {
-            int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
-
-            var rb = other.GetComponent<Rigidbody>();
-            var i = 0;
+            var numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
+            int i = 0;
 
             while (i < numCollisionEvents)
             {
-                _eh.TakeDamage(20);
-                Debug.Log(_eh.curHealth);
+                other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
                 i++;
             }
         }

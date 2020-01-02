@@ -13,7 +13,6 @@ namespace Library.UI.WeaponUpgrades
         
         [SerializeField] private Flak flak;
         [SerializeField] private GameObject flakGameObject;
-        [SerializeField] private BulletPooled pool;
         
         [SerializeField] private UpgradeFlak previousUpgrade;
         [SerializeField] private UpgradeFlak nextUpgrade;
@@ -22,26 +21,29 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private UpgradeShrapnel shrapnelUpgrade;
         
         [SerializeField] private Image lockedImage;
-        private Image _activatedImage;
-        private Button _thisButton;
         
         [SerializeField] private ushort upgradeLevel;
         [SerializeField] private ushort upgradeCost;
         
         public bool isLocked;
         public bool isActivated;
+        private bool _alreadyActivated;
 
+        private Image _activatedImage;
+        private Button _thisButton;
+        private BulletPooled _pool;
         private void Start()
         {
             _activatedImage = gameObject.GetComponent<Image>();
-            pool = flakGameObject.GetComponentInChildren<BulletPooled>();
+            _pool = flakGameObject.GetComponentInChildren<BulletPooled>();
             flak.radius = values.flakDamageRadius;
-            pool.fireRate = values.flakFireRate;
+            _pool.fireRate = values.flakFireRate;
             flak.damage = values.flakDamage;
             flak.gameObject.GetComponent<BulletShot>().maxLifeTime = values.flakRange;
             _thisButton = gameObject.GetComponent<Button>();
             UpdateImages();
             if (currency.flakLevel == 0) return;
+            _alreadyActivated = true;
             Upgrade();
             UpdateImages();
         }
@@ -57,7 +59,7 @@ namespace Library.UI.WeaponUpgrades
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
@@ -82,7 +84,7 @@ namespace Library.UI.WeaponUpgrades
                 shrapnelUpgrade.UpdateImages();
             }
             
-            if (currency.flakLevel < upgradeLevel)
+            if (!_alreadyActivated)
             {
                 currency.flakLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;
@@ -99,7 +101,7 @@ namespace Library.UI.WeaponUpgrades
                     flak.radius = values.flakDamageRadius;
                     return;
                 case 2:
-                    pool.fireRate = values.flakFireRate;
+                    _pool.fireRate = values.flakFireRate;
                     return;
                 default:
                     return;

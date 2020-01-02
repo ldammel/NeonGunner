@@ -17,14 +17,14 @@ namespace Library.UI
 
         private void Start()
         {
-            speedMax = mov.Points[0].GetFloat("Speed");
+            speedMax = mov.Points[1].GetFloat("Speed");
         }
 
         private void Update()
         {
             curSpeed = mov.Points[0].GetFloat("Speed");;
             if (curSpeed > speedMax) curSpeed = speedMax;
-            pointer.transform.eulerAngles = new Vector3(0,0,Mathf.Lerp(pointer.transform.rotation.z,GetSpeedRotation(),1));
+           // pointer.transform.eulerAngles = new Vector3(0,0,Mathf.Lerp(pointer.transform.rotation.z,GetSpeedRotation(),1));
         }
 
         public float GetSpeedRotation()

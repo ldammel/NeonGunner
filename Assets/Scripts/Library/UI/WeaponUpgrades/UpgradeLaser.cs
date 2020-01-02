@@ -11,6 +11,8 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private CurrencyObject currency;
         [SerializeField] private WeaponValues values;
 
+        [SerializeField] private GameObject laserGameObject;
+
         [SerializeField] private UpgradeLaser previousUpgrade;
         [SerializeField] private UpgradeLaser nextUpgrade;
         
@@ -24,10 +26,18 @@ namespace Library.UI.WeaponUpgrades
         public bool isLocked;
         public bool isActivated;
 
+        private bool _alreadyActivated;
+        private Laser laser;
+
         private void Start()
         {
+            laser = laserGameObject.GetComponentInChildren<Laser>();
             _activatedImage = gameObject.GetComponent<Image>();
             _thisButton = gameObject.GetComponent<Button>();
+            UpdateImages();
+            if (currency.laserLevel == 0) return;
+            _alreadyActivated = true;
+            Upgrade();
             UpdateImages();
         }
 
@@ -42,24 +52,29 @@ namespace Library.UI.WeaponUpgrades
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
             }
+            
+            isActivated = true;
+            _thisButton.enabled = false;
             
             if (nextUpgrade !=null)
             {
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
-            
-            currency.laserLevel = upgradeLevel;
-            currency.currentCurrency -= upgradeCost;
 
-            isActivated = true;
-            _thisButton.enabled = false;
+            if (!_alreadyActivated)
+            {
+                currency.laserLevel = upgradeLevel;
+                currency.currentCurrency -= upgradeCost;
+                values.laserDamage *= values.laserDamageUpgrade;
+            }
 
+            laser.damage = values.laserDamage;
         }
     }
 }

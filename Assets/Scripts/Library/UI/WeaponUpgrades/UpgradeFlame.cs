@@ -11,7 +11,7 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private CurrencyObject currency;
         [SerializeField] private WeaponValues values;
         
-        [SerializeField] private Flamethrower flame;
+        
         [SerializeField] private GameObject flameObject;
 
         [SerializeField] private UpgradeFlame previousUpgrade;
@@ -21,43 +21,54 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private UpgradeGas gasUpgrade;
         
         [SerializeField] private Image lockedImage;
-        private Image _activatedImage;
-        private Button _thisButton;
-        
+
         [SerializeField] private ushort upgradeLevel;
         [SerializeField] private ushort upgradeCost;
         
         public bool isLocked;
         public bool isActivated;
-
+        
+        private bool _alreadyActivated;
+        
+        private Image _activatedImage;
+        private Button _thisButton;
+        private Flamethrower _flame;
         private void Start()
         {
             _activatedImage = gameObject.GetComponent<Image>();
-            flame = flameObject.GetComponentInChildren<Flamethrower>();
-            flame.damage = values.flameDamage;
-            flame.range = values.flameRange;
-            flame.spread = values.flameSpread;
-            flame.ammoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
-            flame.ammoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
+            _flame = flameObject.GetComponentInChildren<Flamethrower>();
+            _flame.damage = values.flameDamage;
+            _flame.range = values.flameRange;
+            _flame.spread = values.flameSpread;
+            _flame.ammoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
+            _flame.ammoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
             _thisButton = gameObject.GetComponent<Button>();
+            UpdateImages();
+            if (currency.flameLevel == 0) return;
+            _alreadyActivated = true;
+            Upgrade();
             UpdateImages();
         }
 
         public void UpdateImages()
         {
-            if (previousUpgrade.isActivated) isLocked = false;
-            lockedImage.enabled = isLocked;
-            _activatedImage.color = isActivated ? Color.yellow : Color.gray;
-            _thisButton.enabled = !isLocked;
+            if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
+            if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            if(_thisButton != null) _thisButton.enabled = !isLocked;
+            if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
             }
+            
+            isActivated = true;
+            _thisButton.enabled = false;
             
             if (nextUpgrade !=null)
             {
@@ -75,22 +86,12 @@ namespace Library.UI.WeaponUpgrades
                 gasUpgrade.UpdateImages();
             }
             
-            currency.flameLevel = upgradeLevel;
-            currency.currentCurrency -= upgradeCost;
-
-            isActivated = true;
-            _thisButton.enabled = false;
-
-            switch (upgradeLevel)
+            if (!_alreadyActivated)
             {
-                case 1:
-                    flame.spread = values.flameSpreadUpgrade;
-                    return;
-                case 2:
-                    flame.ammoConsumptionPerSecond /= 2;
-                    return;
-                default:
-                    return;
+                currency.flameLevel = upgradeLevel;
+                currency.currentCurrency -= upgradeCost;
+                if(upgradeLevel == 1) _flame.spread = values.flameSpreadUpgrade;
+                if(upgradeLevel == 2) _flame.ammoConsumptionPerSecond /= 2;
             }
         }
     }

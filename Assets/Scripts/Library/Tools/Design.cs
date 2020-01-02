@@ -38,7 +38,6 @@ namespace Library.Tools
         public CurrencyObject currency;
 
         private GameObject _player;
-        private WaypointMovement _playerSpeed;
         private EnemyHealth _playerHealth;
         #endregion
         
@@ -136,12 +135,10 @@ namespace Library.Tools
           //----------------- Get Required Components ------------------
 
           _player = GameObject.FindGameObjectWithTag("Player");
-          _playerSpeed = _player.GetComponent<WaypointMovement>();
           _playerHealth = _player.GetComponent<EnemyHealth>();
 
           //---------------Value Initialization---------------------
           _playerHealth.maxHealth = playerHealth;
-          _playerSpeed.moveSpeed = playerSpeed; 
           values.mgDamage = mgDamage;
           values.mgRange = mgRange;
           values.mgFireRate = mgFireRate;

@@ -10,62 +10,68 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private CurrencyObject currency;
         [SerializeField] private WeaponValues values;
         
-        [SerializeField] private Caltrops caltrops;
         [SerializeField] private GameObject caltropGameObject;
 
         [SerializeField] private UpgradeCaltrop previousUpgrade;
         [SerializeField] private UpgradeCaltrop nextUpgrade;
 
         [SerializeField] private Image lockedImage;
-        private Image _activatedImage;
-        private Button _thisButton;
         
         [SerializeField] private ushort upgradeLevel;
         [SerializeField] private ushort upgradeCost;
         
         public bool isLocked;
         public bool isActivated;
+        
+        private bool _alreadyActivated;
 
+        private Caltrops _caltrops;
+        private Image _activatedImage;
+        private Button _thisButton;
+        
         private void Start()
         {
             _activatedImage = gameObject.GetComponent<Image>();
-            caltrops = caltropGameObject.GetComponentInChildren<Caltrops>();
-            caltrops.caltropAmount = (int)values.caltropsAmount;
+            _caltrops = caltropGameObject.GetComponentInChildren<Caltrops>();
+            _caltrops.caltropAmount = (int)values.caltropsAmount;
             _thisButton = gameObject.GetComponent<Button>();
+            UpdateImages();
+            if (currency.caltropLevel == 0) return;
+            _alreadyActivated = true;
+            Upgrade();
             UpdateImages();
         }
 
         public void UpdateImages()
         {
-            if (previousUpgrade.isActivated && isLocked) isLocked = false;
-            lockedImage.enabled = isLocked;
-            _activatedImage.color = isActivated ? Color.yellow : Color.gray;
-            _thisButton.enabled = !isLocked;
+            if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
+            if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            if(_thisButton != null) _thisButton.enabled = !isLocked;
+            if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }
 
         public void Upgrade()
         {
-            if (currency.currentCurrency < upgradeCost)
+            if (currency.currentCurrency < upgradeCost && !_alreadyActivated)
             {
                 NotificationManager.Instance.SetNewNotification("Not enough Souls!", 3);
                 return;
             }
-
+            
+            isActivated = true;
+            _thisButton.enabled = false;
+            
             if (nextUpgrade != null)
             {
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
-
+            
+            if (_alreadyActivated) return;
             currency.caltropLevel = upgradeLevel;
             currency.currentCurrency -= upgradeCost;
-
-            isActivated = true;
-            _thisButton.enabled = false;
-
-            if (upgradeLevel == 0) return;
-
-            caltrops.caltropAmount += 10;
+            _caltrops.caltropAmount += 10;
         }
     }
 }
