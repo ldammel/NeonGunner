@@ -22,6 +22,8 @@ namespace Library.UI
 
         private void Update()
         {
+            
+            
             curSpeed = mov.Points[0].GetFloat("Speed");;
             if (curSpeed > speedMax) curSpeed = speedMax;
            // pointer.transform.eulerAngles = new Vector3(0,0,Mathf.Lerp(pointer.transform.rotation.z,GetSpeedRotation(),1));

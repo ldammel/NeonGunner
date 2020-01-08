@@ -76,14 +76,14 @@ namespace Library.Events
         
         public void CalculateReward(int reward)
         {
-            _reward = Mathf.RoundToInt((((EnemySpawnController.totalKills * Design.Instance.currencyGainPerEnemy)/(_timeTaken/20)) +(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth/(_timeTaken/20)))*reward);
+            _reward = 10 + Mathf.RoundToInt(((EnemySpawnController.totalKills * Design.Instance.currencyGainPerEnemy) + Mathf.RoundToInt(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth/(_timeTaken/20)))*reward);
             _manager.upgrades.currentCurrency += _reward;
             _timeTaken = 0;
             EnemySpawnController.totalKills = 0;
             EnemySpawnController.killedEnemies = 0;
             timeLimitMinutes = baseMinutes;
             timeLimitSeconds = baseSeconds;
-            rewardText.text = "You Gained " + _reward + " Money";
+            rewardText.text = "You Gained " + _reward + " Souls";
             rewardText.gameObject.SetActive(true);
         }
 

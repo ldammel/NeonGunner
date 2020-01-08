@@ -486,6 +486,7 @@
                 <e p="CurrencyObject.cs" t="Include" />
                 <e p="WeaponValues.cs" t="Include" />
               </e>
+              <e p="SpeedController.cs" t="Include" />
               <e p="Upgrades" t="Include">
                 <e p="UpgradeManager.cs" t="Include" />
               </e>
