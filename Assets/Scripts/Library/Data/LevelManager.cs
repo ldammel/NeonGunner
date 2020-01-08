@@ -58,13 +58,11 @@ namespace Library.Data
 
         IEnumerator StartGame()
         {
-            PauseMenu.Instance.pauseActive = true;
             levelSelection.SetActive(true);
             upgradeScreen.SetActive(true);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.01f);
             upgradeScreen.SetActive(false);
             levelSelection.SetActive(false);
-            PauseMenu.Instance.pauseActive = false;
         }
     }
 }
