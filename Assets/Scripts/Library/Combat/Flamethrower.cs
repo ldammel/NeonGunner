@@ -32,7 +32,7 @@ namespace Library.Combat
             ammoCountDisplay = GameObject.Find("---UI---/Canvas/FlameAmmo").GetComponent<TextMeshProUGUI>();
         }
 
-        private void OnEnable()
+        private void Update()
         {
             var o = flameFx.gameObject;
             var localScale = o.transform.localScale;

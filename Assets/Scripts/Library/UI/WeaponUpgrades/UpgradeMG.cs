@@ -18,8 +18,7 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private UpgradeMG nextUpgrade;
         
         [SerializeField] private UpgradeLaser laserUpgrade;
-        [SerializeField] private UpgradeTesla teslaUpgrade;
-        
+
         [SerializeField] private Image lockedImage;
 
         [SerializeField] private ushort upgradeLevel;
@@ -77,13 +76,10 @@ namespace Library.UI.WeaponUpgrades
             }
             else
             {
-                if (laserUpgrade == null || teslaUpgrade == null) return;
+                if (laserUpgrade == null) return;
                 
                 laserUpgrade.isLocked = false;
                 laserUpgrade.UpdateImages();
-
-                teslaUpgrade.isLocked = false;
-                teslaUpgrade.UpdateImages();
             }
 
             if (!_alreadyActivated)

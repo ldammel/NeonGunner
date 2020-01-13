@@ -33,18 +33,12 @@ namespace Library.Combat.Enemy
                 {
                     controller.gameObject.GetComponentInChildren<BulletPooled>().canFire = true;
                     controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().isWaypointActive = true;
-                    controller.eh.wp = controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>();
                 }
                 else
                 {
-                    if (!controller.setSpeed)
-                    {
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(-1);
-                    }
                     controller.gameObject.transform.parent = controller.wayPointList[controller.nextWayPoint];
                     controller.gameObject.transform.position = controller.wayPointList[controller.nextWayPoint].position;
                     controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>().isWaypointActive = true;
-                    controller.eh.wp = controller.wayPointList[controller.nextWayPoint].gameObject.GetComponent<Waypoint>();
                     controller.navMeshAgent.enabled = false;
                     controller.enabled = false;
                 }

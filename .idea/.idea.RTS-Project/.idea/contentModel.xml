@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Lucas\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Lucas\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-1039986213.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Lucas\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
+    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-106464127.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lucas.Dammel\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -506,6 +506,8 @@
                 <e p="PatrolAction.cs" t="Include" />
                 <e p="State.cs" t="Include" />
                 <e p="StateController.cs" t="Include" />
+                <e p="TriggerEnemySpawn.cs" t="Include" />
+                <e p="WaypointManager.cs" t="Include" />
               </e>
               <e p="Flak.cs" t="Include" />
               <e p="Flamethrower.cs" t="Include" />

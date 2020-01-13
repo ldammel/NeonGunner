@@ -17,14 +17,12 @@ namespace Library.Events
 
         public WeaponValues selectedDifficulty;
 
-        private NavMeshAgent _enemyNav;
         private EnemyHealth _enemyHealth;
         private BulletPooled _enemyPool;
         private BulletShot _enemyDamage;
 
         private void Start()
         {
-            _enemyNav = enemyPrefab.GetComponent<NavMeshAgent>();
             _enemyHealth = enemyPrefab.GetComponent<EnemyHealth>();
             _enemyPool = enemyPrefab.GetComponentInChildren<BulletPooled>();
             _enemyDamage = enemyBulletObj.GetComponent<BulletShot>();
@@ -35,9 +33,7 @@ namespace Library.Events
         {
             _enemyHealth.maxHealth = selectedDifficulty.enemyHealth;
             _enemyDamage.damage = selectedDifficulty.enemyDamage;
-            _enemyNav.speed = selectedDifficulty.enemyMoveSpeed;
-            _enemyPool.fireRate = selectedDifficulty.enemyAttackSpeed; 
-            _enemyNav.stoppingDistance = selectedDifficulty.enemyRange;
+            _enemyPool.fireRate = selectedDifficulty.enemyAttackSpeed;
         }
     }
 }

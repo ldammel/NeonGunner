@@ -11,11 +11,8 @@ public class WeaponSelectionManager : MonoBehaviour
         [SerializeField] private GameObject[] flameButtons;
         [SerializeField] private GameObject[] mgButtons;
         [SerializeField] private GameObject[] rocketButtons;
-        [SerializeField] private GameObject[] shrapnelButtons;
-        [SerializeField] private GameObject[] teslaButtons;
         [SerializeField] private GameObject[] laserButtons;
         [SerializeField] private GameObject[] gasButtons;
-        [SerializeField] private GameObject[] caltropButtons;
 
         [SerializeField] private TextMeshProUGUI[] displayText;
 
@@ -51,12 +48,9 @@ public class WeaponSelectionManager : MonoBehaviour
                                 mgButtons[1].SetActive(true);
                                 flameButtons[0].SetActive(true);
                                 flakButtons[0].SetActive(true);
-                                /*caltropButtons[0].SetActive(true);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[0].SetActive(true);
-                                teslaButtons[0].SetActive(true);
-                                shrapnelButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);*/
+                                rocketButtons[0].SetActive(true);
                                 displayText[0].text = "MG";
                                 break;
                         case 1:
@@ -64,12 +58,9 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flameButtons[0].SetActive(false);
                                 flameButtons[1].SetActive(true);
                                 flakButtons[0].SetActive(true);
-                                /*caltropButtons[0].SetActive(true);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[0].SetActive(true);
-                                teslaButtons[0].SetActive(true);
-                                shrapnelButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);*/
+                                rocketButtons[0].SetActive(true);
                                 displayText[0].text = "Flame";
                                 break;
                         case 2:
@@ -77,24 +68,18 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flameButtons[0].SetActive(true);
                                 flakButtons[0].SetActive(false);
                                 flakButtons[1].SetActive(true);
-                                /*caltropButtons[0].SetActive(true);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[0].SetActive(true);
-                                teslaButtons[0].SetActive(true);
-                                shrapnelButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);*/
+                                rocketButtons[0].SetActive(true);
                                 displayText[0].text = "Flak";
                                 break;
-                        /*case 3:
+                        case 3:
                                 mgButtons[0].SetActive(true);
                                 flameButtons[0].SetActive(true);
                                 flakButtons[0].SetActive(true);
-                                caltropButtons[0].SetActive(true);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[0].SetActive(false);
                                 laserButtons[1].SetActive(true);
-                                teslaButtons[0].SetActive(true);
-                                shrapnelButtons[0].SetActive(true);
                                 rocketButtons[0].SetActive(true);
                                 displayText[0].text = "Laser";
                                 break;
@@ -102,41 +87,12 @@ public class WeaponSelectionManager : MonoBehaviour
                                 mgButtons[0].SetActive(true);
                                 flameButtons[0].SetActive(true);
                                 flakButtons[0].SetActive(true);
-                                caltropButtons[0].SetActive(true);
-                                gasButtons[0].SetActive(true);
-                                laserButtons[0].SetActive(true);
-                                teslaButtons[0].SetActive(false);
-                                teslaButtons[1].SetActive(true);
-                                shrapnelButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);
-                                displayText[0].text = "Tesla";
-                                break;
-                        case 5:
-                                mgButtons[0].SetActive(true);
-                                flameButtons[0].SetActive(true);
-                                flakButtons[0].SetActive(true);
-                                caltropButtons[0].SetActive(true);
                                 gasButtons[0].SetActive(false);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[0].SetActive(true);
-                                teslaButtons[0].SetActive(true);
-                                shrapnelButtons[0].SetActive(true);
                                 rocketButtons[0].SetActive(true);
                                 displayText[0].text = "Gas";
                                 break;
-                        case 6:
-                                mgButtons[0].SetActive(true);
-                                flameButtons[0].SetActive(true);
-                                flakButtons[0].SetActive(true);
-                                caltropButtons[0].SetActive(false);
-                                caltropButtons[1].SetActive(true);
-                                gasButtons[0].SetActive(true);
-                                laserButtons[0].SetActive(true);
-                                teslaButtons[0].SetActive(true);
-                                shrapnelButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);
-                                displayText[0].text = "Caltrops";
-                                break;*/
                         default:
                                 break;
                 }
@@ -151,12 +107,9 @@ public class WeaponSelectionManager : MonoBehaviour
                                 mgButtons[0].SetActive(true);
                                 flameButtons[1].SetActive(true);
                                 flakButtons[1].SetActive(true);
-                                /*caltropButtons[1].SetActive(true);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[1].SetActive(true);
-                                teslaButtons[1].SetActive(true);
-                                shrapnelButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);*/
+                                rocketButtons[1].SetActive(true);
                                 displayText[1].text = "MG";
                                 break;
                         case 1:
@@ -164,12 +117,9 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flameButtons[1].SetActive(false);
                                 flameButtons[0].SetActive(true);
                                 flakButtons[1].SetActive(true);
-                                /*caltropButtons[1].SetActive(true);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[1].SetActive(true);
-                                teslaButtons[1].SetActive(true);
-                                shrapnelButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);*/
+                                rocketButtons[1].SetActive(true);
                                 displayText[1].text = "Flame";
                                 break;
                         case 2:
@@ -177,24 +127,18 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flameButtons[1].SetActive(true);
                                 flakButtons[1].SetActive(false);
                                 flakButtons[0].SetActive(true);
-                               /* caltropButtons[1].SetActive(true);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[1].SetActive(true);
-                                teslaButtons[1].SetActive(true);
-                                shrapnelButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);*/
+                                rocketButtons[1].SetActive(true);
                                 displayText[1].text = "Flak";
                                 break;
-                        /*case 3:
+                        case 3:
                                 mgButtons[1].SetActive(true);
                                 flameButtons[1].SetActive(true);
                                 flakButtons[1].SetActive(true);
-                                caltropButtons[1].SetActive(true);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[1].SetActive(false);
                                 laserButtons[0].SetActive(true);
-                                teslaButtons[1].SetActive(true);
-                                shrapnelButtons[1].SetActive(true);
                                 rocketButtons[1].SetActive(true);
                                 displayText[1].text = "Laser";
                                 break;
@@ -202,40 +146,11 @@ public class WeaponSelectionManager : MonoBehaviour
                                 mgButtons[1].SetActive(true);
                                 flameButtons[1].SetActive(true);
                                 flakButtons[1].SetActive(true);
-                                caltropButtons[1].SetActive(true);
-                                gasButtons[1].SetActive(true);
-                                laserButtons[1].SetActive(true);
-                                teslaButtons[1].SetActive(false);
-                                teslaButtons[0].SetActive(true);
-                                shrapnelButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);
-                                displayText[1].text = "Tesla";
-                                break;
-                        case 5:
-                                mgButtons[1].SetActive(true);
-                                flameButtons[1].SetActive(true);
-                                flakButtons[1].SetActive(true);
-                                caltropButtons[1].SetActive(true);
                                 gasButtons[1].SetActive(false);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[1].SetActive(true);
-                                teslaButtons[1].SetActive(true);
-                                shrapnelButtons[1].SetActive(true);
                                 rocketButtons[1].SetActive(true);
                                 displayText[1].text = "Gas";
-                                break;
-                        case 6:
-                                mgButtons[1].SetActive(true);
-                                flameButtons[1].SetActive(true);
-                                flakButtons[1].SetActive(true);
-                                caltropButtons[1].SetActive(false);
-                                caltropButtons[0].SetActive(true);
-                                gasButtons[1].SetActive(true);
-                                laserButtons[1].SetActive(true);
-                                teslaButtons[1].SetActive(true);
-                                shrapnelButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);
-                                displayText[1].text = "Caltrops";*/
                                 break;
                         default:
                                 break;

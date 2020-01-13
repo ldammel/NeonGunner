@@ -71,12 +71,6 @@ namespace Library.Events
                     NotificationManager.Instance.SetNewNotification( GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode ? "Godmode Activated" : "Godmode Deactivated", 3);
                     SoundManager.Instance.PlaySound(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode ? "Enabled" : "Disabled");
                     return;
-                case "gottagofast":
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(changedSpeed ? -2 : 2);
-                    NotificationManager.Instance.SetNewNotification(changedSpeed ? "Slow Down!" : "Speed Up!", 3);
-                    SoundManager.Instance.PlaySound(changedSpeed ? "Disabled" : "Enabled");
-                    changedSpeed = !changedSpeed;
-                    return;
                 case "kamikaze":
                     NotificationManager.Instance.SetNewNotification("KAMIKAZEE!", 3);
                     GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<EnemySpawnController>().SpawnEnemies(8);

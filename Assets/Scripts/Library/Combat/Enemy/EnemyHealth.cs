@@ -22,8 +22,6 @@ namespace Library.Combat.Enemy
 
         private Vector3 _startPos;
 
-        public Waypoint wp;
-
         public bool godMode;
 
         public AudioSource deathSound;
@@ -54,7 +52,6 @@ namespace Library.Combat.Enemy
             }
             if (!(curHealth <= 0) || player) return;
             curHealth = 1;
-            if(wp != null && wp.isWaypointActive) wp.isWaypointActive = false;
 
             EnemySpawnController.killedEnemies++;
             EnemySpawnController.totalKills++;

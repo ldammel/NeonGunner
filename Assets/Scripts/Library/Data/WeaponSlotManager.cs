@@ -41,6 +41,7 @@ namespace Library.Data
                                 currencyObject.selectedWeaponTwo = 0;
                         }
                         var go = Instantiate(weapons[weapon], parents[0].transform);
+                        go.transform.localPosition = Vector3.zero;
                         currencyObject.selectedSlotOne = weapons[weapon];
                         currencyObject.selectedWeaponOne = weapon;
                         test.gunMovementComponent[0] = go.GetComponentInChildren<GunMovement>();
@@ -64,12 +65,6 @@ namespace Library.Data
                                 case 4:
                                         
                                         break;
-                                case 5:
-                                        
-                                        break;
-                                case 6:
-                                        test.caltropComponent[0] = go.GetComponentInChildren<Caltrops>();
-                                        break;
                                 default:
                                         break;
                         }
@@ -83,6 +78,7 @@ namespace Library.Data
                                 currencyObject.selectedWeaponOne = 0;
                         }
                         var go = Instantiate(weapons[weapon], parents[1].transform);
+                        go.transform.localPosition = Vector3.zero;
                         currencyObject.selectedSlotTwo = weapons[weapon];
                         currencyObject.selectedWeaponTwo = weapon;
                         test.gunMovementComponent[1] = go.GetComponentInChildren<GunMovement>();
@@ -105,12 +101,6 @@ namespace Library.Data
                                         break;
                                 case 4:
                                         
-                                        break;
-                                case 5:
-                                        
-                                        break;
-                                case 6:
-                                        test.caltropComponent[1] = go.GetComponentInChildren<Caltrops>();
                                         break;
                                 default:
                                         break;

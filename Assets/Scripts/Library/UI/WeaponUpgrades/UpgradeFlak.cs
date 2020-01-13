@@ -18,8 +18,7 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private UpgradeFlak nextUpgrade;
         
         [SerializeField] private UpgradeRocket rocketUpgrade;
-        [SerializeField] private UpgradeShrapnel shrapnelUpgrade;
-        
+
         [SerializeField] private Image lockedImage;
         
         [SerializeField] private ushort upgradeLevel;
@@ -75,13 +74,10 @@ namespace Library.UI.WeaponUpgrades
             }
             else
             {
-                if (rocketUpgrade == null || shrapnelUpgrade == null) return;
+                if (rocketUpgrade == null) return;
                 
                 rocketUpgrade.isLocked = false;
                 rocketUpgrade.UpdateImages();
-
-                shrapnelUpgrade.isLocked = false;
-                shrapnelUpgrade.UpdateImages();
             }
             
             if (!_alreadyActivated)

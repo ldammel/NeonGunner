@@ -16,7 +16,6 @@ public class Test : MonoBehaviour
     public BulletPooled[] bulletPooledComponent = new BulletPooled[2];
     public MachineGun[] machineGunComponent = new MachineGun[2];
     public GameObject[] flamethrowerGameObject = new GameObject[2];
-    public Caltrops[] caltropComponent = new Caltrops[2];
     public Laser[] laserComponent = new Laser[2];
     public CurrencyObject currencyObject;
     public Transform[] positions;
@@ -72,7 +71,6 @@ public class Test : MonoBehaviour
             if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == position);
             if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == position;
             if(laserComponent[i] != null) laserComponent[i].enabled = i == position;
-            if(caltropComponent[i] != null) caltropComponent[i].enabled = i == position;
         }
     }
 
@@ -87,7 +85,6 @@ public class Test : MonoBehaviour
             if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == 0);
             if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == 0;
             if(laserComponent[i] != null) laserComponent[i].enabled = i == 0;
-            if(caltropComponent[i] != null) caltropComponent[i].enabled = i == 0;
         }
     }
 

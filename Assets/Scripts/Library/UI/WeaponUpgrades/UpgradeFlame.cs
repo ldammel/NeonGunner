@@ -17,7 +17,6 @@ namespace Library.UI.WeaponUpgrades
         [SerializeField] private UpgradeFlame previousUpgrade;
         [SerializeField] private UpgradeFlame nextUpgrade;
         
-        [SerializeField] private UpgradeCaltrop caltropUpgrade;
         [SerializeField] private UpgradeGas gasUpgrade;
         
         [SerializeField] private Image lockedImage;
@@ -77,10 +76,7 @@ namespace Library.UI.WeaponUpgrades
             }
             else
             {
-                if (caltropUpgrade == null || gasUpgrade == null) return;
-                
-                caltropUpgrade.isLocked = false;
-                caltropUpgrade.UpdateImages();
+                if (gasUpgrade == null) return;
 
                 gasUpgrade.isLocked = false;
                 gasUpgrade.UpdateImages();

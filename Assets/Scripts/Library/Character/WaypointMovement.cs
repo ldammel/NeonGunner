@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using BansheeGz.BGSpline.Curve;
 using Library.Events;
 using UnityEngine;
@@ -8,31 +9,41 @@ namespace Library.Character
     public class WaypointMovement : MonoBehaviour
     {
         public float moveSpeed;
-        public float maxSpeed;
         public BGCurve path;
+        
         private bool _active;
-        public float reducedSpeed;
+        private int _curPoint;
+        
+        private Vector3 _targetVector;
+        private Vector3 _oldPos;
 
-        private Rigidbody rb;
-
-        public void Start()
+        private void Start()
         {
-            rb = gameObject.GetComponent<Rigidbody>();
+            _oldPos = transform.localPosition;
+            _curPoint = 0;
+            _targetVector = path.Points[_curPoint].PositionLocal;
         }
 
         private void Update()
         {
-            rb.isKinematic = PauseMenu.Instance.pauseActive;
             if (PauseMenu.Instance.pauseActive) return;
-            if (path == null) return;
-        }
+           
+            if(_curPoint <= path.PointsCount -1)
+            {
+                if(Vector3.Distance(this.transform.localPosition, path.Points[_curPoint].PositionLocal) < 1f)
+                {  
+                    _curPoint++;
+                    if(_curPoint != path.PointsCount)_targetVector = path.Points[_curPoint].PositionLocal;
+                    _oldPos = transform.localPosition;
+                }
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
 
-        public void SetSpeed(float amount)
-        {
-            reducedSpeed += amount;
-            if (reducedSpeed <= 0) reducedSpeed = 0;
-            if (reducedSpeed >= maxSpeed) reducedSpeed = maxSpeed;
+            transform.localPosition += ((_targetVector - _oldPos) * Time.deltaTime * moveSpeed);
+            
         }
-
     }
 }
