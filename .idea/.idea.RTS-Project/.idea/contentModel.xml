@@ -544,6 +544,9 @@
                 <e p="VoidEvent.cs" t="Include" />
               </e>
               <e p="CameraTransition.cs" t="Include" />
+              <e p="Checkpoint" t="Include">
+                <e p="Checkpoint.cs" t="Include" />
+              </e>
               <e p="DifficultySelector.cs" t="Include" />
               <e p="EnemyFoundEvent.cs" t="Include" />
               <e p="LevelEnd.cs" t="Include" />

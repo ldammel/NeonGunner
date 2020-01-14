@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Sign.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Sign.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/WaypointManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/WaypointManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Caltrop.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Caltrop.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Tesla.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Tesla.prefab.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,6 +89,7 @@
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/SpawnSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Checkpoint/Checkpoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AimController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/MissionDisplayController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -160,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/GameSaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropThrower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropPiece.cs" />
@@ -211,6 +197,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/WaypointManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/Checkpoint/Checkpoint.cs" />
       </list>
     </option>
   </component>
@@ -303,7 +290,7 @@
       <workItem from="1578495092925" duration="739000" />
       <workItem from="1578495877325" duration="317000" />
       <workItem from="1578912976145" duration="12709000" />
-      <workItem from="1578994078265" duration="5369000" />
+      <workItem from="1578994078265" duration="6969000" />
     </task>
     <servers />
   </component>
