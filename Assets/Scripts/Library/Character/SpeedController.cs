@@ -9,16 +9,11 @@ namespace Library.Character
     public class SpeedController : MonoBehaviour
     {
         public BGCcTrs path;
-        private float _speed;
+        public float speed;
 
         private void Start()
         {
-            _speed = path.Speed;
-        }
-
-        private void Update()
-        {
-            path.Speed = PauseMenu.Instance.pauseActive ? 0 : _speed;
+            speed = path.Speed;
         }
     }
 }

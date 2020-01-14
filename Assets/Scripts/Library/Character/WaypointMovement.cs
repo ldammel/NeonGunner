@@ -10,12 +10,15 @@ namespace Library.Character
     {
         public float moveSpeed;
         public BGCurve path;
+
+        public bool destroyOnEnd;
         
         private bool _active;
         private int _curPoint;
         
         private Vector3 _targetVector;
         private Vector3 _oldPos;
+        
 
         private void Start()
         {
@@ -39,7 +42,14 @@ namespace Library.Character
             }
             else
             {
-                Destroy(gameObject);
+                if (destroyOnEnd)
+                {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    moveSpeed = 0;
+                }
             }
 
             transform.localPosition += ((_targetVector - _oldPos) * Time.deltaTime * moveSpeed);

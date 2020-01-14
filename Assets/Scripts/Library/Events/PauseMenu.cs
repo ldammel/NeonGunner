@@ -29,12 +29,14 @@ namespace Library.Events
 
         public bool pauseActive;
         private bool changedSpeed = false;
+        private SpeedController con;
         private float _speed;
 
         private void Start()
         {
            // _speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().moveSpeed;
            menuObject.SetActive(pauseActive);
+           con = FindObjectOfType<SpeedController>();
         }
 
         private void Update()
@@ -55,6 +57,8 @@ namespace Library.Events
         {
             menuObject.SetActive(!menuObject.activeSelf);
             pauseActive = !pauseActive;
+            con.path.Speed = pauseActive ? 0 : con.speed;
+            
         }
 
         public void CheatCodes(string code)
