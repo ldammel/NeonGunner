@@ -2873,15 +2873,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usePathLeft: 1
-  usePathRight: 0
-  usePathUpLeft: 0
-  usePathUpRight: 0
+  usePathRight: 1
+  usePathUpLeft: 1
+  usePathUpRight: 1
   timeBetweenSpawnsPathLeft:
   - 2
+  - 1
   - 2
-  timeBetweenSpawnsPathRight: []
-  timeBetweenSpawnsPathUpLeft: []
-  timeBetweenSpawnsPathUpRight: []
+  - 3
+  timeBetweenSpawnsPathRight:
+  - 1
+  - 2
+  - 1
+  timeBetweenSpawnsPathUpLeft:
+  - 4
+  - 2
+  timeBetweenSpawnsPathUpRight:
+  - 3
+  - 2
 --- !u!65 &937298873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10126,6 +10135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '---PLAYER---'
       objectReference: {fileID: 0}
+    - target: {fileID: 7546908577239990363, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1493108864}
     - target: {fileID: 7810394855421040821, guid: e88cd94284ff6dc4eb77598252717968,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10136,11 +10150,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 12.194822
       objectReference: {fileID: 0}
-    - target: {fileID: 7546908577239990363, guid: e88cd94284ff6dc4eb77598252717968,
-        type: 3}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1493108864}
     - target: {fileID: 6276908978794783904, guid: e88cd94284ff6dc4eb77598252717968,
         type: 3}
       propertyPath: m_LocalPosition.x

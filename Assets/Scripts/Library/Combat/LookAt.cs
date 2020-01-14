@@ -9,7 +9,7 @@ namespace Library.Combat
 
         private void Start()
         {
-            target = GameObject.FindWithTag("Player");
+            target = GameObject.Find("---PLAYER---/Player/SlotTwo");
         }
 
         private void Update()

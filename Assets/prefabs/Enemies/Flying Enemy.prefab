@@ -515,8 +515,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.64, z: 1}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Size: {x: 2.68, y: 1.62, z: 0.72}
+  m_Center: {x: 0, y: 2.51, z: 0}
 --- !u!114 &513876215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c297c6deae2fa245b2a8067e734aa41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 0.5
   path: {fileID: 0}
 --- !u!1001 &2574870405374392428
 PrefabInstance:
@@ -583,6 +583,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8316347139329622351}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 455837e04172a1e41a1ca6787e96ca1b,
+        type: 3}
+      propertyPath: m_Name
+      value: RangeDeamon2_low
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 455837e04172a1e41a1ca6787e96ca1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -637,11 +642,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 455837e04172a1e41a1ca6787e96ca1b,
-        type: 3}
-      propertyPath: m_Name
-      value: RangeDeamon2_low
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 455837e04172a1e41a1ca6787e96ca1b, type: 3}
