@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using JetBrains.Annotations;
 using Library.Combat.Enemy;
+using Library.Events;
 using Library.Tools;
 using TMPro;
 using UnityEngine;
@@ -75,8 +76,16 @@ namespace Library.Combat
 
             while (i < numCollisionEvents)
             {
-                other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
-                i++;
+                if (other.CompareTag("Enemy"))
+                {
+                    other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+                    i++;
+                }
+                else if (other.CompareTag("Sign"))
+                {
+                    other.gameObject.GetComponentInParent<SignActivation>().active = !other.gameObject.GetComponentInParent<SignActivation>().active;
+                    return;
+                }
             }
         }
     }

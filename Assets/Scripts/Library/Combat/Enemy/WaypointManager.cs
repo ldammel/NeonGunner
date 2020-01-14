@@ -44,11 +44,11 @@ namespace Library.Combat.Enemy
         {
             for (int i = 0; i < delay.Length; i++)
             {
+                yield return new WaitForSeconds(delay[i]);
                 var go = Instantiate(enemyPrefab, lane.Points[0].PointTransform);
                 go.transform.parent = lane.transform;
                 go.transform.localPosition = lane.Points[0].PositionLocal;
                 go.GetComponent<WaypointMovement>().path = lane;
-                yield return new WaitForSeconds(delay[i]);
             }
         }
     }

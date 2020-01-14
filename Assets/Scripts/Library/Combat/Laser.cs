@@ -1,5 +1,6 @@
 ﻿using System;
 using Library.Combat.Enemy;
+using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat
@@ -36,6 +37,14 @@ namespace Library.Combat
             else if (Input.GetMouseButtonUp(0))
             {
                 laser.enabled = false;
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Sign"))
+            {
+                other.gameObject.GetComponentInParent<SignActivation>().active = !other.gameObject.GetComponentInParent<SignActivation>().active;
             }
         }
 
