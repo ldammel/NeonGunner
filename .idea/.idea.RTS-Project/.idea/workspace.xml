@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/RangedEnemy_low6_Wings_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/RangedEnemy_low6_Wings_AlbedoTransparency.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/RangedEnemy_low6_Wings_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/RangedEnemy_low6_Wings_AlbedoTransparency.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/RangedEnemy_low6_Wings_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/RangedEnemy_low6_Wings_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/RangedEnemy_low6_Wings_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/RangedEnemy_low6_Wings_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/wings.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/RangeEnemy/wings.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/train_low.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/train_low.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -299,7 +299,7 @@
       <workItem from="1578912976145" duration="12709000" />
       <workItem from="1578994078265" duration="9953000" />
       <workItem from="1579088326215" duration="14494000" />
-      <workItem from="1579172064673" duration="9956000" />
+      <workItem from="1579172064673" duration="10866000" />
     </task>
     <servers />
   </component>
