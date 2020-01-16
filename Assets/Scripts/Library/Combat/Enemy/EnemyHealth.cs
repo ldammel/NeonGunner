@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Library.AI;
-using Library.Character;
-using Library.Character.Upgrades;
 using Library.Combat.Pooling;
 using Library.Data;
 using Library.Events;
 using Library.Events.Checkpoint;
-using Library.UI;
 using UnityEngine;
-using UnityEngine.AI;
 
 namespace Library.Combat.Enemy
 {

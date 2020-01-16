@@ -3,7 +3,92 @@ guid: 6d33686d46230e542af18642ad0ac227
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_altar_inbetweenparts
+    second: {fileID: 2100000, guid: 1fda3683e1ae71a499fd37dc740d82f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_arches
+    second: {fileID: 2100000, guid: 23e970f95a014e7419128a3890fbfec9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_below
+    second: {fileID: 2100000, guid: eca1f2e6861fbbe4490ff4c66023484f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_cannister_stairs
+    second: {fileID: 2100000, guid: b566cd5670d8a494fa6d13ae9d2d41de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_doors
+    second: {fileID: 2100000, guid: 3d6164623a033234cbd430142da6f0e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_frontgolddetails
+    second: {fileID: 2100000, guid: 726797cffa7b0814a8b9cb0048a15f8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_locomotive_boilers
+    second: {fileID: 2100000, guid: b27e92da23f7cdc4bb4697f277985cc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_locowagon_sideplating_twofrontdetails
+    second: {fileID: 2100000, guid: 246c9aa80b93f6d45820907cbb196a84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_movingparts
+    second: {fileID: 2100000, guid: 6022f01b6f184874a963465950b159cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_pandorabox
+    second: {fileID: 2100000, guid: 7a2dd2da169e9be459630a9e92a0e1de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_pandoraruby
+    second: {fileID: 2100000, guid: 474fabe0a50cd2d43bde2b48280adcbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_stairrailing_towers
+    second: {fileID: 2100000, guid: 29b2e1c8ae4924844acfbf5fa723fa5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_twofront_locotubes
+    second: {fileID: 2100000, guid: ec1f27e45950cb0448deb40d4d574404, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_wagon_pandora
+    second: {fileID: 2100000, guid: 719c7676096810d4c903982634ee0d3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_wagon_pandora_belowgold
+    second: {fileID: 2100000, guid: 6a0d78b134312d14d8c1630dc75bf56f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_wagon_passenger
+    second: {fileID: 2100000, guid: 04c0047388bdf51408c8d1a0ea7b2c14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture_wagon_passenger_belowgold
+    second: {fileID: 2100000, guid: d82b327ffe6d5ca4ca9af3a90bcd859f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -81,7 +166,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.0015
+    globalScale: 0.15
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
