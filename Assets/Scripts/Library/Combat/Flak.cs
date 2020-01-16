@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using Library.Combat.Enemy;
+using Library.Events;
 using Library.Tools;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -12,36 +13,19 @@ namespace Library.Combat
         public float radius = 5;
         public float damage;
         public AudioSource explosionSoundSource;
-
-        public GameObject shrapnelBullet;
-        public int shrapnelAmount;
-
-        public bool isShrapnel;
-
         private bool canExplode;
 
         private void Start()
         {
             var c = gameObject.GetComponent<MeshRenderer>().enabled = true;
             explosionSoundSource = GameObject.Find("---PLAYER---/Sounds/ExplosionSound").GetComponent<AudioSource>();
-            canExplode = false;
-            StartCoroutine(ShrapnelStart());
         }
 
-        private void Update()
+        private void OnTriggerEnter(Collider other)
         {
-            if (Input.GetMouseButtonDown(0) && isShrapnel)
+            if (other.CompareTag("Sign"))
             {
-                if (!canExplode) return;
-                canExplode = false;
-                for (int i = 0; i < shrapnelAmount; i++)
-                {
-                    var go = Instantiate(shrapnelBullet, Random.insideUnitSphere * radius+ transform.position, Quaternion.identity);
-                    var rb = go.gameObject.GetComponent<Rigidbody>();
-                    rb.AddRelativeForce(Random.Range(-1000,1000),-500,Random.Range(-1000,1000));
-                    Destroy(go,0.5f);
-                }
-                AreaDamageEnemies(transform.position, radius, damage);
+                other.gameObject.GetComponentInParent<SignActivation>().active = !other.gameObject.GetComponentInParent<SignActivation>().active;
             }
         }
 
@@ -64,12 +48,6 @@ namespace Library.Combat
             }
 
             var c = gameObject.GetComponent<MeshRenderer>().enabled = false;
-        }
-
-        IEnumerator ShrapnelStart()
-        {
-            yield return new WaitForSeconds(0.3f);
-            canExplode = true;
         }
     }
 }

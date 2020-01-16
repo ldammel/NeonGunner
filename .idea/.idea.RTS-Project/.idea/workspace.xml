@@ -3,10 +3,46 @@
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Currency.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/SpeedController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/SpeedController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/WaypointManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/WaypointManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/Checkpoint/Checkpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/Checkpoint/Checkpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/---MANAGERS---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/---MANAGERS---.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Melee Enemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Melee Enemy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Options.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Options.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flak.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flak.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Gas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Gas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,142 +59,134 @@
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/AI/Waypoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/GameSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Base/BaseScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnTriggerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnCollisionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Modules/RocketStrikeModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnInteractionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Void.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/BaseGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/FloatListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/SpeedController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/IGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Caltrops.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/UpgradeUIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/VoidListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/VoidEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/QuickTimeTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/FloatEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/BaseGameEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/UnityEvents/UnityFloatEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/MissionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/MovementController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/MissionDisplay.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Animations/EnemyAnimation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemySpawnController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/Mission.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ShrapnelPiece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/KillMission.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/MissionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/MonsterInventory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/EnemySpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Environment/Free_Rocks/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientOcclusion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AI/FieldOfViewEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/EnemyFoundEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/AI/Waypoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/Monster.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AI/EnemyVision.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/SummoningController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AI/EnemyHP.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Weapons/Flak.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/EnemyAI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/MathParabola.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/ScreenShakeManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/IngameUIController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/SpawnSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Checkpoint/Checkpoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AimController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/MissionDisplayController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/AddClickEventOnAwake.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.analytics@3.3.2/DataPrivacy/DataPrivacyButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/Keybindings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeCaltrop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/Action.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/State.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/MissionDisplay.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/Monster.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/KillMission.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Caltrops.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/Mission.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnInteractionController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/MissionManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropPiece.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/UpgradeUIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnCollisionController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnTriggerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/MissionController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Void.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/FloatListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/BaseGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/Mission.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/IGameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Listeners/VoidListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/QuickTimeTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AI/EnemyVision.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/BaseGameEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Animations/EnemyAnimation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AI/EnemyHP.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CamTransitionPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AI/FieldOfViewEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/VoidEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/DifficultySelector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/EnemyManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/BaseEvents/FloatEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ShrapnelPiece.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/UnityEvents/UnityFloatEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/MathParabola.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/MovementController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/IngameUIController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AimController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/HealthText.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/EnemyFoundEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Weapons/Flak.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/ScoreText.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ActivateWave.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ParticleDamage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/SpeedController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/SpawnSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/EnemySpawner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/EnemyAI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemySpawnController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/UI/ModuleCDUpgradeUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/UI/ModuleUIController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/MonsterDisplay.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/AddClickEventOnAwake.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/ScreenShakeManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/SummoningController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/MonsterInventory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/MissionDisplayController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/UI/RocketStrikeUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeCaltrop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CamTransitionPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/Missions/Mission.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Library/Assets/Scripts/Library/Base/Loot/MonsterDisplay.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/WaypointManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Base/BaseScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/GameSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropPiece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/UI/ModuleCDUpgradeUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/Keybindings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ActivateWave.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/Action.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/State.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/TriggerEnemySpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/ScoreText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lucas/UI/ModuleUIController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/DifficultySelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/ParticleDamage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/UI/HealthText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Modules/RocketStrikeModule.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/AimController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ShrapnelPiece.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/AI/Waypoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/CameraTransition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/GameSaveManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropThrower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/CaltropPiece.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/HealthText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" />
@@ -166,37 +194,50 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/Upgrades/UpgradeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Caltrops.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/CurrencyObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" />
         <option value="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/IUpgrade.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/RocketStrike.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeCaltrop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeShrapnel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeTesla.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/ParticleDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/SpeedDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/SpeedController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelectionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/TriggerEnemySpawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/DifficultySelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/TriggerEnemySpawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/LookAt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SignActivation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/WaypointManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/PatrolAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/StateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/SpeedController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/Checkpoint/Checkpoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeFlak.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSlotManager.cs" />
       </list>
     </option>
   </component>
@@ -288,6 +329,10 @@
       <workItem from="1578494397134" duration="179000" />
       <workItem from="1578495092925" duration="739000" />
       <workItem from="1578495877325" duration="317000" />
+      <workItem from="1578912976145" duration="12709000" />
+      <workItem from="1578994078265" duration="9953000" />
+      <workItem from="1579088326215" duration="14494000" />
+      <workItem from="1579172064673" duration="8383000" />
     </task>
     <servers />
   </component>

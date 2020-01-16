@@ -47,7 +47,7 @@ namespace Library.Combat.Pooling
             _lifeTime += Time.deltaTime;
             if (!(_lifeTime > maxLifeTime)) return;
             
-            if (_isflakNotNull && !flak.isShrapnel)
+            if (_isflakNotNull)
             {
                 flak.AreaDamageEnemies(transform.position, flak.radius, flak.damage);
                 Instantiate(vfx, transform.position, transform.rotation);

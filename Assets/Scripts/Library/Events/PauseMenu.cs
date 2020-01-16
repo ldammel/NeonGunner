@@ -1,11 +1,10 @@
-﻿using System;
-using Library.Character;
+﻿using Library.Character;
 using Library.Character.Upgrades;
 using Library.Combat.Enemy;
 using Library.Tools;
 using Library.UI;
+using Sirenix.Utilities;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Library.Events
 {
@@ -29,12 +28,14 @@ namespace Library.Events
 
         public bool pauseActive;
         private bool changedSpeed = false;
+        private SpeedController con;
         private float _speed;
 
         private void Start()
         {
            // _speed = GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().moveSpeed;
            menuObject.SetActive(pauseActive);
+           con = FindObjectOfType<SpeedController>();
         }
 
         private void Update()
@@ -55,6 +56,12 @@ namespace Library.Events
         {
             menuObject.SetActive(!menuObject.activeSelf);
             pauseActive = !pauseActive;
+            if (FindObjectOfType<Checkpoint.Checkpoint>().enemyAmount == 0)
+            {
+                con.path.ForEach(x => x.Speed = pauseActive ? 0 : con.speed);
+            }
+
+            if(!pauseActive)FindObjectOfType<Test>().Transi();
         }
 
         public void CheatCodes(string code)
@@ -70,12 +77,6 @@ namespace Library.Events
                     GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode = !GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode;
                     NotificationManager.Instance.SetNewNotification( GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode ? "Godmode Activated" : "Godmode Deactivated", 3);
                     SoundManager.Instance.PlaySound(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().godMode ? "Enabled" : "Disabled");
-                    return;
-                case "gottagofast":
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<WaypointMovement>().SetSpeed(changedSpeed ? -2 : 2);
-                    NotificationManager.Instance.SetNewNotification(changedSpeed ? "Slow Down!" : "Speed Up!", 3);
-                    SoundManager.Instance.PlaySound(changedSpeed ? "Disabled" : "Enabled");
-                    changedSpeed = !changedSpeed;
                     return;
                 case "kamikaze":
                     NotificationManager.Instance.SetNewNotification("KAMIKAZEE!", 3);

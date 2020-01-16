@@ -70,11 +70,13 @@ public class RocketStrikeUI : MonoBehaviour {
     }
 
     public static void ReduceRocketIndicator() {
+        Instance.imageRocketIndicator.gameObject.SetActive(true);
         Instance.imageRocketIndicator.fillAmount = --Instance.activeRocketIndicatorSegments / (float)ROCKET_COUNT;
     }
 
     public static void ResetRocketIndicator() {
         Instance.activeRocketIndicatorSegments = ROCKET_COUNT;
         Instance.imageRocketIndicator.fillAmount = 1f;
+        Instance.imageRocketIndicator.gameObject.SetActive(false);
     }
 }

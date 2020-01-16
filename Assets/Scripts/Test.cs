@@ -16,7 +16,7 @@ public class Test : MonoBehaviour
     public BulletPooled[] bulletPooledComponent = new BulletPooled[2];
     public MachineGun[] machineGunComponent = new MachineGun[2];
     public GameObject[] flamethrowerGameObject = new GameObject[2];
-    public Caltrops[] caltropComponent = new Caltrops[2];
+    public ParticleDamage[] gasGameObject = new ParticleDamage[2];
     public Laser[] laserComponent = new Laser[2];
     public CurrencyObject currencyObject;
     public Transform[] positions;
@@ -32,19 +32,9 @@ public class Test : MonoBehaviour
 
     private void Update()
     {
-        if (InputManager.Instance.KeyDown("options") && !LevelManager.Instance.levelSelection.activeSelf)
+        if (InputManager.Instance.KeyDown("options"))
         {
             PauseMenu.Instance.TriggerMenu();
-        }
-        
-        if (PauseMenu.Instance.pauseActive) return;
-        if (InputManager.Instance.KeyDown("flak"))
-        {
-            TransitionCameraPosition(0);
-        }
-        else if (InputManager.Instance.KeyDown("flame") && currencyObject.selectedSlotTwo != null)
-        {
-            TransitionCameraPosition(1);
         }
         
         for (int i = 0; i < positions.Length; i++)
@@ -58,9 +48,19 @@ public class Test : MonoBehaviour
             if (parents[i] == null) continue;
             _cam.parents[i] = parents[i];
         }
+        
+        if (PauseMenu.Instance.pauseActive) return;
+        if (InputManager.Instance.KeyDown("flak"))
+        {
+            TransitionCameraPosition(0);
+        }
+        else if (InputManager.Instance.KeyDown("flame") && currencyObject.selectedSlotTwo != null)
+        {
+            TransitionCameraPosition(1);
+        }
     }
 
-    private void TransitionCameraPosition(ushort position)
+    public void TransitionCameraPosition(ushort position)
     {
         _cam.parents[position] = parents[position];
         _cam.positions[position] = positions[position];
@@ -72,11 +72,11 @@ public class Test : MonoBehaviour
             if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == position);
             if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == position;
             if(laserComponent[i] != null) laserComponent[i].enabled = i == position;
-            if(caltropComponent[i] != null) caltropComponent[i].enabled = i == position;
+            if(gasGameObject[i] != null) gasGameObject[i].enabled = i == position;
         }
     }
 
-    private IEnumerator FirstTransitionOnStart()
+    public IEnumerator FirstTransitionOnStart()
     {
         yield return new WaitForSeconds(0.2f);
         _cam.FirstTransitionOnStart();
@@ -87,8 +87,13 @@ public class Test : MonoBehaviour
             if(flamethrowerGameObject[i] != null) flamethrowerGameObject[i].SetActive(i == 0);
             if(machineGunComponent[i] != null) machineGunComponent[i].enabled = i == 0;
             if(laserComponent[i] != null) laserComponent[i].enabled = i == 0;
-            if(caltropComponent[i] != null) caltropComponent[i].enabled = i == 0;
+            if(gasGameObject[i] != null) gasGameObject[i].enabled = i == 0;
         }
+    }
+
+    public void Transi()
+    {
+        StartCoroutine(FirstTransitionOnStart());
     }
 
 }

@@ -26,6 +26,7 @@ MonoBehaviour:
   teslaLevel: 0
   selectedSlotOne: {fileID: 8515736470161167883, guid: 447158411e991ce4889d80cfe0603854,
     type: 3}
-  selectedSlotTwo: {fileID: 0}
+  selectedSlotTwo: {fileID: 8879015948160441982, guid: 27135ef34b3f71641af81fe7175bf977,
+    type: 3}
   selectedWeaponOne: 0
-  selectedWeaponTwo: 0
+  selectedWeaponTwo: 1

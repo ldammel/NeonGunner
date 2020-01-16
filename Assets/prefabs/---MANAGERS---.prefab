@@ -127,7 +127,7 @@ MonoBehaviour:
   flamethrowerGameObject:
   - {fileID: 0}
   - {fileID: 0}
-  caltropComponent:
+  gasGameObject:
   - {fileID: 0}
   - {fileID: 0}
   laserComponent:
@@ -158,7 +158,7 @@ MonoBehaviour:
   playerSpeed: 6
   currencyGainPerEnemy: 0
   mgDamage: 50
-  mgRange: 100
+  mgRange: 200
   mgFireRate: 0.2
   mgFireRateUpgrade: 2
   flakDamage: 100
@@ -420,6 +420,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4686874374658800275}
     m_Modifications:
+    - target: {fileID: 9212469234793638705, guid: 68836f5c37523ad43a68b0107e7b2622,
+        type: 3}
+      propertyPath: m_Name
+      value: InputManager
+      objectReference: {fileID: 0}
     - target: {fileID: 6688102746712073092, guid: 68836f5c37523ad43a68b0107e7b2622,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -475,11 +480,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9212469234793638705, guid: 68836f5c37523ad43a68b0107e7b2622,
-        type: 3}
-      propertyPath: m_Name
-      value: InputManager
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68836f5c37523ad43a68b0107e7b2622, type: 3}
 --- !u!4 &2151583083037298175 stripped
@@ -495,6 +495,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4686874374658800275}
     m_Modifications:
+    - target: {fileID: 4557370135991803960, guid: 557dff0ec426fa548afab9b08e4bd39f,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
     - target: {fileID: 5075465124643898185, guid: 557dff0ec426fa548afab9b08e4bd39f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -549,11 +554,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4557370135991803960, guid: 557dff0ec426fa548afab9b08e4bd39f,
-        type: 3}
-      propertyPath: m_Name
-      value: LevelManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557dff0ec426fa548afab9b08e4bd39f, type: 3}
@@ -570,6 +570,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4686874374658800275}
     m_Modifications:
+    - target: {fileID: 2928222509629525687, guid: 355622da5cd048148aca57c0dad8dd5a,
+        type: 3}
+      propertyPath: m_Name
+      value: CameraManager
+      objectReference: {fileID: 0}
     - target: {fileID: 2928222509629525686, guid: 355622da5cd048148aca57c0dad8dd5a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -624,11 +629,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2928222509629525687, guid: 355622da5cd048148aca57c0dad8dd5a,
-        type: 3}
-      propertyPath: m_Name
-      value: CameraManager
       objectReference: {fileID: 0}
     - target: {fileID: 2928222509629525685, guid: 355622da5cd048148aca57c0dad8dd5a,
         type: 3}

@@ -45,8 +45,10 @@ namespace Library.Combat
 
             var rot = transform.rotation.eulerAngles + new Vector3(-_rotation.y, _rotation.x, 0f); //use local if your char is not always oriented Vector3.up
             rot.x = ClampAngle(rot.x, -10f, 20f);
-         
+            //var centerbase = center.rotation.eulerAngles + new Vector3(0, _rotation.x, 0f); //use local if your char is not always oriented Vector3.up
+            
             transform.eulerAngles = rot;
+            //center.transform.eulerAngles = centerbase;
         }
         
         private void Update()
