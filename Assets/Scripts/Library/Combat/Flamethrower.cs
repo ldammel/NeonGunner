@@ -71,6 +71,7 @@ namespace Library.Combat
 
         void OnParticleCollision(GameObject other)
         {
+            if (!other.CompareTag("Enemy")) return;
             var numCollisionEvents = flameFx.GetCollisionEvents(other, collisionEvents);
             int i = 0;
 
@@ -80,11 +81,6 @@ namespace Library.Combat
                 {
                     other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
                     i++;
-                }
-                else if (other.CompareTag("Sign"))
-                {
-                    other.gameObject.GetComponentInParent<SignActivation>().active = !other.gameObject.GetComponentInParent<SignActivation>().active;
-                    return;
                 }
             }
         }
