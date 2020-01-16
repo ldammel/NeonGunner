@@ -19,8 +19,9 @@ namespace Library.UI.WeaponUpgrades
         
         [SerializeField] private UpgradeGas gasUpgrade;
         
-        [SerializeField] private Image lockedImage;
-
+        [SerializeField] private Sprite activatedImage;
+        [SerializeField] private Sprite deactivatedImage;
+        
         [SerializeField] private ushort upgradeLevel;
         [SerializeField] private ushort upgradeCost;
         
@@ -30,7 +31,7 @@ namespace Library.UI.WeaponUpgrades
         private bool _alreadyActivated;
         
         private Image _activatedImage;
-        private Button _thisButton;
+        private UpgradeFlame _thisButton;
         private Flamethrower _flame;
         private void Start()
         {
@@ -41,7 +42,7 @@ namespace Library.UI.WeaponUpgrades
             _flame.spread = values.flameSpread;
             _flame.ammoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
             _flame.ammoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
-            _thisButton = gameObject.GetComponent<Button>();
+            _thisButton = gameObject.GetComponent<UpgradeFlame>();
             UpdateImages();
             if (currency.flameLevel == 0) return;
             _alreadyActivated = true;
@@ -52,8 +53,8 @@ namespace Library.UI.WeaponUpgrades
         public void UpdateImages()
         {
             if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
-            if(lockedImage != null) lockedImage.enabled = isLocked;
-            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            //if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.sprite = isActivated ? activatedImage : deactivatedImage;
             if(_thisButton != null) _thisButton.enabled = !isLocked;
             if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }

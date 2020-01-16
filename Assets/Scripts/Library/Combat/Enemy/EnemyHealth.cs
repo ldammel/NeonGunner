@@ -7,6 +7,7 @@ using Library.Character.Upgrades;
 using Library.Combat.Pooling;
 using Library.Data;
 using Library.Events;
+using Library.Events.Checkpoint;
 using Library.UI;
 using UnityEngine;
 using UnityEngine.AI;
@@ -25,6 +26,9 @@ namespace Library.Combat.Enemy
         public bool godMode;
 
         public AudioSource deathSound;
+
+        public Checkpoint check;
+        public bool isCheckPoint;
 
         public event Action<float> OnHealthPctChanged = delegate{  };
 
@@ -55,6 +59,9 @@ namespace Library.Combat.Enemy
 
             EnemySpawnController.killedEnemies++;
             EnemySpawnController.totalKills++;
+
+            if (isCheckPoint && check.enemyAmount != 0) check.enemyAmount--;
+            
             if (!deathSound.isPlaying)
             {
                 deathSound.Play();

@@ -1,11 +1,10 @@
-﻿using System;
-using Library.Character;
+﻿using Library.Character;
 using Library.Character.Upgrades;
 using Library.Combat.Enemy;
 using Library.Tools;
 using Library.UI;
+using Sirenix.Utilities;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Library.Events
 {
@@ -57,8 +56,12 @@ namespace Library.Events
         {
             menuObject.SetActive(!menuObject.activeSelf);
             pauseActive = !pauseActive;
-            con.path.Speed = pauseActive ? 0 : con.speed;
-            
+            if (FindObjectOfType<Checkpoint.Checkpoint>().enemyAmount == 0)
+            {
+                con.path.ForEach(x => x.Speed = pauseActive ? 0 : con.speed);
+            }
+
+            if(!pauseActive)FindObjectOfType<Test>().Transi();
         }
 
         public void CheatCodes(string code)

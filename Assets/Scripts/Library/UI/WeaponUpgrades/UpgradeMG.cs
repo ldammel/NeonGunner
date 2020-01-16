@@ -19,7 +19,8 @@ namespace Library.UI.WeaponUpgrades
         
         [SerializeField] private UpgradeLaser laserUpgrade;
 
-        [SerializeField] private Image lockedImage;
+        [SerializeField] private Sprite activatedImage;
+        [SerializeField] private Sprite deactivatedImage;
 
         [SerializeField] private ushort upgradeLevel;
         [SerializeField] private ushort upgradeCost;
@@ -31,14 +32,14 @@ namespace Library.UI.WeaponUpgrades
 
         private MachineGun _mg;
         private Image _activatedImage;
-        private Button _thisButton;
+        private UpgradeMG _thisButton;
         
         private void Start()
         {
 
             _activatedImage = gameObject.GetComponent<Image>();
             _mg = mgGameObject.GetComponentInChildren<MachineGun>();
-            _thisButton = gameObject.GetComponent<Button>();
+            _thisButton = gameObject.GetComponent<UpgradeMG>();
             UpdateImages();
             _mg.fireRate = values.mgFireRate;
             _mg.damage = values.mgDamage;
@@ -52,8 +53,8 @@ namespace Library.UI.WeaponUpgrades
         public void UpdateImages()
         {
             if(previousUpgrade != null) isLocked = !previousUpgrade.isActivated;
-            if(lockedImage != null) lockedImage.enabled = isLocked;
-            if(_activatedImage != null) _activatedImage.color = isActivated ? Color.yellow : Color.gray;
+            //if(lockedImage != null) lockedImage.enabled = isLocked;
+            if(_activatedImage != null) _activatedImage.sprite = isActivated ? activatedImage : deactivatedImage;
             if(_thisButton != null) _thisButton.enabled = !isLocked;
             if(_thisButton != null && !isLocked) _thisButton.enabled = !isActivated;
         }

@@ -40,7 +40,7 @@ namespace Library.Combat.Pooling
                 if(!canFire) return;
                 if (_fireTimer >= fireRate)
                 {
-                    gameObject.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+                    gameObject.transform.LookAt(GameObject.Find("---PLAYER---/Player/SlotTwo").transform);
                     _fireTimer = 0;
                     Fire();
                 }

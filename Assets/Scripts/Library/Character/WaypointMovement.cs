@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using BansheeGz.BGSpline.Curve;
+using Library.Combat.Enemy;
 using Library.Events;
 using UnityEngine;
 

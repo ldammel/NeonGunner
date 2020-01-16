@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using BansheeGz.BGSpline.Curve;
 using Library.Character;
 using Sirenix.OdinInspector;
@@ -18,30 +20,32 @@ namespace Library.Combat.Enemy
         [SerializeField] private BGCurve pathUpRight;
 
         [SerializeField] private GameObject enemyPrefab;
+        [SerializeField] private GameObject[] portalVfx;
 
         public void TriggerSpawn(int lane, float[] delay)
         {
             switch (lane)
             {
                 case 1:
-                    StartCoroutine(Spawn(pathLeft, delay));
+                    StartCoroutine(Spawn(pathLeft, delay,0));
                     break;
                 case 2:
-                    StartCoroutine(Spawn(pathRight, delay));
+                    StartCoroutine(Spawn(pathRight, delay,1));
                     break;
                 case 3:
-                    StartCoroutine(Spawn(pathUpLeft, delay));
+                    StartCoroutine(Spawn(pathUpLeft, delay,2));
                     break;
                 case 4:
-                    StartCoroutine(Spawn(pathUpRight, delay));
+                    StartCoroutine(Spawn(pathUpRight, delay,3));
                     break;
                 default:
                     break;
             }
         }
 
-        IEnumerator Spawn(BGCurve lane, float[] delay)
+        IEnumerator Spawn(BGCurve lane, float[] delay, int portalIndex)
         {
+            portalVfx[portalIndex].SetActive(true);
             for (int i = 0; i < delay.Length; i++)
             {
                 yield return new WaitForSeconds(delay[i]);
@@ -50,6 +54,7 @@ namespace Library.Combat.Enemy
                 go.transform.localPosition = lane.Points[0].PositionLocal;
                 go.GetComponent<WaypointMovement>().path = lane;
             }
+            portalVfx[portalIndex].SetActive(false);
         }
     }
 }

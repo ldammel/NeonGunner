@@ -60,7 +60,7 @@ namespace Library.Data
         {
             levelSelection.SetActive(true);
             upgradeScreen.SetActive(true);
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.03f);
             upgradeScreen.SetActive(false);
             levelSelection.SetActive(false);
         }
