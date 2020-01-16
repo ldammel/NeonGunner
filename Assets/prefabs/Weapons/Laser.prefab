@@ -191,13 +191,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093156188635749412}
-  m_LocalRotation: {x: 0.71282214, y: -0, z: -0, w: 0.7013449}
-  m_LocalPosition: {x: 0, y: -0.133817, z: 0.05879283}
+  m_LocalRotation: {x: 0.70540476, y: -0, z: -0, w: 0.70880485}
+  m_LocalPosition: {x: 0, y: -0.072, z: 0.06}
   m_LocalScale: {x: 0.10650653, y: 0.106506586, z: 0.106506586}
   m_Children: []
   m_Father: {fileID: 6229287459937409511}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 8.93, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 89.727005, y: 0, z: 0}
 --- !u!120 &3209629384939260706
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -238,10 +238,10 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 100}
+  - {x: 0, y: 0, z: 500}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -287,7 +287,7 @@ LineRenderer:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
-    numCapVertices: 36
+    numCapVertices: 0
     alignment: 0
     textureMode: 3
     shadowBias: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laser: {fileID: 3209629384939260706}
-  maxLaserLength: 200
+  maxLaserLength: 500
   col: {fileID: 3143130440338648779}
   damage: 20
 --- !u!1 &3699702687889981029

@@ -90,6 +90,7 @@ namespace Library.UI.WeaponUpgrades
                 if(upgradeLevel == 1) _flame.spread = values.flameSpreadUpgrade;
                 if(upgradeLevel == 2) _flame.ammoConsumptionPerSecond /= 2;
             }
+            UpdateImages();
         }
     }
 }

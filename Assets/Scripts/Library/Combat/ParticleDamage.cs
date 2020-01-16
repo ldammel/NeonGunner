@@ -49,7 +49,7 @@ namespace Library.Combat
             var numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
             int i = 0;
 
-            while (i < numCollisionEvents)
+            while (i < numCollisionEvents && other.tag == "Enemy")
             {
                 other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
                 i++;

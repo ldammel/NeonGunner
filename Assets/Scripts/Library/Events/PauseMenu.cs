@@ -56,10 +56,8 @@ namespace Library.Events
         {
             menuObject.SetActive(!menuObject.activeSelf);
             pauseActive = !pauseActive;
-            if (FindObjectOfType<Checkpoint.Checkpoint>().enemyAmount == 0)
-            {
+
                 con.path.ForEach(x => x.Speed = pauseActive ? 0 : con.speed);
-            }
 
             if(!pauseActive)FindObjectOfType<Test>().Transi();
         }

@@ -65,7 +65,7 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
-
+            UpdateImages();
             if (_alreadyActivated) return;
             currency.gasLevel = upgradeLevel;
             currency.currentCurrency -= upgradeCost;

@@ -75,7 +75,7 @@ namespace Library.UI.WeaponUpgrades
                 currency.currentCurrency -= upgradeCost;
                 values.laserDamage *= values.laserDamageUpgrade;
             }
-
+            UpdateImages();
             laser.damage = values.laserDamage;
         }
     }
