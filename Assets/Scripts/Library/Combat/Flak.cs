@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections;
-using Library.Combat.Enemy;
-using Library.Events;
-using Library.Tools;
+﻿using Library.Combat.Enemy;
 using UnityEngine;
-using Random = UnityEngine.Random;
+
 
 namespace Library.Combat
 {
@@ -19,14 +15,6 @@ namespace Library.Combat
         {
             var c = gameObject.GetComponent<MeshRenderer>().enabled = true;
             explosionSoundSource = GameObject.Find("---PLAYER---/Sounds/ExplosionSound").GetComponent<AudioSource>();
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Sign"))
-            {
-                other.gameObject.GetComponentInParent<SignActivation>().active = !other.gameObject.GetComponentInParent<SignActivation>().active;
-            }
         }
 
 

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using Library.Combat.Enemy;
-using Library.Events;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,13 +18,11 @@ namespace Library.Data
         }
 
         public GameObject levelSelection;
-        public GameObject upgradeScreen;
         public GameObject failScreen;
         public GameObject winScreen;
 
         private void Start()
         {
-            StartCoroutine(StartGame());
             SaveData.Instance.LoadAllData();
         }
 
@@ -48,21 +43,10 @@ namespace Library.Data
         public void RemoveEnemies()
         {
             var enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            EnemySpawnController.totalKills = 0;
-            EnemySpawnController.killedEnemies = 0;
             foreach (var e in enemies)
             {
                 Destroy(e);
             }
-        }
-
-        IEnumerator StartGame()
-        {
-            levelSelection.SetActive(true);
-            upgradeScreen.SetActive(true);
-            yield return new WaitForSeconds(0.03f);
-            upgradeScreen.SetActive(false);
-            levelSelection.SetActive(false);
         }
     }
 }

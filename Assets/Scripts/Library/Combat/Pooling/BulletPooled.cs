@@ -16,12 +16,6 @@ namespace Library.Combat.Pooling
         public bool isEnemy = false;
         public bool canFire;
 
-        private void Start()
-        {
-            if (isEnemy) return;
-            objectPool = GameObject.Find("---PLAYER---/GameObjectPool").GetComponent<BulletShotPool>();
-        }
-
         private void Update()
         {
             if (PauseMenu.Instance.pauseActive) return;
@@ -31,7 +25,6 @@ namespace Library.Combat.Pooling
                 {
                     _fireTimer = 0;
                     Fire();
-                    SoundManager.Instance.PlaySound("Flak");
                 }
             }
 

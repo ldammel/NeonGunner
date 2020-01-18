@@ -40,8 +40,6 @@ namespace Library.UI.WeaponUpgrades
             _flame.damage = values.flameDamage;
             _flame.range = values.flameRange;
             _flame.spread = values.flameSpread;
-            _flame.ammoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
-            _flame.ammoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
             _thisButton = gameObject.GetComponent<UpgradeFlame>();
             UpdateImages();
             if (currency.flameLevel == 0) return;
@@ -88,7 +86,6 @@ namespace Library.UI.WeaponUpgrades
                 currency.flameLevel = upgradeLevel;
                 currency.currentCurrency -= upgradeCost;
                 if(upgradeLevel == 1) _flame.spread = values.flameSpreadUpgrade;
-                if(upgradeLevel == 2) _flame.ammoConsumptionPerSecond /= 2;
             }
             UpdateImages();
         }

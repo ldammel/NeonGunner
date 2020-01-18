@@ -4595,11 +4595,6 @@ MonoBehaviour:
   damage: 0
   range: 0
   spread: 0
-  ammoConsumptionPerSecond: 0
-  ammoRefreshPerSecond: 0
-  maxAmmo: 0
-  ammo: 100
-  ammoCountDisplay: {fileID: 0}
 --- !u!1 &1799530521598417773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4875,7 +4870,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5690973226588984943}
   - component: {fileID: 6919336120598994421}
-  - component: {fileID: 7088892087881844153}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -4914,18 +4908,6 @@ MonoBehaviour:
   crosshair: {fileID: 0}
   sphereCastSize: 0
   mainCamera: {fileID: 0}
---- !u!114 &7088892087881844153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8708629117049687693}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b47133e469c21418a5c1e2ec7ee5e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8879015947377951427
 GameObject:
   m_ObjectHideFlags: 0

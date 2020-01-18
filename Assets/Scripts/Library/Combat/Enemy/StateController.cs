@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Library.AI;
-using Library.Character;
-using Library.Events;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,7 +13,6 @@ namespace Library.Combat.Enemy
         [HideInInspector] public int nextWayPoint;
 
         public bool _aiActive;
-        [HideInInspector]
         private void Awake()
         {
             navMeshAgent = GetComponent<NavMeshAgent>();

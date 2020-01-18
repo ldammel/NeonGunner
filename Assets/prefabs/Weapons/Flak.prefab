@@ -445,7 +445,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4947597215950024039}
   - component: {fileID: 275663788383242196}
-  - component: {fileID: 950558136413216746}
   m_Layer: 0
   m_Name: pivot
   m_TagString: Untagged
@@ -485,18 +484,6 @@ MonoBehaviour:
   crosshair: {fileID: 0}
   sphereCastSize: 0
   mainCamera: {fileID: 0}
---- !u!114 &950558136413216746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6592923068064494785}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b47133e469c21418a5c1e2ec7ee5e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8438026072307830842
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,14 +17,6 @@ namespace Library.Events
            value.flakDamage = values.flakDamage;
 
            value.flameDamage = values.flameDamage;
-           value.flameAmmoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
-           value.flameAmmoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
-
-           value.enemyDamage = values.enemyDamage;
-           value.enemyHealth = values.enemyHealth;
-           value.enemyMoveSpeed = values.enemyMoveSpeed;
-           value.enemyAttackSpeed = values.enemyAttackSpeed;
-           value.enemyRange = values.enemyRange ;
 
            value.mgFireRateUpgrade = values.mgFireRateUpgrade;
            

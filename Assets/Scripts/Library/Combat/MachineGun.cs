@@ -1,8 +1,6 @@
-﻿using System;
-using Library.Character.ScriptableObjects;
+﻿using Library.Character.ScriptableObjects;
 using Library.Combat.Enemy;
 using Library.Events;
-using Library.Tools;
 using UnityEngine;
 
 namespace Library.Combat
@@ -55,15 +53,10 @@ namespace Library.Combat
             
             if (hit.collider.gameObject.CompareTag("Enemy"))
             {
-                hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+                if(hit.collider.gameObject.GetComponent<EnemyHealth>() != null) hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
             }
-            else if (hit.collider.gameObject.CompareTag("Sign"))
-            {
-               hit.collider.gameObject.GetComponentInParent<SignActivation>().active = !hit.collider.gameObject.GetComponentInParent<SignActivation>().active;
-            }
-            
+
             Instantiate(vfx, hit.point, hit.collider.transform.rotation);
-            Instantiate(soundObject,gameObject.transform);
         }
     }
 }

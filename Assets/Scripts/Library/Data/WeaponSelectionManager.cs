@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Library.Character.Upgrades;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class WeaponSelectionManager : MonoBehaviour
@@ -10,7 +6,6 @@ public class WeaponSelectionManager : MonoBehaviour
         [SerializeField] private GameObject[] flakButtons;
         [SerializeField] private GameObject[] flameButtons;
         [SerializeField] private GameObject[] mgButtons;
-        [SerializeField] private GameObject[] rocketButtons;
         [SerializeField] private GameObject[] laserButtons;
         [SerializeField] private GameObject[] gasButtons;
 
@@ -50,7 +45,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flakButtons[0].SetActive(true);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);
                                 displayText[0].text = "MG";
                                 break;
                         case 1:
@@ -60,7 +54,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flakButtons[0].SetActive(true);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);
                                 displayText[0].text = "Flame";
                                 break;
                         case 2:
@@ -70,7 +63,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flakButtons[1].SetActive(true);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);
                                 displayText[0].text = "Flak";
                                 break;
                         case 3:
@@ -80,7 +72,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 gasButtons[0].SetActive(true);
                                 laserButtons[0].SetActive(false);
                                 laserButtons[1].SetActive(true);
-                                rocketButtons[0].SetActive(true);
                                 displayText[0].text = "Laser";
                                 break;
                         case 4:
@@ -90,7 +81,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 gasButtons[0].SetActive(false);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[0].SetActive(true);
-                                rocketButtons[0].SetActive(true);
                                 displayText[0].text = "Gas";
                                 break;
                         default:
@@ -109,7 +99,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flakButtons[1].SetActive(true);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);
                                 displayText[1].text = "MG";
                                 break;
                         case 1:
@@ -119,7 +108,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flakButtons[1].SetActive(true);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);
                                 displayText[1].text = "Flame";
                                 break;
                         case 2:
@@ -129,7 +117,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 flakButtons[0].SetActive(true);
                                 gasButtons[1].SetActive(true);
                                 laserButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);
                                 displayText[1].text = "Flak";
                                 break;
                         case 3:
@@ -139,7 +126,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 gasButtons[1].SetActive(true);
                                 laserButtons[1].SetActive(false);
                                 laserButtons[0].SetActive(true);
-                                rocketButtons[1].SetActive(true);
                                 displayText[1].text = "Laser";
                                 break;
                         case 4:
@@ -149,7 +135,6 @@ public class WeaponSelectionManager : MonoBehaviour
                                 gasButtons[1].SetActive(false);
                                 gasButtons[0].SetActive(true);
                                 laserButtons[1].SetActive(true);
-                                rocketButtons[1].SetActive(true);
                                 displayText[1].text = "Gas";
                                 break;
                         default:
