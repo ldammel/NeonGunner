@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using BansheeGz.BGSpline.Curve;
 using Library.Combat.Enemy;
 using Library.Events;
 using UnityEngine;
@@ -9,11 +8,9 @@ namespace Library.Character
 {
     public class WaypointMovement : MonoBehaviour
     {
-        public float moveSpeed;
-        public BGCurve path;
+        [SerializeField] private float moveSpeed;
+        [SerializeField] private bool destroyOnEnd;
 
-        public bool destroyOnEnd;
-        
         private bool _active;
         private int _curPoint;
         
@@ -25,36 +22,12 @@ namespace Library.Character
         {
             _oldPos = transform.localPosition;
             _curPoint = 0;
-            _targetVector = path.Points[_curPoint].PositionLocal;
         }
 
         private void Update()
         {
             if (PauseMenu.Instance.pauseActive) return;
-           
-            if(_curPoint <= path.PointsCount -1)
-            {
-                if(Vector3.Distance(this.transform.localPosition, path.Points[_curPoint].PositionLocal) < 1f)
-                {  
-                    _curPoint++;
-                    if(_curPoint != path.PointsCount)_targetVector = path.Points[_curPoint].PositionLocal;
-                    _oldPos = transform.localPosition;
-                }
-            }
-            else
-            {
-                if (destroyOnEnd)
-                {
-                    Destroy(gameObject);
-                }
-                else
-                {
-                    moveSpeed = 0;
-                }
-            }
-
-            transform.localPosition += ((_targetVector - _oldPos) * Time.deltaTime * moveSpeed);
-            
+            gameObject.transform.Translate(0,0,moveSpeed * Time.deltaTime);
         }
     }
 }

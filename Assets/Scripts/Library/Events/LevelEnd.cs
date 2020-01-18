@@ -1,10 +1,5 @@
-﻿using System;
-using System.Globalization;
-using Library.Character.Upgrades;
-using Library.Combat.Enemy;
+﻿using Library.Combat.Enemy;
 using Library.Data;
-using Library.Tools;
-using Library.UI;
 using TMPro;
 using UnityEngine;
 
@@ -34,14 +29,12 @@ namespace Library.Events
 
         private int _reward;
         private float _timeTaken;
-        private UpgradeManager _manager;
         private float baseSeconds;
         private ushort baseMinutes;
         
 
         private void Start()
         {
-            _manager = FindObjectOfType<UpgradeManager>();
             _timeTaken = 0;
             baseMinutes = timeLimitMinutes;
             baseSeconds = timeLimitSeconds;
@@ -76,11 +69,8 @@ namespace Library.Events
         
         public void CalculateReward(int reward)
         {
-            _reward = 10 + Mathf.RoundToInt(((EnemySpawnController.totalKills * Design.Instance.currencyGainPerEnemy) + Mathf.RoundToInt(GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth/(_timeTaken/20)))*reward);
-            _manager.upgrades.currentCurrency += _reward;
+            _reward = 10;
             _timeTaken = 0;
-            EnemySpawnController.totalKills = 0;
-            EnemySpawnController.killedEnemies = 0;
             timeLimitMinutes = baseMinutes;
             timeLimitSeconds = baseSeconds;
             rewardText.text = "You Gained " + _reward + " Souls";

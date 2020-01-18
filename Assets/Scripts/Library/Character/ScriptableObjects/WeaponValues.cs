@@ -26,20 +26,7 @@ namespace Library.Character.ScriptableObjects
         [BoxGroup("Laser Settings")] 
         public float laserRange;
         #endregion
-        
-        #region Tesla Settings
-        [BoxGroup("Tesla Settings")] 
-        public float teslaDamage;
-        [BoxGroup("Tesla Settings")] 
-        public float teslaFireRate;
-        [BoxGroup("Tesla Settings")] 
-        public float teslaJumpAmount;
-        [BoxGroup("Tesla Settings")] 
-        public float teslaFireRateUpgrade;
-        [BoxGroup("Tesla Settings")] 
-        public float teslaJumpAmountUpgrade;
-        #endregion
-        
+
         #region Flak Settings
         [BoxGroup("Flak Settings")] 
         public float flakDamage;
@@ -54,57 +41,18 @@ namespace Library.Character.ScriptableObjects
         [BoxGroup(" Flak Settings")] 
         public float flakRadiusUpgrade;
         #endregion
-        
-        #region Shrapnel Settings
-        [BoxGroup("Shrapnel Settings")] 
-        public float shrapnelDamage;
-        [BoxGroup("Shrapnel Settings")] 
-        public float shrapnelRadius;
-        [BoxGroup("Shrapnel Settings")] 
-        public float shrapnelAmount;
-        [BoxGroup("Shrapnel Settings")] 
-        public float shrapnelRadiusUpgrade;
-        [BoxGroup("Shrapnel Settings")] 
-        public float shrapnelDamageUpgrade;
-        #endregion
-        
-        #region Rocket Settings
-        [BoxGroup("Rocket Settings")] 
-        public float rocketDamage;
-        [BoxGroup("Rocket Settings")] 
-        public float rocketFireRate;
-        [BoxGroup("Rocket Settings")] 
-        public float rocketEnemiesAmount;
-        [BoxGroup("Rocket Settings")] 
-        public float rocketFireRateUpgrade;
-        [BoxGroup("Rocket Settings")] 
-        public float rocketEnemiesAmountUpgrade;
-        #endregion
-        
+
         #region Flame Settings
         [BoxGroup("Flamethrower Settings")] 
         public float flameDamage;
         [BoxGroup("Flamethrower Settings")] 
         public float flameRange;
         [BoxGroup("Flamethrower Settings")] 
-        public float flameAmmoConsumptionPerSecond;
-        [BoxGroup("Flamethrower Settings")] 
-        public float flameAmmoRefreshPerSecond;
-        [BoxGroup("Flamethrower Settings")] 
         public float flameSpread;
         [BoxGroup(" Flamethrower Settings")] 
         public float flameSpreadUpgrade;
         #endregion
-        
-        #region Caltrops Settings
-        [BoxGroup("Caltrops Settings")] 
-        public float caltropsDamage;
-        [BoxGroup("Caltrops Settings")] 
-        public float caltropsAmount;
-        [BoxGroup("Caltrops Settings")] 
-        public float caltropsAmountUpgrade;
-        #endregion
-        
+
         #region Gas Settings
         [BoxGroup("Gas Settings")] 
         public float gasDamage;
@@ -114,19 +62,6 @@ namespace Library.Character.ScriptableObjects
         public float gasDamageUpgrade;
         [BoxGroup("Gas Settings")] 
         public float gasMaxRadiusUpgrade;
-        #endregion
-        
-        #region Flying Enemy Settings
-        [BoxGroup("Flying Enemy Settings")] 
-        public float enemyHealth;
-        [BoxGroup("Flying Enemy Settings")] 
-        public float enemyDamage;
-        [BoxGroup("Flying Enemy Settings")] 
-        public float enemyAttackSpeed;
-        [BoxGroup("Flying Enemy Settings")] 
-        public float enemyMoveSpeed;
-        [BoxGroup("Flying Enemy Settings")] 
-        public float enemyRange;
         #endregion
     }
 }

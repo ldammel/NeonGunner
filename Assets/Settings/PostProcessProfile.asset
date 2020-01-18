@@ -67,11 +67,11 @@ MonoBehaviour:
     value: 1
   spectralLut:
     overrideState: 1
-    value: {fileID: 2800000, guid: 2e38f7921b7d7b1418ab63c08117ffb8, type: 3}
+    value: {fileID: 2800000, guid: 0add875d66ee38748ae258def6b3a4b5, type: 3}
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.319
+    value: 0.07
   fastMode:
     overrideState: 1
     value: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -169,33 +169,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   intensity:
     overrideState: 1
-    value: 2
+    value: 2.56
   threshold:
     overrideState: 1
-    value: 1
+    value: 0
   softKnee:
-    overrideState: 0
-    value: 0.5
+    overrideState: 1
+    value: 0
   clamp:
     overrideState: 0
     value: 65472
   diffusion:
     overrideState: 0
-    value: 7
+    value: 10
   anamorphicRatio:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -1
   color:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
   fastMode:
-    overrideState: 0
+    overrideState: 1
     value: 0
   dirtTexture:
     overrideState: 0
@@ -257,10 +257,10 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -7
+    value: 0
   tint:
     overrideState: 1
-    value: -3
+    value: 0
   colorFilter:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -269,24 +269,24 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: 3
+    value: 0
   brightness:
     overrideState: 0
     value: 0
   postExposure:
     overrideState: 1
-    value: -0.14
+    value: 0.16
   contrast:
     overrideState: 1
     value: 33
   mixerRedOutRedIn:
-    overrideState: 1
+    overrideState: 0
     value: 106
   mixerRedOutGreenIn:
-    overrideState: 1
+    overrideState: 0
     value: -12
   mixerRedOutBlueIn:
-    overrideState: 1
+    overrideState: 0
     value: 3
   mixerGreenOutRedIn:
     overrideState: 0
@@ -1633,7 +1633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1642,7 +1642,7 @@ MonoBehaviour:
     value: 3.46
   aperture:
     overrideState: 1
-    value: 12.6
+    value: 32
   focalLength:
     overrideState: 1
     value: 1

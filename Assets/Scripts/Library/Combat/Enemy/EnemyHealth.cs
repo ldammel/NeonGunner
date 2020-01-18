@@ -2,7 +2,6 @@
 using Library.Combat.Pooling;
 using Library.Data;
 using Library.Events;
-using Library.Events.Checkpoint;
 using UnityEngine;
 
 namespace Library.Combat.Enemy
@@ -14,15 +13,9 @@ namespace Library.Combat.Enemy
 
         public bool player;
 
-        private Vector3 _startPos;
-
         public bool godMode;
 
         public AudioSource deathSound;
-
-        public Checkpoint check;
-        public bool isCheckPoint;
-
         public event Action<float> OnHealthPctChanged = delegate{  };
 
         public BulletPooled pool;
@@ -30,7 +23,6 @@ namespace Library.Combat.Enemy
         private void Start()
         {
             deathSound = GameObject.Find("---PLAYER---/Sounds/DeathSound").GetComponent<AudioSource>();
-            _startPos = transform.position;
             curHealth = maxHealth;
         }
         
@@ -50,11 +42,6 @@ namespace Library.Combat.Enemy
             if (!(curHealth <= 0) || player) return;
             curHealth = 1;
 
-            EnemySpawnController.killedEnemies++;
-            EnemySpawnController.totalKills++;
-
-            if (isCheckPoint && check.enemyAmount != 0) check.enemyAmount--;
-            
             if (!deathSound.isPlaying)
             {
                 deathSound.Play();

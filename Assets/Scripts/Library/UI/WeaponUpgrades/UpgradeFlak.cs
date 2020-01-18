@@ -16,8 +16,6 @@ namespace Library.UI.WeaponUpgrades
         
         [SerializeField] private UpgradeFlak previousUpgrade;
         [SerializeField] private UpgradeFlak nextUpgrade;
-        
-        [SerializeField] private UpgradeRocket rocketUpgrade;
 
         [SerializeField] private Sprite activatedImage;
         [SerializeField] private Sprite deactivatedImage;
@@ -73,14 +71,7 @@ namespace Library.UI.WeaponUpgrades
                 nextUpgrade.isLocked = false;
                 nextUpgrade.UpdateImages();
             }
-            else
-            {
-                if (rocketUpgrade == null) return;
-                
-                rocketUpgrade.isLocked = false;
-                rocketUpgrade.UpdateImages();
-            }
-            
+
             if (!_alreadyActivated)
             {
                 currency.flakLevel = upgradeLevel;

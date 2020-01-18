@@ -238,10 +238,10 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 100}
+  - {x: 0, y: 0, z: 500}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -287,7 +287,7 @@ LineRenderer:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
-    numCapVertices: 36
+    numCapVertices: 0
     alignment: 0
     textureMode: 3
     shadowBias: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laser: {fileID: 3209629384939260706}
-  maxLaserLength: 200
+  maxLaserLength: 500
   col: {fileID: 3143130440338648779}
   damage: 20
 --- !u!1 &3699702687889981029
@@ -365,7 +365,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5146383450731691595}
   - component: {fileID: 932140106120469075}
-  - component: {fileID: 8706553514913227734}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -404,18 +403,6 @@ MonoBehaviour:
   crosshair: {fileID: 0}
   sphereCastSize: 0
   mainCamera: {fileID: 0}
---- !u!114 &8706553514913227734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4037423529630271717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b47133e469c21418a5c1e2ec7ee5e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6307328074370650107
 GameObject:
   m_ObjectHideFlags: 0

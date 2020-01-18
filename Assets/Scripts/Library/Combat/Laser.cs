@@ -1,6 +1,4 @@
-﻿using System;
-using Library.Combat.Enemy;
-using Library.Events;
+﻿using Library.Combat.Enemy;
 using UnityEngine;
 
 namespace Library.Combat
@@ -39,14 +37,6 @@ namespace Library.Combat
                 laser.enabled = false;
                 col.size = new Vector3(0,0,0);
                 col.center = new Vector3(0,0,0);
-            }
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Sign"))
-            {
-                other.gameObject.GetComponentInParent<SignActivation>().active = !other.gameObject.GetComponentInParent<SignActivation>().active;
             }
         }
 

@@ -1,7 +1,4 @@
-﻿using Library.AI;
-using Library.Character;
-using Library.Combat.Pooling;
-using Library.Events;
+﻿using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat.Enemy

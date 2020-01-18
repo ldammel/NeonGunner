@@ -36,7 +36,6 @@ namespace Library.Events
         {
             var transform1 = cam.transform;
             _lastCamVec = new Vector3(transform1.rotation.x,transform1.rotation.y,transform1.rotation.z);
-            parents[0].eulerAngles = Vector3.zero;
             transform1.position = positions[0].position;
             transform1.eulerAngles = Vector3.zero;
             transform1.parent = parents[0];

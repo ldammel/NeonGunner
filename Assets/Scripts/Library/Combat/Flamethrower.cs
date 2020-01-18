@@ -17,12 +17,7 @@ namespace Library.Combat
          public float damage;
          public float range;
          public float spread;
-        [HideInInspector] public float ammoConsumptionPerSecond;
-        [HideInInspector] public float ammoRefreshPerSecond;
-        [HideInInspector] public float maxAmmo;
-        [SerializeField]  private float ammo;
-        [SerializeField]  private TextMeshProUGUI ammoCountDisplay;
-        public List<ParticleCollisionEvent> collisionEvents;
+         public List<ParticleCollisionEvent> collisionEvents;
         private bool soundPlaying;
 
         private void Start()
@@ -30,7 +25,6 @@ namespace Library.Combat
             var coll = flameFx.collision;
             coll.enabled = true;
             collisionEvents = new List<ParticleCollisionEvent>();
-            ammoCountDisplay = GameObject.Find("---UI---/Canvas/FlameAmmo").GetComponent<TextMeshProUGUI>();
         }
 
         private void Update()
@@ -39,7 +33,6 @@ namespace Library.Combat
             var localScale = o.transform.localScale;
             localScale = new Vector3(spread,localScale.y, range);
             o.transform.localScale = localScale;
-            ammoCountDisplay.text = Mathf.Round(ammo).ToString(CultureInfo.CurrentCulture);
             var flameFxMain = flameFx.main;
             if (Input.GetMouseButton(0))
             {
@@ -55,16 +48,6 @@ namespace Library.Combat
                 flameFxMain.maxParticles = 0;
                 if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
                 soundPlaying = false;
-            }
-
-            if (flameFxMain.maxParticles != 0)
-            {
-                ammo -= ammoConsumptionPerSecond * Time.deltaTime;
-            }
-
-            if (ammo < maxAmmo && flameFxMain.maxParticles == 0)
-            {
-                ammo += ammoRefreshPerSecond * Time.deltaTime;
             }
         }
 

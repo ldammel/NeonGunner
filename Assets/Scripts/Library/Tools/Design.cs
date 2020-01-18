@@ -1,9 +1,5 @@
-﻿using Library.Character;
-using Library.Character.ScriptableObjects;
-using Library.Character.Upgrades;
-using Library.Combat;
+﻿using Library.Character.ScriptableObjects;
 using Library.Combat.Enemy;
-using Library.Data;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
@@ -98,34 +94,10 @@ namespace Library.Tools
         public float flameRange;
         [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
         [GUIColor(1, 0.6f, 0.4f)]
-        public float flameAmmoConsumptionPerSecond;
-        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
-        [GUIColor(1, 0.6f, 0.4f)]
-        public float flameAmmoRefreshPerSecond;
-        [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
-        [GUIColor(1, 0.6f, 0.4f)]
         public float flameSpread;
         [TabGroup("Weapon Settings","Flamethrower Base Settings")] 
         [GUIColor(0, 1, 0)]
         public float flameSpreadUpgrade;
-        #endregion
-        
-        #region Flying Enemy Settings
-        [TabGroup("Enemy Settings")] 
-        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
-        public float enemyHealth;
-        [TabGroup("Enemy Settings")] 
-        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
-        public float enemyDamage;
-        [TabGroup("Enemy Settings")] 
-        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
-        public float enemyAttackSpeed;
-        [TabGroup("Enemy Settings")] 
-        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
-        public float enemyMoveSpeed;
-        [TabGroup("Enemy Settings")] 
-        [GUIColor(0.3f, 0.8f, 0.8f, 1f)]
-        public float enemyRange;
         #endregion
 
         [Button("Reset Stats On Scriptable Object",(ButtonSizes.Large))]
@@ -149,13 +121,6 @@ namespace Library.Tools
           values.flameDamage = flameDamage;
           values.flameRange = flameRange;
           values.flameSpread = flameSpread;
-          values.flameAmmoConsumptionPerSecond = flameAmmoConsumptionPerSecond;
-          values.flameAmmoRefreshPerSecond = flameAmmoRefreshPerSecond;
-          values.enemyDamage = enemyDamage;
-          values.enemyHealth = enemyHealth;
-          values.enemyMoveSpeed = enemyMoveSpeed;
-          values.enemyAttackSpeed = enemyAttackSpeed;
-          values.enemyRange = enemyRange;
           values.mgFireRateUpgrade = mgFireRateUpgrade;
           values.flameSpreadUpgrade = flameSpreadUpgrade;
           values.flakRadiusUpgrade = flakRadiusUpgrade;
@@ -170,12 +135,8 @@ namespace Library.Tools
             currency.flakLevel = 0;
             currency.flameLevel = 0;
             currency.mgLevel = 0;
-            currency.rocketLevel = 0;
-            currency.shrapnelLevel = 0;
-            currency.caltropLevel = 0;
             currency.gasLevel = 0;
             currency.laserLevel = 0;
-            currency.teslaLevel = 0;
             currency.selectedWeaponOne = 0;
             currency.selectedWeaponTwo = 0;
             currency.selectedSlotTwo = null;
@@ -194,13 +155,6 @@ namespace Library.Tools
           flameDamage = values.flameDamage;
           flameRange = values.flameRange;
           flameSpread = values.flameSpread;
-          flameAmmoConsumptionPerSecond = values.flameAmmoConsumptionPerSecond;
-          flameAmmoRefreshPerSecond = values.flameAmmoRefreshPerSecond;
-          enemyDamage = values.enemyDamage;
-          enemyHealth = values.enemyHealth;
-          enemyMoveSpeed = values.enemyMoveSpeed;
-          enemyAttackSpeed = values.enemyAttackSpeed;
-          enemyRange = values.enemyRange ;
           mgFireRateUpgrade = values.mgFireRateUpgrade;
           flameSpreadUpgrade = values.flameSpreadUpgrade;
           flakRadiusUpgrade = values.flakRadiusUpgrade;
@@ -209,12 +163,8 @@ namespace Library.Tools
           currency.flakLevel = 0;
           currency.flameLevel = 0;
           currency.mgLevel = 0;
-          currency.rocketLevel = 0;
-          currency.shrapnelLevel = 0;
-          currency.caltropLevel = 0;
           currency.gasLevel = 0;
           currency.laserLevel = 0;
-          currency.teslaLevel = 0;
         }
     }
 }

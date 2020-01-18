@@ -128,9 +128,6 @@ MonoBehaviour:
   radius: 5
   damage: 100
   explosionSoundSource: {fileID: 0}
-  shrapnelBullet: {fileID: 0}
-  shrapnelAmount: 0
-  isShrapnel: 0
 --- !u!54 &7545042013801477964
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -139,7 +136,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4468534938057636108}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
