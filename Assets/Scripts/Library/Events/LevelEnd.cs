@@ -1,4 +1,6 @@
-﻿using Library.Combat.Enemy;
+﻿using System;
+using Library.Character;
+using Library.Combat.Enemy;
 using Library.Data;
 using TMPro;
 using UnityEngine;
@@ -17,64 +19,56 @@ namespace Library.Events
                 Application.Quit();
                 return;
             }
-
             Instance = this;
         }
-        
-        public float timeLimitSeconds;
-        public ushort timeLimitMinutes;
-        
-        [SerializeField] private TextMeshProUGUI timeText;
+
         [SerializeField] private TextMeshProUGUI rewardText;
+        [SerializeField] private TextMeshProUGUI statsText;
+        [SerializeField] private GameObject rewardObj;
+        [SerializeField] private CurrencyObject cur;
+
+        public float enemiesKilled;
+        public float totalEnemies;
+        public float totalShots;
+
+        private float _accuracy;
 
         private int _reward;
-        private float _timeTaken;
-        private float baseSeconds;
-        private ushort baseMinutes;
-        
 
         private void Start()
         {
-            _timeTaken = 0;
-            baseMinutes = timeLimitMinutes;
-            baseSeconds = timeLimitSeconds;
+            var enemy = FindObjectsOfType<EnemyHealth>();
+
+            for (int i = 0; i < enemy.Length -1; i++)
+            {
+                totalEnemies++;
+            }
         }
 
         private void Update()
         {
-            if (PauseMenu.Instance.pauseActive) return;
-            
-            timeLimitSeconds -= 1 * Time.deltaTime;
-            _timeTaken += 1 * Time.deltaTime;
-            if (timeLimitSeconds <= 0 && timeLimitMinutes > 0)
-            {
-                timeLimitSeconds = 59;
-                timeLimitMinutes--;
-            }
-            else if (timeLimitSeconds <= 0 && timeLimitMinutes == 0)
-            {
-                GameObject.FindGameObjectWithTag("Player").GetComponent<EnemyHealth>().curHealth = 0;
-            }
-
-            timeText.text = Mathf.RoundToInt(timeLimitMinutes) + ":" + Mathf.RoundToInt(timeLimitSeconds);
+            _accuracy = Mathf.Round((enemiesKilled / totalShots)*100);
+            if (float.IsNaN(_accuracy)) _accuracy = 0;
+            if (_accuracy <= 0) _accuracy = 0;
+            statsText.text = "Kills: " + enemiesKilled + " / " + totalEnemies+ "\n" + "\nAccuracy: "+ _accuracy + "%\n";
         }
 
         private void OnCollisionEnter(Collision other)
         {
             if (!other.gameObject.CompareTag("Player")) return;
             LevelManager.Instance.winScreen.SetActive(true);
-            CalculateReward(3);
+            FindObjectOfType<WaypointMovement>().moveSpeed = 0;
+            CalculateReward();
             PauseMenu.Instance.pauseActive = true;
         }
         
-        public void CalculateReward(int reward)
+        public void CalculateReward()
         {
-            _reward = 10;
-            _timeTaken = 0;
-            timeLimitMinutes = baseMinutes;
-            timeLimitSeconds = baseSeconds;
-            rewardText.text = "You Gained " + _reward + " Souls";
-            rewardText.gameObject.SetActive(true);
+            _reward = Mathf.RoundToInt((enemiesKilled * (_accuracy/100))*((enemiesKilled/totalEnemies)*2));
+            cur.currentCurrency += _reward;
+            rewardText.text = "Kills: " + enemiesKilled + " / " + totalEnemies+ "\n" + "\nAccuracy: "+ _accuracy + "%\n" + "\nReward: " + _reward;
+            rewardObj.SetActive(true);
+            statsText.gameObject.SetActive(false);
         }
 
     }

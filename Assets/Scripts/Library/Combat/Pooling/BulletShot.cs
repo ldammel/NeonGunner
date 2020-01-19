@@ -9,7 +9,11 @@ namespace Library.Combat.Pooling
         public float moveSpeed = 30f;
         private float _lifeTime;
         public float maxLifeTime;
+        public float damage;
 
+        public bool isEnemy;
+
+        private EnemyHealth player;
         private BulletShotPool _pool;
 
         public BulletShotPool Pool
@@ -26,6 +30,7 @@ namespace Library.Combat.Pooling
         private void OnEnable()
         {
             _lifeTime = 0f;
+            player = GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>();
         }
 
 
@@ -39,6 +44,10 @@ namespace Library.Combat.Pooling
 
         private void OnCollisionEnter(Collision other)
         {
+            if (!other.collider.CompareTag("Player") && isEnemy)
+            {
+                player.TakeDamage(damage);
+            }
             _pool.ReturnToPool(gameObject);
         }
     }

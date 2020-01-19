@@ -217,6 +217,7 @@
               <e p="LevelManager.cs" t="Include" />
               <e p="MathParabola.cs" t="Include" />
               <e p="SaveData.cs" t="Include" />
+              <e p="SelectWeapon.cs" t="Include" />
               <e p="WeaponSelectionManager.cs" t="Include" />
               <e p="WeaponSlotManager.cs" t="Include" />
             </e>

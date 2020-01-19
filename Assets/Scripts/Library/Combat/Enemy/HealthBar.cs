@@ -11,9 +11,13 @@ namespace Library.Combat.Enemy
 
         [SerializeField] private float updateSpeedSeconds = 0.5f;
 
+        public bool isEnemy;
+        public EnemyHealth player;
+
         private void Awake()
         {
-            GetComponentInParent<EnemyHealth>().OnHealthPctChanged += HandleHealthChanged;
+            if(isEnemy)GetComponentInParent<EnemyHealth>().OnHealthPctChanged += HandleHealthChanged;
+            else{player.OnHealthPctChanged += HandleHealthChanged;}
         }
 
         private void HandleHealthChanged(float pct)

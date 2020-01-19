@@ -1,4 +1,7 @@
-﻿using Library.Combat.Enemy;
+﻿using System.Collections;
+using Library.Combat.Enemy;
+using Library.Data;
+using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat
@@ -10,6 +13,7 @@ namespace Library.Combat
         [SerializeField] private BoxCollider col;
 
         public float damage;
+        private bool active;
         
         
 
@@ -27,23 +31,32 @@ namespace Library.Combat
         {
             if (Input.GetMouseButtonDown(0))
             {
-                laser.enabled = true;
-                laser.SetPosition(1, new Vector3(0,0,Mathf.Lerp(0,maxLaserLength,2)));
-                col.size = new Vector3(0.3f,0.3f,laser.GetPosition(1).z);
-                col.center = new Vector3(0,0,laser.GetPosition(1).z/2);
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                laser.enabled = false;
-                col.size = new Vector3(0,0,0);
-                col.center = new Vector3(0,0,0);
+                StartCoroutine(Shot());
             }
         }
 
         private void OnTriggerStay(Collider other)
         {
+            if (other.CompareTag("SelectWeapon"))
+            {
+                other.gameObject.GetComponent<SelectWeapon>().ActivateWeapon();
+            }
             if (!other.CompareTag("Enemy")) return;
             if(other.gameObject.GetComponent<EnemyHealth>() != null)other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+        }
+
+        private IEnumerator Shot()
+        {
+            LevelEnd.Instance.totalShots++;
+            laser.enabled = true;
+            laser.SetPosition(1, new Vector3(0,0,Mathf.Lerp(0,maxLaserLength,2)));
+            col.size = new Vector3(0.3f,0.3f,laser.GetPosition(1).z);
+            col.center = new Vector3(0,0,laser.GetPosition(1).z/2);
+            yield return new WaitForSeconds(1);
+            laser.enabled = false;
+            col.size = new Vector3(0,0,0);
+            col.center = new Vector3(0,0,0);
+            
         }
     }
 }

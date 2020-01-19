@@ -41,6 +41,7 @@ namespace Library.Combat.Enemy
             }
             if (!(curHealth <= 0) || player) return;
             curHealth = 1;
+            LevelEnd.Instance.enemiesKilled++;
 
             if (!deathSound.isPlaying)
             {
@@ -55,7 +56,7 @@ namespace Library.Combat.Enemy
         {
             PauseMenu.Instance.pauseActive = true;
             LevelManager.Instance.failScreen.SetActive(true);
-            LevelEnd.Instance.CalculateReward(1);
+            LevelEnd.Instance.CalculateReward();
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
             curHealth = maxHealth;
         }

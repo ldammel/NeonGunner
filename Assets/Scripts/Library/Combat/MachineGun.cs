@@ -1,5 +1,6 @@
 ﻿using Library.Character.ScriptableObjects;
 using Library.Combat.Enemy;
+using Library.Data;
 using Library.Events;
 using UnityEngine;
 
@@ -50,10 +51,16 @@ namespace Library.Combat
         {
             RaycastHit hit;
             if (!Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range)) return;
+            LevelEnd.Instance.totalShots++;
             
             if (hit.collider.gameObject.CompareTag("Enemy"))
             {
                 if(hit.collider.gameObject.GetComponent<EnemyHealth>() != null) hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+            }
+
+            if (hit.collider.gameObject.CompareTag("SelectWeapon"))
+            {
+                hit.collider.gameObject.GetComponent<SelectWeapon>().ActivateWeapon();
             }
 
             Instantiate(vfx, hit.point, hit.collider.transform.rotation);

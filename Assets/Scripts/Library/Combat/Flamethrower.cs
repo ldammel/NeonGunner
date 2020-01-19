@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using JetBrains.Annotations;
 using Library.Combat.Enemy;
+using Library.Data;
 using Library.Events;
 using Library.Tools;
 using TMPro;
@@ -36,24 +38,36 @@ namespace Library.Combat
             var flameFxMain = flameFx.main;
             if (Input.GetMouseButton(0))
             {
-                flameFxMain.maxParticles = 130;
-                if (!soundPlaying)
-                {
-                    SoundManager.Instance.PlaySound("Flame");
-                    soundPlaying = true;
-                }
-            }
-            else
-            {
-                flameFxMain.maxParticles = 0;
-                if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
-                soundPlaying = false;
+                StartCoroutine(Shot());
             }
         }
+
+        private IEnumerator Shot()
+        {
+            var flameFxMain = flameFx.main;
+            LevelEnd.Instance.totalShots++;
+            flameFxMain.maxParticles = 130;
+            if (!soundPlaying)
+            {
+                SoundManager.Instance.PlaySound("Flame");
+                soundPlaying = true;
+            }
+            yield return new WaitForSeconds(1);
+            flameFxMain.maxParticles = 0;
+            if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
+            soundPlaying = false;
+        }
+
+
 
 
         void OnParticleCollision(GameObject other)
         {
+            if (other.CompareTag("SelectWeapon"))
+            {
+                other.gameObject.GetComponent<SelectWeapon>().ActivateWeapon();
+                return;
+            }
             if (!other.CompareTag("Enemy")) return;
             var numCollisionEvents = flameFx.GetCollisionEvents(other, collisionEvents);
             int i = 0;

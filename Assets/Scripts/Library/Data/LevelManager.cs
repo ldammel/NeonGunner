@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Library.Events;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -28,7 +29,10 @@ namespace Library.Data
 
         public void RoundEnd()
         {
-            RemoveEnemies();
+            LevelEnd.Instance.enemiesKilled = 0;
+            LevelEnd.Instance.totalShots = 0;
+            LevelEnd.Instance.totalEnemies = 0;
+            
             winScreen.SetActive(false);
             failScreen.SetActive(false);
             levelSelection.SetActive(true);
@@ -40,13 +44,5 @@ namespace Library.Data
             SceneManager.LoadScene(1);
         }
 
-        public void RemoveEnemies()
-        {
-            var enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            foreach (var e in enemies)
-            {
-                Destroy(e);
-            }
-        }
     }
 }
