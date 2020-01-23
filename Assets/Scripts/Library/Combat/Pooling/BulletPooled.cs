@@ -8,6 +8,7 @@ namespace Library.Combat.Pooling
     public class BulletPooled : MonoBehaviour
     {
         public float fireRate;
+        public float range;
 
         [SerializeField] private BulletShotPool objectPool;
 
@@ -15,6 +16,12 @@ namespace Library.Combat.Pooling
 
         public bool isEnemy = false;
         public bool canFire;
+        private GameObject player;
+
+        private void Start()
+        {
+            player = GameObject.Find("---PLAYER---/Player/SlotTwo");
+        }
 
         private void Update()
         {
@@ -31,9 +38,10 @@ namespace Library.Combat.Pooling
             if (isEnemy)
             {
                 if(!canFire) return;
+                if (Vector3.Distance(transform.position,player.transform.position) > range) return;
                 if (_fireTimer >= fireRate)
                 {
-                    gameObject.transform.LookAt(GameObject.Find("---PLAYER---/Player/SlotTwo").transform);
+                    gameObject.transform.LookAt(player.transform);
                     _fireTimer = 0;
                     Fire();
                 }

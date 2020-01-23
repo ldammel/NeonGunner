@@ -18,6 +18,7 @@ TagManager:
   - Crosshair
   - RocketStrike
   - SelectWeapon
+  - PlayerRear
   layers:
   - Default
   - TransparentFX

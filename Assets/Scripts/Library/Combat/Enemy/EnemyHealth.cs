@@ -18,8 +18,6 @@ namespace Library.Combat.Enemy
         public AudioSource deathSound;
         public event Action<float> OnHealthPctChanged = delegate{  };
 
-        public BulletPooled pool;
-        
         private void Start()
         {
             deathSound = GameObject.Find("---PLAYER---/Sounds/DeathSound").GetComponent<AudioSource>();
@@ -47,9 +45,17 @@ namespace Library.Combat.Enemy
             {
                 deathSound.Play();
             }
+            
+            gameObject.GetComponent<EnemyPooled>().ReturnToPool();
+            curHealth = maxHealth;
+        }
 
-            pool.enabled = false;
-            Destroy(gameObject);
+        private void OnTriggerEnter(Collider other)
+        {
+            if (!other.CompareTag("PlayerRear")) return;
+            GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>().TakeDamage(10);
+            LevelEnd.Instance.enemiesMissed++;
+            gameObject.GetComponent<EnemyPooled>().ReturnToPool();
         }
 
         private void PlayerDeath()

@@ -30,6 +30,7 @@ namespace Library.Events
         public float enemiesKilled;
         public float totalEnemies;
         public float totalShots;
+        public float enemiesMissed;
 
         private float _accuracy;
 
@@ -37,9 +38,14 @@ namespace Library.Events
 
         private void Start()
         {
+            UpdateEnemies();
+        }
+
+        public void UpdateEnemies()
+        {
             var enemy = FindObjectsOfType<EnemyHealth>();
 
-            for (int i = 0; i < enemy.Length -1; i++)
+            for (int i = 0; i < enemy.Length - 1; i++)
             {
                 totalEnemies++;
             }
@@ -50,7 +56,7 @@ namespace Library.Events
             _accuracy = Mathf.Round((enemiesKilled / totalShots)*100);
             if (float.IsNaN(_accuracy)) _accuracy = 0;
             if (_accuracy <= 0) _accuracy = 0;
-            statsText.text = "Kills: " + enemiesKilled + " / " + totalEnemies+ "\n" + "\nAccuracy: "+ _accuracy + "%\n";
+            statsText.text = "Kills: " + enemiesKilled + " / " + totalEnemies+ "\n" + "\nAccuracy: "+ _accuracy + "%\n" + "\nMissed: "+ enemiesMissed + "\n";
         }
 
         private void OnCollisionEnter(Collision other)
