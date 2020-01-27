@@ -1,10 +1,11 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Library.Character;
 using Library.Combat.Pooling;
-using Library.Events;
 using TMPro;
 using UnityEngine;
 using Object = UnityEngine.Object;
+using Lean.Pool;
 
 public class SpawnNextPatternManager : MonoBehaviour
 {
@@ -21,13 +22,14 @@ public class SpawnNextPatternManager : MonoBehaviour
         Instance = this;
     }
 
-    [SerializeField] private int levelNumber;
+    public int levelNumber;
 
-    [SerializeField] private EnemyPool[] pool;
+    [SerializeField] private LeanGameObjectPool[] pool;
 
     [SerializeField] private WaypointMovement playerSpeed;
     [SerializeField] private float speedModifier;
 
+    [SerializeField] private List<GameObject> spawned;
     private void Start()
     {
         playerSpeed = GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>();
@@ -38,16 +40,20 @@ public class SpawnNextPatternManager : MonoBehaviour
         text.text = "LEVEL: " + levelNumber;
     }
 
-    public void SpawnNextRoom(Component endPoint, Object objectToRemove, int patternNumber)
+    public void SpawnNextRoom(Component endPoint, int patternNumber)
     {
         if (pool == null) return;
         playerSpeed.moveSpeed += speedModifier;
-        var room = pool[patternNumber].Get();
         var transform1 = endPoint.transform;
-        room.transform.position = transform1.position;
-        room.transform.rotation = transform1.rotation;
-        room.gameObject.SetActive(true);
-        if(objectToRemove != null) Destroy(objectToRemove);
+        var room = pool[patternNumber].Spawn(transform1.position,transform1.rotation, pool[patternNumber].transform);
+        room.GetComponent<EnemyPooled>().Pool = pool[patternNumber];
+        spawned.Add(room);
+        room.GetComponent<SpawnBuildingsInPattern>().SpawnEnemies();
+        if (levelNumber > 9)
+        {
+            spawned[0].GetComponent<EnemyPooled>().ReturnToPool();
+            spawned.Remove(spawned[0]);
+        }
         levelNumber++;
         var text = room.GetComponentInChildren<TextMeshProUGUI>();
         UpdateLevelText(text);

@@ -1021,52 +1021,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5967891358329139023}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1762997888086040767
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9141478248508669910}
-  - component: {fileID: 360824727477406120}
-  m_Layer: 10
-  m_Name: EnemyPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9141478248508669910
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762997888086040767}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 170.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5967891358329139023}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &360824727477406120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762997888086040767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b15784b562b54f648acef72d52193dbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 8316347139329622347, guid: b6688555abdb53d439e2da5a8711b167, type: 3}
 --- !u!1 &2012441388655406959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,7 +1420,6 @@ Transform:
   - {fileID: 418271708975247978}
   - {fileID: 3182642954164327202}
   - {fileID: 8695111799768843780}
-  - {fileID: 9141478248508669910}
   - {fileID: 8661525045669541707}
   - {fileID: 4918506030808546644}
   m_Father: {fileID: 0}
@@ -1482,6 +1437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15cae9c35c73480cb6763cf2e43387f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pool: {fileID: 0}
+  isBuilding: 0
+  isCloseEnemy: 0
 --- !u!114 &4535919657131434536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,11 +1452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a471e237f1f043b21efbf21d04902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildings:
-  - {fileID: 8300624612288380715, guid: 4c7048d311db61648a06dcda3dca43c9, type: 3}
-  - {fileID: 4736910920962749077, guid: 5908671ec5cd70c49952b652531a1b29, type: 3}
-  - {fileID: 696693198125860546, guid: f6e1de605765bc14eaddddfc1749cb68, type: 3}
-  - {fileID: 3036992530354149385, guid: 9aa3b0833fe36fb40809e17e0b40c84f, type: 3}
   spawnpoints:
   - {fileID: 1683318258878724989}
   - {fileID: 4376029051324372760}
@@ -1523,6 +1476,7 @@ MonoBehaviour:
   - {fileID: 3029182344791341665}
   - {fileID: 4187015901378285271}
   spawner: {fileID: 3062369702980996179}
+  pools: []
   _enemySpawners: 0
 --- !u!1 &6080334263695680405
 GameObject:
@@ -1634,7 +1588,7 @@ Transform:
   - {fileID: 3029182344791341665}
   - {fileID: 4187015901378285271}
   m_Father: {fileID: 5967891358329139023}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6763974889665184235
 GameObject:
@@ -1753,7 +1707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8156784409116839977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1345, y: -0.4917, z: -0.361}
+  m_LocalPosition: {x: -2.1345, y: -0.4625, z: -0.361}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 418271709345741494}
@@ -1770,8 +1724,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.11, y: 0.01, z: 0.16}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.7282241, y: 0.04291346, z: 14.076664}
+  m_Center: {x: 0.005438475, y: -0.01729828, z: 1.1266041}
 --- !u!114 &3062369702980996179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1784,7 +1738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b9f08a9d4852941bcb8918184bf946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPool: {fileID: 360824727477406120}
+  objectPool: {fileID: 0}
   spawnPoints: []
 --- !u!114 &3355644969333636120
 MonoBehaviour:
@@ -1799,8 +1753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 8661525045669541707}
-  objectToRemove: {fileID: 0}
   patternNumber: 0
+  scoreAdd: 100
 --- !u!1 &8348046249745622356
 GameObject:
   m_ObjectHideFlags: 0

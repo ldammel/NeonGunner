@@ -1,4 +1,5 @@
 ﻿using System;
+using Lean.Pool;
 using Library.Events;
 using Library.Tools;
 using UnityEngine;
@@ -8,12 +9,13 @@ namespace Library.Combat.Pooling
     public class EnemySpawner : MonoBehaviour
     {
 
-        public EnemyPool objectPool;
+        public LeanGameObjectPool objectPool;
         public Transform[] spawnPoints;
 
         private void Awake()
         {
             spawnPoints = new Transform[100];
+            objectPool= GameObject.Find("---MANAGERS---/PatternPools/EnemyPool").GetComponent<LeanGameObjectPool>();
         }
 
         public void SpawnEnemies()
@@ -21,13 +23,10 @@ namespace Library.Combat.Pooling
             for (int i = 0; i < spawnPoints.Length; i++)
             {
                 if(spawnPoints[i] == null) continue;
-                var enemy = objectPool.Get();
                 var transform1 = spawnPoints[i].transform;
-                enemy.transform.position = transform1.position;
-                enemy.transform.rotation = transform1.rotation;
-                enemy.gameObject.SetActive(true);
-                LevelEnd.Instance.UpdateEnemies();
+                objectPool.Spawn(transform1.position,transform1.rotation, objectPool.transform);
             }
+            LevelEnd.Instance.UpdateEnemies();
         }
     }
 }

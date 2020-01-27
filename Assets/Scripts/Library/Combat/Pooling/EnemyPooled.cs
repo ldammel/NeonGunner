@@ -1,33 +1,47 @@
 ﻿using System;
+using Lean.Pool;
 using Library.Combat.Enemy;
+using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat.Pooling
 {
-    public class EnemyPooled : MonoBehaviour, IEnemyPooled
+    public class EnemyPooled : MonoBehaviour
     {
-        private EnemyPool _pool;
+        public LeanGameObjectPool _pool;
+        public bool isBuilding;
+        public bool isCloseEnemy;
 
-        public EnemyPool Pool
+        public LeanGameObjectPool Pool
         {
             get => _pool;
             set
             {
                 if (_pool == null)
                     _pool = value;
-                else 
-                    throw new Exception("Bad pool use, this should only get set once!");
+            }
+        }
+
+        private void Start()
+        {
+            if(gameObject.CompareTag("Enemy") && !isCloseEnemy)Pool = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<LeanGameObjectPool>();
+            if(gameObject.CompareTag("Enemy") && isCloseEnemy)Pool = GameObject.Find("---PLAYER---/Player/SpawnPoints/CloseEnemyPool").GetComponent<LeanGameObjectPool>();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (!other.CompareTag("PlayerRear")) return;
+            if (gameObject.CompareTag("Enemy"))
+            {
+                GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>().TakeDamage(10);
+                LevelEnd.Instance.enemiesMissed++;
+                ReturnToPool();
             }
         }
 
         public void ReturnToPool()
         {
-            _pool.ReturnToPool(gameObject);
+            Pool.Despawn(gameObject);
         }
-    }
-    
-    internal interface IEnemyPooled
-    {
-        EnemyPool Pool { get; set; }
     }
 }

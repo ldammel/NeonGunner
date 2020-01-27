@@ -15,7 +15,10 @@ namespace Library.Combat.Enemy
 
         public bool godMode;
 
+        public int scorePerKill;
+
         public AudioSource deathSound;
+        public bool iscloseEnemy;
         public event Action<float> OnHealthPctChanged = delegate{  };
 
         private void Start()
@@ -40,22 +43,16 @@ namespace Library.Combat.Enemy
             if (!(curHealth <= 0) || player) return;
             curHealth = 1;
             LevelEnd.Instance.enemiesKilled++;
+            LevelEnd.Instance.score += Mathf.RoundToInt(scorePerKill * (SpawnNextPatternManager.Instance.levelNumber / 2));
 
             if (!deathSound.isPlaying)
             {
                 deathSound.Play();
             }
             
+            if (iscloseEnemy) SpawnCloseEnemies.Instance.spawnedAmount--;
             gameObject.GetComponent<EnemyPooled>().ReturnToPool();
             curHealth = maxHealth;
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (!other.CompareTag("PlayerRear")) return;
-            GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>().TakeDamage(10);
-            LevelEnd.Instance.enemiesMissed++;
-            gameObject.GetComponent<EnemyPooled>().ReturnToPool();
         }
 
         private void PlayerDeath()

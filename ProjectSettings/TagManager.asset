@@ -19,6 +19,9 @@ TagManager:
   - RocketStrike
   - SelectWeapon
   - PlayerRear
+  - patterns
+  - EnemyPool
+  - CloseEnemy
   layers:
   - Default
   - TransparentFX

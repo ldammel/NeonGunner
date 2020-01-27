@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Lean.Pool;
 using UnityEngine;
 
 namespace Library.Combat.Pooling
@@ -39,7 +40,6 @@ namespace Library.Combat.Pooling
                 var newObject = Instantiate(prefab, gameObject.transform);
                 newObject.SetActive(false);
                 _objects.Enqueue(newObject);
-                newObject.GetComponent<IEnemyPooled>().Pool = this;
             }
         }
 

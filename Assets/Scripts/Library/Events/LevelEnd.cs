@@ -26,13 +26,12 @@ namespace Library.Events
         [SerializeField] private TextMeshProUGUI statsText;
         [SerializeField] private GameObject rewardObj;
         [SerializeField] private CurrencyObject cur;
+        public int score;
 
         public float enemiesKilled;
         public float totalEnemies;
         public float totalShots;
         public float enemiesMissed;
-
-        private float _accuracy;
 
         private int _reward;
 
@@ -53,10 +52,7 @@ namespace Library.Events
 
         private void Update()
         {
-            _accuracy = Mathf.Round((enemiesKilled / totalShots)*100);
-            if (float.IsNaN(_accuracy)) _accuracy = 0;
-            if (_accuracy <= 0) _accuracy = 0;
-            statsText.text = "Kills: " + enemiesKilled + " / " + totalEnemies+ "\n" + "\nAccuracy: "+ _accuracy + "%\n" + "\nMissed: "+ enemiesMissed + "\n";
+            statsText.text = "Score: " + score + "\nKilled: " + enemiesKilled + " / " + totalEnemies;
         }
 
         private void OnCollisionEnter(Collision other)
@@ -70,9 +66,10 @@ namespace Library.Events
         
         public void CalculateReward()
         {
-            _reward = Mathf.RoundToInt((enemiesKilled * (_accuracy/100))*((enemiesKilled/totalEnemies)*2));
+            _reward = Mathf.RoundToInt(enemiesKilled * ((enemiesKilled/totalEnemies)*2) * (SpawnNextPatternManager.Instance.levelNumber/2));
             cur.currentCurrency += _reward;
-            rewardText.text = "Kills: " + enemiesKilled + " / " + totalEnemies+ "\n" + "\nAccuracy: "+ _accuracy + "%\n" + "\nReward: " + _reward;
+            score += _reward;
+            rewardText.text = "Score: " + score;
             rewardObj.SetActive(true);
             statsText.gameObject.SetActive(false);
         }
