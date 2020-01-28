@@ -9,6 +9,7 @@ namespace Library.Character
     public class WaypointMovement : MonoBehaviour
     {
         public float moveSpeed;
+        public float maxSpeed;
 
         private void Update()
         {

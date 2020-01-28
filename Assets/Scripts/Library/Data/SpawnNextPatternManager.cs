@@ -43,7 +43,7 @@ public class SpawnNextPatternManager : MonoBehaviour
     public void SpawnNextRoom(Component endPoint, int patternNumber)
     {
         if (pool == null) return;
-        playerSpeed.moveSpeed += speedModifier;
+        if(playerSpeed.moveSpeed< playerSpeed.maxSpeed)playerSpeed.moveSpeed += speedModifier;
         var transform1 = endPoint.transform;
         var room = pool[patternNumber].Spawn(transform1.position,transform1.rotation, pool[patternNumber].transform);
         room.GetComponent<EnemyPooled>().Pool = pool[patternNumber];

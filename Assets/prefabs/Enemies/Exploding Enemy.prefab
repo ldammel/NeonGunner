@@ -163,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionVfx: {fileID: 168542, guid: 5702e2a6fea804b45b49b70d8feaf7ae, type: 3}
   damage: 100
+  col: {fileID: 8316347139329622346}
 --- !u!1001 &2393596762307392070
 PrefabInstance:
   m_ObjectHideFlags: 0
