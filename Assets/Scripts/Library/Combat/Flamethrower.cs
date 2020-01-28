@@ -38,26 +38,19 @@ namespace Library.Combat
             var flameFxMain = flameFx.main;
             if (Input.GetMouseButton(0))
             {
-                StartCoroutine(Shot());
-            }
-        }
-
-        private IEnumerator Shot()
-        {
-            var flameFxMain = flameFx.main;
-            LevelEnd.Instance.totalShots++;
-            flameFxMain.maxParticles = 130;
-            if (!soundPlaying)
-            {
+                LevelEnd.Instance.totalShots++;
+                flameFxMain.maxParticles = 130;
+                if (soundPlaying) return;
                 SoundManager.Instance.PlaySound("Flame");
                 soundPlaying = true;
             }
-            yield return new WaitForSeconds(1);
-            flameFxMain.maxParticles = 0;
-            if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
-            soundPlaying = false;
+            else if (Input.GetMouseButtonUp(0))
+            {
+                flameFxMain.maxParticles = 0;
+                if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
+                soundPlaying = false;
+            }
         }
-
 
 
 

@@ -176,7 +176,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 10}
+  m_Size: {x: 12, y: 12, z: 12}
   m_Center: {x: 0, y: 5, z: 0}
 --- !u!114 &513876215
 MonoBehaviour:
@@ -190,8 +190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ed14d55ca63d841b2c8b76177c5081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
-  curHealth: 30
+  maxHealth: 2
+  curHealth: 2
   player: 0
   godMode: 0
   scorePerKill: 50

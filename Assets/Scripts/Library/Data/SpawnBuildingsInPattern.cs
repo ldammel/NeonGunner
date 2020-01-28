@@ -9,10 +9,14 @@ public class SpawnBuildingsInPattern : MonoBehaviour
     [SerializeField] private Transform[] spawnpoints;
     [SerializeField] private EnemySpawner spawner;
     [SerializeField] private LeanGameObjectPool[] pools;
-    public int _enemySpawners = 0;
+    public int enemySpawners = 0;
+
+    public bool premadeRoom;
+    public bool startRoom;
 
     private void Start()
     {
+        if (premadeRoom) return;
         pools = new LeanGameObjectPool[4];
         var x = GameObject.FindGameObjectsWithTag("patterns");
         pools[0] = x[0].GetComponent<LeanGameObjectPool>();
@@ -29,23 +33,25 @@ public class SpawnBuildingsInPattern : MonoBehaviour
 
     public void PlaceBuildings()
     {
+        if (premadeRoom) return;
         for (int i = 0; i < spawnpoints.Length; i++)
         {
+            if(!spawnpoints[i].gameObject.activeSelf) continue;
             var transform1 = spawnpoints[i].transform;
             var go = pools[Random.Range(0, pools.Length)];
-            var spawned = go.Spawn(transform1.position, transform1.rotation,transform);
+            var spawned = go.Spawn(transform1.position, transform1.rotation, transform);
             spawned.GetComponent<EnemyPooled>().Pool = go;
             var es = spawned.GetComponentsInChildren<EnemySpawnPoint>();
-           foreach (var t in es)
-           {
-               spawner.spawnPoints[_enemySpawners] = t.point;
-               _enemySpawners++;
-           }
+            foreach (var t in es)
+            {
+                spawner.spawnPoints[enemySpawners] = t.point;
+                enemySpawners++;
+            }
         }
-        StartCoroutine(Enemies());
+        if(startRoom) SpawnEnemies();
     }
 
-    IEnumerator Enemies()
+    private IEnumerator Enemies()
     {
         if (spawner == null) spawner = gameObject.GetComponentInChildren<EnemySpawner>();
         yield return new WaitForSeconds(0.5f);

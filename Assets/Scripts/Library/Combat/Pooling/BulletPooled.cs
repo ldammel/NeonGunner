@@ -50,7 +50,7 @@ namespace Library.Combat.Pooling
             _fireTimer += Time.deltaTime;
         }
 
-        private void Fire()
+        public void Fire()
         {
             var shot = objectPool.Get();
             var transform1 = transform;

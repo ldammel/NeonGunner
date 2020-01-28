@@ -16,7 +16,7 @@ namespace Library.Combat.Enemy
         private void Update()
         {
             if (!_onPoint) return;
-            LevelEnd.Instance.score -= Mathf.RoundToInt((pointsLossPerSecond * (SpawnNextPatternManager.Instance.levelNumber/2)) * Time.deltaTime);
+            LevelEnd.Instance.score -= Mathf.RoundToInt((pointsLossPerSecond * SpawnNextPatternManager.Instance.levelNumber) * Time.deltaTime);
         }
 
         private void OnTriggerEnter(Collider other)

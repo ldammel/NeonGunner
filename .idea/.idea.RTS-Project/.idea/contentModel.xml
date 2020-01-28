@@ -239,6 +239,7 @@
                 <e p="ExplodingEnemy.cs" t="Include" />
                 <e p="HealthBar.cs" t="Include" />
                 <e p="PatrolAction.cs" t="Include" />
+                <e p="SpawnBomb.cs" t="Include" />
                 <e p="SpawnCloseEnemies.cs" t="Include" />
                 <e p="State.cs" t="Include" />
                 <e p="StateController.cs" t="Include" />
@@ -269,6 +270,7 @@
               <e p="SpawnNextPatternManager.cs" t="Include" />
               <e p="SpawnPattern.cs" t="Include" />
               <e p="WeaponSelectionManager.cs" t="Include" />
+              <e p="WeaponSelector.cs" t="Include" />
               <e p="WeaponSlotManager.cs" t="Include" />
             </e>
             <e p="Events" t="Include">

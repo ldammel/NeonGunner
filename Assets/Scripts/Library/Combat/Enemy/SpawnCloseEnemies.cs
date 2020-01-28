@@ -25,6 +25,7 @@ namespace Library.Combat.Enemy
         [SerializeField] private Transform[] spawnPoints;
         [SerializeField] private LeanGameObjectPool pool;
         [SerializeField] private int amountUntilReset;
+        [SerializeField] private int maxEnemxAmount;
         [SerializeField] private int waitTime;
         public int spawnedAmount;
 
@@ -44,13 +45,15 @@ namespace Library.Combat.Enemy
         {
             _started = true;
             yield return new WaitForSeconds(initialWait);
-            for (int i = 0; i < spawnPoints.Length; i++)
+            while (spawnedAmount < maxEnemxAmount)
             {
-                yield return new WaitForSeconds(1);
-                var s = pool.Spawn(spawnPoints[i].position, spawnPoints[i].rotation, pool.transform);
-                spawnedAmount++;
+                for (int i = 0; i < spawnPoints.Length; i++)
+                {
+                    yield return new WaitForSeconds(0.5f);
+                    var s = pool.Spawn(spawnPoints[i].position, spawnPoints[i].rotation, pool.transform);
+                    spawnedAmount++;
+                }
             }
-
             _started = false;
         }
     }

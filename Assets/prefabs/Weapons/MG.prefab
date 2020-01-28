@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679254040288563142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0507, z: 0.0096}
+  m_LocalPosition: {x: 0, y: -0.1427, z: 0.0096}
   m_LocalScale: {x: 0.02, y: 0.020000016, z: 0.020000016}
   m_Children: []
   m_Father: {fileID: 1774222249863189327}
@@ -371,13 +371,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  range: 500
+  range: 1000
   values: {fileID: 11400000, guid: 5312efd9cb4c7d248835458f03572f93, type: 2}
   cam: {fileID: 0}
   vfx: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
+  bp: {fileID: 6314199105348804205}
   fireRate: 0.2
-  soundObject: {fileID: 1740181045613590565, guid: 43f5251e342aab445a2a7d000da783c2,
-    type: 3}
 --- !u!114 &6314199105348804205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,8 +390,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 0.2
+  range: 0
   objectPool: {fileID: 6345659777843602167}
-  isEnemy: 0
+  isEnemy: 1
   canFire: 0
 --- !u!1 &3819212157912618620
 GameObject:

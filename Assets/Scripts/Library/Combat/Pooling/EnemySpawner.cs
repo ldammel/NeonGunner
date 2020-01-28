@@ -9,12 +9,14 @@ namespace Library.Combat.Pooling
     public class EnemySpawner : MonoBehaviour
     {
 
+        public SpawnBuildingsInPattern pat;
         public LeanGameObjectPool objectPool;
         public Transform[] spawnPoints;
+        
 
         private void Awake()
         {
-            spawnPoints = new Transform[100];
+            if(!pat.premadeRoom)spawnPoints = new Transform[100];
             objectPool= GameObject.Find("---MANAGERS---/PatternPools/EnemyPool").GetComponent<LeanGameObjectPool>();
         }
 
@@ -22,7 +24,7 @@ namespace Library.Combat.Pooling
         {
             for (int i = 0; i < spawnPoints.Length; i++)
             {
-                if(spawnPoints[i] == null) continue;
+                if(spawnPoints[i] == null || !spawnPoints[i].gameObject.activeSelf) continue;
                 var transform1 = spawnPoints[i].transform;
                 objectPool.Spawn(transform1.position,transform1.rotation, objectPool.transform);
             }

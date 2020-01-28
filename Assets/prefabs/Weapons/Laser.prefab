@@ -238,7 +238,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 500}
+  - {x: 0, y: 0, z: 1000}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laser: {fileID: 3209629384939260706}
-  maxLaserLength: 500
+  maxLaserLength: 1000
   col: {fileID: 3143130440338648779}
   damage: 20
 --- !u!1 &3699702687889981029

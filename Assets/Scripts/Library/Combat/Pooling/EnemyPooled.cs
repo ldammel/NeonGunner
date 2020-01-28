@@ -11,6 +11,7 @@ namespace Library.Combat.Pooling
         public LeanGameObjectPool _pool;
         public bool isBuilding;
         public bool isCloseEnemy;
+        public bool isBomb;
 
         public LeanGameObjectPool Pool
         {
@@ -24,8 +25,9 @@ namespace Library.Combat.Pooling
 
         private void Start()
         {
-            if(gameObject.CompareTag("Enemy") && !isCloseEnemy)Pool = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<LeanGameObjectPool>();
+            if(gameObject.CompareTag("Enemy") && !isCloseEnemy && !isBomb)Pool = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<LeanGameObjectPool>();
             if(gameObject.CompareTag("Enemy") && isCloseEnemy)Pool = GameObject.Find("---PLAYER---/Player/SpawnPoints/CloseEnemyPool").GetComponent<LeanGameObjectPool>();
+            if(gameObject.CompareTag("Enemy") && isBomb)Pool = GameObject.Find("---MANAGERS---/PatternPools/ExplodingEnemyPool").GetComponent<LeanGameObjectPool>();
         }
 
         private void OnTriggerEnter(Collider other)

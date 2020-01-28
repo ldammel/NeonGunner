@@ -57,7 +57,7 @@ namespace Library.Combat
             var centerOfCrosshair = crosshair.transform.position;
             crossHairRay = mainCamera.ScreenPointToRay(centerOfCrosshair);
 
-            if (Physics.SphereCast(crossHairRay, sphereCastSize,out RaycastHit hitInfo, 300f, LayerMask.GetMask("Enemy")))
+            if (Physics.SphereCast(crossHairRay, sphereCastSize,out RaycastHit hitInfo, 2000f, LayerMask.GetMask("Enemy")))
             {
                 crosshair.color = Color.red;
                 if(hitInfo.collider.gameObject != null && hitInfo.collider.gameObject.GetComponent<EnemyHealth>()) enemyInVisor.Invoke(hitInfo.collider.gameObject.GetComponent<EnemyHealth>());

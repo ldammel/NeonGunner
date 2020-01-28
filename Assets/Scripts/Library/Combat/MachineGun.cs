@@ -1,5 +1,6 @@
 ﻿using Library.Character.ScriptableObjects;
 using Library.Combat.Enemy;
+using Library.Combat.Pooling;
 using Library.Data;
 using Library.Events;
 using UnityEngine;
@@ -14,9 +15,9 @@ namespace Library.Combat
         [SerializeField] private WeaponValues values;
         [SerializeField] private Camera cam;
         [SerializeField] private GameObject vfx;
+        [SerializeField] private BulletPooled bp;
         
         public float fireRate;
-        public GameObject soundObject;
 
         private float _fireTimer;
 
@@ -30,6 +31,7 @@ namespace Library.Combat
             fireRate = values.mgFireRate;
             damage = values.mgDamage;
             range = values.mgRange;
+            bp = gameObject.GetComponent<BulletPooled>();
         }
 
 
@@ -52,6 +54,7 @@ namespace Library.Combat
             RaycastHit hit;
             if (!Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range)) return;
             LevelEnd.Instance.totalShots++;
+            bp.Fire();
             
             if (hit.collider.gameObject.CompareTag("Enemy"))
             {
@@ -64,6 +67,7 @@ namespace Library.Combat
             }
 
             Instantiate(vfx, hit.point, hit.collider.transform.rotation);
+            Debug.Log(hit.collider.gameObject);
         }
     }
 }

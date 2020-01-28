@@ -31,11 +31,6 @@ namespace Library.Events
         {
             Cursor.visible = pauseActive;
             Cursor.lockState = pauseActive ? CursorLockMode.None : CursorLockMode.Locked;
-            
-            if (InputManager.Instance.KeyDown("options"))
-            {
-                Instance.TriggerMenu();
-            }
         }
 
         public void Quit()
