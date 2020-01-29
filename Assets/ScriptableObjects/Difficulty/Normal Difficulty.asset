@@ -15,48 +15,23 @@ MonoBehaviour:
   Name: 
   BaseValue: 0
   mgDamage: 50
-  mgRange: 100
+  mgRange: 1000
   mgFireRate: 0.2
   mgFireRateUpgrade: 2
   laserDamage: 0
   laserDamageUpgrade: 0
   laserRange: 0
-  teslaDamage: 0
-  teslaFireRate: 0
-  teslaJumpAmount: 0
-  teslaFireRateUpgrade: 0
-  teslaJumpAmountUpgrade: 0
   flakDamage: 100
   flakRange: 0.5
   flakDamageRadius: 2
   flakFireRate: 2
   flakFireRateUpgrade: 2
   flakRadiusUpgrade: 2
-  shrapnelDamage: 0
-  shrapnelRadius: 0
-  shrapnelAmount: 0
-  shrapnelRadiusUpgrade: 0
-  shrapnelDamageUpgrade: 0
-  rocketDamage: 0
-  rocketFireRate: 0
-  rocketEnemiesAmount: 0
-  rocketFireRateUpgrade: 0
-  rocketEnemiesAmountUpgrade: 0
   flameDamage: 30
   flameRange: 15
-  flameAmmoConsumptionPerSecond: 1
-  flameAmmoRefreshPerSecond: 1
   flameSpread: 7
   flameSpreadUpgrade: 10
-  caltropsDamage: 0
-  caltropsAmount: 0
-  caltropsAmountUpgrade: 0
   gasDamage: 0
   gasMaxRadius: 0
   gasDamageUpgrade: 0
   gasMaxRadiusUpgrade: 0
-  enemyHealth: 100
-  enemyDamage: 10
-  enemyAttackSpeed: 1
-  enemyMoveSpeed: 45
-  enemyRange: 10

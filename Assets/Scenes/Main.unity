@@ -2086,5 +2086,30 @@ PrefabInstance:
       propertyPath: isFlame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4466920261658854867, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1313
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466920261658854867, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0115
+      objectReference: {fileID: 0}
+    - target: {fileID: 9049878648093277857, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9049878648093277857, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0.95554936
+      objectReference: {fileID: 0}
+    - target: {fileID: 9049878648093277857, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e88cd94284ff6dc4eb77598252717968, type: 3}
