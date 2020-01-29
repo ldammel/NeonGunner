@@ -16,6 +16,13 @@ namespace Library.Combat.Enemy
         private void Update()
         {
             if (!_onPoint) return;
+            
+            
+            /*----------------------------------------------------------------------------------------------------------------------------
+            //TODO:  Calculate Per Second - Negative score display updates each second - score gets removed once all enemies are killed
+            ----------------------------------------------------------------------------------------------------------------------------*/
+            
+            
             LevelEnd.Instance.score -= Mathf.RoundToInt((pointsLossPerSecond * SpawnNextPatternManager.Instance.levelNumber) * Time.deltaTime);
         }
 

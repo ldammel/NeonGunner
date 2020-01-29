@@ -2,11 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnNextPatternManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnNextPatternManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Exploding Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Exploding Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Building1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Building1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Building2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Building2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Building3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Building3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Building4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Building4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Building5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Building5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullet 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bullet 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullet 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bullet 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullet 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bullet 3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullet 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bullet 4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullet 5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bullet 5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bullet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Spawn 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Spawn 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Spawn 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Spawn 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Spawn.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Spawn.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/rail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/rail.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Weapons/turrets/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Weapons/turrets/No Name.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Weapons/turrets/flamethrower.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Weapons/turrets/flamethrower.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Weapons/turrets/laser.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Weapons/turrets/laser.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/LWRP-HighQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/LWRP-HighQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/LWRP-LowQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/LWRP-LowQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/LWRP-MediumQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/LWRP-MediumQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PostProcessProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PostProcessProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BasePattern.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BasePattern.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Monolyths.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Monolyths.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Stair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Stair.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Rails.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Rails.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +67,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShotPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@6.9.0/Runtime/LightweightRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Character/ScriptableObjects/WeaponValues.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnTriggerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnCollisionController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,6 +94,7 @@
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/MissionDisplay.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Animations/EnemyAnimation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SnapshotShaders/Scripts/SnapshotMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/Mission.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/Missions/KillMission.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
@@ -64,11 +107,15 @@
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/EnemySpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Lean/Pool/Scripts/LeanGameObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flak.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SnapshotShaders/Shaders/Neon.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/Design.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SnapshotShaders/Shaders/Bloom.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnBomb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnCloseEnemies.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SnapshotShaders/Scripts/SnapshotFilter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SnapshotShaders/Scripts/SnapshotCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unit74/Assets/Scripts/Lukas/AI/FieldOfViewEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/EnemyFoundEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -141,9 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/RocketStrikeUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeGas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeLaser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeRocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/WeaponUpgrades/UpgradeMG.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/Checkpoint/Checkpoint.cs" />
@@ -175,16 +219,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnBomb.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/EnemyPooled.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnCloseEnemies.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnBuildingsInPattern.cs" />
@@ -192,6 +231,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnNextPatternManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/SnapshotShaders/Scripts/SnapshotMode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
+        <option value="$PROJECT_DIR$/Assets/SnapshotShaders/Shaders/Bloom.shader" />
+        <option value="$PROJECT_DIR$/Assets/SnapshotShaders/Shaders/Neon.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
       </list>
     </option>
   </component>
@@ -302,6 +349,9 @@
       <workItem from="1580214028389" duration="7089000" />
       <workItem from="1580222023061" duration="1594000" />
       <workItem from="1580227688049" duration="995000" />
+      <workItem from="1580302502672" duration="589000" />
+      <workItem from="1580303777279" duration="1501000" />
+      <workItem from="1580307789976" duration="5565000" />
     </task>
     <servers />
   </component>

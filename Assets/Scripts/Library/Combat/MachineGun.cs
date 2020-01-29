@@ -67,7 +67,6 @@ namespace Library.Combat
             }
 
             Instantiate(vfx, hit.point, hit.collider.transform.rotation);
-            Debug.Log(hit.collider.gameObject);
         }
     }
 }

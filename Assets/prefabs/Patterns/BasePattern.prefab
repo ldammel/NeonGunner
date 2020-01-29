@@ -2293,11 +2293,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rails (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3380060415841548977, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8519067446479521776, guid: d23b2e3586679264db34ba20805792a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2352,46 +2347,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7640063976443120200, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 7640063976443120200, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5999777551158623979, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_Positions.Array.data[1].z
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 349005387345117959, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 349005387345117959, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 778212909899867902, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_Positions.Array.data[1].z
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 3358480735802148804, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4788468245939144983, guid: d23b2e3586679264db34ba20805792a3,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d23b2e3586679264db34ba20805792a3, type: 3}

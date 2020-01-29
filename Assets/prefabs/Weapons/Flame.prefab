@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3710236766117104071}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: flamethrower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 947637446096026846}
   - component: {fileID: 947637446095979902}
   - component: {fileID: 6096048548216738522}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Flames
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,13 +58,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947637446110537150}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.12, y: -0.02, z: 3.91}
+  m_LocalRotation: {x: 0.07445662, y: 0, z: 0, w: 0.9972243}
+  m_LocalPosition: {x: -0.12, y: 0.2, z: 3.91}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children: []
   m_Father: {fileID: 784091188196309373}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.54, y: 0, z: 0}
 --- !u!198 &947637446096026846
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -576,7 +576,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1436,7 +1436,7 @@ ParticleSystem:
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 3
@@ -2024,7 +2024,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
   ForceModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 3
@@ -2194,7 +2194,7 @@ ParticleSystem:
       m_Bits: 4294967295
     influenceList: []
   ClampVelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 1
@@ -4566,13 +4566,13 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 0
+  m_RenderAlignment: 3
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
   m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
-  m_AllowRoll: 1
+  m_AllowRoll: 0
   m_VertexStreams: 0001030405
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
@@ -4592,9 +4592,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flameFx: {fileID: 947637446096026846}
-  damage: 0
-  range: 0
-  spread: 0
+  damage: 10
+  range: 100
+  spread: 7
 --- !u!1 &1799530521598417773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4605,7 +4605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2708821365781922929}
   - component: {fileID: 2912558650701659434}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: camTransitionPoint (1)
   m_TagString: CamTransition
   m_Icon: {fileID: 0}
@@ -4622,7 +4622,8 @@ Transform:
   m_LocalRotation: {x: -0.000000016007041, y: 0.000000023028116, z: -0.19509037, w: 0.9807853}
   m_LocalPosition: {x: 0.016303558, y: 0.03936029, z: -0.3005475}
   m_LocalScale: {x: 0.020000003, y: 0.020000003, z: 0.02}
-  m_Children: []
+  m_Children:
+  - {fileID: 4965221942362905859}
   m_Father: {fileID: 1096594619644779122}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4639,6 +4640,166 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: {fileID: 0}
+--- !u!1 &2147379694754613332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4965221942362905859}
+  - component: {fileID: 5480690399220358620}
+  - component: {fileID: 6167895875997509419}
+  - component: {fileID: 6547615522411281711}
+  - component: {fileID: 26747576}
+  m_Layer: 2
+  m_Name: Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4965221942362905859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147379694754613332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.7, z: -15.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2708821365781922929}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &5480690399220358620
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147379694754613332}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.01
+  far clip plane: 5000
+  field of view: 26.991467
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 7991
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 1
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &6167895875997509419
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147379694754613332}
+  m_Enabled: 1
+--- !u!114 &6547615522411281711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147379694754613332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e20b1465bf764b99239e2a0c36192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useCanvas: 0
+  snapshotCanvasPrefab: {fileID: 2654080978173619198, guid: 3a9765b469d010f4da2f7ecc008810d1,
+    type: 3}
+--- !u!114 &26747576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147379694754613332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 0}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &5326282917248249187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4650,7 +4811,7 @@ GameObject:
   - component: {fileID: 1096594619644779122}
   - component: {fileID: 5497122971949244246}
   - component: {fileID: 3211190027696405328}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: flamethrower_gun_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4698,7 +4859,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 910311855ea6d7e4e9111f364641b138, type: 3}
+  - {fileID: 2100000, guid: 597f1cb1b5402de4ab1e2da495f9ca59, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4730,7 +4891,7 @@ GameObject:
   - component: {fileID: 693276212037715459}
   - component: {fileID: 4461492286422142212}
   - component: {fileID: 5338815793149368377}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: flamethrower_base_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4776,7 +4937,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 910311855ea6d7e4e9111f364641b138, type: 3}
+  - {fileID: 2100000, guid: 597f1cb1b5402de4ab1e2da495f9ca59, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4806,7 +4967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4037808721202017388}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cam target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4836,7 +4997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 784091188196309373}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4870,7 +5031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5690973226588984943}
   - component: {fileID: 6919336120598994421}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4907,7 +5068,7 @@ MonoBehaviour:
   rotationSpeed: 50
   crosshair: {fileID: 0}
   sphereCastSize: 0
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 5480690399220358620}
 --- !u!1 &8879015947377951427
 GameObject:
   m_ObjectHideFlags: 0
@@ -4918,7 +5079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8879015947377951436}
   - component: {fileID: 8879015947377951437}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Spot Light (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5008,13 +5169,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8879015948160441983}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8879015948160441983
 Transform:
   m_ObjectHideFlags: 0

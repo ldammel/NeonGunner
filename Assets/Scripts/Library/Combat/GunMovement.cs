@@ -22,6 +22,8 @@ namespace Library.Combat
         public Camera mainCamera;
         public Ray crossHairRay;
         
+        public bool isFlame;
+        
         public readonly EnemyFoundEvent enemyInVisor = new EnemyFoundEvent();
 
         private void Start()
@@ -43,11 +45,12 @@ namespace Library.Combat
             _rotation.y = Input.GetAxis("Mouse Y")* Time.deltaTime * rotationSpeed;
             _rotation.z = 0;
 
-            var rot = transform.rotation.eulerAngles + new Vector3(-_rotation.y, _rotation.x, 0f); //use local if your char is not always oriented Vector3.up
-            rot.x = ClampAngle(rot.x, -20f, 30f);
+            var rot = transform.localRotation.eulerAngles + new Vector3(-_rotation.y, _rotation.x, 0f); //use local if your char is not always oriented Vector3.up
+            rot.x = ClampAngle(rot.x, -10f, 30f);
+            if(isFlame)rot.y = ClampAngle(rot.y, -30f, 40f);
             //var centerbase = center.rotation.eulerAngles + new Vector3(0, _rotation.x, 0f); //use local if your char is not always oriented Vector3.up
             
-            transform.eulerAngles = rot;
+            gameObject.transform.localEulerAngles = rot;
             //center.transform.eulerAngles = centerbase;
         }
         

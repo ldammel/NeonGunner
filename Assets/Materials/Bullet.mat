@@ -8,15 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bullet
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _RECEIVE_SHADOWS_OFF _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
     _SPECULAR_SETUP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2050
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -93,8 +92,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 0.008129791, b: 0, a: 1}
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
-    - _EmissionColor: {r: 1, g: 0.023529412, b: 0, a: 1}
+    - _Color: {r: 1, g: 0, b: 0.047468662, a: 1}
+    - _EmissionColor: {r: 1, g: 0.023529414, b: 0, a: 1}
     - _SpecColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &2140426150984589877
 MonoBehaviour:

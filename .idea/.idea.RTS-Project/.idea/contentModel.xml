@@ -330,6 +330,37 @@
             <e p="UnlitVertexColour_Alpha.shader" t="Include" />
           </e>
         </e>
+        <e p="SnapshotShaders" t="Include">
+          <e p="Scenes" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CameraMove.cs" t="Include" />
+              <e p="Hover.cs" t="Include" />
+              <e p="Rotate.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="SnapshotCanvas.cs" t="Include" />
+            <e p="SnapshotFilter.cs" t="Include" />
+            <e p="SnapshotMode.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Base.shader" t="Include" />
+            <e p="Bloom.shader" t="Include" />
+            <e p="CRTScreen.shader" t="Include" />
+            <e p="EdgeBlur.shader" t="Include" />
+            <e p="EdgeDetect.shader" t="Include" />
+            <e p="GaussianBlur.shader" t="Include" />
+            <e p="Greyscale.shader" t="Include" />
+            <e p="Neon.shader" t="Include" />
+            <e p="Painting.shader" t="Include" />
+            <e p="PixelGB.shader" t="Include" />
+            <e p="PixelNES.shader" t="Include" />
+            <e p="PixelSNES.shader" t="Include" />
+            <e p="Pride.shader" t="Include" />
+            <e p="Sepia.shader" t="Include" />
+            <e p="Silhouette.shader" t="Include" />
+          </e>
+        </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
