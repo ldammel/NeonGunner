@@ -4,14 +4,15 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: LivingParticleFloor_02
   m_Shader: {fileID: 4800000, guid: 2b6cdd1bf15d4914481d23cb528e7327, type: 3}
   m_ShaderKeywords: _CAMERAFADEENABLED_ON _CLOSEFADEENABLED_ON _KEYWORD0_ON _LOCKYOFFSET_ON
     _OFFSETYLOCK_ON _RAMPENABLED_ON _USEPIXELDISTANCE_ON
   m_LightmapFlags: 0
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -19,6 +20,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AudioSpectrum:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _FinalTexture:
         m_Texture: {fileID: 2800000, guid: a8b8a3b14f2650542890347948aafe87, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -64,6 +69,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AudioAmplitudeEmissionPower: 1
+    - _AudioAmplitudeEnabled: 0
+    - _AudioAmplitudeOffsetPower: 1
+    - _AudioMaskAffectsAmplitude: 0
+    - _AudioMaskEnabled: 0
+    - _AudioMaskExp: 1
+    - _AudioMaskMultiply: 1
+    - _AudioSpectrumDistanceTiling: 4
+    - _AudioSpectrumEnabled: 0
+    - _AudioSpectrumPower: 1
     - _CameraFadeDistance: 1
     - _CameraFadeEnabled: 1
     - _CameraFadeOffset: 0.2
@@ -92,6 +107,8 @@ Material:
     - _Tiling: 0.2
     - _ToggleSwitch0: 0
     - _UsePixelDistance: 1
+    - _XYUV: 0
+    - _ZYUV: 0
     - __dirty: 0
     m_Colors:
     - _Affector: {r: 0, g: 0, b: 0, a: 0}

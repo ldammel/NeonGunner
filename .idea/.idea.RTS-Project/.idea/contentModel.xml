@@ -330,6 +330,41 @@
             <e p="UnlitVertexColour_Alpha.shader" t="Include" />
           </e>
         </e>
+        <e p="SineVFX" t="Include">
+          <e p="LivingParticles" t="Include">
+            <e p="01.QuickStart.txt" t="Include" />
+            <e p="02.MaterialParameters.txt" t="Include" />
+            <e p="03.AudioReactiveEffects.txt" t="Include" />
+            <e p="04.UsingWithSRP.txt" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Audio" t="Include">
+                  <e p="LivingParticlesAudioModule.cs" t="Include" />
+                  <e p="LivingParticlesAudioSource.cs" t="Include" />
+                </e>
+                <e p="LivingParticleArrayController.cs" t="Include" />
+                <e p="LivingParticleController.cs" t="Include" />
+                <e p="ParticleGridGenerator.cs" t="Include" />
+                <e p="ParticleSystemRampGenerator.cs" t="Include" />
+                <e p="SuperSimpleMovement.cs" t="Include" />
+                <e p="UIController.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="LivingParticleAlphaBlended.shader" t="Include" />
+                <e p="LivingParticleAlphaBlendedArray.shader" t="Include" />
+                <e p="LivingParticleFloor.shader" t="Include" />
+                <e p="LivingParticleFloorArray.shader" t="Include" />
+                <e p="LivingParticleFloorPbr.shader" t="Include" />
+                <e p="LivingParticleFloorPbrArray.shader" t="Include" />
+                <e p="LivingParticleMaskedMorphPbr.shader" t="Include" />
+                <e p="LivingParticleMaskedMorphPbrArray.shader" t="Include" />
+                <e p="LivingParticleMaskedPbr.shader" t="Include" />
+                <e p="LivingParticleMaskedPbrArray.shader" t="Include" />
+                <e p="SkyboxProceduralDesaturated.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="SnapshotShaders" t="Include">
           <e p="Scenes" t="Include">
             <e p="Scripts" t="Include">

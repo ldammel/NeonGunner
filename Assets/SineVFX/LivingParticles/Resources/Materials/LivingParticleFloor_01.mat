@@ -4,14 +4,15 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: LivingParticleFloor_01
   m_Shader: {fileID: 4800000, guid: 2b6cdd1bf15d4914481d23cb528e7327, type: 3}
   m_ShaderKeywords: _AUDIOENABLED_ON _CAMERAFADEENABLED_ON _CLOSEFADEENABLED_ON _KEYWORD0_ON
     _LOCKYOFFSET_ON _OFFSETYLOCK_ON _RAMPENABLED_ON _USEPIXELDISTANCE_ON
   m_LightmapFlags: 0
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -24,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FinalTexture:
-        m_Texture: {fileID: 2800000, guid: a0c8393bc92291e438c0a270fbfa611f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 49a09d670da69bf45841f2597d16b2c3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -88,23 +89,23 @@ Material:
     - _CameraFadeOffset: 0.2
     - _CloseFadeDistance: 0.75
     - _CloseFadeEnabled: 1
-    - _Distance: 1.75
-    - _DistancePower: 1
+    - _Distance: 280
+    - _DistancePower: 0.92
     - _FadeCloseDistance: 0.65
-    - _FinalExp: 2
-    - _FinalMaskMultiply: 3
-    - _FinalPower: 3
+    - _FinalExp: 4
+    - _FinalMaskMultiply: 2.47
+    - _FinalPower: 2.41
     - _FinalPower2: 1.5
     - _IgnoreYAxis: 0
     - _InvFade: 1
     - _LockYOffset: 1
-    - _Noise01ScrollSpeed: 0.08
-    - _Noise02ScrollSpeed: 0.12
-    - _NoiseDistortionPower: 0.2
-    - _NoiseDistortionScrollSpeed: 0.04
-    - _NoisePower: 6
-    - _NoiseTiling: 0.05
-    - _OffsetPower: -1
+    - _Noise01ScrollSpeed: 0.02
+    - _Noise02ScrollSpeed: 0.03
+    - _NoiseDistortionPower: 0.003
+    - _NoiseDistortionScrollSpeed: 0.68
+    - _NoisePower: 6.41
+    - _NoiseTiling: -1.7
+    - _OffsetPower: 27.8
     - _OffsetYLock: 1
     - _RampEnabled: 1
     - _SoftParticleDistance: 0.25
@@ -117,8 +118,8 @@ Material:
     m_Colors:
     - _Affector: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _FinalColor: {r: 1, g: 0, b: 0, a: 1}
-    - _FinalColor2: {r: 0, g: 0, b: 0, a: 0}
+    - _FinalColor: {r: 0, g: 0.37446824, b: 1, a: 1}
+    - _FinalColor2: {r: 1, g: 1, b: 1, a: 1}
     - _FinalUnlitColor: {r: 0, g: 0, b: 0, a: 1}
     - _TintColor: {r: 1, g: 0, b: 0, a: 0.5}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 0}

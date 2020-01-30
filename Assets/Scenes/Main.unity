@@ -139,6 +139,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9fd72a063064ae42b02478259e0e866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &214001371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214001372}
+  m_Layer: 2
+  m_Name: particle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &214001372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214001371}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 184.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1465681141}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216392351
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +722,12 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!4 &1465681141 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7810394855421040821, guid: e88cd94284ff6dc4eb77598252717968,
+    type: 3}
+  m_PrefabInstance: {fileID: 6276908978292146487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1551913690 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5533721278569311297, guid: d545ce7d4a7f425429f36add55d1d3b7,
@@ -1044,6 +1080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: patternNumber
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425636695586132441, guid: 5ef128e635f8c8347becec5c204d6bf4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5203546925343054100, guid: 5ef128e635f8c8347becec5c204d6bf4, type: 3}
@@ -1916,6 +1957,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7425636695586132441, guid: 5ef128e635f8c8347becec5c204d6bf4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 360824727477406120, guid: 5ef128e635f8c8347becec5c204d6bf4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5ef128e635f8c8347becec5c204d6bf4, type: 3}
@@ -1930,6 +1976,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '---PLAYER---'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546908577533324498, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6276908978794783904, guid: e88cd94284ff6dc4eb77598252717968,
         type: 3}
@@ -2110,6 +2161,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Parameters.colorGradient.key1.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949249047136687842, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895104903294506995, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818854892950615662, guid: e88cd94284ff6dc4eb77598252717968,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e88cd94284ff6dc4eb77598252717968, type: 3}
