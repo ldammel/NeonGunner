@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Lean.Pool;
-using Library.Combat.Pooling;
+using Library.Character;
+using Library.Events;
 using Library.UI;
 using UnityEngine;
 
@@ -27,13 +27,19 @@ namespace Library.Combat.Enemy
         [SerializeField] private int amountUntilReset;
         [SerializeField] private int maxEnemxAmount;
         [SerializeField] private int waitTime;
+        public GameObject warningImage;
         public int spawnedAmount;
+        
+        public int pointsLost;
+        public bool onPoint;
+
 
         private bool _started;
 
         private void Update()
         {
             if (spawnedAmount <= amountUntilReset && !_started) StartCoroutine(SpawnEnemies(waitTime));
+            warningImage.SetActive(onPoint);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -43,7 +49,9 @@ namespace Library.Combat.Enemy
 
         IEnumerator SpawnEnemies(float initialWait)
         {
+            onPoint = false;
             _started = true;
+            UpdatePos();
             yield return new WaitForSeconds(initialWait);
             while (spawnedAmount < maxEnemxAmount)
             {
@@ -51,10 +59,18 @@ namespace Library.Combat.Enemy
                 {
                     yield return new WaitForSeconds(0.5f);
                     var s = pool.Spawn(spawnPoints[i].position, spawnPoints[i].rotation, pool.transform);
+                    s.GetComponent<CloseEnemy>().spawn = this;
                     spawnedAmount++;
                 }
             }
             _started = false;
+        }
+
+        public void UpdatePos()
+        {
+            WaveMovement.Instance.ReducePosition(pointsLost);
+            LevelEnd.Instance.ReduceScore();
+            pointsLost = 0;
         }
     }
 }

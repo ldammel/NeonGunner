@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Character;
 using Library.Combat.Pooling;
 using Library.Data;
 using Library.Events;
@@ -44,6 +45,7 @@ namespace Library.Combat.Enemy
             curHealth = 1;
             LevelEnd.Instance.enemiesKilled++;
             LevelEnd.Instance.score += Mathf.RoundToInt(scorePerKill * (SpawnNextPatternManager.Instance.levelNumber / 2));
+            WaveMovement.Instance.UpdatePosition(Mathf.RoundToInt(scorePerKill * (SpawnNextPatternManager.Instance.levelNumber / 2)));
 
             if (!deathSound.isPlaying)
             {

@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mov: {fileID: 4288810132371861985}
   pointsLossPerSecond: 10
-  baseSpeed: 5
+  baseSpeed: 10
 --- !u!114 &1112288054262939471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +149,7 @@ MonoBehaviour:
   _pool: {fileID: 0}
   isBuilding: 0
   isCloseEnemy: 1
+  isBomb: 0
 --- !u!54 &5521532504761419984
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -192,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  maxSpeed: 0
 --- !u!1001 &6146686383227665265
 PrefabInstance:
   m_ObjectHideFlags: 0

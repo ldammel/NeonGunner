@@ -19,17 +19,22 @@ public class Test : MonoBehaviour
             PauseMenu.Instance.TriggerMenu();
         }
         
-        if (InputManager.Instance.KeyDown("mg"))
+        if (InputManager.Instance.KeyDown("mg") || Input.GetKeyDown(KeyCode.Keypad1))
         {
             selector.SelectWeapon(0);
         }
-        if (InputManager.Instance.KeyDown("flame"))
+        if (InputManager.Instance.KeyDown("flame") || Input.GetKeyDown(KeyCode.Keypad2))
         {
             selector.SelectWeapon(1);
         }
-        if (InputManager.Instance.KeyDown("flak"))
+        if (SpawnNextPatternManager.Instance.levelNumber < 12) return;
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            selector.SelectWeapon(2);
-        }
+            selector.SwitchLane(-3);
+        }    
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            selector.SwitchLane(3);
+        }    
     }
 }

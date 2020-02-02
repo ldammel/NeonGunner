@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Character;
 using Library.Combat.Pooling;
 using Library.Events;
 using TMPro;
@@ -18,6 +19,7 @@ namespace Library.Data
             SpawnNextPatternManager.Instance.SpawnNextRoom(endPoint,patternNumber);
             
             LevelEnd.Instance.score += scoreAdd * SpawnNextPatternManager.Instance.levelNumber;
+            WaveMovement.Instance.UpdatePosition(scoreAdd * SpawnNextPatternManager.Instance.levelNumber);
         }
     }
 }

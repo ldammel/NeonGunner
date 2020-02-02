@@ -16,6 +16,7 @@ namespace Library.Combat
         private Vector3 _rotation = Vector3.zero;
         
         [SerializeField] private Image crosshair;
+        [SerializeField] private Slider sensitivitySlider;
 
         [SerializeField] private float sphereCastSize;
         
@@ -28,8 +29,14 @@ namespace Library.Combat
 
         private void Start()
         {
+            rotationSpeed = sensitivitySlider.value;
             crosshair = GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>();
             mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        }
+
+        public void ChangeSpeed()
+        {
+            rotationSpeed = sensitivitySlider.value;
         }
 
         private float ClampAngle(float angle, float from, float to)

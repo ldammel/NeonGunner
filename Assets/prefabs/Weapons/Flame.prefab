@@ -944,14 +944,14 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1.2310137
-          outSlope: 1.2310137
+          inSlope: 1.2583857
+          outSlope: 1.2583857
           tangentMode: 34
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.81233865
+          time: 0.794669
           value: 1
           inSlope: 1.4823244
           outSlope: -0.17678112
@@ -962,8 +962,8 @@ ParticleSystem:
         - serializedVersion: 3
           time: 1
           value: 0.69959855
-          inSlope: -1.6007636
-          outSlope: -1.6007636
+          inSlope: -1.4630105
+          outSlope: -1.4630105
           tangentMode: 34
           weightedMode: 0
           inWeight: 0.33333334
@@ -1103,7 +1103,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   RotationModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -4534,7 +4534,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a595d561ddb2ac4aad808dc54e08e6a, type: 2}
+  - {fileID: 2100000, guid: 1cfe02ffd0b74854ea5bcd1a3c63ac3c, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4556,7 +4556,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
+  m_RenderMode: 4
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -4574,7 +4574,7 @@ ParticleSystemRenderer:
   m_ApplyActiveColorSpace: 0
   m_AllowRoll: 0
   m_VertexStreams: 0001030405
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -5067,8 +5067,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 50
   crosshair: {fileID: 0}
+  sensitivitySlider: {fileID: 0}
   sphereCastSize: 0
   mainCamera: {fileID: 5480690399220358620}
+  isFlame: 0
 --- !u!1 &8879015947377951427
 GameObject:
   m_ObjectHideFlags: 0

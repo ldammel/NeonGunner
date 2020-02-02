@@ -30,6 +30,8 @@ public class SpawnNextPatternManager : MonoBehaviour
     [SerializeField] private float speedModifier;
 
     [SerializeField] private List<GameObject> spawned;
+
+    public bool tutorial;
     private void Start()
     {
         playerSpeed = GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>();
@@ -42,14 +44,23 @@ public class SpawnNextPatternManager : MonoBehaviour
 
     public void SpawnNextRoom(Component endPoint, int patternNumber)
     {
-        if (pool == null) return;
+        if (pool == null)
+        {
+            Debug.LogError("Could not find a Room!");
+            return;
+        }
         if(playerSpeed.moveSpeed< playerSpeed.maxSpeed)playerSpeed.moveSpeed += speedModifier;
         var transform1 = endPoint.transform;
         var room = pool[patternNumber].Spawn(transform1.position,transform1.rotation, pool[patternNumber].transform);
         room.GetComponent<EnemyPooled>().Pool = pool[patternNumber];
         spawned.Add(room);
         room.GetComponent<SpawnBuildingsInPattern>().SpawnEnemies();
-        if (levelNumber > 9)
+        if (levelNumber > 9 && !tutorial)
+        {
+            spawned[0].GetComponent<EnemyPooled>().ReturnToPool();
+            spawned.Remove(spawned[0]);
+        }
+        else if (tutorial && levelNumber > 20)
         {
             spawned[0].GetComponent<EnemyPooled>().ReturnToPool();
             spawned.Remove(spawned[0]);

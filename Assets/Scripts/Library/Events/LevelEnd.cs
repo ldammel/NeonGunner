@@ -27,11 +27,14 @@ namespace Library.Events
         [SerializeField] private GameObject rewardObj;
         [SerializeField] private CurrencyObject cur;
         public int score;
+        public int negativeScore;
 
         public float enemiesKilled;
         public float totalEnemies;
         public float totalShots;
         public float enemiesMissed;
+
+        public float waveDistance = 180;
 
         private int _reward;
 
@@ -52,12 +55,11 @@ namespace Library.Events
 
         private void Update()
         {
-            statsText.text = "Score: " + score + "\nKilled: " + enemiesKilled + " / " + totalEnemies;
+            statsText.text = "Score: " + score + " (" + negativeScore + ")   -   Wave: " + waveDistance + "m" + "   -   Killed: " + enemiesKilled + " / " + totalEnemies;
         }
 
-        private void OnCollisionEnter(Collision other)
+        public void End()
         {
-            if (!other.gameObject.CompareTag("Player")) return;
             LevelManager.Instance.winScreen.SetActive(true);
             FindObjectOfType<WaypointMovement>().moveSpeed = 0;
             CalculateReward();
@@ -72,6 +74,12 @@ namespace Library.Events
             rewardText.text = "Score: " + score;
             rewardObj.SetActive(true);
             statsText.gameObject.SetActive(false);
+        }
+
+        public void ReduceScore()
+        {
+            score -= negativeScore;
+            negativeScore = 0;
         }
 
     }

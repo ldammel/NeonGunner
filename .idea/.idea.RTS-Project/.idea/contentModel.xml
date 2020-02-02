@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-106464127.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Lucas.Dammel\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
+    <e p="C:\Users\Lucas\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lucas\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-1039986213.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lucas\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -228,6 +228,7 @@
                 <e p="CurrencyObject.cs" t="Include" />
                 <e p="WeaponValues.cs" t="Include" />
               </e>
+              <e p="WaveMovement.cs" t="Include" />
               <e p="WaypointMovement.cs" t="Include" />
             </e>
             <e p="Combat" t="Include">
@@ -296,17 +297,20 @@
               <e p="PauseMenu.cs" t="Include" />
               <e p="SceneSwitch.cs" t="Include" />
               <e p="SelectDifficulty.cs" t="Include" />
+              <e p="ShieldActivator.cs" t="Include" />
               <e p="UnityEvents" t="Include">
                 <e p="UnityFloatEvent.cs" t="Include" />
                 <e p="UnityIntEvent.cs" t="Include" />
                 <e p="UnityVoidEvent.cs" t="Include" />
               </e>
               <e p="Void.cs" t="Include" />
+              <e p="WallCollision.cs" t="Include" />
             </e>
             <e p="Tools" t="Include">
               <e p="Design.cs" t="Include" />
               <e p="InputManager.cs" t="Include" />
               <e p="Keybindings.cs" t="Include" />
+              <e p="ObjectActivator.cs" t="Include" />
               <e p="SoundManager.cs" t="Include" />
               <e p="SoundPlayer.cs" t="Include" />
             </e>

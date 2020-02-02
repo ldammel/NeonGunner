@@ -29,6 +29,14 @@ namespace Library.Combat
             collisionEvents = new List<ParticleCollisionEvent>();
         }
 
+        private void OnDisable()
+        {
+            var flameFxMain = flameFx.main;
+            flameFxMain.maxParticles = 0;
+            if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
+            soundPlaying = false;
+        }
+
         private void Update()
         {
             var o = flameFx.gameObject;

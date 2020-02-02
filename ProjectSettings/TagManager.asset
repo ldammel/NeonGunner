@@ -22,6 +22,7 @@ TagManager:
   - patterns
   - EnemyPool
   - CloseEnemy
+  - shield
   layers:
   - Default
   - TransparentFX

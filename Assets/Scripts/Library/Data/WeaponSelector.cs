@@ -1,4 +1,6 @@
-﻿using Library.Combat;
+﻿using System;
+using Library.Combat;
+using Library.Events;
 using UnityEngine;
 
 namespace Library.Data
@@ -9,6 +11,11 @@ namespace Library.Data
 
         private Quaternion _prevRotation;
 
+        public bool started = false;
+
+        public float targetPos;
+        public float prevPos;
+
         public void SelectWeapon(int index)
         {
             for (int i = 0; i < weapons.Length; i++)
@@ -18,6 +25,23 @@ namespace Library.Data
                 weapons[i].SetActive(i == index);
 
             }
+        }
+
+        private void Update()
+        {
+            if (PauseMenu.Instance.pauseActive) return;
+            var transform1 = transform;
+            var position = transform1.position;
+            position = new Vector3(Vector3.Slerp(new Vector3(position.x, position.y,position.z), new Vector3(targetPos, position.y,position.z), 3f*Time.deltaTime).x, position.y,position.z);
+            position = new Vector3(Mathf.Clamp(position.x ,-3,3), position.y,position.z);
+            transform1.position = position;
+        }
+
+        public void SwitchLane(float amount)
+        {
+            started = true;
+            targetPos += amount;
+            targetPos = Mathf.Clamp(targetPos, -3, 3);
         }
     }    
 }

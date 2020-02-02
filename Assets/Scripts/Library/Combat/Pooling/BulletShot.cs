@@ -44,11 +44,19 @@ namespace Library.Combat.Pooling
 
         private void OnCollisionEnter(Collision other)
         {
-            if (!other.collider.CompareTag("Player") && isEnemy)
+            if (other.collider.CompareTag("Player") && isEnemy)
             {
                 player.TakeDamage(damage);
             }
             _pool.ReturnToPool(gameObject);
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("shield") && isEnemy)
+            {
+                _pool.ReturnToPool(gameObject);
+            }
         }
     }
     

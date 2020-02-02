@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Library.Character;
 using Library.Events;
 using UnityEngine;
@@ -8,26 +9,31 @@ namespace Library.Combat.Enemy
     public class CloseEnemy : MonoBehaviour
     {
         [SerializeField] private WaypointMovement mov;
+        public SpawnCloseEnemies spawn;
         [SerializeField] private int pointsLossPerSecond;
         [SerializeField] private float baseSpeed;
 
         private bool _onPoint;
+        private bool _blinking;
+
+        private void OnDisable()
+        {
+            mov.moveSpeed = baseSpeed;
+            _onPoint = false;
+        }
 
         private void Update()
         {
             if (!_onPoint) return;
-            
-            
-            /*----------------------------------------------------------------------------------------------------------------------------
-            //TODO:  Calculate Per Second - Negative score display updates each second - score gets removed once all enemies are killed
-            ----------------------------------------------------------------------------------------------------------------------------*/
-            
-            
-            LevelEnd.Instance.score -= Mathf.RoundToInt((pointsLossPerSecond * SpawnNextPatternManager.Instance.levelNumber) * Time.deltaTime);
+            spawn.onPoint = true;
+            LevelEnd.Instance.negativeScore -= Mathf.RoundToInt((pointsLossPerSecond * SpawnNextPatternManager.Instance.levelNumber) * Time.deltaTime);
+            spawn.pointsLost -= Mathf.RoundToInt((pointsLossPerSecond * SpawnNextPatternManager.Instance.levelNumber) * Time.deltaTime);
         }
 
         private void OnTriggerEnter(Collider other)
         {
+            
+            if (other.CompareTag("shield")) gameObject.GetComponent<EnemyHealth>().TakeDamage(100);
             if (!other.CompareTag("CloseEnemy")) return;
             mov.moveSpeed = 0;
             _onPoint = true;
@@ -35,8 +41,10 @@ namespace Library.Combat.Enemy
 
         private void OnTriggerExit(Collider other)
         {
+            if (!other.CompareTag("CloseEnemy")) return;
             mov.moveSpeed = baseSpeed;
             _onPoint = false;
         }
+
     }
 }
