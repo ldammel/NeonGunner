@@ -60,7 +60,7 @@ namespace Library.Combat.Enemy
         private void PlayerDeath()
         {
             PauseMenu.Instance.pauseActive = true;
-            LevelManager.Instance.failScreen.SetActive(true);
+            LevelManager.Instance.winScreen.SetActive(true);
             LevelEnd.Instance.CalculateReward();
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
             curHealth = maxHealth;

@@ -71,7 +71,7 @@ namespace Library.Events
             _reward = Mathf.RoundToInt(enemiesKilled * ((enemiesKilled/totalEnemies)*2) * (SpawnNextPatternManager.Instance.levelNumber/2));
             cur.currentCurrency += _reward;
             score += _reward;
-            rewardText.text = "Score: " + score;
+            rewardText.text = "Score: " + score + "\nLevel: " + SpawnNextPatternManager.Instance.levelNumber;
             rewardObj.SetActive(true);
             statsText.gameObject.SetActive(false);
         }

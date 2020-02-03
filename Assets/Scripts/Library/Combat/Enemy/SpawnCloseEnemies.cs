@@ -49,10 +49,11 @@ namespace Library.Combat.Enemy
 
         IEnumerator SpawnEnemies(float initialWait)
         {
-            onPoint = false;
             _started = true;
+            onPoint = false;
             UpdatePos();
             yield return new WaitForSeconds(initialWait);
+            onPoint = false;
             while (spawnedAmount < maxEnemxAmount)
             {
                 for (int i = 0; i < spawnPoints.Length; i++)

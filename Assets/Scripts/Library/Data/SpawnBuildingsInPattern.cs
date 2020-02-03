@@ -16,7 +16,7 @@ public class SpawnBuildingsInPattern : MonoBehaviour
 
     private void Start()
     {
-        if(SpawnNextPatternManager.Instance.levelNumber >= 12) gameObject.GetComponent<ObjectActivator>().ActivateObjects();
+        if(SpawnNextPatternManager.Instance.levelNumber > 9) gameObject.GetComponent<ObjectActivator>().ActivateObjects();
         if (premadeRoom) return;
         pools = new LeanGameObjectPool[4];
         var x = GameObject.FindGameObjectsWithTag("patterns");

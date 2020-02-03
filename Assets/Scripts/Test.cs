@@ -27,7 +27,7 @@ public class Test : MonoBehaviour
         {
             selector.SelectWeapon(1);
         }
-        if (SpawnNextPatternManager.Instance.levelNumber < 12) return;
+        if (SpawnNextPatternManager.Instance.levelNumber < 10) return;
         if (Input.GetKeyDown(KeyCode.Q))
         {
             selector.SwitchLane(-3);
