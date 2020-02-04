@@ -1,5 +1,4 @@
-﻿using System;
-using Library.Character;
+﻿using Library.Character;
 using Library.Combat.Enemy;
 using Library.Data;
 using TMPro;
@@ -26,8 +25,9 @@ namespace Library.Events
         [SerializeField] private TextMeshProUGUI statsText;
         [SerializeField] private GameObject rewardObj;
         [SerializeField] private CurrencyObject cur;
-        public int score;
-        public int negativeScore;
+        public float score;
+        public float negativeScore;
+        public float totalNegativeScore = 1;
 
         public float enemiesKilled;
         public float totalEnemies;
@@ -55,7 +55,7 @@ namespace Library.Events
 
         private void Update()
         {
-            statsText.text = "Score: " + score + " (" + negativeScore + ")   -   Wave: " + waveDistance + "m" + "   -   Killed: " + enemiesKilled + " / " + totalEnemies;
+            statsText.text = "Score: " + score + " (" + negativeScore + ")   -   Wave: " + Mathf.RoundToInt(waveDistance) + "m";
         }
 
         public void End()
@@ -68,9 +68,6 @@ namespace Library.Events
         
         public void CalculateReward()
         {
-            _reward = Mathf.RoundToInt(enemiesKilled * ((enemiesKilled/totalEnemies)*2) * (SpawnNextPatternManager.Instance.levelNumber/2));
-            cur.currentCurrency += _reward;
-            score += _reward;
             rewardText.text = "Score: " + score + "\nLevel: " + SpawnNextPatternManager.Instance.levelNumber;
             rewardObj.SetActive(true);
             statsText.gameObject.SetActive(false);

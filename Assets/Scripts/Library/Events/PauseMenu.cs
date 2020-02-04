@@ -1,5 +1,4 @@
-﻿using Library.Tools;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Library.Events
 {
@@ -20,6 +19,8 @@ namespace Library.Events
 
         [SerializeField] private GameObject menuObject;
 
+        public AudioSource audio;
+
         public bool pauseActive;
 
         private void Start()
@@ -31,6 +32,11 @@ namespace Library.Events
         {
             Cursor.visible = pauseActive;
             Cursor.lockState = pauseActive ? CursorLockMode.None : CursorLockMode.Locked;
+            if (pauseActive)
+            {
+                audio.Pause();
+            }
+            else audio.UnPause();
         }
 
         public void Quit()

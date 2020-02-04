@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Lucas\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Lucas\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-1039986213.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Lucas\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
+    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-106464127.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lucas.Dammel\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -272,7 +272,6 @@
               <e p="SpawnPattern.cs" t="Include" />
               <e p="WeaponSelectionManager.cs" t="Include" />
               <e p="WeaponSelector.cs" t="Include" />
-              <e p="WeaponSlotManager.cs" t="Include" />
             </e>
             <e p="Events" t="Include">
               <e p="BaseEvents" t="Include">
@@ -307,6 +306,7 @@
               <e p="WallCollision.cs" t="Include" />
             </e>
             <e p="Tools" t="Include">
+              <e p="BlockSpawner.cs" t="Include" />
               <e p="Design.cs" t="Include" />
               <e p="InputManager.cs" t="Include" />
               <e p="Keybindings.cs" t="Include" />
@@ -316,15 +316,9 @@
             </e>
             <e p="UI" t="Include">
               <e p="HealthText.cs" t="Include" />
+              <e p="LoadHighscore.cs" t="Include" />
               <e p="NotificationManager.cs" t="Include" />
               <e p="NotificationTrigger.cs" t="Include" />
-              <e p="WeaponUpgrades" t="Include">
-                <e p="UpgradeFlak.cs" t="Include" />
-                <e p="UpgradeFlame.cs" t="Include" />
-                <e p="UpgradeGas.cs" t="Include" />
-                <e p="UpgradeLaser.cs" t="Include" />
-                <e p="UpgradeMG.cs" t="Include" />
-              </e>
             </e>
           </e>
           <e p="Test.cs" t="Include" />
@@ -367,37 +361,6 @@
                 <e p="SkyboxProceduralDesaturated.shader" t="Include" />
               </e>
             </e>
-          </e>
-        </e>
-        <e p="SnapshotShaders" t="Include">
-          <e p="Scenes" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="CameraMove.cs" t="Include" />
-              <e p="Hover.cs" t="Include" />
-              <e p="Rotate.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="SnapshotCanvas.cs" t="Include" />
-            <e p="SnapshotFilter.cs" t="Include" />
-            <e p="SnapshotMode.cs" t="Include" />
-          </e>
-          <e p="Shaders" t="Include">
-            <e p="Base.shader" t="Include" />
-            <e p="Bloom.shader" t="Include" />
-            <e p="CRTScreen.shader" t="Include" />
-            <e p="EdgeBlur.shader" t="Include" />
-            <e p="EdgeDetect.shader" t="Include" />
-            <e p="GaussianBlur.shader" t="Include" />
-            <e p="Greyscale.shader" t="Include" />
-            <e p="Neon.shader" t="Include" />
-            <e p="Painting.shader" t="Include" />
-            <e p="PixelGB.shader" t="Include" />
-            <e p="PixelNES.shader" t="Include" />
-            <e p="PixelSNES.shader" t="Include" />
-            <e p="Pride.shader" t="Include" />
-            <e p="Sepia.shader" t="Include" />
-            <e p="Silhouette.shader" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

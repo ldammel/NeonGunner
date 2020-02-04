@@ -29,8 +29,6 @@ namespace Library.Combat.Enemy
         [SerializeField] private int waitTime;
         public GameObject warningImage;
         public int spawnedAmount;
-        
-        public int pointsLost;
         public bool onPoint;
 
 
@@ -40,11 +38,12 @@ namespace Library.Combat.Enemy
         {
             if (spawnedAmount <= amountUntilReset && !_started) StartCoroutine(SpawnEnemies(waitTime));
             warningImage.SetActive(onPoint);
+            WaveMovement.Instance.ReducePosition();
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if(other.CompareTag("Enemy")) NotificationManager.Instance.SetNewNotification("Enemies Incoming from behind!", 5f);
+            if(other.CompareTag("Enemy") && GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>().moveSpeed > 15) NotificationManager.Instance.SetNewNotification("Enemies Incoming from behind!", 2f, Color.red);
         }
 
         IEnumerator SpawnEnemies(float initialWait)
@@ -69,9 +68,8 @@ namespace Library.Combat.Enemy
 
         public void UpdatePos()
         {
-            WaveMovement.Instance.ReducePosition(pointsLost);
+            onPoint = false;
             LevelEnd.Instance.ReduceScore();
-            pointsLost = 0;
         }
     }
 }

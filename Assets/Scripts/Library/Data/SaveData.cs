@@ -1,4 +1,5 @@
 ﻿using Library.Character.ScriptableObjects;
+using Library.Events;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -7,7 +8,6 @@ namespace Library.Data
     public class SaveData : MonoBehaviour
     {
         public static SaveData Instance;
-
         private void Awake()
         {
             if (Instance != null)
@@ -22,6 +22,21 @@ namespace Library.Data
         public CurrencyObject cO;
         public WeaponValues wV;
         
+        private float _score1 = 0;
+        private float _score2 = 0;
+        private float _score3 = 0;
+        private float _score4 = 0;
+        private float _score5 = 0;
+
+        private void Start()
+        {
+            _score1 = PlayerPrefs.GetInt("HighScore1");
+            _score2 = PlayerPrefs.GetInt("HighScore2");
+            _score3 = PlayerPrefs.GetInt("HighScore3");
+            _score4 = PlayerPrefs.GetInt("HighScore4");
+            _score5 = PlayerPrefs.GetInt("HighScore5");
+        }
+
         [Button]
         public void SaveAllData()
         {
@@ -96,6 +111,51 @@ namespace Library.Data
             wV.gasMaxRadiusUpgrade = PlayerPrefs.GetFloat("gasMaxRadiusUpgrade", wV.gasMaxRadiusUpgrade);
             
             Debug.Log("Loaded Data");
+        }
+
+        public void SaveHighScore(string name)
+        {
+
+            if (LevelEnd.Instance.score > _score1)
+            {
+                _score5 = _score4;
+                _score4 = _score3;
+                _score3 = _score2;
+                _score2 = _score1;
+                _score1 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore1", LevelEnd.Instance.score);
+                PlayerPrefs.SetString("HighScore1Name", name);
+            }
+            else if (LevelEnd.Instance.score > _score2)
+            {
+                _score5 = _score4;
+                _score4 = _score3;
+                _score3 = _score2;
+                _score2 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore2", LevelEnd.Instance.score);
+                PlayerPrefs.SetString("HighScore2Name", name);
+            }
+            else if (LevelEnd.Instance.score > _score3)
+            {
+                _score5 = _score4;
+                _score4 = _score3;
+                _score3 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore3", LevelEnd.Instance.score);
+                PlayerPrefs.SetString("HighScore3Name", name);
+            }
+            else if (LevelEnd.Instance.score > _score4)
+            {
+                _score5 = _score4;
+                _score4 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore4", LevelEnd.Instance.score);
+                PlayerPrefs.SetString("HighScore4Name", name);
+            }
+            else if (LevelEnd.Instance.score > _score5)
+            {
+                _score5 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore5", LevelEnd.Instance.score);
+                PlayerPrefs.SetString("HighScore5Name", name);
+            }
         }
     }
 }

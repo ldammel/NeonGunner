@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using Library.Character;
+﻿using Library.Character;
 using Library.Events;
 using UnityEngine;
 
@@ -18,16 +16,17 @@ namespace Library.Combat.Enemy
 
         private void OnDisable()
         {
-            mov.moveSpeed = baseSpeed;
             _onPoint = false;
+            mov.moveSpeed = baseSpeed;
         }
 
         private void Update()
         {
+            if (PauseMenu.Instance.pauseActive) return;
             if (!_onPoint) return;
             spawn.onPoint = true;
-            LevelEnd.Instance.negativeScore -= Mathf.RoundToInt((pointsLossPerSecond * SpawnNextPatternManager.Instance.levelNumber) * Time.deltaTime);
-            spawn.pointsLost -= Mathf.RoundToInt((pointsLossPerSecond * SpawnNextPatternManager.Instance.levelNumber) * Time.deltaTime);
+            LevelEnd.Instance.negativeScore -= Mathf.RoundToInt(pointsLossPerSecond  * Time.deltaTime);
+            LevelEnd.Instance.totalNegativeScore += Mathf.RoundToInt(pointsLossPerSecond  * Time.deltaTime);
         }
 
         private void OnTriggerEnter(Collider other)

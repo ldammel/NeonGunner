@@ -402,8 +402,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 50
   crosshair: {fileID: 0}
+  sensitivitySlider: {fileID: 0}
   sphereCastSize: 0
   mainCamera: {fileID: 4383028443337933467}
+  isFlame: 0
 --- !u!1 &6301452196031237409
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +417,6 @@ GameObject:
   - component: {fileID: 3246677121533645370}
   - component: {fileID: 4383028443337933467}
   - component: {fileID: 4962361031502296306}
-  - component: {fileID: 3255920917210850145}
   - component: {fileID: 1709284258}
   m_Layer: 2
   m_Name: Camera
@@ -489,21 +490,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6301452196031237409}
   m_Enabled: 1
---- !u!114 &3255920917210850145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6301452196031237409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1e20b1465bf764b99239e2a0c36192, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useCanvas: 0
-  snapshotCanvasPrefab: {fileID: 2654080978173619198, guid: 3a9765b469d010f4da2f7ecc008810d1,
-    type: 3}
 --- !u!114 &1709284258
 MonoBehaviour:
   m_ObjectHideFlags: 0

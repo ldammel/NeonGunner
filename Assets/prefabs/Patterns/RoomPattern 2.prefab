@@ -57,13 +57,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418271708111157808}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0.486, y: 6.7, z: 0}
   m_LocalScale: {x: 0.055727996, y: 12.03, z: 1}
   m_Children: []
   m_Father: {fileID: 3182642954164327202}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!33 &418271708111157812
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -195,8 +195,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294959872
-  m_fontColor: {r: 0, g: 0.89056206, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -929,7 +929,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 406df7549dfb9124baaa4ff09135e7a6, type: 2}
+  - {fileID: 2100000, guid: a7783c20b9654f948b3edd5f42a79964, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2005,6 +2005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificationText: Bombs ahead!
   displayTime: 3
+  tutorial: 0
 --- !u!1 &8408263527241684933
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,6 +3137,10 @@ PrefabInstance:
     - target: {fileID: 1096536808823910, guid: 48947c277d5f6bf42931b4371e5e4ccb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096536808823910, guid: 48947c277d5f6bf42931b4371e5e4ccb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4027244344758218, guid: 48947c277d5f6bf42931b4371e5e4ccb, type: 3}
       propertyPath: m_LocalPosition.x

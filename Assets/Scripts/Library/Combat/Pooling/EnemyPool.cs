@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Lean.Pool;
 using UnityEngine;
 
 namespace Library.Combat.Pooling

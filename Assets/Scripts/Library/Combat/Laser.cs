@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using Library.Combat.Enemy;
-using Library.Data;
+﻿using Library.Combat.Enemy;
 using Library.Events;
 using UnityEngine;
 

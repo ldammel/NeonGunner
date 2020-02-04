@@ -1,6 +1,6 @@
-﻿using System;
+﻿using System.Collections;
+using Library.Character;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Library.UI
 {
@@ -8,11 +8,34 @@ namespace Library.UI
  {
   [SerializeField] private string notificationText;
   [SerializeField] private float displayTime;
+  [SerializeField] private Color color = Color.white;
+
+  private WaypointMovement player;
+  private float baseSpeed;
+  public bool tutorial;
+
+  private void Start()
+  {
+   player = GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>();
+   baseSpeed = player.moveSpeed;
+  }
 
   private void OnTriggerEnter(Collider other)
   {
    if (!other.CompareTag("Player")) return;
-   NotificationManager.Instance.SetNewNotification(notificationText, displayTime);
+   if (tutorial)
+   {
+    StartCoroutine(Tutorial());
+   }
+   else NotificationManager.Instance.SetNewNotification(notificationText, displayTime, color);
+  }
+
+  IEnumerator Tutorial()
+  {
+   player.moveSpeed = 5;
+   NotificationManager.Instance.SetNewNotification(notificationText, displayTime, color);
+   yield return new WaitForSeconds(displayTime);
+   player.moveSpeed = baseSpeed;
   }
  }
 }

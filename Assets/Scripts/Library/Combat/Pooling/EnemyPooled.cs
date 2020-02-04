@@ -1,5 +1,4 @@
-﻿using System;
-using Lean.Pool;
+﻿using Lean.Pool;
 using Library.Combat.Enemy;
 using Library.Events;
 using UnityEngine;

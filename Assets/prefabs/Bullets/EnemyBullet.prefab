@@ -112,6 +112,7 @@ MonoBehaviour:
   moveSpeed: 60
   maxLifeTime: 3
   damage: 10
+  vfx: {fileID: 100014, guid: d6465a07953ca3746a6c29632c44fb9a, type: 3}
   isEnemy: 1
 --- !u!65 &2766835713533738013
 BoxCollider:

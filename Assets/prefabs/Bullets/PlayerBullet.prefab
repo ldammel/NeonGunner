@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4468534938057636108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 74, y: 0.76, z: 57.745}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 29.681122}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 30}
   m_Children:
   - {fileID: 8330697391708182117}
   m_Father: {fileID: 0}
@@ -127,6 +127,7 @@ MonoBehaviour:
   moveSpeed: 150
   maxLifeTime: 0.5
   damage: 0
+  vfx: {fileID: 0}
   isEnemy: 0
 --- !u!1001 &8011889537061686955
 PrefabInstance:
@@ -194,6 +195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086663826993722954, guid: 43f5251e342aab445a2a7d000da783c2,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1232662025842899049, guid: 43f5251e342aab445a2a7d000da783c2,
         type: 3}

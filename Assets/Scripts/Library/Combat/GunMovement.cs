@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Library.Combat.Enemy;
+﻿using Library.Combat.Enemy;
 using Library.Events;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Library.Combat

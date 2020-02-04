@@ -35,23 +35,20 @@ namespace Library.UI
             }
         }
 
-        public void SetNewNotification(string message, float displayTime)
+        public void SetNewNotification(string message, float displayTime, Color color)
         {
             if (_notificationCoroutine != null) StopCoroutine(_notificationCoroutine);
-            _notificationCoroutine = FadeOutNotification(message, displayTime);
+            _notificationCoroutine = FadeOutNotification(message, displayTime, color);
             StartCoroutine(_notificationCoroutine);
         }
 
-        private IEnumerator FadeOutNotification(string message, float time )
+        private IEnumerator FadeOutNotification(string message, float time , Color color)
         {
             displayText.text = message;
-            float t = 0;
-            while (t < time)
-            {
-                t += Time.unscaledDeltaTime;
-                displayText.color = new Color(displayText.color.r,displayText.color.g,displayText.color.b,Mathf.Lerp(1f,0f,t/time));
-                yield return null;
-            }
+            displayText.color = color;
+            displayText.gameObject.SetActive(true);
+            yield return  new WaitForSeconds(time);
+            displayText.gameObject.SetActive(false);
         }
     }
 }

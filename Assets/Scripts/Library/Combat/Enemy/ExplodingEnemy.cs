@@ -1,5 +1,4 @@
-﻿using System;
-using Library.Character;
+﻿using Library.Character;
 using Library.Combat.Pooling;
 using UnityEngine;
 

@@ -1,5 +1,5 @@
-﻿using System;
-using Library.Events;
+﻿using Library.Events;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Library.Character
@@ -9,7 +9,10 @@ namespace Library.Character
         public static WaveMovement Instance;
 
         private float _distanceToWave;
+        private float _baseDistance = 200;
 
+        public float zValue;
+        
         private void Awake()
         {
             if (Instance != null)
@@ -20,22 +23,12 @@ namespace Library.Character
 
             Instance = this;
         }
-        
 
-        public void UpdatePosition(int scoreChange)
+        public void ReducePosition()
         {
-            var zValue = scoreChange / 100;
-            transform.localPosition = new Vector3(0,0,transform.localPosition.z - zValue);
-            _distanceToWave = 360 - transform.localPosition.z;
-            LevelEnd.Instance.waveDistance = _distanceToWave;
-            if( transform.localPosition.z >= 365) LevelEnd.Instance.End();
-        }
-        
-        
-        public void ReducePosition(int scoreChange)
-        {
-            var zValue = scoreChange / 50;
-            transform.localPosition = new Vector3(0,0,transform.localPosition.z - zValue);
+            if (LevelEnd.Instance.totalNegativeScore == 0) return;
+            zValue = 200*(LevelEnd.Instance.totalNegativeScore / LevelEnd.Instance.score);
+            transform.localPosition = new Vector3(0,0,_baseDistance + zValue);
             _distanceToWave = 360 - transform.localPosition.z;
             LevelEnd.Instance.waveDistance = _distanceToWave;
             if( transform.localPosition.z >= 365) LevelEnd.Instance.End();

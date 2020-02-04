@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Library.Character;
 using Library.Combat.Pooling;
 using TMPro;
 using UnityEngine;
-using Object = UnityEngine.Object;
 using Lean.Pool;
 
 public class SpawnNextPatternManager : MonoBehaviour
@@ -39,7 +37,7 @@ public class SpawnNextPatternManager : MonoBehaviour
 
     public void UpdateLevelText(TextMeshProUGUI text)
     {
-        text.text = "LEVEL: " + levelNumber;
+        if(text != null)text.text = "LEVEL: " + levelNumber;
     }
 
     public void SpawnNextRoom(Component endPoint, int patternNumber)
@@ -54,7 +52,7 @@ public class SpawnNextPatternManager : MonoBehaviour
         var room = pool[patternNumber].Spawn(transform1.position,transform1.rotation, pool[patternNumber].transform);
         room.GetComponent<EnemyPooled>().Pool = pool[patternNumber];
         spawned.Add(room);
-        room.GetComponent<SpawnBuildingsInPattern>().SpawnEnemies();
+        if(room.GetComponent<SpawnBuildingsInPattern>() != null)room.GetComponent<SpawnBuildingsInPattern>().SpawnEnemies();
         if (levelNumber > 9 && !tutorial)
         {
             spawned[0].GetComponent<EnemyPooled>().ReturnToPool();

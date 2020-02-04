@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: LivingParticleFloor_01Audio
   m_Shader: {fileID: 4800000, guid: 2b6cdd1bf15d4914481d23cb528e7327, type: 3}
   m_ShaderKeywords: _AUDIOAMPLITUDEENABLED_ON _AUDIOENABLED_ON _AUDIOSPECTRUMENABLED_ON
@@ -69,16 +70,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AudioAmplitudeEmissionPower: 1
+    - _AudioAmplitudeEmissionPower: 2.02
     - _AudioAmplitudeEnabled: 1
-    - _AudioAmplitudeOffsetPower: 1
+    - _AudioAmplitudeOffsetPower: 0.73
     - _AudioEnabled: 1
     - _AudioMaskAffectsAmplitude: 0
     - _AudioMaskEnabled: 0
     - _AudioMaskExp: 1
     - _AudioMaskMultiply: 1
     - _AudioPower: 1
-    - _AudioSpectrumDistanceTiling: 4
+    - _AudioSpectrumDistanceTiling: 27.4
     - _AudioSpectrumEnabled: 1
     - _AudioSpectrumMaskEnabled: 0
     - _AudioSpectrumMaskExp: 1
@@ -89,7 +90,7 @@ Material:
     - _CameraFadeOffset: 0.2
     - _CloseFadeDistance: 0.75
     - _CloseFadeEnabled: 1
-    - _Distance: 1.75
+    - _Distance: 3
     - _DistancePower: 1
     - _FadeCloseDistance: 0.65
     - _FinalExp: 2
@@ -103,8 +104,8 @@ Material:
     - _Noise02ScrollSpeed: 0.12
     - _NoiseDistortionPower: 0.2
     - _NoiseDistortionScrollSpeed: 0.04
-    - _NoisePower: 6
-    - _NoiseTiling: 0.05
+    - _NoisePower: 3.17
+    - _NoiseTiling: 3.39
     - _OffsetPower: -1
     - _OffsetYLock: 1
     - _RampEnabled: 1

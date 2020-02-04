@@ -1,5 +1,4 @@
-﻿using System;
-using Library.Character.ScriptableObjects;
+﻿using Library.Character.ScriptableObjects;
 using UnityEngine;
 
 

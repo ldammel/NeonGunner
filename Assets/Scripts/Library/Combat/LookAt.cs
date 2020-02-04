@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Library.Combat
 {
@@ -9,7 +8,7 @@ namespace Library.Combat
 
         private void Start()
         {
-            target = GameObject.Find("---PLAYER---/Player/SlotTwo");
+            target = GameObject.Find("---PLAYER---/Player/Cube");
         }
 
         private void Update()

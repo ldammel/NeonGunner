@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Character;
 using Library.Combat.Enemy;
 using UnityEngine;
 
@@ -10,12 +11,13 @@ namespace Library.Combat.Pooling
         private float _lifeTime;
         public float maxLifeTime;
         public float damage;
-
+        public GameObject vfx;
+        
         public bool isEnemy;
 
         private EnemyHealth player;
         private BulletShotPool _pool;
-
+        
         public BulletShotPool Pool
         {
             get => _pool;
@@ -47,6 +49,8 @@ namespace Library.Combat.Pooling
             if (other.collider.CompareTag("Player") && isEnemy)
             {
                 player.TakeDamage(damage);
+                if(vfx != null)Instantiate(vfx, other.GetContact(0).point, other.collider.transform.rotation, other.collider.transform);
+                other.gameObject.GetComponentInChildren<WaypointMovement>().SwitchMaterial(0.15f);
             }
             _pool.ReturnToPool(gameObject);
         }

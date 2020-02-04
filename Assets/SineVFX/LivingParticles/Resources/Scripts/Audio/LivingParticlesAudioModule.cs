@@ -15,7 +15,10 @@ public class LivingParticlesAudioModule : MonoBehaviour {
     private ParticleSystemRenderer psr;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
+        if (audioPosition == null) audioPosition = GameObject.Find("---PLAYER---/Player").transform;
+        if (LPaSourse == null) LPaSourse = GameObject.Find("---PLAYER---/Player").GetComponent<LivingParticlesAudioSource>();
         psr = GetComponent<ParticleSystemRenderer>();
         switch (LPaSourse.numberOfBands)
         {

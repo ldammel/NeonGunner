@@ -1,7 +1,5 @@
-﻿using System;
-using Lean.Pool;
+﻿using Lean.Pool;
 using Library.Events;
-using Library.Tools;
 using UnityEngine;
 
 namespace Library.Combat.Pooling

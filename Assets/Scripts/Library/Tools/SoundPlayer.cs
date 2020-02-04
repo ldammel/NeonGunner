@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Library.Tools;
+﻿using Library.Tools;
 using UnityEngine;
 
 public class SoundPlayer : MonoBehaviour

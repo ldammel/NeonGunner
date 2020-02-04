@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using Library.Events;
+﻿using Library.Events;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

@@ -19,6 +19,7 @@ namespace Library.Combat.Enemy
         public int scorePerKill;
 
         public AudioSource deathSound;
+        public GameObject deathVfx;
         public bool iscloseEnemy;
         public event Action<float> OnHealthPctChanged = delegate{  };
 
@@ -44,8 +45,7 @@ namespace Library.Combat.Enemy
             if (!(curHealth <= 0) || player) return;
             curHealth = 1;
             LevelEnd.Instance.enemiesKilled++;
-            LevelEnd.Instance.score += Mathf.RoundToInt(scorePerKill * (SpawnNextPatternManager.Instance.levelNumber / 2));
-            WaveMovement.Instance.UpdatePosition(Mathf.RoundToInt(scorePerKill * (SpawnNextPatternManager.Instance.levelNumber / 2)));
+            LevelEnd.Instance.score += scorePerKill;
 
             if (!deathSound.isPlaying)
             {
@@ -53,6 +53,7 @@ namespace Library.Combat.Enemy
             }
             
             if (iscloseEnemy) SpawnCloseEnemies.Instance.spawnedAmount--;
+            Instantiate(deathVfx, transform.position, transform.rotation);
             gameObject.GetComponent<EnemyPooled>().ReturnToPool();
             curHealth = maxHealth;
         }

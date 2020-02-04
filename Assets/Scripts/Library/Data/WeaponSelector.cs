@@ -1,5 +1,4 @@
-﻿using System;
-using Library.Combat;
+﻿using Library.Combat;
 using Library.Events;
 using UnityEngine;
 
@@ -10,6 +9,8 @@ namespace Library.Data
         [SerializeField] private GameObject[] weapons;
 
         private Quaternion _prevRotation;
+
+        public float transitionSpeed = 3f;
 
         public bool started = false;
 
@@ -32,7 +33,7 @@ namespace Library.Data
             if (PauseMenu.Instance.pauseActive) return;
             var transform1 = transform;
             var position = transform1.position;
-            position = new Vector3(Vector3.Slerp(new Vector3(position.x, position.y,position.z), new Vector3(targetPos, position.y,position.z), 3f*Time.deltaTime).x, position.y,position.z);
+            position = new Vector3(Vector3.Slerp(new Vector3(position.x, position.y,position.z), new Vector3(targetPos, position.y,position.z), transitionSpeed*Time.deltaTime).x, position.y,position.z);
             position = new Vector3(Mathf.Clamp(position.x ,-3,3), position.y,position.z);
             transform1.position = position;
         }
