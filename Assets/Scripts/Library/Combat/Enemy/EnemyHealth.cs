@@ -3,6 +3,8 @@ using Library.Character;
 using Library.Combat.Pooling;
 using Library.Data;
 using Library.Events;
+using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Library.Combat.Enemy
@@ -17,6 +19,8 @@ namespace Library.Combat.Enemy
         public bool godMode;
 
         public int scorePerKill;
+        public GameObject killText;
+        public Transform killTextPoint;
 
         public AudioSource deathSound;
         public GameObject deathVfx;
@@ -46,6 +50,8 @@ namespace Library.Combat.Enemy
             curHealth = 1;
             LevelEnd.Instance.enemiesKilled++;
             LevelEnd.Instance.score += scorePerKill;
+            killText.GetComponent<TextMeshPro>().text = scorePerKill.ToString();
+            Instantiate(killText, killTextPoint.position, Quaternion.identity);
 
             if (!deathSound.isPlaying)
             {

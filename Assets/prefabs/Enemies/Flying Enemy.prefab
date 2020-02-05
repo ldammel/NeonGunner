@@ -195,6 +195,9 @@ MonoBehaviour:
   player: 0
   godMode: 0
   scorePerKill: 100
+  killText: {fileID: 6186637870116070455, guid: 9f7f1336a63d78d439689ae5e5cafeeb,
+    type: 3}
+  killTextPoint: {fileID: 8316347138113221264}
   deathSound: {fileID: 6697611754318035362, guid: 507b4169413c6dd4a819dbdbf7698494,
     type: 3}
   deathVfx: {fileID: 168542, guid: fadb39df6c5b86c4ba47e4f9f2e35974, type: 3}

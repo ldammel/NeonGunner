@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6637624447802519289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4877481886304520133}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4877481886304520133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637624447802519289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8513780049630712335}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8316347139329622347
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,9 +133,12 @@ MonoBehaviour:
   player: 0
   godMode: 0
   scorePerKill: 50
+  killText: {fileID: 6186637870116070455, guid: 9f7f1336a63d78d439689ae5e5cafeeb,
+    type: 3}
+  killTextPoint: {fileID: 4877481886304520133}
   deathSound: {fileID: 6697611754318035362, guid: 507b4169413c6dd4a819dbdbf7698494,
     type: 3}
-  deathVfx: {fileID: 168542, guid: fadb39df6c5b86c4ba47e4f9f2e35974, type: 3}
+  deathVfx: {fileID: 168542, guid: 71cbfb5d3b283814f91723055f69558e, type: 3}
   iscloseEnemy: 1
 --- !u!114 &6493277324922056057
 MonoBehaviour:

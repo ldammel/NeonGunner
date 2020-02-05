@@ -13,6 +13,7 @@ namespace Library.Data
         {
             if (!other.CompareTag("Player")) return;
             SpawnNextPatternManager.Instance.SpawnNextRoom(endPoint,patternNumber);
+            Debug.Log("Spawned room "+ patternNumber);
         }
     }
 }

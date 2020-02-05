@@ -51,7 +51,7 @@ namespace Library.Character
             updated = true;
             LevelEnd.Instance.score += Mathf.RoundToInt(trackingObject.transform.position.z - prevDist);
             prevDist = trackingObject.transform.position.z;
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(.5f);
             updated = false;
         }
     }

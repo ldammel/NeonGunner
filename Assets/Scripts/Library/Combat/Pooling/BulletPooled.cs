@@ -1,4 +1,5 @@
-﻿using Library.Events;
+﻿using System.Collections;
+using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat.Pooling
@@ -14,6 +15,7 @@ namespace Library.Combat.Pooling
 
         public bool isEnemy = false;
         public bool canFire;
+
         private GameObject player;
 
         private void Start()

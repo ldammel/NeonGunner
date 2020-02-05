@@ -114,6 +114,9 @@ MonoBehaviour:
   player: 0
   godMode: 0
   scorePerKill: 150
+  killText: {fileID: 6186637870116070455, guid: 9f7f1336a63d78d439689ae5e5cafeeb,
+    type: 3}
+  killTextPoint: {fileID: 4451479687817162250}
   deathSound: {fileID: 6697611754318035362, guid: 507b4169413c6dd4a819dbdbf7698494,
     type: 3}
   deathVfx: {fileID: 168542, guid: fadb39df6c5b86c4ba47e4f9f2e35974, type: 3}
@@ -164,6 +167,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionVfx: {fileID: 168542, guid: fadb39df6c5b86c4ba47e4f9f2e35974, type: 3}
   damage: 1000
+  switchTime: 0.4
+  rend: {fileID: 1414511696343574725}
+  switchMat: {fileID: 2100000, guid: 953afd909b044cd4fac7600c94a4871a, type: 2}
   col: {fileID: 8316347139329622346}
 --- !u!1001 &8699936325545805072
 PrefabInstance:
@@ -257,6 +263,12 @@ PrefabInstance:
 --- !u!4 &4451479687817162250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: da40c26e7312a31428399c17807aa7e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8699936325545805072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1414511696343574725 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: da40c26e7312a31428399c17807aa7e7,
     type: 3}
   m_PrefabInstance: {fileID: 8699936325545805072}
   m_PrefabAsset: {fileID: 0}

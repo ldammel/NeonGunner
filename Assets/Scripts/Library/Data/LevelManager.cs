@@ -40,7 +40,7 @@ namespace Library.Data
         public void Restart()
         {
             SaveData.Instance.SaveAllData();
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
     }

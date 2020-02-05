@@ -308,6 +308,7 @@
             <e p="Tools" t="Include">
               <e p="BlockSpawner.cs" t="Include" />
               <e p="Design.cs" t="Include" />
+              <e p="DestroyAfterTime.cs" t="Include" />
               <e p="InputManager.cs" t="Include" />
               <e p="Keybindings.cs" t="Include" />
               <e p="ObjectActivator.cs" t="Include" />

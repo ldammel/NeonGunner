@@ -1,33 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using Library.Tools;
 using UnityEngine;
 
 public class ShieldActivator : MonoBehaviour
 {
         [SerializeField] private GameObject shield;
+        [SerializeField] private Transform shieldPos;
         [SerializeField] private float activeTime;
 
-        private SphereCollider col;
-        private MeshRenderer rend;
-
-        private void Start()
+        private void Update()
         {
-                col = gameObject.GetComponent<SphereCollider>();
-                rend = gameObject.GetComponent<MeshRenderer>();
-        }
-
-        public void ActivateShield()
-        {
-                StartCoroutine(Activate());
+                if(Input.GetMouseButtonDown(0) && !shield.activeSelf) StartCoroutine(Activate());
         }
 
         IEnumerator Activate()
         {
+                var sTransform = shield.transform;
+                sTransform.position = shieldPos.position;
+                sTransform.rotation = shieldPos.rotation;
                 shield.SetActive(true);
-                col.enabled = false;
-                rend.enabled = false;
                 yield return new WaitForSeconds(activeTime);
-                col.enabled = true;
-                rend.enabled = true;
                 shield.SetActive(false);
         }
 }

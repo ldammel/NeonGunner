@@ -59,11 +59,6 @@ namespace Library.Combat
             {
                 if(hit.collider.gameObject.GetComponent<EnemyHealth>() != null) hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
             }
-            
-            if (hit.collider.gameObject.CompareTag("shield"))
-            {
-                hit.collider.gameObject.GetComponent<ShieldActivator>().ActivateShield();
-            }
 
             Instantiate(vfx, hit.point, hit.collider.transform.rotation);
         }
