@@ -43,7 +43,15 @@ namespace Library.Combat.Enemy
 
         private void OnTriggerEnter(Collider other)
         {
-            if(other.CompareTag("Enemy") && GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>().moveSpeed > 15) NotificationManager.Instance.SetNewNotification("Enemies Incoming from behind!", 2f, Color.red);
+            if (other.CompareTag("Enemy") && GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>().moveSpeed > 15)
+            {
+                NotificationManager.Instance.SetNewNotification("Enemies Incoming from behind!", 2f, Color.red);
+                onPoint = true;
+            }
+            else
+            {
+                onPoint = false;
+            }
         }
 
         IEnumerator SpawnEnemies(float initialWait)
@@ -68,8 +76,10 @@ namespace Library.Combat.Enemy
 
         public void UpdatePos()
         {
-            onPoint = false;
             LevelEnd.Instance.ReduceScore();
+            onPoint = false;
         }
+        
+        
     }
 }

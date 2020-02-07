@@ -22,21 +22,6 @@ namespace Library.Data
         public CurrencyObject cO;
         public WeaponValues wV;
         
-        private float _score1 = 0;
-        private float _score2 = 0;
-        private float _score3 = 0;
-        private float _score4 = 0;
-        private float _score5 = 0;
-
-        private void Start()
-        {
-            _score1 = PlayerPrefs.GetInt("HighScore1");
-            _score2 = PlayerPrefs.GetInt("HighScore2");
-            _score3 = PlayerPrefs.GetInt("HighScore3");
-            _score4 = PlayerPrefs.GetInt("HighScore4");
-            _score5 = PlayerPrefs.GetInt("HighScore5");
-        }
-
         [Button]
         public void SaveAllData()
         {
@@ -113,48 +98,63 @@ namespace Library.Data
             Debug.Log("Loaded Data");
         }
 
-        public void SaveHighScore(string name)
+        public void SaveHighScore(string playerName)
         {
 
-            if (LevelEnd.Instance.score > _score1)
+            if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore1"))
             {
-                _score5 = _score4;
-                _score4 = _score3;
-                _score3 = _score2;
-                _score2 = _score1;
-                _score1 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore5", PlayerPrefs.GetFloat("HighScore4"));
+                PlayerPrefs.SetString("HighScore5Name", PlayerPrefs.GetString("HighScore4Name"));
+                
+                PlayerPrefs.SetFloat("HighScore4", PlayerPrefs.GetFloat("HighScore3"));
+                PlayerPrefs.SetString("HighScore4Name", PlayerPrefs.GetString("HighScore3Name"));
+                
+                PlayerPrefs.SetFloat("HighScore3", PlayerPrefs.GetFloat("HighScore2"));
+                PlayerPrefs.SetString("HighScore3Name", PlayerPrefs.GetString("HighScore2Name"));
+                
+                PlayerPrefs.SetFloat("HighScore2", PlayerPrefs.GetFloat("HighScore1"));
+                PlayerPrefs.SetString("HighScore2Name", PlayerPrefs.GetString("HighScore1Name"));
+                
                 PlayerPrefs.SetFloat("HighScore1", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore1Name", name);
+                PlayerPrefs.SetString("HighScore1Name", playerName);
             }
-            else if (LevelEnd.Instance.score > _score2)
+            else if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore2"))
             {
-                _score5 = _score4;
-                _score4 = _score3;
-                _score3 = _score2;
-                _score2 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore5", PlayerPrefs.GetFloat("HighScore4"));
+                PlayerPrefs.SetString("HighScore5Name", PlayerPrefs.GetString("HighScore4Name"));
+                
+                PlayerPrefs.SetFloat("HighScore4", PlayerPrefs.GetFloat("HighScore3"));
+                PlayerPrefs.SetString("HighScore4Name", PlayerPrefs.GetString("HighScore3Name"));
+                
+                PlayerPrefs.SetFloat("HighScore3", PlayerPrefs.GetFloat("HighScore2"));
+                PlayerPrefs.SetString("HighScore3Name", PlayerPrefs.GetString("HighScore2Name"));
+                
                 PlayerPrefs.SetFloat("HighScore2", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore2Name", name);
+                PlayerPrefs.SetString("HighScore2Name", playerName);
             }
-            else if (LevelEnd.Instance.score > _score3)
+            else if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore3"))
             {
-                _score5 = _score4;
-                _score4 = _score3;
-                _score3 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore5", PlayerPrefs.GetFloat("HighScore4"));
+                PlayerPrefs.SetString("HighScore5Name", PlayerPrefs.GetString("HighScore4Name"));
+                
+                PlayerPrefs.SetFloat("HighScore4", PlayerPrefs.GetFloat("HighScore3"));
+                PlayerPrefs.SetString("HighScore4Name", PlayerPrefs.GetString("HighScore3Name"));
+                
                 PlayerPrefs.SetFloat("HighScore3", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore3Name", name);
+                PlayerPrefs.SetString("HighScore3Name", playerName);
             }
-            else if (LevelEnd.Instance.score > _score4)
+            else if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore4"))
             {
-                _score5 = _score4;
-                _score4 = LevelEnd.Instance.score;
+                PlayerPrefs.SetFloat("HighScore5", PlayerPrefs.GetFloat("HighScore4"));
+                PlayerPrefs.SetString("HighScore5Name", PlayerPrefs.GetString("HighScore4Name"));
+                
                 PlayerPrefs.SetFloat("HighScore4", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore4Name", name);
+                PlayerPrefs.SetString("HighScore4Name", playerName);
             }
-            else if (LevelEnd.Instance.score > _score5)
+            else if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore5"))
             {
-                _score5 = LevelEnd.Instance.score;
                 PlayerPrefs.SetFloat("HighScore5", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore5Name", name);
+                PlayerPrefs.SetString("HighScore5Name", playerName);
             }
         }
     }

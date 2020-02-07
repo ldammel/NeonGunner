@@ -114,7 +114,7 @@ MonoBehaviour:
   player: 0
   godMode: 0
   scorePerKill: 150
-  killText: {fileID: 6186637870116070455, guid: 9f7f1336a63d78d439689ae5e5cafeeb,
+  killText: {fileID: 7937955160102986843, guid: 9f7f1336a63d78d439689ae5e5cafeeb,
     type: 3}
   killTextPoint: {fileID: 4451479687817162250}
   deathSound: {fileID: 6697611754318035362, guid: 507b4169413c6dd4a819dbdbf7698494,
@@ -183,6 +183,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Virus
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: da40c26e7312a31428399c17807aa7e7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0bb4ddf323f967f4d87b78af5b43082f, type: 2}
     - target: {fileID: -4216859302048453862, guid: da40c26e7312a31428399c17807aa7e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -253,11 +258,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: -1504981713932161579, guid: da40c26e7312a31428399c17807aa7e7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0bb4ddf323f967f4d87b78af5b43082f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da40c26e7312a31428399c17807aa7e7, type: 3}
 --- !u!4 &4451479687817162250 stripped

@@ -35,14 +35,12 @@ namespace Library.Combat.Enemy
             if (other.CompareTag("shield")) gameObject.GetComponent<EnemyHealth>().TakeDamage(100);
             if (!other.CompareTag("CloseEnemy")) return;
             mov.moveSpeed = 0;
-            _onPoint = true;
         }
 
         private void OnTriggerExit(Collider other)
         {
             if (!other.CompareTag("CloseEnemy")) return;
             mov.moveSpeed = baseSpeed;
-            _onPoint = false;
         }
 
     }

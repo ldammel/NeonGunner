@@ -50,7 +50,7 @@ namespace Library.Combat.Enemy
             curHealth = 1;
             LevelEnd.Instance.enemiesKilled++;
             LevelEnd.Instance.score += scorePerKill;
-            killText.GetComponent<TextMeshPro>().text = scorePerKill.ToString();
+            killText.GetComponentInChildren<TextMeshPro>().text = scorePerKill.ToString();
             Instantiate(killText, killTextPoint.position, Quaternion.identity);
 
             if (!deathSound.isPlaying)
