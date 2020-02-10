@@ -20,6 +20,7 @@ namespace Library.Events
         {
             if (!_nova.activeSelf) return;
             var localScale = _nova.transform.localScale;
+            _nova.transform.Rotate(0,2,0);
             localScale = new Vector3((localScale.x + ((maxSize/time) * Time.deltaTime)), (localScale.y + ((maxSize/time) * Time.deltaTime)),(localScale.z + ((maxSize/time) * Time.deltaTime)));
             _nova.transform.localScale = localScale;
             if (!(_nova.transform.localScale.x >= maxSize)) return;

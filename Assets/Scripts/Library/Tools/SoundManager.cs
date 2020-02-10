@@ -48,6 +48,10 @@ namespace Library.Tools
                     source.clip = clips[5];
                     source.Play();
                     return;
+                case "Hit":
+                    source.clip = clips[6];
+                    source.Play();
+                    return;
                 case "Stop":
                     source.Stop();
                     return;

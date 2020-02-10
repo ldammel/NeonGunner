@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8316347139329622351}
   - component: {fileID: 8316347139329622348}
   - component: {fileID: 8316347139329622349}
-  - component: {fileID: 8316347139329622346}
   - component: {fileID: 513876215}
   - component: {fileID: 1112288054262939471}
   - component: {fileID: 5521532504761419984}
   - component: {fileID: 106127223842724383}
+  - component: {fileID: 6970399647872926047}
   m_Layer: 9
   m_Name: Exploding Enemy
   m_TagString: Enemy
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8316347139329622347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.799979, y: 1.799979, z: 1.799979}
   m_Children:
   - {fileID: 4451479687817162250}
   m_Father: {fileID: 0}
@@ -84,19 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &8316347139329622346
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316347139329622347}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.01, z: 1}
-  m_Center: {x: 0, y: 0.54, z: -8}
 --- !u!114 &513876215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,8 +104,6 @@ MonoBehaviour:
   killText: {fileID: 7937955160102986843, guid: 9f7f1336a63d78d439689ae5e5cafeeb,
     type: 3}
   killTextPoint: {fileID: 4451479687817162250}
-  deathSound: {fileID: 6697611754318035362, guid: 507b4169413c6dd4a819dbdbf7698494,
-    type: 3}
   deathVfx: {fileID: 168542, guid: fadb39df6c5b86c4ba47e4f9f2e35974, type: 3}
   iscloseEnemy: 0
 --- !u!114 &1112288054262939471
@@ -133,8 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15cae9c35c73480cb6763cf2e43387f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pool: {fileID: 0}
-  isBuilding: 0
+  pool: {fileID: 0}
   isCloseEnemy: 0
   isBomb: 1
 --- !u!54 &5521532504761419984
@@ -170,7 +154,19 @@ MonoBehaviour:
   switchTime: 0.4
   rend: {fileID: 1414511696343574725}
   switchMat: {fileID: 2100000, guid: 953afd909b044cd4fac7600c94a4871a, type: 2}
-  col: {fileID: 8316347139329622346}
+--- !u!65 &6970399647872926047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316347139329622347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.43, z: 0}
 --- !u!1001 &8699936325545805072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -178,11 +174,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8316347139329622351}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: da40c26e7312a31428399c17807aa7e7,
-        type: 3}
-      propertyPath: m_Name
-      value: Virus
-      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: da40c26e7312a31428399c17807aa7e7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -257,6 +248,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: da40c26e7312a31428399c17807aa7e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Virus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da40c26e7312a31428399c17807aa7e7, type: 3}

@@ -32,17 +32,9 @@ namespace Library.Combat.Enemy
 
         private void OnTriggerEnter(Collider other)
         {
-            
-            if (other.CompareTag("shield")) gameObject.GetComponent<EnemyHealth>().TakeDamage(100);
             if (!other.CompareTag("CloseEnemy")) return;
+            _onPoint = true;
             mov.moveSpeed = 0;
         }
-
-        private void OnTriggerExit(Collider other)
-        {
-            if (!other.CompareTag("CloseEnemy")) return;
-            mov.moveSpeed = baseSpeed;
-        }
-
     }
 }

@@ -32,9 +32,9 @@ namespace Library.UI
 
   IEnumerator Tutorial()
   {
-   player.moveSpeed = 5;
+   player.moveSpeed = 10;
    NotificationManager.Instance.SetNewNotification(notificationText, displayTime, color);
-   yield return new WaitForSeconds(displayTime);
+   yield return new WaitForSeconds(displayTime-2);
    player.moveSpeed = baseSpeed;
   }
  }

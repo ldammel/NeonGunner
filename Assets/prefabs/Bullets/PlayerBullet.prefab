@@ -121,11 +121,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7817876571762682305}
     m_Modifications:
-    - target: {fileID: 1740181045613590565, guid: 43f5251e342aab445a2a7d000da783c2,
-        type: 3}
-      propertyPath: m_Name
-      value: MGFire
-      objectReference: {fileID: 0}
     - target: {fileID: 2068109036010674382, guid: 43f5251e342aab445a2a7d000da783c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -181,10 +176,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1740181045613590565, guid: 43f5251e342aab445a2a7d000da783c2,
+        type: 3}
+      propertyPath: m_Name
+      value: MGFire
+      objectReference: {fileID: 0}
     - target: {fileID: 3086663826993722954, guid: 43f5251e342aab445a2a7d000da783c2,
         type: 3}
       propertyPath: m_Volume
-      value: 0.1
+      value: 0.162
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086663826993722954, guid: 43f5251e342aab445a2a7d000da783c2,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e6d931dbde3770048abd4e54db152239, type: 3}
+    - target: {fileID: 3086663826993722954, guid: 43f5251e342aab445a2a7d000da783c2,
+        type: 3}
+      propertyPath: Pan2D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086663826993722954, guid: 43f5251e342aab445a2a7d000da783c2,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 1232662025842899049, guid: 43f5251e342aab445a2a7d000da783c2,
         type: 3}

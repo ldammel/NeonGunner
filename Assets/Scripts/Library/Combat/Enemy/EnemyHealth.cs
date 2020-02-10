@@ -21,15 +21,13 @@ namespace Library.Combat.Enemy
         public int scorePerKill;
         public GameObject killText;
         public Transform killTextPoint;
-
-        public AudioSource deathSound;
+        
         public GameObject deathVfx;
         public bool iscloseEnemy;
         public event Action<float> OnHealthPctChanged = delegate{  };
 
         private void Start()
         {
-            deathSound = GameObject.Find("---PLAYER---/Sounds/DeathSound").GetComponent<AudioSource>();
             curHealth = maxHealth;
         }
         
@@ -52,11 +50,6 @@ namespace Library.Combat.Enemy
             LevelEnd.Instance.score += scorePerKill;
             killText.GetComponentInChildren<TextMeshPro>().text = scorePerKill.ToString();
             Instantiate(killText, killTextPoint.position, Quaternion.identity);
-
-            if (!deathSound.isPlaying)
-            {
-                deathSound.Play();
-            }
             
             if (iscloseEnemy) SpawnCloseEnemies.Instance.spawnedAmount--;
             Instantiate(deathVfx, transform.position, transform.rotation);

@@ -7,6 +7,8 @@ namespace Library.Data
     public class WeaponSelector : MonoBehaviour
     {
         [SerializeField] private GameObject[] weapons;
+        [SerializeField] private GameObject[] selectedGb;
+        [SerializeField] private GameObject[] selectedArrow;
 
         private Quaternion _prevRotation;
 
@@ -24,6 +26,8 @@ namespace Library.Data
                 if (weapons[i].activeSelf) _prevRotation = i == 1 ? new Quaternion(0,0,0,0) : weapons[i].GetComponentInChildren<GunMovement>().gameObject.transform.rotation;
                 weapons[index].GetComponentInChildren<GunMovement>().gameObject.transform.rotation = index == 1 ? new Quaternion(0,0,0,0) : _prevRotation;
                 weapons[i].SetActive(i == index);
+                selectedGb[i].SetActive(i == index);
+                selectedArrow[i].SetActive(i == index);
 
             }
         }

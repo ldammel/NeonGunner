@@ -1,6 +1,7 @@
 ﻿using System;
 using Library.Character;
 using Library.Combat.Enemy;
+using Library.Tools;
 using UnityEngine;
 
 namespace Library.Combat.Pooling

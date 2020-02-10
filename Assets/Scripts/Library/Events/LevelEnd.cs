@@ -23,6 +23,7 @@ namespace Library.Events
 
         [SerializeField] private TextMeshProUGUI rewardText;
         [SerializeField] private TextMeshProUGUI statsText;
+        [SerializeField] private TextMeshProUGUI reduceStatsText;
         [SerializeField] private TextMeshProUGUI comboText;
         [SerializeField] private GameObject rewardObj;
         [SerializeField] private GameObject nova;
@@ -39,7 +40,8 @@ namespace Library.Events
         private int _reward;
         private void Update()
         {
-            statsText.text = "Score: " + score + " (" + negativeScore + ")   -   Wave: " + Mathf.RoundToInt(waveDistance) + "m";
+            statsText.text = score.ToString();
+            reduceStatsText.text = negativeScore.ToString();
             comboText.text = enemiesKilled + "/" + comboNeed;
             if (enemiesKilled >= comboNeed) SpawnNova();
 
@@ -68,7 +70,7 @@ namespace Library.Events
 
         public void ReduceScore()
         {
-            score -= negativeScore;
+            score += negativeScore;
             negativeScore = 0;
         }
 
