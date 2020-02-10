@@ -27,6 +27,7 @@ namespace Library.Combat.Enemy
             spawn.onPoint = true;
             LevelEnd.Instance.negativeScore -= Mathf.RoundToInt(pointsLossPerSecond  * Time.deltaTime);
             LevelEnd.Instance.totalNegativeScore += Mathf.RoundToInt(pointsLossPerSecond  * Time.deltaTime);
+            LevelEnd.Instance.enemiesKilled = 0;
         }
 
         private void OnTriggerEnter(Collider other)

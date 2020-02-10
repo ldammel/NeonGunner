@@ -21,7 +21,6 @@ public class SpawnBomb : MonoBehaviour
             var transform1 = spawnPoints[i].transform;
             objectPool.Spawn(transform1.position,transform1.rotation, objectPool.transform);
         }
-        LevelEnd.Instance.UpdateEnemies();
     }
 
     private void OnTriggerEnter(Collider other)

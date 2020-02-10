@@ -7,18 +7,17 @@ namespace Library.Combat.Pooling
 {
     public class EnemyPooled : MonoBehaviour
     {
-        public LeanGameObjectPool _pool;
-        public bool isBuilding;
+        public LeanGameObjectPool pool;
         public bool isCloseEnemy;
         public bool isBomb;
 
         public LeanGameObjectPool Pool
         {
-            get => _pool;
+            get => pool;
             set
             {
-                if (_pool == null)
-                    _pool = value;
+                if (pool == null)
+                    pool = value;
             }
         }
 
@@ -32,12 +31,7 @@ namespace Library.Combat.Pooling
         private void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("PlayerRear")) return;
-            if (gameObject.CompareTag("Enemy"))
-            {
-                GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>().TakeDamage(10);
-                LevelEnd.Instance.enemiesMissed++;
-                ReturnToPool();
-            }
+            if (gameObject.CompareTag("Enemy"))ReturnToPool();
         }
 
         public void ReturnToPool()

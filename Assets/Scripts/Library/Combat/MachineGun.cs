@@ -52,7 +52,6 @@ namespace Library.Combat
         {
             RaycastHit hit;
             if (!Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range)) return;
-            LevelEnd.Instance.totalShots++;
             bp.Fire();
             
             if (hit.collider.gameObject.CompareTag("Enemy"))

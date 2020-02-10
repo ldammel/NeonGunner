@@ -10,6 +10,7 @@ namespace Library.Events
             if (!other.CompareTag("Player")) return;
             LevelEnd.Instance.totalNegativeScore += LevelEnd.Instance.score / 10;
             other.GetComponentInChildren<WaypointMovement>().SwitchMaterial(0.3f);
+            LevelEnd.Instance.enemiesKilled = 0;
         }
     }
 }

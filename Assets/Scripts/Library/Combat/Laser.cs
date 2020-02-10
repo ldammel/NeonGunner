@@ -29,7 +29,6 @@ namespace Library.Combat
         {
             if (Input.GetMouseButton(0))
             {
-                LevelEnd.Instance.totalShots++;
                 laser.enabled = true;
                 laser.SetPosition(1, new Vector3(0,0,Mathf.Lerp(0,maxLaserLength,2)));
                 col.size = new Vector3(0.3f,0.3f,laser.GetPosition(1).z);

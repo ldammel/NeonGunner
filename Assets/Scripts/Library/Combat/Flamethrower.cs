@@ -40,7 +40,6 @@ namespace Library.Combat
             var flameFxMain = flameFx.main;
             if (Input.GetMouseButton(0))
             {
-                LevelEnd.Instance.totalShots++;
                 flameFxMain.maxParticles = 130;
                 if (soundPlaying) return;
                 SoundManager.Instance.PlaySound("Flame");

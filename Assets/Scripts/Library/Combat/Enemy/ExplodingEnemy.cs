@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Library.Character;
 using Library.Combat.Pooling;
+using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat.Enemy
@@ -38,6 +39,7 @@ namespace Library.Combat.Enemy
             if(!other.CompareTag("Player")) return;
             other.GetComponent<EnemyHealth>().TakeDamage(damage);
             Instantiate(explosionVfx, transform.position, transform.rotation);
+            LevelEnd.Instance.enemiesKilled = 0;
             gameObject.GetComponent<EnemyPooled>().ReturnToPool();
         }
 

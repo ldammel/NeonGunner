@@ -26,12 +26,12 @@ namespace Library.Character
 
         public void ReducePosition()
         {
-            if (LevelEnd.Instance.totalNegativeScore == 0) return;
+            if (LevelEnd.Instance.totalNegativeScore <= 0) return;
             zValue = 200*(LevelEnd.Instance.totalNegativeScore / LevelEnd.Instance.score);
             transform.localPosition = new Vector3(0,0,_baseDistance + zValue);
             _distanceToWave = 360 - transform.localPosition.z;
             LevelEnd.Instance.waveDistance = _distanceToWave;
-            if( transform.localPosition.z >= 365) LevelEnd.Instance.End();
+            if( transform.localPosition.z >= 365 || _distanceToWave <= 0) LevelEnd.Instance.End();
         }
     }
 }

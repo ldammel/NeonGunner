@@ -29,9 +29,7 @@ namespace Library.Data
         public void RoundEnd()
         {
             LevelEnd.Instance.enemiesKilled = 0;
-            LevelEnd.Instance.totalShots = 0;
-            LevelEnd.Instance.totalEnemies = 0;
-            
+
             winScreen.SetActive(false);
             failScreen.SetActive(false);
             levelSelection.SetActive(true);

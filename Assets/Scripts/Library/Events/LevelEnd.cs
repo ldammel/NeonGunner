@@ -23,39 +23,26 @@ namespace Library.Events
 
         [SerializeField] private TextMeshProUGUI rewardText;
         [SerializeField] private TextMeshProUGUI statsText;
+        [SerializeField] private TextMeshProUGUI comboText;
         [SerializeField] private GameObject rewardObj;
+        [SerializeField] private GameObject nova;
         [SerializeField] private CurrencyObject cur;
         public float score;
         public float negativeScore;
         public float totalNegativeScore = 1;
 
-        public float enemiesKilled;
-        public float totalEnemies;
-        public float totalShots;
-        public float enemiesMissed;
+        public int comboNeed = 25;
+        public float enemiesKilled = 0;
 
         public float waveDistance = 180;
 
         private int _reward;
-
-        private void Start()
-        {
-            UpdateEnemies();
-        }
-
-        public void UpdateEnemies()
-        {
-            var enemy = FindObjectsOfType<EnemyHealth>();
-
-            for (int i = 0; i < enemy.Length - 1; i++)
-            {
-                totalEnemies++;
-            }
-        }
-
         private void Update()
         {
             statsText.text = "Score: " + score + " (" + negativeScore + ")   -   Wave: " + Mathf.RoundToInt(waveDistance) + "m";
+            comboText.text = enemiesKilled + "/" + comboNeed;
+            if (enemiesKilled >= comboNeed) SpawnNova();
+
         }
 
         public void End()
@@ -65,7 +52,13 @@ namespace Library.Events
             CalculateReward();
             PauseMenu.Instance.pauseActive = true;
         }
-        
+
+        private void SpawnNova()
+        {
+            nova.SetActive(true);
+            enemiesKilled = 0;
+        }
+
         public void CalculateReward()
         {
             rewardText.text = "Score: " + score + "\nLevel: " + SpawnNextPatternManager.Instance.levelNumber;
