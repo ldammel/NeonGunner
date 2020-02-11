@@ -12,6 +12,8 @@ namespace Library.Character
         private float _baseDistance = 200;
 
         public float zValue;
+
+        public bool testing;
         
         private void Awake()
         {
@@ -26,6 +28,7 @@ namespace Library.Character
 
         public void ReducePosition()
         {
+            if (testing) return;
             if (LevelEnd.Instance.totalNegativeScore <= 0) return;
             zValue = 200*(LevelEnd.Instance.totalNegativeScore / LevelEnd.Instance.score);
             transform.localPosition = new Vector3(0,0,_baseDistance + zValue);

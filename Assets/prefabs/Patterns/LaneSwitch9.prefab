@@ -1515,7 +1515,7 @@ GameObject:
   - component: {fileID: 5024926943517925136}
   - component: {fileID: 4535919657131434536}
   m_Layer: 10
-  m_Name: LaneSwitch5
+  m_Name: LaneSwitch9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1669,29 +1669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pat: {fileID: 4535919657131434536}
   objectPool: {fileID: 0}
-  spawnPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  spawnPoints: []
 --- !u!114 &3355644969333636120
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -70,16 +70,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AudioAmplitudeEmissionPower: 2.02
+    - _AudioAmplitudeEmissionPower: 2.57
     - _AudioAmplitudeEnabled: 1
-    - _AudioAmplitudeOffsetPower: 0.73
+    - _AudioAmplitudeOffsetPower: 0.9
     - _AudioEnabled: 1
     - _AudioMaskAffectsAmplitude: 0
     - _AudioMaskEnabled: 0
     - _AudioMaskExp: 1
     - _AudioMaskMultiply: 1
     - _AudioPower: 1
-    - _AudioSpectrumDistanceTiling: 27.4
+    - _AudioSpectrumDistanceTiling: 10
     - _AudioSpectrumEnabled: 1
     - _AudioSpectrumMaskEnabled: 0
     - _AudioSpectrumMaskExp: 1

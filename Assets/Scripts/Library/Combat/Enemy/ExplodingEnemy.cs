@@ -30,7 +30,7 @@ namespace Library.Combat.Enemy
         private void Update()
         {
             if (Vector3.Distance(transform.position, mov.transform.position) < 10 && Math.Abs(mov.transform.position.x - transform.position.x) < 0.2) Explode();
-            if (!switching || this.gameObject.activeSelf) StartCoroutine(SwitchMat());
+            if (this.gameObject.activeSelf && !switching) StartCoroutine(SwitchMat());
         }
 
         private void Explode()

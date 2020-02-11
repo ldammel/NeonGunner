@@ -2111,14 +2111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a471e237f1f043b21efbf21d04902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnpoints:
-  - {fileID: 307783504954676271}
-  - {fileID: 691258208014653297}
-  - {fileID: 1700388161815140517}
-  - {fileID: 2028950066661917633}
-  - {fileID: 5945917607045179729}
-  - {fileID: 745385687102259873}
-  - {fileID: 9004665015148060043}
+  spawnpoints: []
   spawner: {fileID: 3062369702980996179}
   pools: []
   enemySpawners: 0
@@ -2738,11 +2731,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5967891358329139023}
     m_Modifications:
-    - target: {fileID: 8300624612288380715, guid: 10b0d8729b8c47e459be6b8c89ea87ca,
-        type: 3}
-      propertyPath: m_Name
-      value: Building 5 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5004773881701826718, guid: 10b0d8729b8c47e459be6b8c89ea87ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2797,6 +2785,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300624612288380715, guid: 10b0d8729b8c47e459be6b8c89ea87ca,
+        type: 3}
+      propertyPath: m_Name
+      value: Building 5 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10b0d8729b8c47e459be6b8c89ea87ca, type: 3}
@@ -3155,11 +3148,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5967891358329139023}
     m_Modifications:
-    - target: {fileID: 8300624612288380715, guid: 10b0d8729b8c47e459be6b8c89ea87ca,
-        type: 3}
-      propertyPath: m_Name
-      value: Building 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5004773881701826718, guid: 10b0d8729b8c47e459be6b8c89ea87ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3214,6 +3202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300624612288380715, guid: 10b0d8729b8c47e459be6b8c89ea87ca,
+        type: 3}
+      propertyPath: m_Name
+      value: Building 5
       objectReference: {fileID: 0}
     - target: {fileID: 9016849748924659562, guid: 10b0d8729b8c47e459be6b8c89ea87ca,
         type: 3}
