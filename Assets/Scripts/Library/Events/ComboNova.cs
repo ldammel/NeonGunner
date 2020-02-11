@@ -25,6 +25,7 @@ namespace Library.Events
             _nova.transform.localScale = localScale;
             if (!(_nova.transform.localScale.x >= maxSize)) return;
             _nova.transform.localScale = new Vector3(0,0,0);
+            LevelEnd.Instance.enemiesKilled = 0;
             _nova.SetActive(false);
         }
 

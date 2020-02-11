@@ -4,19 +4,11 @@
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaveMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaveMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnPattern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SineVFX/LivingParticles/Resources/Materials/LivingParticleFloor_01Audio.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SineVFX/LivingParticles/Resources/Materials/LivingParticleFloor_01Audio.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/ComboNova.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/ComboNova.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/LoadHighscore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/LoadHighscore.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Big Blocks.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Big Blocks.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Empty.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Empty.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Gate 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Gate 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/LaneSwitch9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/LaneSwitch9.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Laying down.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Laying down.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Monolith.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Monolith.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/RoomPattern 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/RoomPattern 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/fast lane switch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/fast lane switch.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,7 +152,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/GunMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/DestroyAfterTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnCloseEnemies.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/LoadHighscore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/MachineGun.cs" />
@@ -169,7 +160,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/ComboMeter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/EnemyPooled.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/ComboNova.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
@@ -179,10 +169,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaveMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/ComboNova.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/LoadHighscore.cs" />
       </list>
     </option>
   </component>
@@ -317,6 +309,7 @@
       <workItem from="1581349731219" duration="1263000" />
       <workItem from="1581353600164" duration="4461000" />
       <workItem from="1581426764742" duration="5588000" />
+      <workItem from="1581444040214" duration="1713000" />
     </task>
     <servers />
   </component>

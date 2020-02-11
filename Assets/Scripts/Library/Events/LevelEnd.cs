@@ -3,6 +3,7 @@ using Library.Combat.Enemy;
 using Library.Data;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Library.Events
 {
@@ -25,6 +26,7 @@ namespace Library.Events
         [SerializeField] private TextMeshProUGUI statsText;
         [SerializeField] private TextMeshProUGUI reduceStatsText;
         [SerializeField] private TextMeshProUGUI comboText;
+        [SerializeField] private Image comboImage;
         [SerializeField] private TextMeshProUGUI waveText;
         [SerializeField] private GameObject rewardObj;
         [SerializeField] private GameObject nova;
@@ -45,6 +47,7 @@ namespace Library.Events
             waveText.text = Mathf.Round(waveDistance) + " m";
             reduceStatsText.text = negativeScore.ToString();
             comboText.text = enemiesKilled + "/" + comboNeed;
+            comboImage.fillAmount = enemiesKilled / comboNeed;
             if (enemiesKilled >= comboNeed) SpawnNova();
 
         }
