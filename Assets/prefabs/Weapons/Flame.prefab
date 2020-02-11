@@ -4624,14 +4624,14 @@ RectTransform:
   m_GameObject: {fileID: 1034711681791785993}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.90718246, y: 0.90718263, z: 0.90718263}
+  m_LocalScale: {x: 0.9492373, y: 0.90718263, z: 0.90718263}
   m_Children: []
   m_Father: {fileID: 4722681953567299884}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -4.605217, y: 4.087227}
+  m_AnchoredPosition: {x: -2.5193176, y: 4.087219}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &331768302624459821
@@ -4696,8 +4696,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248506810051699216}
   m_LocalRotation: {x: 0.0000012278366, y: 0.9999962, z: -0.0027440658, w: 0.00044744991}
-  m_LocalPosition: {x: -0.1, y: 5.442471, z: -5.6999993}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0.01, y: 1.25, z: -13.15}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 3710236766117104071}
   m_RootOrder: 0
@@ -4723,8 +4723,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 3.31
+    height: 0.47
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 80
@@ -4975,15 +4975,15 @@ RectTransform:
   m_GameObject: {fileID: 1963387277989695032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.90718246, y: 0.90718263, z: 0.90718263}
+  m_LocalScale: {x: 0.48062646, y: 0.90718263, z: 0.90718263}
   m_Children: []
   m_Father: {fileID: 4722681953567299884}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.035583496, y: -0.5536041}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0.018867493, y: -0.55358887}
+  m_SizeDelta: {x: 196.2, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7537330404510629940
 CanvasRenderer:
@@ -5045,18 +5045,18 @@ RectTransform:
   m_GameObject: {fileID: 4227502821974782455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.000000009802784}
-  m_LocalScale: {x: 1.5449835, y: 1.5449833, z: 1.5449833}
+  m_LocalScale: {x: 2.9161565, y: 1.5449833, z: 1.5449833}
   m_Children:
   - {fileID: 6447621581759771212}
   - {fileID: 1272623327778030754}
   m_Father: {fileID: 3369716546349819852}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -73.885, y: -6.3146973}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 1, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &7463848542699562168
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6269,7 +6269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8879015948160441983
 Transform:
   m_ObjectHideFlags: 0
@@ -6292,6 +6292,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5690973226588984943}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: c20b85f48b8bd2f4ba68b007e4aced67,
+        type: 3}
+      propertyPath: m_Name
+      value: flamethrower1_ohneStange
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c20b85f48b8bd2f4ba68b007e4aced67,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6361,11 +6366,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 170.61012
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: c20b85f48b8bd2f4ba68b007e4aced67,
-        type: 3}
-      propertyPath: m_Name
-      value: flamethrower1_ohneStange
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: c20b85f48b8bd2f4ba68b007e4aced67,
         type: 3}

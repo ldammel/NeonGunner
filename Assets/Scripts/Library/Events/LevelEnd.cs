@@ -25,6 +25,7 @@ namespace Library.Events
         [SerializeField] private TextMeshProUGUI statsText;
         [SerializeField] private TextMeshProUGUI reduceStatsText;
         [SerializeField] private TextMeshProUGUI comboText;
+        [SerializeField] private TextMeshProUGUI waveText;
         [SerializeField] private GameObject rewardObj;
         [SerializeField] private GameObject nova;
         [SerializeField] private CurrencyObject cur;
@@ -41,6 +42,7 @@ namespace Library.Events
         private void Update()
         {
             statsText.text = score.ToString();
+            waveText.text = Mathf.Round(waveDistance) + " m";
             reduceStatsText.text = negativeScore.ToString();
             comboText.text = enemiesKilled + "/" + comboNeed;
             if (enemiesKilled >= comboNeed) SpawnNova();
@@ -50,7 +52,7 @@ namespace Library.Events
         public void End()
         {
             LevelManager.Instance.winScreen.SetActive(true);
-            FindObjectOfType<WaypointMovement>().moveSpeed = 0;
+            GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>().moveSpeed = 0;
             CalculateReward();
             PauseMenu.Instance.pauseActive = true;
         }

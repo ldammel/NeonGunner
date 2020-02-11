@@ -2,129 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Leiste.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Leiste.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Gameplay_Ground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Gameplay_Ground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Mainbutton_Active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Mainbutton_Active.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Mainbutton_UNactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Mainbutton_UNactive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Sound_Balken.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Sound_Balken.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Sound_Ground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Sound_Ground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Sound_Regler.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Sound_Regler.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Visuals_Ground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Option/Option_Visuals_Ground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Button_notactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Button_notactive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Button_notactive_WithoutShadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Button_notactive_WithoutShadow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Button_tactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Button_tactive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Button_tactive_WithoutShadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Button_tactive_WithoutShadow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Untergrund.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Pausen_menue_Untergrund.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Ground1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Ground1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Ground2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Ground2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Ground3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Ground3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LandmieneL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LandmieneL1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LandmieneL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LandmieneL2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LandmieneL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LandmieneL3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Laser1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Laser1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Laser2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Laser2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Laser3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Laser3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LevelICON_ACTIVE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LevelICON_ACTIVE.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LevelICON_UNACTIVE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/LevelICON_UNACTIVE.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/MGL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/MGL1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/MGL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/MGL2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/MGL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/MGL3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/RaketeL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/RaketeL1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/RaketeL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/RaketeL2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/RaketeL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/RaketeL3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Soul_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Soul_icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Weappon_ICONS.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/Weappon_ICONS.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/flammenwerfer1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/flammenwerfer1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/flammenwerfer2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/flammenwerfer2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/flammenwerfer3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/flammenwerfer3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/gas1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/gas1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/gas2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/gas2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/gas3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/UpgradeICONS/gas3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl/Ground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl/Ground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl/links.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl/links.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl/rechts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl/rechts.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl/selected_weapon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Waffen_Auswahl/selected_weapon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Grid 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Grid 4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Life_bar/Lifebar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/Life_bar/Lifebar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Life_bar/ground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/Life_bar/ground.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/ComboNova.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/ComboNova.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/WallCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/WallCollision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SimpleFX/Prefabs/FX_Fireworks_Blue_Large 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleFX/Prefabs/FX_Fireworks_Blue_Large 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SimpleFX/Prefabs/FX_Fireworks_Blue_Large.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleFX/Prefabs/FX_Fireworks_Blue_Large.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion Small 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion Small 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/---MANAGERS---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/---MANAGERS---.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/EnemyBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/EnemyBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Bullets/PlayerBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Bullets/PlayerBullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Exploding Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Exploding Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/MGFire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/MGFire.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Monolyths.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Monolyths.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Stair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Stair.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/---PLAYER---.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Wall.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Wall.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/LaneSwitch1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/LaneSwitch1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/RoomPattern 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/RoomPattern 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Laser.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -149,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnCollisionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/OnInteractionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Events/Void.cs" root0="FORCE_HIGHLIGHTING" />
@@ -279,7 +174,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaveMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/ComboNova.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" />
@@ -289,6 +183,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
       </list>
     </option>
   </component>
@@ -422,6 +317,7 @@
       <workItem from="1581348693433" duration="984000" />
       <workItem from="1581349731219" duration="1263000" />
       <workItem from="1581353600164" duration="4461000" />
+      <workItem from="1581426764742" duration="1697000" />
     </task>
     <servers />
   </component>
