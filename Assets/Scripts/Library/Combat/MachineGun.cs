@@ -36,6 +36,7 @@ namespace Library.Combat
 
         private void Update()
         {
+            if (PauseMenu.Instance.pauseActive) return;
             if (Input.GetMouseButton(0))
             {
                 if (PauseMenu.Instance.pauseActive) return;

@@ -33,6 +33,7 @@ namespace Library.Combat
 
         private void Update()
         {
+            if (PauseMenu.Instance.pauseActive) return;
             var o = flameFx.gameObject;
             var localScale = o.transform.localScale;
             localScale = new Vector3(spread,localScale.y, range);
