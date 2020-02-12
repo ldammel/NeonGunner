@@ -12,6 +12,7 @@ namespace Library.Events
             SoundManager.Instance.PlaySound("Disabled");
             LevelEnd.Instance.totalNegativeScore += LevelEnd.Instance.score / 10;
             other.GetComponentInChildren<WaypointMovement>().SwitchMaterial(0.3f);
+            other.GetComponentInChildren<WaveMovement>().ReducePosition();
             LevelEnd.Instance.enemiesKilled = 0;
         }
     }

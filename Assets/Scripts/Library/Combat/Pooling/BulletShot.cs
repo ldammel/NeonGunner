@@ -34,6 +34,7 @@ namespace Library.Combat.Pooling
         {
             _lifeTime = 0f;
             player = GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>();
+            if (PlayerPrefs.GetString("Difficulty") == "Easy") damage = 50;
         }
 
 

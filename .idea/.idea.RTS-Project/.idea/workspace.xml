@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowE.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowE.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowE_druck_effekt.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowE_druck_effekt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowQ.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowQ.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowQ_druck_effekt.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowQ_druck_effekt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/WallCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/WallCollision.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,9 +148,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/EnemyPooled.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Laser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/WallCollision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Tools/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/NotificationTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/ExplodingEnemy.cs" />
@@ -180,8 +167,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/WallCollision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletShot.cs" />
       </list>
     </option>
   </component>
@@ -321,6 +310,8 @@
       <workItem from="1581504683912" duration="7882000" />
       <workItem from="1581520949750" duration="4429000" />
       <workItem from="1581527204003" duration="365000" />
+      <workItem from="1581527740332" duration="508000" />
+      <workItem from="1581530285444" duration="35000" />
     </task>
     <servers />
   </component>
