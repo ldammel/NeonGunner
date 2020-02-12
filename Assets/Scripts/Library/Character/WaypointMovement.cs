@@ -59,6 +59,7 @@ namespace Library.Character
 
         IEnumerator ScoreUpdate()
         {
+            if (trackingObject.transform.position.z - prevDist < 0) yield break;
             if (PauseMenu.Instance.pauseActive) yield break;
             updated = true;
             LevelEnd.Instance.score += Mathf.RoundToInt(trackingObject.transform.position.z - prevDist);

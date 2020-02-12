@@ -2,55 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba7b40a-9425-4b43-8b91-8b37211e6d06" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RTS-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_bullet_ICON.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_bullet_ICON.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_fire_ICON.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_fire_ICON.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_pink.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_pink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_pink_select.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_pink_select.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_pink_select_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/Weapon_select/weapon_windows_pink_select_arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowE.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowE_druck_effekt.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowE_druck_effekt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowQ.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowQ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowQ_druck_effekt.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/UI/ArrowQ_druck_effekt.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaveMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaveMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnBomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnBomb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnCloseEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnCloseEnemies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/BulletPooled.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnBuildingsInPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnBuildingsInPattern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnNextPatternManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnNextPatternManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library/UI/LoadHighscore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library/UI/LoadHighscore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/---MANAGERS---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/---MANAGERS---.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/FloatingText.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/FloatingText.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Big Blocks.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Big Blocks.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building 4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Building2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Monolyths.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Monolyths.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Stair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/BlockPatterns/Stair.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Empty.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Empty.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Gate 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Gate 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/LaneSwitch1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/LaneSwitch1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/LaneSwitch9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/LaneSwitch9.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Laying down.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Laying down.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Monolith.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Monolith.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/RoomPattern 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/RoomPattern 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/Screwdriver.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/Screwdriver.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Patterns/fast lane switch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Patterns/fast lane switch.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/Flame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Weapons/MG.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/floatingText.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/floatingText.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/patterns_1.3 with one super hard level.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +83,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/SelectWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Combat/Pooling/EnemyPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnBuildingsInPattern.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Library/Tools/DestroyAfterTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CamTransitionPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/prefabs/Enemies/Flying Enemy.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -165,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/VFX/JMO Assets/WarFX/Demo/Assets/WFX_Demo_DeleteAfterDelay.cs" />
         <option value="$PROJECT_DIR$/Assets/SnapshotShaders/Scripts/SnapshotMode.cs" />
         <option value="$PROJECT_DIR$/Assets/SnapshotShaders/Shaders/Bloom.shader" />
         <option value="$PROJECT_DIR$/Assets/SnapshotShaders/Shaders/Neon.shader" />
@@ -207,15 +172,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/SelectDifficulty.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnBomb.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/EnemyHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/SpawnCloseEnemies.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/UI/LoadHighscore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/SpawnNextPatternManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Enemy/CloseEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Library/Combat/Flamethrower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Events/LevelEnd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Character/WaypointMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Library/Data/WeaponSelector.cs" />
       </list>
     </option>
   </component>
@@ -353,7 +319,8 @@
       <workItem from="1581444040214" duration="1713000" />
       <workItem from="1581502626845" duration="306000" />
       <workItem from="1581504683912" duration="7882000" />
-      <workItem from="1581520949750" duration="1248000" />
+      <workItem from="1581520949750" duration="4429000" />
+      <workItem from="1581527204003" duration="365000" />
     </task>
     <servers />
   </component>

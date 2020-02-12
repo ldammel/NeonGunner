@@ -9,6 +9,7 @@ namespace Library.Data
         [SerializeField] private GameObject[] weapons;
         [SerializeField] private GameObject[] selectedGb;
         [SerializeField] private GameObject[] selectedArrow;
+        [SerializeField] private GameObject selectedGo;
 
         private Quaternion _prevRotation;
 
@@ -38,6 +39,7 @@ namespace Library.Data
         private void Update()
         {
             if (PauseMenu.Instance.pauseActive) return;
+            selectedGo.SetActive(PlayerPrefs.GetString("Difficulty") == "Hard");
             var transform1 = transform;
             var position = transform1.position;
             position = new Vector3(Vector3.Slerp(new Vector3(position.x, position.y,position.z), new Vector3(targetPos, position.y,position.z), transitionSpeed*Time.deltaTime).x, position.y,position.z);
