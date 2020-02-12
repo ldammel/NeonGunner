@@ -11,6 +11,8 @@ public class LoadingScene : MonoBehaviour
     public float duration;
     public Image image;
 
+    private bool _ready;
+
     private void Start()
     {
         StartCoroutine(FadeTo(1, duration));
@@ -19,7 +21,7 @@ public class LoadingScene : MonoBehaviour
     private void Update()
     {
         if(image.color.a >= 0.9) StartCoroutine(FadeTo(0, duration));
-        if(image.color.a <= 0.1) sceneSwitch.SwitchScene();
+        if(image.color.a <= 0.01 && _ready) sceneSwitch.SwitchScene();
     }
 
     IEnumerator FadeTo(float aValue, float aTime)
@@ -29,6 +31,7 @@ public class LoadingScene : MonoBehaviour
         {
             Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,aValue,t));
             image.color = newColor;
+            _ready = true;
             yield return null;
         }
     }
