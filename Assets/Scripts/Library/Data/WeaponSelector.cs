@@ -19,8 +19,11 @@ namespace Library.Data
         public float targetPos;
         public float prevPos;
 
+        private int _curWeapon;
+
         public void SelectWeapon(int index)
         {
+            if(_curWeapon == index) return;
             for (int i = 0; i < weapons.Length; i++)
             {
                 if (weapons[i].activeSelf) _prevRotation = i == 1 ? new Quaternion(0,0,0,0) : weapons[i].GetComponentInChildren<GunMovement>().gameObject.transform.rotation;
@@ -28,8 +31,8 @@ namespace Library.Data
                 weapons[i].SetActive(i == index);
                 selectedGb[i].SetActive(i == index);
                 selectedArrow[i].SetActive(i == index);
-
             }
+            _curWeapon = index;
         }
 
         private void Update()

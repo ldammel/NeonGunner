@@ -1,4 +1,5 @@
-﻿using Library.Data;
+﻿using System.Collections;
+using Library.Data;
 using UnityEngine;
 using Library.Events;
 using Library.Tools;
@@ -6,6 +7,10 @@ using Library.Tools;
 public class Test : MonoBehaviour
 {
     [SerializeField] private WeaponSelector selector;
+    [SerializeField] private GameObject qImage;
+    [SerializeField] private GameObject eImage;
+    
+    
 
     private void Start()
     {
@@ -19,22 +24,34 @@ public class Test : MonoBehaviour
             PauseMenu.Instance.TriggerMenu();
         }
         
-        if (InputManager.Instance.KeyDown("mg") || Input.GetKeyDown(KeyCode.Keypad1))
+        if (Input.GetMouseButtonDown(0))
         {
             selector.SelectWeapon(0);
         }
-        if (InputManager.Instance.KeyDown("flame") || Input.GetKeyDown(KeyCode.Keypad2))
+        if (Input.GetMouseButtonDown(1))
         {
+            if (PlayerPrefs.GetString("Difficulty") == "Easy" ||
+                PlayerPrefs.GetString("Difficulty") == "Medium") return;
             selector.SelectWeapon(1);
         }
-        if (SpawnNextPatternManager.Instance.levelNumber < 10) return;
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (SpawnNextPatternManager.Instance.levelNumber < 14) return;
+        if (Input.GetKeyDown(KeyCode.A))
         {
             selector.SwitchLane(-3);
-        }    
-        if (Input.GetKeyDown(KeyCode.E))
+            qImage.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            qImage.SetActive(false);
+        }  
+        if (Input.GetKeyDown(KeyCode.D))
         {
             selector.SwitchLane(3);
-        }    
+            eImage.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            eImage.SetActive(false);
+        } 
     }
 }

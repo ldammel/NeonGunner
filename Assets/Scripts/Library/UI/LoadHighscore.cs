@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -17,9 +18,18 @@ namespace Library.UI
         private void Start()
         {
             LoadScore();
+            StartCoroutine(Enable());
         }
         private void OnEnable()
         {
+            LoadScore();
+            StartCoroutine(Enable());
+        }
+
+        IEnumerator Enable()
+        {
+            LoadScore();
+            yield return new WaitForSeconds(0.5f);
             LoadScore();
         }
 

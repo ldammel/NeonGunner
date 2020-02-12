@@ -24,11 +24,30 @@ namespace Library.Combat.Enemy
         
         public GameObject deathVfx;
         public bool iscloseEnemy;
+        private int _scoreMultiplier;
         public event Action<float> OnHealthPctChanged = delegate{  };
 
         private void Start()
         {
+            if (PlayerPrefs.GetString("Difficulty") == "Easy")
+            {
+                _scoreMultiplier = 1;
+            }
+            else if (PlayerPrefs.GetString("Difficulty") == "Medium")
+            {
+                _scoreMultiplier = 2;
+            }
+            else if (PlayerPrefs.GetString("Difficulty") == "Hard")
+            {
+                _scoreMultiplier = 4;
+            }
+
             curHealth = maxHealth;
+        }
+        
+        public void SelectGodMode(bool value)
+        {
+            godMode = value;
         }
         
         private void Update()
@@ -47,8 +66,8 @@ namespace Library.Combat.Enemy
             if (!(curHealth <= 0) || player) return;
             curHealth = 1;
             LevelEnd.Instance.enemiesKilled++;
-            LevelEnd.Instance.score += scorePerKill;
-            killText.GetComponentInChildren<TextMeshPro>().text = scorePerKill.ToString();
+            LevelEnd.Instance.score += scorePerKill * _scoreMultiplier;
+            killText.GetComponentInChildren<TextMeshPro>().text = (scorePerKill * _scoreMultiplier).ToString();
             Instantiate(killText, killTextPoint.position, Quaternion.identity);
             
             if (iscloseEnemy) SpawnCloseEnemies.Instance.spawnedAmount--;

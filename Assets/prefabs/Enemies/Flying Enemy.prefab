@@ -198,8 +198,6 @@ MonoBehaviour:
   killText: {fileID: 7937955160102986843, guid: 9f7f1336a63d78d439689ae5e5cafeeb,
     type: 3}
   killTextPoint: {fileID: 8316347138113221264}
-  deathSound: {fileID: 6697611754318035362, guid: 507b4169413c6dd4a819dbdbf7698494,
-    type: 3}
   deathVfx: {fileID: 168542, guid: fadb39df6c5b86c4ba47e4f9f2e35974, type: 3}
   iscloseEnemy: 0
 --- !u!114 &513876216
@@ -266,6 +264,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8316347139329622351}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 9dd73f41809f6a848aa3e3fad5ccfe3b,
+        type: 3}
+      propertyPath: m_Name
+      value: shoot
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9dd73f41809f6a848aa3e3fad5ccfe3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -335,11 +338,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 522.027
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 9dd73f41809f6a848aa3e3fad5ccfe3b,
-        type: 3}
-      propertyPath: m_Name
-      value: shoot
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 9dd73f41809f6a848aa3e3fad5ccfe3b,
         type: 3}

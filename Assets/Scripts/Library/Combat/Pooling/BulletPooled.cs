@@ -16,11 +16,15 @@ namespace Library.Combat.Pooling
         public bool isEnemy = false;
         public bool canFire;
 
+        private GameObject playerTarget;
         private GameObject player;
+        private GameObject thisEnemy;
 
         private void Start()
         {
-            player = GameObject.Find("---PLAYER---/Player/SlotTwo");
+            player = GameObject.Find("---PLAYER---/Player");
+            playerTarget = GameObject.Find("---PLAYER---/Player/SlotTwo");
+            thisEnemy = transform.parent.gameObject;
         }
 
         private void Update()
@@ -39,9 +43,10 @@ namespace Library.Combat.Pooling
             {
                 if(!canFire) return;
                 if (Vector3.Distance(transform.position,player.transform.position) > range) return;
+                if (player.transform.position.z > thisEnemy.transform.position.z) return;
                 if (_fireTimer >= fireRate)
                 {
-                    gameObject.transform.LookAt(player.transform);
+                    gameObject.transform.LookAt(playerTarget.transform);
                     _fireTimer = 0;
                     Fire();
                 }

@@ -23,6 +23,7 @@ namespace Library.Combat.Enemy
         private void Update()
         {
             if (PauseMenu.Instance.pauseActive) return;
+            if (GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>().godMode) return;
             if (!_onPoint) return;
             spawn.onPoint = true;
             LevelEnd.Instance.negativeScore -= Mathf.RoundToInt(pointsLossPerSecond  * Time.deltaTime);

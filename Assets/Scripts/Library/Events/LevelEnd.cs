@@ -1,4 +1,5 @@
-﻿using Library.Character;
+﻿using System;
+using Library.Character;
 using Library.Combat.Enemy;
 using Library.Data;
 using TMPro;
@@ -30,7 +31,6 @@ namespace Library.Events
         [SerializeField] private TextMeshProUGUI waveText;
         [SerializeField] private GameObject rewardObj;
         [SerializeField] private GameObject nova;
-        [SerializeField] private CurrencyObject cur;
         public float score;
         public float negativeScore;
         public float totalNegativeScore = 1;
@@ -41,6 +41,23 @@ namespace Library.Events
         public float waveDistance = 180;
 
         private int _reward;
+
+        private void Start()
+        {
+            if (PlayerPrefs.GetString("Difficulty") == "Easy")
+            {
+                comboNeed = 50;
+            }
+            else if (PlayerPrefs.GetString("Difficulty") == "Medium")
+            {
+                comboNeed = 40;
+            }
+            else if (PlayerPrefs.GetString("Difficulty") == "Hard")
+            {
+                comboNeed = 30;
+            }
+        }
+
         private void Update()
         {
             statsText.text = score.ToString();
@@ -49,7 +66,6 @@ namespace Library.Events
             comboText.text = enemiesKilled + "/" + comboNeed;
             comboImage.fillAmount = enemiesKilled / comboNeed;
             if (enemiesKilled >= comboNeed) SpawnNova();
-
         }
 
         public void End()

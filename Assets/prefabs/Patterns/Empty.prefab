@@ -4455,7 +4455,7 @@ GameObject:
   - component: {fileID: 1190520493767943724}
   - component: {fileID: 3062369702980996179}
   - component: {fileID: 3355644969333636120}
-  - component: {fileID: 4076903357258623117}
+  - component: {fileID: 1008558250295285382}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -4519,7 +4519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPoint: {fileID: 8661525045669541707}
   patternNumber: 3
---- !u!114 &4076903357258623117
+--- !u!114 &1008558250295285382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

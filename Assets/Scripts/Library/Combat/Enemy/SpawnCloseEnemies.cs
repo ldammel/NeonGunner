@@ -36,6 +36,9 @@ namespace Library.Combat.Enemy
 
         private void Update()
         {
+            if (PlayerPrefs.GetString("Difficulty") == "Easy") return;
+            if (PlayerPrefs.GetString("Difficulty") == "Medium") return;
+            if (transform.parent.GetComponent<EnemyHealth>().godMode) return;
             if (spawnedAmount <= amountUntilReset && !_started) StartCoroutine(SpawnEnemies(waitTime));
             warningImage.SetActive(onPoint);
             WaveMovement.Instance.ReducePosition();
@@ -43,7 +46,10 @@ namespace Library.Combat.Enemy
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Enemy") && GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>().moveSpeed > 15)
+            if (transform.parent.GetComponent<EnemyHealth>().godMode) return;
+            if (PlayerPrefs.GetString("Difficulty") == "Easy") return;
+            if (PlayerPrefs.GetString("Difficulty") == "Medium") return;
+            if (other.name.Contains("Close") && GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>().moveSpeed > 15)
             {
                 NotificationManager.Instance.SetNewNotification("Enemies Incoming from behind!", 2f, Color.red);
                 onPoint = true;

@@ -28,6 +28,7 @@ public class SpawnNextPatternManager : MonoBehaviour
     [SerializeField] private float speedModifier;
 
     [SerializeField] private List<GameObject> spawned;
+    [SerializeField] private GameObject laneImages;
 
     public bool tutorial;
     private void Start()
@@ -53,6 +54,7 @@ public class SpawnNextPatternManager : MonoBehaviour
         room.GetComponent<EnemyPooled>().Pool = pool[patternNumber];
         spawned.Add(room);
         if(room.GetComponent<SpawnBuildingsInPattern>() != null)room.GetComponent<SpawnBuildingsInPattern>().SpawnEnemies();
+        laneImages.SetActive(levelNumber > 12);
         if (levelNumber > 9 && !tutorial)
         {
             spawned[0].GetComponent<EnemyPooled>().ReturnToPool();

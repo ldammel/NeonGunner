@@ -1,4 +1,5 @@
-﻿using Library.Events;
+﻿using Library.Combat.Enemy;
+using Library.Events;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -28,6 +29,7 @@ namespace Library.Character
 
         public void ReducePosition()
         {
+            if (transform.parent.GetComponent<EnemyHealth>().godMode) return;
             if (testing) return;
             if (LevelEnd.Instance.totalNegativeScore <= 0) return;
             zValue = 200*(LevelEnd.Instance.totalNegativeScore / LevelEnd.Instance.score);

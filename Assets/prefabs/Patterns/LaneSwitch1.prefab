@@ -1334,7 +1334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4921556263301905761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 1.81, z: 21}
+  m_LocalPosition: {x: 3, y: 1.81, z: 153.3}
   m_LocalScale: {x: 1.4097, y: 1.9219, z: 1}
   m_Children: []
   m_Father: {fileID: 5967891358329139023}
@@ -1439,7 +1439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5501054415303369925}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.81, z: -156.4}
+  m_LocalPosition: {x: 0, y: 1.81, z: -110.2}
   m_LocalScale: {x: 1.4097, y: 1.9219, z: 1}
   m_Children: []
   m_Father: {fileID: 5967891358329139023}
@@ -1665,8 +1665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15cae9c35c73480cb6763cf2e43387f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pool: {fileID: 0}
-  isBuilding: 0
+  pool: {fileID: 0}
   isCloseEnemy: 0
   isBomb: 0
 --- !u!114 &4535919657131434536
@@ -1745,7 +1744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7515804791511664608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 1.81, z: -54.9}
+  m_LocalPosition: {x: -3, y: 1.81, z: 35.8}
   m_LocalScale: {x: 1.4097, y: 1.9219, z: 1}
   m_Children: []
   m_Father: {fileID: 5967891358329139023}
@@ -1897,7 +1896,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPoint: {fileID: 8661525045669541707}
   patternNumber: 2
-  scoreAdd: 100
 --- !u!1001 &418271709362236915
 PrefabInstance:
   m_ObjectHideFlags: 0

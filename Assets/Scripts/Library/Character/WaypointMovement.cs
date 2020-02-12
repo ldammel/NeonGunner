@@ -23,6 +23,18 @@ namespace Library.Character
         {
             if (rend == null) return;
             baseMaterial = rend.material;
+            if (PlayerPrefs.GetString("Difficulty") == "Easy")
+            {
+                moveSpeed = 25;
+            }
+            else if (PlayerPrefs.GetString("Difficulty") == "Medium")
+            {
+                moveSpeed = 50;
+            }
+            else if (PlayerPrefs.GetString("Difficulty") == "Hard")
+            {
+                moveSpeed = 75;
+            }
         }
 
         IEnumerator SwitchMat(float waitTime)

@@ -38,14 +38,14 @@ namespace Library.Combat
             localScale = new Vector3(spread,localScale.y, range);
             o.transform.localScale = localScale;
             var flameFxMain = flameFx.main;
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(1))
             {
                 flameFxMain.maxParticles = 130;
                 if (soundPlaying) return;
                 SoundManager.Instance.PlaySound("Flame");
                 soundPlaying = true;
             }
-            else if (Input.GetMouseButtonUp(0))
+            else if (Input.GetMouseButtonUp(1))
             {
                 flameFxMain.maxParticles = 0;
                 if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");

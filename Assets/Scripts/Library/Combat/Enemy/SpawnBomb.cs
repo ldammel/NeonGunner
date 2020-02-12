@@ -15,6 +15,7 @@ public class SpawnBomb : MonoBehaviour
     
     public void SpawnEnemies()
     {
+        if (PlayerPrefs.GetString("Difficulty") == "Easy") return;
         for (int i = 0; i < spawnPoints.Length; i++)
         {
             if(spawnPoints[i] == null) continue;

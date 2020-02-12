@@ -26,6 +26,11 @@ namespace Library.Events
             
         }
 
+        public void DifMode(string mode)
+        {
+            PlayerPrefs.SetString("Difficulty", mode);
+        }
+
 
     }
 }
