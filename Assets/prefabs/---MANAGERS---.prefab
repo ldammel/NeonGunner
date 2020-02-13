@@ -1118,6 +1118,7 @@ MonoBehaviour:
   playerSpeed: {fileID: 0}
   speedModifier: 2
   spawned: []
+  laneImages: {fileID: 0}
   tutorial: 1
 --- !u!1 &2113775383
 GameObject:
@@ -1290,7 +1291,8 @@ AudioSource:
   m_GameObject: {fileID: 4686874374658800274}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4342467872754217321, guid: 93f3c3bc8476b47409db2932ab22f2d0,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.1
@@ -1404,6 +1406,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selector: {fileID: 0}
+  qImage: {fileID: 0}
+  eImage: {fileID: 0}
 --- !u!114 &1131169826207157692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1424,7 +1428,6 @@ MonoBehaviour:
   waveText: {fileID: 0}
   rewardObj: {fileID: 0}
   nova: {fileID: 0}
-  cur: {fileID: 11400000, guid: 814e1a936aab54942b6b93ba53a05b3d, type: 2}
   score: 1
   negativeScore: 0
   totalNegativeScore: 0

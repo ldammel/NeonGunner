@@ -324,6 +324,7 @@
             </e>
           </e>
           <e p="LoadingScene.cs" t="Include" />
+          <e p="SoundSettings.cs" t="Include" />
           <e p="Test.cs" t="Include" />
         </e>
         <e p="SimpleFX" t="Include">

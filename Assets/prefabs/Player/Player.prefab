@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zValue: 0
+  testing: 0
 --- !u!1 &409171032
 GameObject:
   m_ObjectHideFlags: 0
@@ -9812,7 +9813,8 @@ AudioSource:
   m_GameObject: {fileID: 349057424754517737}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7080612222196670843, guid: 93f3c3bc8476b47409db2932ab22f2d0,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 3f5d97ebf97fe7b4b85e71572a192cc7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.245
@@ -9952,6 +9954,7 @@ MonoBehaviour:
   selectedArrow:
   - {fileID: 0}
   - {fileID: 0}
+  selectedGo: {fileID: 0}
   transitionSpeed: 10
   started: 0
   targetPos: 0
@@ -20681,6 +20684,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1920368292750862369, guid: 447158411e991ce4889d80cfe0603854,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2988824012976022934, guid: 447158411e991ce4889d80cfe0603854,
         type: 3}
       propertyPath: m_Mesh
@@ -20745,11 +20753,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Transitions.m_BlendHint
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1920368292750862369, guid: 447158411e991ce4889d80cfe0603854,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1485628743, guid: 447158411e991ce4889d80cfe0603854, type: 3}
@@ -20961,6 +20964,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5535242747555930384, guid: 27135ef34b3f71641af81fe7175bf977,
+        type: 3}
+      propertyPath: m_Transitions.m_BlendHint
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1272623327778030754, guid: 27135ef34b3f71641af81fe7175bf977,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -20970,11 +20978,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000022888184
-      objectReference: {fileID: 0}
-    - target: {fileID: 5535242747555930384, guid: 27135ef34b3f71641af81fe7175bf977,
-        type: 3}
-      propertyPath: m_Transitions.m_BlendHint
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27135ef34b3f71641af81fe7175bf977, type: 3}
