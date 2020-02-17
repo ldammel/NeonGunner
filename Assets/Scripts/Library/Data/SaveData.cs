@@ -1,6 +1,6 @@
-﻿using Library.Character.ScriptableObjects;
+﻿using System.Collections;
 using Library.Events;
-using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using UnityEngine;
 
 namespace Library.Data
@@ -17,144 +17,84 @@ namespace Library.Data
             }
 
             Instance = this;
+            LoadHighScore();
         }
 
-        public CurrencyObject cO;
-        public WeaponValues wV;
+        private const string PrivateCode = "5W6CphQFz0yVqxJ-kIuKAwYwKSQ5jJHkuQt0oQP93JAg";
+        private const string PublicCode = "5e485cf0fe232612b8331df7";
+        private const string WebUrl = "http://dreamlo.com/lb/";
+        public Highscore[] highscoreList;
+
+        public void SaveHighScore(string username)
+        {
+            if (username.IsNullOrWhitespace() || username.Length < 1) username = "NoName";
+            var score = (int)LevelEnd.Instance.score;
+            var level = SpawnNextPatternManager.Instance.levelNumber;
+            StartCoroutine(UploadNewHighscore(username, score, level));
+        }
         
-        [Button]
-        public void SaveAllData()
+        public void LoadHighScore()
         {
-            PlayerPrefs.SetInt("CurrentCurrency", cO.currentCurrency);
-            PlayerPrefs.SetInt("flakLevel", cO.flakLevel);
-            PlayerPrefs.SetInt("flameLevel", cO.flameLevel);
-            PlayerPrefs.SetInt("mgLevel", cO.mgLevel);
-            PlayerPrefs.SetInt("gasLevel", cO.gasLevel);
-
-            PlayerPrefs.SetFloat("mgDamage", wV.mgDamage);
-            PlayerPrefs.SetFloat("mgRange", wV.mgRange);
-            PlayerPrefs.SetFloat("mgFireRate", wV.mgFireRate);
-            PlayerPrefs.SetFloat("mgFireRateUpgrade", wV.mgFireRateUpgrade);
-            
-            PlayerPrefs.SetFloat("flakDamage", wV.flakDamage);
-            PlayerPrefs.SetFloat("flakRange", wV.flakRange);
-            PlayerPrefs.SetFloat("flakFireRate", wV.flakFireRate);
-            PlayerPrefs.SetFloat("flakDamageRadius", wV.flakDamageRadius);
-            PlayerPrefs.SetFloat("flakFireRateUpgrade", wV.flakFireRateUpgrade);
-            PlayerPrefs.SetFloat("flakRadiusUpgrade", wV.flakRadiusUpgrade);
-            
-            PlayerPrefs.SetFloat("flameDamage", wV.flameDamage);
-            PlayerPrefs.SetFloat("flameRange", wV.flameRange);
-            PlayerPrefs.SetFloat("flameSpread", wV.flameSpread);
-            PlayerPrefs.SetFloat("flameSpreadUpgrade", wV.flameSpreadUpgrade);
-
-            PlayerPrefs.SetFloat("laserDamage", wV.laserDamage);
-            PlayerPrefs.SetFloat("laserRange", wV.laserRange);
-            PlayerPrefs.SetFloat("laserDamageUpgrade", wV.laserDamageUpgrade);
-
-            PlayerPrefs.SetFloat("gasDamage", wV.gasDamage);
-            PlayerPrefs.SetFloat("gasDamageUpgrade", wV.gasDamageUpgrade);
-            PlayerPrefs.SetFloat("gasMaxRadius", wV.gasMaxRadius);
-            PlayerPrefs.SetFloat("gasMaxRadiusUpgrade", wV.gasMaxRadiusUpgrade);
-            Debug.Log("Saved Data");
+            StartCoroutine(DownloadHighscoreFromDatabase());
         }
 
-        [Button]
-        public void LoadAllData()
+        IEnumerator UploadNewHighscore(string username, int score, int level)
         {
-            cO.currentCurrency = PlayerPrefs.GetInt("CurrentCurrency", cO.currentCurrency);
-            cO.flakLevel = (ushort)PlayerPrefs.GetInt("flakLevel", cO.flakLevel);
-            cO.flameLevel = (ushort)PlayerPrefs.GetInt("flameLevel", cO.flameLevel);
-            cO.mgLevel = (ushort)PlayerPrefs.GetInt("mgLevel", cO.mgLevel);
-            cO.gasLevel = (ushort)PlayerPrefs.GetInt("gasLevel", cO.gasLevel);
-            cO.laserLevel = (ushort)PlayerPrefs.GetInt("laserLevel", cO.laserLevel);
+            var www = new WWW(WebUrl + PrivateCode + "/add/" + WWW.EscapeURL(username) + "/" + score + "/" + level);
+            yield return www;
 
-            wV.mgDamage = PlayerPrefs.GetFloat("mgDamage", wV.mgDamage);
-            wV.mgRange = PlayerPrefs.GetFloat("mgRange", wV.mgRange);
-            wV.mgFireRate = PlayerPrefs.GetFloat("mgFireRate", wV.mgFireRate);
-            wV.mgFireRateUpgrade = PlayerPrefs.GetFloat("mgFireRateUpgrade", wV.mgFireRateUpgrade);
-            
-            wV.flakDamage = PlayerPrefs.GetFloat("flakDamage", wV.flakDamage);
-            wV.flakRange = PlayerPrefs.GetFloat("flakRange", wV.flakRange);
-            wV.flakFireRate = PlayerPrefs.GetFloat("flakFireRate", wV.flakFireRate);
-            wV.flakDamageRadius = PlayerPrefs.GetFloat("flakDamageRadius", wV.flakDamageRadius);
-            wV.flakFireRateUpgrade = PlayerPrefs.GetFloat("flakFireRateUpgrade", wV.flakFireRateUpgrade);
-            wV.flakRadiusUpgrade = PlayerPrefs.GetFloat("flakRadiusUpgrade", wV.flakRadiusUpgrade);
-            
-            wV.flameDamage = PlayerPrefs.GetFloat("flameDamage", wV.flameDamage);
-            wV.flameRange = PlayerPrefs.GetFloat("flameRange", wV.flameRange);
-            wV.flameSpread = PlayerPrefs.GetFloat("flameSpread", wV.flameSpread);
-            wV.flameSpreadUpgrade = PlayerPrefs.GetFloat("flameSpreadUpgrade", wV.flameSpreadUpgrade);
+            if (string.IsNullOrEmpty(www.error))
+            {
+                print("Upload Successful");
+            }
+            else
+            {
+                print("Error: " + www.error);
+            }
+        }
+        
+        IEnumerator DownloadHighscoreFromDatabase()
+        {
+            var www = new WWW(WebUrl + PublicCode + "/pipe/");
+            yield return www;
 
-            wV.laserDamage = PlayerPrefs.GetFloat("laserDamage", wV.laserDamage);
-            wV.laserRange = PlayerPrefs.GetFloat("laserRange", wV.laserRange);
-            wV.laserDamageUpgrade = PlayerPrefs.GetFloat("laserDamageUpgrade", wV.laserDamageUpgrade);
+            if (string.IsNullOrEmpty(www.error))
+            {
+                FormatHighScores(www.text);
+            }
+            else
+            {
+                print("Error: " + www.error);
+            }
 
-            wV.gasDamage = PlayerPrefs.GetFloat("gasDamage", wV.gasDamage);
-            wV.gasDamageUpgrade = PlayerPrefs.GetFloat("gasDamageUpgrade", wV.gasDamageUpgrade);
-            wV.gasMaxRadius = PlayerPrefs.GetFloat("gasMaxRadius", wV.gasMaxRadius);
-            wV.gasMaxRadiusUpgrade = PlayerPrefs.GetFloat("gasMaxRadiusUpgrade", wV.gasMaxRadiusUpgrade);
-            
-            Debug.Log("Loaded Data");
         }
 
-        public void SaveHighScore(string playerName)
+        private void FormatHighScores(string textStream)
         {
+            string[] entries = textStream.Split(new char[] {'\n'}, System.StringSplitOptions.RemoveEmptyEntries);
+            highscoreList = new Highscore[entries.Length];
 
-            if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore1"))
+            for (int i = 0; i < entries.Length; i++)
             {
-                PlayerPrefs.SetFloat("HighScore5", PlayerPrefs.GetFloat("HighScore4"));
-                PlayerPrefs.SetString("HighScore5Name", PlayerPrefs.GetString("HighScore4Name"));
-                
-                PlayerPrefs.SetFloat("HighScore4", PlayerPrefs.GetFloat("HighScore3"));
-                PlayerPrefs.SetString("HighScore4Name", PlayerPrefs.GetString("HighScore3Name"));
-                
-                PlayerPrefs.SetFloat("HighScore3", PlayerPrefs.GetFloat("HighScore2"));
-                PlayerPrefs.SetString("HighScore3Name", PlayerPrefs.GetString("HighScore2Name"));
-                
-                PlayerPrefs.SetFloat("HighScore2", PlayerPrefs.GetFloat("HighScore1"));
-                PlayerPrefs.SetString("HighScore2Name", PlayerPrefs.GetString("HighScore1Name"));
-                
-                PlayerPrefs.SetFloat("HighScore1", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore1Name", playerName);
+                string[] entryInfo = entries[i].Split(new char[] {'|'});
+                string username = entryInfo[0];
+                int score = int.Parse(entryInfo[1]);
+                int level = int.Parse(entryInfo[2]);
+                highscoreList[i] = new Highscore(username,score,level);
             }
-            else if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore2"))
+        }
+        
+        public struct Highscore
+        {
+            public string username;
+            public int score;
+            public int level;
+
+            public Highscore(string _username, int _score, int _level)
             {
-                PlayerPrefs.SetFloat("HighScore5", PlayerPrefs.GetFloat("HighScore4"));
-                PlayerPrefs.SetString("HighScore5Name", PlayerPrefs.GetString("HighScore4Name"));
-                
-                PlayerPrefs.SetFloat("HighScore4", PlayerPrefs.GetFloat("HighScore3"));
-                PlayerPrefs.SetString("HighScore4Name", PlayerPrefs.GetString("HighScore3Name"));
-                
-                PlayerPrefs.SetFloat("HighScore3", PlayerPrefs.GetFloat("HighScore2"));
-                PlayerPrefs.SetString("HighScore3Name", PlayerPrefs.GetString("HighScore2Name"));
-                
-                PlayerPrefs.SetFloat("HighScore2", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore2Name", playerName);
-            }
-            else if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore3"))
-            {
-                PlayerPrefs.SetFloat("HighScore5", PlayerPrefs.GetFloat("HighScore4"));
-                PlayerPrefs.SetString("HighScore5Name", PlayerPrefs.GetString("HighScore4Name"));
-                
-                PlayerPrefs.SetFloat("HighScore4", PlayerPrefs.GetFloat("HighScore3"));
-                PlayerPrefs.SetString("HighScore4Name", PlayerPrefs.GetString("HighScore3Name"));
-                
-                PlayerPrefs.SetFloat("HighScore3", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore3Name", playerName);
-            }
-            else if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore4"))
-            {
-                PlayerPrefs.SetFloat("HighScore5", PlayerPrefs.GetFloat("HighScore4"));
-                PlayerPrefs.SetString("HighScore5Name", PlayerPrefs.GetString("HighScore4Name"));
-                
-                PlayerPrefs.SetFloat("HighScore4", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore4Name", playerName);
-            }
-            else if (LevelEnd.Instance.score > PlayerPrefs.GetFloat("HighScore5"))
-            {
-                PlayerPrefs.SetFloat("HighScore5", LevelEnd.Instance.score);
-                PlayerPrefs.SetString("HighScore5Name", playerName);
+                username = _username;
+                score = _score;
+                level = _level;
             }
         }
     }

@@ -21,11 +21,6 @@ namespace Library.Data
         public GameObject failScreen;
         public GameObject winScreen;
 
-        private void Start()
-        {
-            SaveData.Instance.LoadAllData();
-        }
-
         public void RoundEnd()
         {
             LevelEnd.Instance.enemiesKilled = 0;
@@ -37,7 +32,6 @@ namespace Library.Data
 
         public void Restart()
         {
-            SaveData.Instance.SaveAllData();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 

@@ -58,11 +58,6 @@ namespace Library.Combat
 
         void OnParticleCollision(GameObject other)
         {
-            if (other.CompareTag("SelectWeapon"))
-            {
-                other.gameObject.GetComponent<SelectWeapon>().ActivateWeapon();
-                return;
-            }
             if (!other.CompareTag("Enemy")) return;
             var numCollisionEvents = flameFx.GetCollisionEvents(other, collisionEvents);
             int i = 0;

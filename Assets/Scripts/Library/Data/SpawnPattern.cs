@@ -14,7 +14,6 @@ namespace Library.Data
             if (!other.CompareTag("Player")) return;
             SelectRoom();
             SpawnNextPatternManager.Instance.SpawnNextRoom(endPoint,patternNumber);
-            Debug.Log("Spawned room "+ patternNumber);
         }
 
         private void SelectRoom()

@@ -19,10 +19,12 @@ public class Test : MonoBehaviour
 
     private void Update()
     {
-        if (InputManager.Instance.KeyDown("options"))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseMenu.Instance.TriggerMenu();
         }
+
+        if (PauseMenu.Instance.pauseActive) return;if (LevelManager.Instance.winScreen.activeSelf) return;
         
         if (Input.GetMouseButtonDown(0))
         {

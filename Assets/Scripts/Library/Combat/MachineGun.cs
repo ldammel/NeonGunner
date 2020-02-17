@@ -1,5 +1,4 @@
-﻿using Library.Character.ScriptableObjects;
-using Library.Combat.Enemy;
+﻿using Library.Combat.Enemy;
 using Library.Combat.Pooling;
 using Library.Events;
 using UnityEngine;
@@ -10,13 +9,11 @@ namespace Library.Combat
     {
         public float damage;
         public float range;
-
-        [SerializeField] private WeaponValues values;
+        public float fireRate;
+        
         [SerializeField] private Camera cam;
         [SerializeField] private GameObject vfx;
         [SerializeField] private BulletPooled bp;
-        
-        public float fireRate;
 
         private float _fireTimer;
 
@@ -27,9 +24,6 @@ namespace Library.Combat
             {
                 cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
             }
-            fireRate = values.mgFireRate;
-            damage = values.mgDamage;
-            range = values.mgRange;
             bp = gameObject.GetComponent<BulletPooled>();
         }
 

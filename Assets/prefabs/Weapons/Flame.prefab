@@ -4840,7 +4840,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2708821365781922929}
-  - component: {fileID: 2912558650701659434}
   m_Layer: 2
   m_Name: camTransitionPoint (1)
   m_TagString: CamTransition
@@ -4862,19 +4861,6 @@ Transform:
   m_Father: {fileID: 102571224523829035}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2912558650701659434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799530521598417773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 471a1167113bb9849969385664e33e3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  point: {fileID: 0}
 --- !u!1 &2219677416540174114
 GameObject:
   m_ObjectHideFlags: 0

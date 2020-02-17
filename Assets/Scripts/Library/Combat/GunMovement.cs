@@ -20,8 +20,6 @@ namespace Library.Combat
         public Ray crossHairRay;
         
         public bool isFlame;
-        
-        public readonly EnemyFoundEvent enemyInVisor = new EnemyFoundEvent();
 
         private void Start()
         {
@@ -49,7 +47,7 @@ namespace Library.Combat
             _rotation.z = 0;
 
             var rot = transform.localRotation.eulerAngles + new Vector3(-_rotation.y, _rotation.x, 0f); //use local if your char is not always oriented Vector3.up
-            rot.x = ClampAngle(rot.x, -40f, 30f);
+            rot.x = ClampAngle(rot.x, isFlame? 0 : -40f, 30f);
             if(isFlame)rot.y = ClampAngle(rot.y, -30f, 40f);
             //var centerbase = center.rotation.eulerAngles + new Vector3(0, _rotation.x, 0f); //use local if your char is not always oriented Vector3.up
             
@@ -66,7 +64,6 @@ namespace Library.Combat
             if (Physics.SphereCast(crossHairRay, sphereCastSize,out RaycastHit hitInfo, 2000f, LayerMask.GetMask("Enemy")))
             {
                 crosshair.color = Color.red;
-                if(hitInfo.collider.gameObject != null && hitInfo.collider.gameObject.GetComponent<EnemyHealth>()) enemyInVisor.Invoke(hitInfo.collider.gameObject.GetComponent<EnemyHealth>());
             }
             else if (Physics.SphereCast(crossHairRay, 0.1f, 300f, LayerMask.GetMask("Player")))
             {

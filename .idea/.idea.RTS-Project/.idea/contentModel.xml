@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Lucas.Dammel\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-106464127.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Lucas.Dammel\Documents\GITProjects\RTS-Project" t="IncludeRecursive">
+    <e p="C:\Users\Lucas\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lucas\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RTS-Project.-1694248644.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lucas\Documents\GITProjects\RTS-Project\RTS-Project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="dreamlo" t="Include">
+          <e p="dreamloLeaderBoard.cs" t="Include" />
+          <e p="dreamloPromoCode.cs" t="Include" />
+          <e p="LeaderBoardSample.cs" t="Include" />
+          <e p="README_FIRST.txt" t="Include" />
+        </e>
         <e p="Lean" t="Include">
           <e p="Common" t="Include">
             <e p="Examples" t="Include">
@@ -218,40 +224,24 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CamTransitionPoint.cs" t="Include" />
           <e p="Library" t="Include">
-            <e p="Base" t="Include">
-              <e p="BaseScriptableObject.cs" t="Include" />
-            </e>
             <e p="Character" t="Include">
-              <e p="ScriptableObjects" t="Include">
-                <e p="CurrencyObject.cs" t="Include" />
-                <e p="WeaponValues.cs" t="Include" />
-              </e>
               <e p="WaveMovement.cs" t="Include" />
               <e p="WaypointMovement.cs" t="Include" />
             </e>
             <e p="Combat" t="Include">
               <e p="Enemy" t="Include">
-                <e p="Action.cs" t="Include" />
                 <e p="CloseEnemy.cs" t="Include" />
                 <e p="EnemyHealth.cs" t="Include" />
-                <e p="EnemyStats.cs" t="Include" />
                 <e p="ExplodingEnemy.cs" t="Include" />
                 <e p="HealthBar.cs" t="Include" />
-                <e p="PatrolAction.cs" t="Include" />
                 <e p="SpawnBomb.cs" t="Include" />
                 <e p="SpawnCloseEnemies.cs" t="Include" />
-                <e p="State.cs" t="Include" />
-                <e p="StateController.cs" t="Include" />
               </e>
-              <e p="Flak.cs" t="Include" />
               <e p="Flamethrower.cs" t="Include" />
               <e p="GunMovement.cs" t="Include" />
-              <e p="Laser.cs" t="Include" />
               <e p="LookAt.cs" t="Include" />
               <e p="MachineGun.cs" t="Include" />
-              <e p="ParticleDamage.cs" t="Include" />
               <e p="Pooling" t="Include">
                 <e p="BulletPooled.cs" t="Include" />
                 <e p="BulletShot.cs" t="Include" />
@@ -264,54 +254,24 @@
             <e p="Data" t="Include">
               <e p="EnemySpawnPoint.cs" t="Include" />
               <e p="LevelManager.cs" t="Include" />
-              <e p="MathParabola.cs" t="Include" />
               <e p="SaveData.cs" t="Include" />
-              <e p="SelectWeapon.cs" t="Include" />
               <e p="SpawnBuildingsInPattern.cs" t="Include" />
               <e p="SpawnNextPatternManager.cs" t="Include" />
               <e p="SpawnPattern.cs" t="Include" />
-              <e p="WeaponSelectionManager.cs" t="Include" />
+              <e p="ValidateName.cs" t="Include" />
               <e p="WeaponSelector.cs" t="Include" />
             </e>
             <e p="Events" t="Include">
-              <e p="BaseEvents" t="Include">
-                <e p="BaseGameEvent.cs" t="Include" />
-                <e p="FloatEvent.cs" t="Include" />
-                <e p="IntEvent.cs" t="Include" />
-                <e p="VoidEvent.cs" t="Include" />
-              </e>
               <e p="CameraTransition.cs" t="Include" />
               <e p="ComboNova.cs" t="Include" />
-              <e p="EnemyFoundEvent.cs" t="Include" />
               <e p="LevelEnd.cs" t="Include" />
-              <e p="Listeners" t="Include">
-                <e p="BaseGameEventListener.cs" t="Include" />
-                <e p="FloatListener.cs" t="Include" />
-                <e p="IGameEventListener.cs" t="Include" />
-                <e p="IntListener.cs" t="Include" />
-                <e p="VoidListener.cs" t="Include" />
-              </e>
-              <e p="OnCollisionController.cs" t="Include" />
-              <e p="OnInteractionController.cs" t="Include" />
-              <e p="OnTriggerController.cs" t="Include" />
               <e p="PauseMenu.cs" t="Include" />
               <e p="SceneSwitch.cs" t="Include" />
               <e p="SelectDifficulty.cs" t="Include" />
-              <e p="ShieldActivator.cs" t="Include" />
-              <e p="UnityEvents" t="Include">
-                <e p="UnityFloatEvent.cs" t="Include" />
-                <e p="UnityIntEvent.cs" t="Include" />
-                <e p="UnityVoidEvent.cs" t="Include" />
-              </e>
-              <e p="Void.cs" t="Include" />
               <e p="WallCollision.cs" t="Include" />
             </e>
             <e p="Tools" t="Include">
-              <e p="BlockSpawner.cs" t="Include" />
-              <e p="Design.cs" t="Include" />
               <e p="DestroyAfterTime.cs" t="Include" />
-              <e p="InputManager.cs" t="Include" />
-              <e p="Keybindings.cs" t="Include" />
               <e p="ObjectActivator.cs" t="Include" />
               <e p="SoundManager.cs" t="Include" />
               <e p="SoundPlayer.cs" t="Include" />
