@@ -2,6 +2,7 @@
 using Library.Events;
 using Sirenix.Utilities;
 using UnityEngine;
+using UnityEngine.Networking;
 
 namespace Library.Data
 {
@@ -23,22 +24,22 @@ namespace Library.Data
         private const string PrivateCode = "5W6CphQFz0yVqxJ-kIuKAwYwKSQ5jJHkuQt0oQP93JAg";
         private const string PublicCode = "5e485cf0fe232612b8331df7";
         private const string WebUrl = "http://dreamlo.com/lb/";
-        public Highscore[] highscoreList;
+        public HighScore[] highScoreList;
 
         public void SaveHighScore(string username)
         {
             if (username.IsNullOrWhitespace() || username.Length < 1) username = "NoName";
             var score = (int)LevelEnd.Instance.score;
             var level = SpawnNextPatternManager.Instance.levelNumber;
-            StartCoroutine(UploadNewHighscore(username, score, level));
+            StartCoroutine(UploadNewHighScore(username, score, level));
         }
         
         public void LoadHighScore()
         {
-            StartCoroutine(DownloadHighscoreFromDatabase());
+            StartCoroutine(DownloadHighScoreFromDatabase());
         }
 
-        IEnumerator UploadNewHighscore(string username, int score, int level)
+        private static IEnumerator UploadNewHighScore(string username, int score, int level)
         {
             var www = new WWW(WebUrl + PrivateCode + "/add/" + WWW.EscapeURL(username) + "/" + score + "/" + level);
             yield return www;
@@ -52,8 +53,8 @@ namespace Library.Data
                 print("Error: " + www.error);
             }
         }
-        
-        IEnumerator DownloadHighscoreFromDatabase()
+
+        private IEnumerator DownloadHighScoreFromDatabase()
         {
             var www = new WWW(WebUrl + PublicCode + "/pipe/");
             yield return www;
@@ -71,30 +72,30 @@ namespace Library.Data
 
         private void FormatHighScores(string textStream)
         {
-            string[] entries = textStream.Split(new char[] {'\n'}, System.StringSplitOptions.RemoveEmptyEntries);
-            highscoreList = new Highscore[entries.Length];
+            var entries = textStream.Split(new char[] {'\n'}, System.StringSplitOptions.RemoveEmptyEntries);
+            highScoreList = new HighScore[entries.Length];
 
-            for (int i = 0; i < entries.Length; i++)
+            for (var i = 0; i < entries.Length; i++)
             {
-                string[] entryInfo = entries[i].Split(new char[] {'|'});
-                string username = entryInfo[0];
-                int score = int.Parse(entryInfo[1]);
-                int level = int.Parse(entryInfo[2]);
-                highscoreList[i] = new Highscore(username,score,level);
+                var entryInfo = entries[i].Split(new char[] {'|'});
+                var username = entryInfo[0];
+                var score = int.Parse(entryInfo[1]);
+                var level = int.Parse(entryInfo[2]);
+                highScoreList[i] = new HighScore(username,score,level);
             }
         }
         
-        public struct Highscore
+        public struct HighScore
         {
-            public string username;
-            public int score;
-            public int level;
+            public readonly string username;
+            public readonly int score;
+            public readonly int level;
 
-            public Highscore(string _username, int _score, int _level)
+            public HighScore(string username, int score, int level)
             {
-                username = _username;
-                score = _score;
-                level = _level;
+                this.username = username;
+                this.score = score;
+                this.level = level;
             }
         }
     }

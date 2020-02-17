@@ -6,13 +6,13 @@ namespace Library.Combat.Enemy
 {
     public class CloseEnemy : MonoBehaviour
     {
-        [SerializeField] private WaypointMovement mov;
         public SpawnCloseEnemies spawn;
+        
+        [SerializeField] private WaypointMovement mov;
         [SerializeField] private int pointsLossPerSecond;
         [SerializeField] private float baseSpeed;
 
         private bool _onPoint;
-        private bool _blinking;
 
         private void OnDisable()
         {
@@ -23,7 +23,6 @@ namespace Library.Combat.Enemy
         private void Update()
         {
             if (PauseMenu.Instance.pauseActive) return;
-            if (GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>().godMode) return;
             if (!_onPoint) return;
             spawn.onPoint = true;
             LevelEnd.Instance.negativeScore -= Mathf.RoundToInt(pointsLossPerSecond  * Time.deltaTime);

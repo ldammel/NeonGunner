@@ -1,6 +1,4 @@
 ﻿using Lean.Pool;
-using Library.Combat.Enemy;
-using Library.Events;
 using UnityEngine;
 
 namespace Library.Combat.Pooling

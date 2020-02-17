@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using Library.Character;
 using Library.Combat.Pooling;
 using Library.Events;
 using Library.Tools;
@@ -15,41 +14,45 @@ namespace Library.Combat.Enemy
         public float switchTime;
         public MeshRenderer rend;
         public Material switchMat;
-        private Material baseMat;
+        private Material _baseMat;
 
-        private GameObject mov;
+        private GameObject _mov;
 
-        private bool switching;
+        private bool _switching;
+        private EnemyHealth _enemyHealth;
+        private EnemyPooled _enemyPooled;
 
         private void Start()
         {
-            baseMat = rend.material;
-            mov = GameObject.Find("---PLAYER---/Player");
+            _baseMat = rend.material;
+            _mov = GameObject.Find("---PLAYER---/Player");
+            _enemyHealth = _mov.GetComponent<EnemyHealth>();
+            _enemyPooled = gameObject.GetComponent<EnemyPooled>();
         }
 
         private void Update()
         {
-            if (Vector3.Distance(transform.position, mov.transform.position) < 10 && Math.Abs(mov.transform.position.x - transform.position.x) < 0.2) Explode();
-            if (this.gameObject.activeSelf && !switching) StartCoroutine(SwitchMat());
+            if (Vector3.Distance(transform.position, _mov.transform.position) < 10 && Math.Abs(_mov.transform.position.x - transform.position.x) < 0.2) Explode();
+            if (this.gameObject.activeSelf && !_switching) StartCoroutine(SwitchMat());
         }
 
         private void Explode()
         {
-            mov.GetComponent<EnemyHealth>().TakeDamage(damage);
+            _enemyHealth.TakeDamage(damage);
             Instantiate(explosionVfx, transform.position, transform.rotation);
             SoundManager.Instance.PlaySound("Explosion");
             LevelEnd.Instance.enemiesKilled = 0;
-            gameObject.GetComponent<EnemyPooled>().ReturnToPool();
+            _enemyPooled.ReturnToPool();
         }
 
         IEnumerator SwitchMat()
         {
-            switching = true;
+            _switching = true;
             rend.material = switchMat;
             yield return new WaitForSeconds(switchTime);
-            rend.material = baseMat;
+            rend.material = _baseMat;
             yield return new WaitForSeconds(0.2f);
-            switching = false;
+            _switching = false;
         }
     }
 }

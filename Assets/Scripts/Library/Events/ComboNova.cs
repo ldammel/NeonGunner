@@ -1,7 +1,5 @@
-﻿using System;
-using Library.Combat.Enemy;
+﻿using Library.Combat.Enemy;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Library.Events
 {

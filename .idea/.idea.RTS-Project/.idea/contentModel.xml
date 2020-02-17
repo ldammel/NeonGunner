@@ -9,12 +9,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="dreamlo" t="Include">
-          <e p="dreamloLeaderBoard.cs" t="Include" />
-          <e p="dreamloPromoCode.cs" t="Include" />
-          <e p="LeaderBoardSample.cs" t="Include" />
-          <e p="README_FIRST.txt" t="Include" />
-        </e>
         <e p="Lean" t="Include">
           <e p="Common" t="Include">
             <e p="Examples" t="Include">
@@ -234,7 +228,6 @@
                 <e p="CloseEnemy.cs" t="Include" />
                 <e p="EnemyHealth.cs" t="Include" />
                 <e p="ExplodingEnemy.cs" t="Include" />
-                <e p="HealthBar.cs" t="Include" />
                 <e p="SpawnBomb.cs" t="Include" />
                 <e p="SpawnCloseEnemies.cs" t="Include" />
               </e>
@@ -262,7 +255,6 @@
               <e p="WeaponSelector.cs" t="Include" />
             </e>
             <e p="Events" t="Include">
-              <e p="CameraTransition.cs" t="Include" />
               <e p="ComboNova.cs" t="Include" />
               <e p="LevelEnd.cs" t="Include" />
               <e p="PauseMenu.cs" t="Include" />

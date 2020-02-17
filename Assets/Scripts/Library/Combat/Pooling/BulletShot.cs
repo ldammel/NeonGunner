@@ -1,22 +1,20 @@
 ﻿using System;
 using Library.Character;
 using Library.Combat.Enemy;
-using Library.Tools;
 using UnityEngine;
 
 namespace Library.Combat.Pooling
 {
     public class BulletShot : MonoBehaviour, IGameObjectPooled
     {
-        public float moveSpeed = 30f;
-        private float _lifeTime;
-        public float maxLifeTime;
-        public float damage;
-        public GameObject vfx;
-        
-        public bool isEnemy;
+        [SerializeField] private float moveSpeed = 30f;
+        [SerializeField] private float lifeTime;
+        [SerializeField] private float maxLifeTime;
+        [SerializeField] private float damage;
+        [SerializeField] private GameObject vfx;
+        [SerializeField] private bool isEnemy;
 
-        private EnemyHealth player;
+        private EnemyHealth _player;
         private BulletShotPool _pool;
         
         public BulletShotPool Pool
@@ -32,8 +30,8 @@ namespace Library.Combat.Pooling
         }
         private void OnEnable()
         {
-            _lifeTime = 0f;
-            player = GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>();
+            lifeTime = 0f;
+            _player = GameObject.Find("---PLAYER---/Player").GetComponent<EnemyHealth>();
             if (PlayerPrefs.GetString("Difficulty") == "Easy") damage = 50;
         }
 
@@ -41,8 +39,8 @@ namespace Library.Combat.Pooling
         private void Update()
         {
             transform.Translate(Time.deltaTime * moveSpeed * Vector3.forward);
-            _lifeTime += Time.deltaTime;
-            if (!(_lifeTime > maxLifeTime)) return;
+            lifeTime += Time.deltaTime;
+            if (!(lifeTime > maxLifeTime)) return;
             _pool.ReturnToPool(gameObject);
         }
 
@@ -50,7 +48,7 @@ namespace Library.Combat.Pooling
         {
             if (other.collider.CompareTag("Player") && isEnemy)
             {
-                player.TakeDamage(damage);
+                _player.TakeDamage(damage);
                 if(vfx != null)Instantiate(vfx, other.GetContact(0).point, other.collider.transform.rotation, other.collider.transform);
                 other.gameObject.GetComponentInChildren<WaypointMovement>().SwitchMaterial(0.15f);
             }

@@ -19,7 +19,7 @@ namespace Library.Events
 
         [SerializeField] private GameObject menuObject;
 
-        public AudioSource audio;
+        public AudioSource audioS;
 
         public bool pauseActive;
 
@@ -34,9 +34,9 @@ namespace Library.Events
             Cursor.lockState = pauseActive ? CursorLockMode.None : CursorLockMode.Locked;
             if (pauseActive)
             {
-                audio.Pause();
+                audioS.Pause();
             }
-            else audio.UnPause();
+            else audioS.UnPause();
         }
 
         public void Quit()

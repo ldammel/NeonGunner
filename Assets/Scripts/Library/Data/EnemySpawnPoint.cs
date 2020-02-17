@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 
-public class EnemySpawnPoint : MonoBehaviour
+namespace Library.Data
 {
-        public Transform point;
-
-        private void Awake()
+        public class EnemySpawnPoint : MonoBehaviour
         {
-                point = this.transform;
+                public Transform point;
+
+                private void Awake()
+                {
+                        point = transform;
+                }
         }
 }

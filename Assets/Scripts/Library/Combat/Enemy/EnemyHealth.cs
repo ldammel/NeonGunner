@@ -1,34 +1,35 @@
 ﻿using System;
-using Library.Character;
 using Library.Combat.Pooling;
 using Library.Data;
 using Library.Events;
 using TMPro;
-using Unity.Mathematics;
 using UnityEngine;
 
 namespace Library.Combat.Enemy
 {
     public class EnemyHealth : MonoBehaviour
     {
-        public float maxHealth = 100;
         public float curHealth = 100;
-
-        public bool player;
-
-        public bool godMode;
-
-        public int scorePerKill;
-        public GameObject killText;
-        public Transform killTextPoint;
-        
-        public GameObject deathVfx;
-        public bool iscloseEnemy;
-        private int _scoreMultiplier;
+        public float maxHealth = 100;
         public event Action<float> OnHealthPctChanged = delegate{  };
+        
+        [SerializeField] private bool player;
+        [SerializeField] private int scorePerKill;
+        [SerializeField] private GameObject killText;
+        [SerializeField] private Transform killTextPoint;
+        [SerializeField] private GameObject deathVfx;
+        [SerializeField] private bool isCloseEnemy;
+        
+        private int _scoreMultiplier;
+        private TextMeshPro _textMeshPro;
+        private EnemyPooled _enemyPooled;
+        private Rigidbody _rigidbody;
 
         private void Start()
         {
+            _rigidbody = gameObject.GetComponent<Rigidbody>();
+            _enemyPooled = gameObject.GetComponent<EnemyPooled>();
+            if(killText != null)_textMeshPro = killText.GetComponentInChildren<TextMeshPro>();
             if (PlayerPrefs.GetString("Difficulty") == "Easy")
             {
                 _scoreMultiplier = 1;
@@ -41,38 +42,18 @@ namespace Library.Combat.Enemy
             {
                 _scoreMultiplier = 4;
             }
-
             curHealth = maxHealth;
         }
-        
-        public void SelectGodMode(bool value)
+        private void EnemyDeath()
         {
-            godMode = value;
-        }
-        
-        private void Update()
-        {
-            if (godMode)
-            {
-                curHealth = maxHealth;
-            }
-            if(player)
-            {
-                if (curHealth <= 0)
-                {
-                    PlayerDeath();
-                }
-            }
-            if (!(curHealth <= 0) || player) return;
-            curHealth = 1;
             LevelEnd.Instance.enemiesKilled++;
             LevelEnd.Instance.score += scorePerKill * _scoreMultiplier;
-            killText.GetComponentInChildren<TextMeshPro>().text = (scorePerKill * _scoreMultiplier).ToString();
+            _textMeshPro.text = (scorePerKill * _scoreMultiplier).ToString();
             Instantiate(killText, killTextPoint.position, Quaternion.identity);
-            
-            if (iscloseEnemy) SpawnCloseEnemies.Instance.spawnedAmount--;
+
+            if (isCloseEnemy) SpawnCloseEnemies.Instance.spawnedAmount--;
             Instantiate(deathVfx, transform.position, transform.rotation);
-            gameObject.GetComponent<EnemyPooled>().ReturnToPool();
+            _enemyPooled.ReturnToPool();
             curHealth = maxHealth;
         }
 
@@ -81,7 +62,7 @@ namespace Library.Combat.Enemy
             PauseMenu.Instance.pauseActive = true;
             LevelManager.Instance.winScreen.SetActive(true);
             LevelEnd.Instance.CalculateReward();
-            gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            _rigidbody.isKinematic = true;
             curHealth = maxHealth;
         }
 
@@ -90,6 +71,9 @@ namespace Library.Combat.Enemy
             curHealth -= damage;
             var currentHealthPct = curHealth / maxHealth;
             OnHealthPctChanged(currentHealthPct);
+            if (curHealth > 0) return;
+            if(player) PlayerDeath();
+            else EnemyDeath();
         }
     }
 }

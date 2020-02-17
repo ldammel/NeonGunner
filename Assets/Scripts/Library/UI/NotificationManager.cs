@@ -18,7 +18,7 @@ namespace Library.UI
         private static NotificationManager _instance;
         private static NotificationManager CreateNewInstance()
         {
-            NotificationManager prefab = Resources.Load<NotificationManager>("Prefabs/Managers/NotificationManager");
+            var prefab = Resources.Load<NotificationManager>("Prefabs/Managers/NotificationManager");
             _instance = Instantiate(prefab);
             return _instance;
         }

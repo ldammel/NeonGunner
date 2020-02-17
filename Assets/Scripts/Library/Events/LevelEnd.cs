@@ -1,6 +1,4 @@
-﻿using System;
-using Library.Character;
-using Library.Combat.Enemy;
+﻿using Library.Character;
 using Library.Data;
 using TMPro;
 using UnityEngine;
@@ -31,19 +29,20 @@ namespace Library.Events
         [SerializeField] private TextMeshProUGUI waveText;
         [SerializeField] private GameObject rewardObj;
         [SerializeField] private GameObject nova;
+        
         public float score;
         public float negativeScore;
         public float totalNegativeScore = 1;
-
         public int comboNeed = 25;
         public float enemiesKilled = 0;
-
         public float waveDistance = 180;
 
         private int _reward;
+        private WaypointMovement _waypointMovement;
 
         private void Start()
         {
+            _waypointMovement = GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>();
             if (PlayerPrefs.GetString("Difficulty") == "Easy")
             {
                 comboNeed = 50;
@@ -60,9 +59,9 @@ namespace Library.Events
 
         private void Update()
         {
-            statsText.text = score.ToString();
+            statsText.text = "" + score;
             waveText.text = Mathf.Round(waveDistance) + " m";
-            reduceStatsText.text = negativeScore.ToString();
+            reduceStatsText.text = "" + negativeScore;
             comboText.text = enemiesKilled + "/" + comboNeed;
             comboImage.fillAmount = enemiesKilled / comboNeed;
             if (enemiesKilled >= comboNeed) SpawnNova();
@@ -71,7 +70,7 @@ namespace Library.Events
         public void End()
         {
             LevelManager.Instance.winScreen.SetActive(true);
-            GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>().moveSpeed = 0;
+            _waypointMovement.moveSpeed = 0;
             CalculateReward();
             PauseMenu.Instance.pauseActive = true;
         }

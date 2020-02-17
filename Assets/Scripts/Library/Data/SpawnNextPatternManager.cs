@@ -1,72 +1,75 @@
 ﻿using System.Collections.Generic;
+using Lean.Pool;
 using Library.Character;
 using Library.Combat.Pooling;
 using TMPro;
 using UnityEngine;
-using Lean.Pool;
 
-public class SpawnNextPatternManager : MonoBehaviour
+namespace Library.Data
 {
-    public static SpawnNextPatternManager Instance;
-
-    private void Awake()
+    public class SpawnNextPatternManager : MonoBehaviour
     {
-        if (Instance != null)
+        public static SpawnNextPatternManager Instance;
+
+        private void Awake()
         {
-            Debug.LogError("There can only be one SpawnNextPatternManager!");
-            Application.Quit();
+            if (Instance != null)
+            {
+                Debug.LogError("There can only be one SpawnNextPatternManager!");
+                Application.Quit();
+            }
+
+            Instance = this;
         }
 
-        Instance = this;
-    }
+        public int levelNumber;
 
-    public int levelNumber;
+        [SerializeField] private LeanGameObjectPool[] pool;
 
-    [SerializeField] private LeanGameObjectPool[] pool;
+        [SerializeField] private WaypointMovement playerSpeed;
+        [SerializeField] private float speedModifier;
 
-    [SerializeField] private WaypointMovement playerSpeed;
-    [SerializeField] private float speedModifier;
+        [SerializeField] private List<GameObject> spawned;
+        [SerializeField] private GameObject laneImages;
 
-    [SerializeField] private List<GameObject> spawned;
-    [SerializeField] private GameObject laneImages;
-
-    public bool tutorial;
-    private void Start()
-    {
-        playerSpeed = GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>();
-    }
-
-    public void UpdateLevelText(TextMeshProUGUI text)
-    {
-        if(text != null)text.text = "LEVEL: " + levelNumber;
-    }
-
-    public void SpawnNextRoom(Component endPoint, int patternNumber)
-    {
-        if (pool == null)
+        public bool tutorial;
+        private void Start()
         {
-            Debug.LogError("Could not find a Room!");
-            return;
+            playerSpeed = GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>();
         }
-        if(playerSpeed.moveSpeed< playerSpeed.maxSpeed)playerSpeed.moveSpeed += speedModifier;
-        var transform1 = endPoint.transform;
-        var room = pool[patternNumber].Spawn(transform1.position,transform1.rotation, pool[patternNumber].transform);
-        room.GetComponent<EnemyPooled>().Pool = pool[patternNumber];
-        spawned.Add(room);
-        if(room.GetComponent<SpawnBuildingsInPattern>() != null)room.GetComponent<SpawnBuildingsInPattern>().SpawnEnemies();
-        laneImages.SetActive(levelNumber > 12);
-        if (levelNumber > 9 && !tutorial)
+
+        public void UpdateLevelText(TextMeshProUGUI text)
         {
-            spawned[0].GetComponent<EnemyPooled>().ReturnToPool();
-            spawned.Remove(spawned[0]);
+            if(text != null)text.text = "LEVEL: " + levelNumber;
         }
-        else if (tutorial && levelNumber > 20)
+
+        public void SpawnNextRoom(Component endPoint, int patternNumber)
         {
-            spawned[0].GetComponent<EnemyPooled>().ReturnToPool();
-            spawned.Remove(spawned[0]);
+            if (pool == null)
+            {
+                Debug.LogError("Could not find a Room!");
+                return;
+            }
+            if(playerSpeed.moveSpeed< playerSpeed.maxSpeed)playerSpeed.moveSpeed += speedModifier;
+            var transform1 = endPoint.transform;
+            var room = pool[patternNumber].Spawn(transform1.position,transform1.rotation, pool[patternNumber].transform);
+            room.GetComponent<EnemyPooled>().Pool = pool[patternNumber];
+            spawned.Add(room);
+            if(room.GetComponent<SpawnBuildingsInPattern>() != null)room.GetComponent<SpawnBuildingsInPattern>().SpawnEnemies();
+            laneImages.SetActive(levelNumber > 12);
+            if (levelNumber > 9 && !tutorial)
+            {
+                spawned[0].GetComponent<EnemyPooled>().ReturnToPool();
+                spawned.Remove(spawned[0]);
+            }
+            else if (tutorial && levelNumber > 20)
+            {
+                spawned[0].GetComponent<EnemyPooled>().ReturnToPool();
+                spawned.Remove(spawned[0]);
+            }
+            levelNumber++;
+            var text = room.GetComponentInChildren<TextMeshProUGUI>();
+            UpdateLevelText(text);
         }
-        levelNumber++;
-        var text = room.GetComponentInChildren<TextMeshProUGUI>();
-        UpdateLevelText(text);
     }
 }

@@ -5,7 +5,7 @@ namespace Library.Combat.Pooling
 {
     public class EnemyPool: MonoBehaviour
     {
-        public GameObject prefab;
+        [SerializeField] private GameObject prefab;
         private readonly Queue<GameObject> _objects = new Queue<GameObject>();
 
         private void Start()

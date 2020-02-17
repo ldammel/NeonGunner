@@ -1,6 +1,5 @@
 ﻿using Library.Combat.Enemy;
 using Library.Events;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Library.Character
@@ -8,14 +7,6 @@ namespace Library.Character
     public class WaveMovement : MonoBehaviour
     {
         public static WaveMovement Instance;
-
-        private float _distanceToWave;
-        private float _baseDistance = 200;
-
-        public float zValue;
-
-        public bool testing;
-        
         private void Awake()
         {
             if (Instance != null)
@@ -26,15 +17,21 @@ namespace Library.Character
 
             Instance = this;
         }
+        
+        public float zValue;
+        public bool testing;
+
+        private float _distanceToWave;
+        private const float BaseDistance = 200;
 
         public void ReducePosition()
         {
-            if (transform.parent.GetComponent<EnemyHealth>().godMode) return;
             if (testing) return;
             if (LevelEnd.Instance.totalNegativeScore <= 0) return;
             zValue = 200*(LevelEnd.Instance.totalNegativeScore / LevelEnd.Instance.score);
-            transform.localPosition = new Vector3(0,0,_baseDistance + zValue);
-            _distanceToWave = 360 - transform.localPosition.z;
+            var transform1 = transform;
+            transform1.localPosition = new Vector3(0,0,BaseDistance + zValue);
+            _distanceToWave = 360 - transform1.localPosition.z;
             LevelEnd.Instance.waveDistance = _distanceToWave;
             if( transform.localPosition.z >= 365 || _distanceToWave <= 0) LevelEnd.Instance.End();
         }

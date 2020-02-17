@@ -1,6 +1,4 @@
-﻿using Library.Character;
-using Library.Events;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Library.Data
 {

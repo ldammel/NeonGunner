@@ -11,6 +11,7 @@ namespace Library.Combat.Enemy
     {
         public static SpawnCloseEnemies Instance;
 
+
         private void Awake()
         {
             if (Instance != null)
@@ -25,7 +26,7 @@ namespace Library.Combat.Enemy
         [SerializeField] private Transform[] spawnPoints;
         [SerializeField] private LeanGameObjectPool pool;
         [SerializeField] private int amountUntilReset;
-        [SerializeField] private int maxEnemxAmount;
+        [SerializeField] private int maxEnemyAmount;
         [SerializeField] private int waitTime;
         public GameObject warningImage;
         public int spawnedAmount;
@@ -33,22 +34,24 @@ namespace Library.Combat.Enemy
 
 
         private bool _started;
+        private IEnumerator _enumerator;
 
+        private void Start()
+        {
+            _enumerator = SpawnEnemies(waitTime);
+        }
+        
         private void Update()
         {
             if (PlayerPrefs.GetString("Difficulty") == "Easy") return;
             if (PlayerPrefs.GetString("Difficulty") == "Medium") return;
-            if (transform.parent.GetComponent<EnemyHealth>().godMode) return;
-            if (spawnedAmount <= amountUntilReset && !_started) StartCoroutine(SpawnEnemies(waitTime));
+            if (spawnedAmount <= amountUntilReset && !_started) StartCoroutine(_enumerator);
             warningImage.SetActive(onPoint);
-            WaveMovement.Instance.ReducePosition();
+            if(onPoint)WaveMovement.Instance.ReducePosition();
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (transform.parent.GetComponent<EnemyHealth>().godMode) return;
-            if (PlayerPrefs.GetString("Difficulty") == "Easy") return;
-            if (PlayerPrefs.GetString("Difficulty") == "Medium") return;
             if (other.name.Contains("Close") && GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>().moveSpeed > 15)
             {
                 NotificationManager.Instance.SetNewNotification("Enemies Incoming from behind!", 2f, Color.red);
@@ -60,19 +63,19 @@ namespace Library.Combat.Enemy
             }
         }
 
-        IEnumerator SpawnEnemies(float initialWait)
+        private IEnumerator SpawnEnemies(float initialWait)
         {
             _started = true;
             onPoint = false;
             UpdatePos();
             yield return new WaitForSeconds(initialWait);
             onPoint = false;
-            while (spawnedAmount < maxEnemxAmount)
+            while (spawnedAmount < maxEnemyAmount)
             {
-                for (int i = 0; i < spawnPoints.Length; i++)
+                foreach (var t in spawnPoints)
                 {
                     yield return new WaitForSeconds(0.5f);
-                    var s = pool.Spawn(spawnPoints[i].position, spawnPoints[i].rotation, pool.transform);
+                    var s = pool.Spawn(t.position, t.rotation, pool.transform);
                     s.GetComponent<CloseEnemy>().spawn = this;
                     spawnedAmount++;
                 }
@@ -80,7 +83,7 @@ namespace Library.Combat.Enemy
             _started = false;
         }
 
-        public void UpdatePos()
+        private void UpdatePos()
         {
             LevelEnd.Instance.ReduceScore();
             onPoint = false;

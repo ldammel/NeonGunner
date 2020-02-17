@@ -1,5 +1,5 @@
 ﻿using Lean.Pool;
-using Library.Events;
+using Library.Data;
 using UnityEngine;
 
 namespace Library.Combat.Pooling
@@ -14,16 +14,16 @@ namespace Library.Combat.Pooling
 
         private void Awake()
         {
-            if(!pat.premadeRoom)spawnPoints = new Transform[100];
+            if(!pat.preMadeRoom)spawnPoints = new Transform[100];
             objectPool= GameObject.Find("---MANAGERS---/PatternPools/EnemyPool").GetComponent<LeanGameObjectPool>();
         }
 
         public void SpawnEnemies()
         {
-            for (int i = 0; i < spawnPoints.Length; i++)
+            foreach (var t in spawnPoints)
             {
-                if(spawnPoints[i] == null || !spawnPoints[i].gameObject.activeSelf) continue;
-                var transform1 = spawnPoints[i].transform;
+                if(t == null || !t.gameObject.activeSelf) continue;
+                var transform1 = t.transform;
                 objectPool.Spawn(transform1.position,transform1.rotation, objectPool.transform);
             }
         }

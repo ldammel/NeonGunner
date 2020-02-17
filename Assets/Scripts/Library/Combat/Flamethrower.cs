@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Library.Combat.Enemy;
-using Library.Data;
 using Library.Events;
 using Library.Tools;
 using UnityEngine;
@@ -10,14 +9,14 @@ namespace Library.Combat
     public class Flamethrower : MonoBehaviour
     {
         [SerializeField] private ParticleSystem flameFx;
-         public float damage;
-         public float range;
-         public float spread;
-         public List<ParticleCollisionEvent> collisionEvents;
-        private bool soundPlaying;
+        public float damage;
+        public List<ParticleCollisionEvent> collisionEvents;
+        private bool _soundPlaying;
+        private bool _isInstanceNotNull;
 
         private void Start()
         {
+            _isInstanceNotNull = SoundManager.Instance != null;
             var coll = flameFx.collision;
             coll.enabled = true;
             collisionEvents = new List<ParticleCollisionEvent>();
@@ -28,47 +27,41 @@ namespace Library.Combat
             var flameFxMain = flameFx.main;
             flameFxMain.maxParticles = 0;
             if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
-            soundPlaying = false;
+            _soundPlaying = false;
         }
 
         private void Update()
         {
             if (PauseMenu.Instance.pauseActive) return;
-            var o = flameFx.gameObject;
-            var localScale = o.transform.localScale;
-            localScale = new Vector3(spread,localScale.y, range);
-            o.transform.localScale = localScale;
-            var flameFxMain = flameFx.main;
             if (Input.GetMouseButton(1))
             {
+                var flameFxMain = flameFx.main;
                 flameFxMain.maxParticles = 130;
-                if (soundPlaying) return;
+                if (_soundPlaying) return;
                 SoundManager.Instance.PlaySound("Flame");
-                soundPlaying = true;
+                _soundPlaying = true;
             }
             else if (Input.GetMouseButtonUp(1))
             {
+                var flameFxMain = flameFx.main;
                 flameFxMain.maxParticles = 0;
-                if(SoundManager.Instance != null)SoundManager.Instance.PlaySound("Stop");
-                soundPlaying = false;
+                if(_isInstanceNotNull)SoundManager.Instance.PlaySound("Stop");
+                _soundPlaying = false;
             }
         }
 
 
-
-        void OnParticleCollision(GameObject other)
+        private void OnParticleCollision(GameObject other)
         {
             if (!other.CompareTag("Enemy")) return;
             var numCollisionEvents = flameFx.GetCollisionEvents(other, collisionEvents);
-            int i = 0;
+            var i = 0;
 
             while (i < numCollisionEvents)
             {
-                if (other.CompareTag("Enemy"))
-                {
-                    other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
-                    i++;
-                }
+                if (!other.CompareTag("Enemy")) continue;
+                other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+                i++;
             }
         }
     }

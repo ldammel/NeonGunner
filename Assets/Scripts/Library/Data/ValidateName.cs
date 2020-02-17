@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Linq;
-using Library.UI;
+﻿using System.Linq;
 using Sirenix.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,7 +31,7 @@ namespace Library.Data
                 tooLongWarning.SetActive(true);
                 return;
             }
-            if (badWords.Any(t => username.Contains(t)))
+            if (badWords.Any(username.Contains))
             {
                 badWordWarning.SetActive(true);
                 return;

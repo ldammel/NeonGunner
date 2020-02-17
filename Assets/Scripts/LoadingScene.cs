@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using Library.Events;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,12 +22,12 @@ public class LoadingScene : MonoBehaviour
         if(image.color.a <= 0.01 && _ready) sceneSwitch.SwitchScene();
     }
 
-    IEnumerator FadeTo(float aValue, float aTime)
+    private IEnumerator FadeTo(float aValue, float aTime)
     {
-        float alpha = image.color.a;
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        var alpha = image.color.a;
+        for (var t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
         {
-            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,aValue,t));
+            var newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,aValue,t));
             image.color = newColor;
             _ready = true;
             yield return null;

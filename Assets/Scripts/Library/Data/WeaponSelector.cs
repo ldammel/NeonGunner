@@ -10,16 +10,9 @@ namespace Library.Data
         [SerializeField] private GameObject[] selectedGb;
         [SerializeField] private GameObject[] selectedArrow;
         [SerializeField] private GameObject selectedGo;
-
-        private Quaternion _prevRotation;
-
         public float transitionSpeed = 3f;
-
-        public bool started = false;
-
         public float targetPos;
-        public float prevPos;
-
+        private Quaternion _prevRotation;
         private int _curWeapon;
 
         public void SelectWeapon(int index)
@@ -49,7 +42,6 @@ namespace Library.Data
 
         public void SwitchLane(float amount)
         {
-            started = true;
             targetPos += amount;
             targetPos = Mathf.Clamp(targetPos, -3, 3);
         }

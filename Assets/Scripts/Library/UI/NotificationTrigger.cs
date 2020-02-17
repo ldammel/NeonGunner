@@ -10,14 +10,14 @@ namespace Library.UI
   [SerializeField] private float displayTime;
   [SerializeField] private Color color = Color.white;
 
-  private WaypointMovement player;
-  private float baseSpeed;
+  private WaypointMovement _player;
+  private float _baseSpeed;
   public bool tutorial;
 
   private void Start()
   {
-   player = GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>();
-   baseSpeed = player.moveSpeed;
+   _player = GameObject.Find("---PLAYER---/Player").GetComponent<WaypointMovement>();
+   _baseSpeed = _player.moveSpeed;
   }
 
   private void OnTriggerEnter(Collider other)
@@ -30,12 +30,12 @@ namespace Library.UI
    else NotificationManager.Instance.SetNewNotification(notificationText, displayTime, color);
   }
 
-  IEnumerator Tutorial()
+  private IEnumerator Tutorial()
   {
-   player.moveSpeed = 10;
+   _player.moveSpeed = 10;
    NotificationManager.Instance.SetNewNotification(notificationText, displayTime, color);
    yield return new WaitForSeconds(displayTime-2);
-   player.moveSpeed = baseSpeed;
+   _player.moveSpeed = _baseSpeed;
   }
  }
 }

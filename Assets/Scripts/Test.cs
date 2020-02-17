@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using Library.Data;
+﻿using Library.Data;
 using UnityEngine;
 using Library.Events;
-using Library.Tools;
 
 public class Test : MonoBehaviour
 {
@@ -24,7 +22,8 @@ public class Test : MonoBehaviour
             PauseMenu.Instance.TriggerMenu();
         }
 
-        if (PauseMenu.Instance.pauseActive) return;if (LevelManager.Instance.winScreen.activeSelf) return;
+        if (PauseMenu.Instance.pauseActive) return;
+        if (LevelManager.Instance.winScreen.activeSelf) return;
         
         if (Input.GetMouseButtonDown(0))
         {

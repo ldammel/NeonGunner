@@ -8,21 +8,21 @@ namespace Library.Character
     {
         public float moveSpeed;
         public float maxSpeed;
+        public GameObject trackingObject;
+        public bool player;
+        public float prevDist;
 
         [SerializeField] private MeshRenderer rend;
         [SerializeField] private Material wallMaterial;
-        private Material baseMaterial;
-        public GameObject trackingObject;
-        public bool player;
 
-        private bool updated;
-        public float prevDist;
+        private Material _baseMaterial;
+        private bool _updated;
 
 
         private void Start()
         {
             if (rend == null) return;
-            baseMaterial = rend.material;
+            _baseMaterial = rend.material;
             if (PlayerPrefs.GetString("Difficulty") == "Easy")
             {
                 moveSpeed = 25;
@@ -37,11 +37,11 @@ namespace Library.Character
             }
         }
 
-        IEnumerator SwitchMat(float waitTime)
+        private IEnumerator SwitchMat(float waitTime)
         {
             rend.material = wallMaterial;
             yield return new WaitForSeconds(waitTime);
-            rend.material = baseMaterial;
+            rend.material = _baseMaterial;
         }
 
         public void SwitchMaterial(float waitTime)
@@ -54,18 +54,19 @@ namespace Library.Character
             if (PauseMenu.Instance.pauseActive) return;
             
             gameObject.transform.Translate(0,0,moveSpeed * Time.deltaTime);
-            if (!updated && player) StartCoroutine(ScoreUpdate());
+            if (!_updated && player) StartCoroutine(ScoreUpdate());
         }
 
         IEnumerator ScoreUpdate()
         {
             if (trackingObject.transform.position.z - prevDist < 0) yield break;
             if (PauseMenu.Instance.pauseActive) yield break;
-            updated = true;
-            LevelEnd.Instance.score += Mathf.RoundToInt(trackingObject.transform.position.z - prevDist);
-            prevDist = trackingObject.transform.position.z;
+            _updated = true;
+            var position = trackingObject.transform.position;
+            LevelEnd.Instance.score += Mathf.RoundToInt(position.z - prevDist);
+            prevDist = position.z;
             yield return new WaitForSeconds(.5f);
-            updated = false;
+            _updated = false;
         }
     }
 }

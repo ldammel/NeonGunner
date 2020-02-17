@@ -1573,11 +1573,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a471e237f1f043b21efbf21d04902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnpoints: []
+  spawnPoints: []
   spawner: {fileID: 3062369702980996179}
   pools: []
   enemySpawners: 0
-  premadeRoom: 1
+  preMadeRoom: 1
   startRoom: 0
 --- !u!1 &6370498771892578744
 GameObject:

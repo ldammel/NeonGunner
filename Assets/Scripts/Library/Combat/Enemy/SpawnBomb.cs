@@ -1,31 +1,33 @@
 ﻿using Lean.Pool;
-using Library.Events;
 using UnityEngine;
 
-public class SpawnBomb : MonoBehaviour
+namespace Library.Combat.Enemy
 {
-    public LeanGameObjectPool objectPool;
-    public Transform[] spawnPoints;
+    public class SpawnBomb : MonoBehaviour
+    {
+        public LeanGameObjectPool objectPool;
+        public Transform[] spawnPoints;
         
 
-    private void Awake()
-    {
-        objectPool= GameObject.Find("---MANAGERS---/PatternPools/ExplodingEnemyPool").GetComponent<LeanGameObjectPool>();
-    }
-    
-    public void SpawnEnemies()
-    {
-        if (PlayerPrefs.GetString("Difficulty") == "Easy") return;
-        for (int i = 0; i < spawnPoints.Length; i++)
+        private void Awake()
         {
-            if(spawnPoints[i] == null) continue;
-            var transform1 = spawnPoints[i].transform;
-            objectPool.Spawn(transform1.position,transform1.rotation, objectPool.transform);
+            objectPool= GameObject.Find("---MANAGERS---/PatternPools/ExplodingEnemyPool").GetComponent<LeanGameObjectPool>();
         }
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player")) SpawnEnemies();
+        private void SpawnEnemies()
+        {
+            if (PlayerPrefs.GetString("Difficulty") == "Easy") return;
+            foreach (var t in spawnPoints)
+            {
+                if(t == null) continue;
+                var transform1 = t.transform;
+                objectPool.Spawn(transform1.position,transform1.rotation, objectPool.transform);
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Player")) SpawnEnemies();
+        }
     }
 }

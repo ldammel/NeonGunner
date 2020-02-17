@@ -7,10 +7,9 @@ namespace Library.Combat
 {
     public class MachineGun : MonoBehaviour
     {
-        public float damage;
-        public float range;
-        public float fireRate;
-        
+        [SerializeField] private float damage;
+        [SerializeField] private float range;
+        [SerializeField] private float fireRate;
         [SerializeField] private Camera cam;
         [SerializeField] private GameObject vfx;
         [SerializeField] private BulletPooled bp;
@@ -51,7 +50,8 @@ namespace Library.Combat
             
             if (hit.collider.gameObject.CompareTag("Enemy"))
             {
-                if(hit.collider.gameObject.GetComponent<EnemyHealth>() != null) hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+                var eh = hit.collider.gameObject.GetComponent<EnemyHealth>();
+                if(eh != null) eh.TakeDamage(damage);
             }
 
             Instantiate(vfx, hit.point, hit.collider.transform.rotation);
